@@ -1,7 +1,14 @@
-import Image from "next/image";
 import Icon from "@/components/icons";
 import ShapeGrid from "@/components/ShapeGrid";
+import Stars from "@/components/Stars";
 import { company } from "@/lib/data";
+
+const highPriorityProducts = [
+  "Shredder Knives",
+  "Plastic Granulator Blades",
+  "Chipper Knives",
+  "Wood Chipper Knives",
+];
 
 export default function Hero() {
   return (
@@ -58,21 +65,24 @@ export default function Hero() {
         </div>
 
         <div className="hero-visual">
-          <div className="blade-spin">
-            <div className="blade-rings" aria-hidden />
-            <div className="blade-img">
-              <Image
-                src="/hero/shredder-blade.jpg"
-                alt="Shredder blade manufactured by K.S.G. Tools"
-                fill
-                sizes="380px"
-                priority
-                style={{ objectFit: "cover" }}
-              />
+          <div className="kicker">Our Specialities</div>
+          <div className="title">Industrial Knives &amp; Machines</div>
+          <div className="knife-row">
+            {highPriorityProducts.map((p) => (
+              <div className="knife-chip" key={p}>
+                <span className="dot" aria-hidden />
+                {p}
+              </div>
+            ))}
+          </div>
+          <div className="rating-row">
+            <Stars count={company.rating} />
+            <div>
+              <strong style={{ color: "#fff" }}>{company.rating} / 5</strong>
+              <div style={{ fontSize: "13px", color: "#9aa8bc" }}>
+                {company.totalRatings} verified ratings
+              </div>
             </div>
-            <span className="blade-chip">
-              Shredder Knives &amp; Blades · {company.city}
-            </span>
           </div>
         </div>
       </div>

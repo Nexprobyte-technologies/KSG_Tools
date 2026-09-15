@@ -49,8 +49,15 @@ export default function Navbar() {
             <a href={`tel:${company.phoneLink}`} className="phone-pill">
               <Icon name="phone" size={16} /> {company.phone}
             </a>
-            <a href="/contact" className="btn btn-primary">
-              Contact Supplier
+            <a
+              href={`https://wa.me/${company.whatsapp}?text=${encodeURIComponent(
+                "Hi K.S.G. Tools, please share your product catalogue."
+              )}`}
+              target="_blank"
+              rel="noreferrer"
+              className="btn btn-primary"
+            >
+              Download Catalogue
             </a>
           </div>
           <button

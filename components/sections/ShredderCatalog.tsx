@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { shredderKnives } from "@/lib/data";
+import { company, shredderKnives } from "@/lib/data";
 
 export default function ShredderCatalog() {
   return (
@@ -52,11 +52,8 @@ export default function ShredderCatalog() {
                 <Link href={`/products/${p.slug}`} className="btn btn-primary">
                   View Details
                 </Link>
-                <a
-                  href={`/contact?product=${encodeURIComponent(p.name)}`}
-                  className="btn btn-dark"
-                >
-                  Get Best Quote
+                <a href={`tel:${company.phoneLink}`} className="btn btn-dark">
+                  Call Now
                 </a>
               </div>
             </div>
