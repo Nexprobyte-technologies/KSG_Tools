@@ -43,6 +43,22 @@ export default function Navbar() {
                   </a>
                 </li>
               ))}
+              <li className="nav-mobile-cta">
+                <a
+                  href={`https://wa.me/${company.whatsapp}?text=${encodeURIComponent(
+                    "Hi K.S.G. Tools, please share your product catalogue."
+                  )}`}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="btn btn-primary nav-mobile-download-btn"
+                  onClick={() => setOpen(false)}
+                >
+                  <Icon name="download" size={16} /> Download Full Catalogue
+                </a>
+                <a href={`tel:${company.phoneLink}`} className="phone-pill phone-pill-mobile">
+                  <Icon name="phone" size={16} /> Call {company.phone}
+                </a>
+              </li>
             </ul>
           </nav>
           <div className="nav-cta">
@@ -55,9 +71,13 @@ export default function Navbar() {
               )}`}
               target="_blank"
               rel="noreferrer"
-              className="btn btn-primary"
+              className="btn btn-primary nav-download-btn"
+              title="Download Catalogue"
+              aria-label="Download Catalogue"
             >
-              Download Catalogue
+              <Icon name="download" size={15} />
+              <span className="btn-text-full">Download Catalogue</span>
+              <span className="btn-text-short">Catalogue</span>
             </a>
           </div>
           <button
