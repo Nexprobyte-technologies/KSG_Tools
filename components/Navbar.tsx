@@ -1,7 +1,8 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
+import Link from "next/link";
 import Icon from "@/components/icons";
 import { navLinks, company } from "@/lib/data";
 
@@ -12,35 +13,69 @@ export default function Navbar() {
   const isActive = (href: string) =>
     href === "/" ? pathname === "/" : pathname.startsWith(href);
 
+  // Auto-close on page navigation
+  useEffect(() => {
+    setOpen(false);
+  }, [pathname]);
+
+  // Lock body scroll when mobile menu is open
+  useEffect(() => {
+    if (open) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [open]);
+
   return (
     <>
       <div className="topbar">
         <div className="container">
-          <span>
-            <span aria-hidden>★</span> {company.rating} rating - {company.city}, India
-          </span>
-          <span>
-            <Icon name="check" size={13} /> Giving Specialized IndiaMART Services
-          </span>
+          <div className="topbar-left">
+            <span>
+              <Icon name="award" size={13} /> Estd. {company.estd} · 16+ Years Industrial Toolmaking
+            </span>
+            <span className="topbar-divider">|</span>
+            <span>
+              <Icon name="shield" size={13} /> GST: {company.gst}
+            </span>
+          </div>
+          <div className="topbar-right">
+            <span>
+              <span aria-hidden>★</span> {company.rating} Rating · {company.city}
+            </span>
+            <span className="topbar-divider">|</span>
+            <span>
+              <Icon name="check" size={13} /> Verified IndiaMART Manufacturer
+            </span>
+          </div>
         </div>
       </div>
+
       <header className="navbar">
         <div className="container">
-          <a href="/" className="brand">
+          <Link href="/" className="brand" onClick={() => setOpen(false)}>
             <span className="brand-mark">KSG</span>
-            K.S.G. Tools
-          </a>
+            <span className="brand-title-wrap">
+              <span className="brand-name">K.S.G. Tools</span>
+              <span className="brand-badge">Precision Tooling · Coimbatore</span>
+            </span>
+          </Link>
+
           <nav>
             <ul className={`nav-links${open ? " open" : ""}`}>
               {navLinks.map((l) => (
                 <li key={l.href}>
-                  <a
+                  <Link
                     href={l.href}
                     className={isActive(l.href) ? "active" : ""}
                     onClick={() => setOpen(false)}
                   >
-                    {l.label}
-                  </a>
+                    <span>{l.label}</span>
+                  </Link>
                 </li>
               ))}
               <li className="nav-mobile-cta">
@@ -55,15 +90,21 @@ export default function Navbar() {
                 >
                   <Icon name="download" size={16} /> Download Full Catalogue
                 </a>
-                <a href={`tel:${company.phoneLink}`} className="phone-pill phone-pill-mobile">
+                <a
+                  href={`tel:${company.phoneLink}`}
+                  className="phone-pill phone-pill-mobile"
+                  onClick={() => setOpen(false)}
+                >
                   <Icon name="phone" size={16} /> Call {company.phone}
                 </a>
               </li>
             </ul>
           </nav>
+
           <div className="nav-cta">
             <a href={`tel:${company.phoneLink}`} className="phone-pill">
-              <Icon name="phone" size={16} /> {company.phone}
+              <Icon name="phone" size={14} />
+              <span className="phone-pill-text">{company.phone}</span>
             </a>
             <a
               href={`https://wa.me/${company.whatsapp}?text=${encodeURIComponent(
@@ -75,21 +116,31 @@ export default function Navbar() {
               title="Download Catalogue"
               aria-label="Download Catalogue"
             >
-              <Icon name="download" size={15} />
+              <Icon name="download" size={14} />
               <span className="btn-text-full">Download Catalogue</span>
               <span className="btn-text-short">Catalogue</span>
             </a>
           </div>
+
           <button
             className="burger"
             type="button"
             aria-label="Toggle menu"
+            aria-expanded={open}
             onClick={() => setOpen((v) => !v)}
           >
             {open ? "✕" : "☰"}
           </button>
         </div>
       </header>
+
+      {open && (
+        <div
+          className="nav-backdrop"
+          onClick={() => setOpen(false)}
+          aria-hidden="true"
+        />
+      )}
     </>
   );
 }

@@ -1,14 +1,7 @@
 import Icon from "@/components/icons";
 import ShapeGrid from "@/components/ShapeGrid";
-import Stars from "@/components/Stars";
+import HeroProductSlider from "@/components/HeroProductSlider";
 import { company } from "@/lib/data";
-
-const highPriorityProducts = [
-  "Shredder Knives",
-  "Plastic Granulator Blades",
-  "Chipper Knives",
-  "Wood Chipper Knives",
-];
 
 export default function Hero() {
   return (
@@ -27,11 +20,22 @@ export default function Hero() {
       <div className="container">
         <div>
           <span className="hero-badge">
-            <Icon name="zap" size={14} /> Estd. 2009 · Manufacturer
+            <Icon name="factory" size={14} /> Estd. 2009 · Industrial Tool Manufacturer · Coimbatore
           </span>
           <h1>
-            Precision Cutting Tools by <span className="accent">K.S.G. Tools</span>
+            Precision Industrial Cutting Tools &amp; Machinery by <span className="accent">K.S.G. Tools</span>
           </h1>
+          <div className="hero-tech-pills">
+            <span className="hero-tech-pill">
+              <Icon name="gear" size={13} /> D2 &amp; HCHCr Tool Steels
+            </span>
+            <span className="hero-tech-pill">
+              <Icon name="shield" size={13} /> HRC 58-62 Hardened
+            </span>
+            <span className="hero-tech-pill">
+              <Icon name="wrench" size={13} /> 4-Axis VMC Tooling
+            </span>
+          </div>
           <p className="lead">
             {company.tagline} Trusted partner for the recycling and wood-processing
             industries since {company.estd}.
@@ -42,7 +46,7 @@ export default function Hero() {
               <div className="label">Years of Experience</div>
             </div>
             <div className="stat-card">
-              <div className="val">49+</div>
+              <div className="val">29+</div>
               <div className="label">Products &amp; Services</div>
             </div>
             <div className="stat-card">
@@ -64,26 +68,8 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className="hero-visual">
-          <div className="kicker">Our Specialities</div>
-          <div className="title">Industrial Knives &amp; Machines</div>
-          <div className="knife-row">
-            {highPriorityProducts.map((p) => (
-              <div className="knife-chip" key={p}>
-                <span className="dot" aria-hidden />
-                {p}
-              </div>
-            ))}
-          </div>
-          <div className="rating-row">
-            <Stars count={company.rating} />
-            <div>
-              <strong style={{ color: "#fff" }}>{company.rating} / 5</strong>
-              <div style={{ fontSize: "13px", color: "#9aa8bc" }}>
-                {company.totalRatings} verified ratings
-              </div>
-            </div>
-          </div>
+        <div className="hero-slider-column">
+          <HeroProductSlider />
         </div>
       </div>
       <div className="hero-scroll">Scroll to explore ↓</div>

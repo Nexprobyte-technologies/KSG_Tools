@@ -4,34 +4,35 @@ import Footer from "@/components/Footer";
 import Chatbot from "@/components/Chatbot";
 import JsonLd from "@/components/JsonLd";
 import "./globals.css";
+import "./hero-slider.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://ksg-tools.com"),
   title: {
-    default: "K.S.G. Tools | Shredder Knives & Granulator Blades | Coimbatore",
+    default: "K.S.G. Tools | Chipper Knives, Tools & Dies, Machinery | Coimbatore",
     template: "%s | K.S.G. Tools",
   },
   description:
-    "K.S.G. Tools is a leading manufacturer, wholesaler, trader and retailer of Shredder Knives, Plastic Granulator Blades, Chipper Knives, Wood Chipper Knives and more. Estd. 2009, Coimbatore.",
+    "K.S.G. Tools is a leading manufacturer of Chipper Knives, Tools & Dies, Industrial Shredding Machinery, Grinder Blades, Granulator Blades, and VMC Job Work. Estd. 2009, Coimbatore.",
   keywords: [
-    "Shredder Knives",
-    "Granulator Blades",
     "Chipper Knives",
-    "Wood Chipper Knives",
-    "Shredder Blades",
+    "Tools And Dies",
+    "Shredding Machine",
+    "Grinder Blades",
+    "Granulator Blades",
+    "VMC Machine Job Work",
+    "Chaff Cutter Blades",
     "Industrial Cutting Tools",
     "Coimbatore Manufacturer",
-    "Chaff Cutter Blades",
-    "Shredding Machine",
   ],
   openGraph: {
     type: "website",
     locale: "en_IN",
     url: "https://ksg-tools.com",
     siteName: "K.S.G. Tools",
-    title: "K.S.G. Tools | Shredder Knives & Granulator Blades | Coimbatore",
+    title: "K.S.G. Tools | Industrial Cutting Tools & Precision Dies | Coimbatore",
     description:
-      "Manufacturer, Wholesaler, Trader and Retailer of Shredder Knives, Plastic Granulator Blades, Chipper Knives and more from Coimbatore.",
+      "Manufacturer and Supplier of Chipper Knives, Tools & Dies, Industrial Shredding Machinery, and VMC Job Work from Coimbatore.",
     images: [
       {
         url: "/hero/shredder-blade.jpg",

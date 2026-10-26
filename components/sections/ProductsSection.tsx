@@ -29,7 +29,7 @@ export default function ProductsSection() {
           <div className="marquee-track">
             {track.map((c, i) => (
               <a
-                href="/products#shredder-knives"
+                href="/products"
                 className="category-card"
                 key={`${c.name}-${i}`}
                 aria-hidden={i >= categories.length}

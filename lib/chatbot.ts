@@ -3,7 +3,7 @@ import {
   categories,
   factsheet,
   whyUsPoints,
-  shredderKnives,
+  allProducts,
 } from "./data";
 
 export interface Lead {
@@ -75,14 +75,27 @@ const SPECS_TEXT = (specs: [string, string][], moq?: string): string => {
 };
 
 const matchProduct = (q: string) => {
-  const has = (words: string[]) => words.some((w) => q.includes(w));
-  if (has(["10 inch", "10 inch double"])) return shredderKnives.products[0];
-  if (has(["8 inch"])) return shredderKnives.products[6];
-  if (has(["8mm", "agricultural"])) return shredderKnives.products[5];
-  if (has(["chicken"])) return shredderKnives.products[7];
-  if (has(["mild steel"])) return shredderKnives.products[3];
-  if (has(["plastic"])) return shredderKnives.products[8];
-  if (has(["machine knife", "machine knives"])) return shredderKnives.products[1];
+  const qClean = q.toLowerCase();
+  for (const p of allProducts) {
+    if (
+      qClean.includes(p.code.toLowerCase()) ||
+      qClean.includes(p.code.toLowerCase().replace("-", "")) ||
+      qClean.includes(p.name.toLowerCase())
+    ) {
+      return p;
+    }
+  }
+  const has = (words: string[]) => words.some((w) => qClean.includes(w));
+  if (has(["vmc", "4 axis", "4-axis"])) return allProducts.find((p) => p.code === "KSG-701");
+  if (has(["press tool", "die manufacturer"])) return allProducts.find((p) => p.code === "KSG-301");
+  if (has(["moulding die", "moulding dies"])) return allProducts.find((p) => p.code === "KSG-302");
+  if (has(["chipper", "wood chipper"])) return allProducts.find((p) => p.code === "KSG-201");
+  if (has(["chaff", "chaff cutter"])) return allProducts.find((p) => p.code === "KSG-801");
+  if (has(["granulator"])) return allProducts.find((p) => p.code === "KSG-601");
+  if (has(["shredding machine", "automatic shredder"])) return allProducts.find((p) => p.code === "KSG-401");
+  if (has(["coconut husk", "coir"])) return allProducts.find((p) => p.code === "KSG-403");
+  if (has(["grinder", "plastic crusher"])) return allProducts.find((p) => p.code === "KSG-501");
+  if (has(["aluminium pattern"])) return allProducts.find((p) => p.code === "KSG-303");
   return null;
 };
 
@@ -231,7 +244,7 @@ export function getBotReply(
   if (product) {
     const spec = SPECS_TEXT(product.specs, product.moq);
     return {
-      text: `${product.name}\nPrice: ${PRODUCT_LABEL(product.price)}\nSpecification: ${spec}\n\n${product.desc ?? ""}\n\nType 'enquiry' to order this on WhatsApp.`,
+      text: `[Item Code: ${product.code}] ${product.name}\nPrice: ${PRODUCT_LABEL(product.price)}\nSpecification: ${spec}\n\n${product.desc ?? ""}\n\nType 'enquiry' to order this on WhatsApp with Product Code #${product.code}.`,
       suggestions: ["Order now", "MOQ details", "More products"],
       next: INITIAL_STATE,
     };
@@ -260,12 +273,12 @@ export function getBotReply(
   }
 
   if (has("price", "prices", "cost", "rate", "rates", "quote", "quotation", "best price", "cheap")) {
-    const list = shredderKnives.products
-      .map((p) => `• ${p.name} — ${PRODUCT_LABEL(p.price)}`)
+    const list = allProducts.slice(0, 6)
+      .map((p) => `• [${p.code}] ${p.name} — ${PRODUCT_LABEL(p.price)}`)
       .join("\n");
     return {
-      text: `Here is our indicative Shredder Knives price list:\n${list}\n\nFinal prices depend on quantity, material and customisation — type 'enquiry' to get a best quote on WhatsApp!`,
-      suggestions: ["10 inch specs", "Chicken cutting knives", "MOQ details", "Send enquiry"],
+      text: `Here is our indicative product price list with Item Codes:\n${list}\n\nFinal prices depend on quantity, material and customisation — type 'enquiry' to get a best quote on WhatsApp!`,
+      suggestions: ["Chipper Knives", "Tools & Dies", "MOQ details", "Send enquiry"],
       next: INITIAL_STATE,
     };
   }

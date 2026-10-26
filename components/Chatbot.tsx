@@ -10,7 +10,7 @@ import {
   type BotState,
   type Lead,
 } from "@/lib/chatbot";
-import { company, shredderKnives } from "@/lib/data";
+import { company, allProducts } from "@/lib/data";
 
 interface Msg {
   role: "bot" | "user";
@@ -23,7 +23,7 @@ const DEFAULT_SUGGESTIONS = ["Our products", "Prices", "GST details", "Send enqu
 function getContextProduct(pathname: string): string | undefined {
   const match = pathname.match(/^\/products\/([^/]+)/);
   if (!match) return undefined;
-  const product = shredderKnives.products.find(
+  const product = allProducts.find(
     (p) => p.slug === decodeURIComponent(match[1])
   );
   return product?.name;

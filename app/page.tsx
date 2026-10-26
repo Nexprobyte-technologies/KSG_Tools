@@ -3,6 +3,7 @@ import ProductsSection from "@/components/sections/ProductsSection";
 import ShredderCatalog from "@/components/sections/ShredderCatalog";
 import StatsBand from "@/components/sections/StatsBand";
 import ServicesSection from "@/components/sections/ServicesSection";
+import VideosSection from "@/components/sections/VideosSection";
 import PhotosSection from "@/components/sections/PhotosSection";
 import CompanyProfile from "@/components/sections/CompanyProfile";
 import ReviewsSection from "@/components/sections/ReviewsSection";
@@ -17,6 +18,7 @@ export default function Home() {
       <ShredderCatalog />
       <StatsBand />
       <ServicesSection />
+      <VideosSection />
       <PhotosSection />
       <CompanyProfile />
       <ReviewsSection />

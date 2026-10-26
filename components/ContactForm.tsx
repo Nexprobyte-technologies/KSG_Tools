@@ -1,10 +1,14 @@
 "use client";
 
 import { useState } from "react";
-import { company } from "@/lib/data";
+import Icon from "@/components/icons";
+import { company, allProducts } from "@/lib/data";
 
-const productOptions = [
-  "Shredder Knives",
+const specificProductOptions = allProducts.map(
+  (p) => `[${p.code}] ${p.name}`
+);
+
+const generalCategories = [
   "Chipper Knives",
   "Granulator Blades",
   "Grinder Blades",
@@ -15,11 +19,20 @@ const productOptions = [
   "Other / General Enquiry",
 ];
 
+const productOptions = [...specificProductOptions, ...generalCategories];
+
 export default function ContactForm({ defaultProduct }: { defaultProduct?: string }) {
   const [sent, setSent] = useState(false);
-  const [product, setProduct] = useState(defaultProduct ?? "Shredder Knives");
-  const options = defaultProduct && !productOptions.includes(defaultProduct)
-    ? [defaultProduct, ...productOptions]
+  const [product, setProduct] = useState(() => {
+    if (!defaultProduct) return specificProductOptions[0];
+    const match = productOptions.find(
+      (o) => o.toLowerCase().includes(defaultProduct.toLowerCase())
+    );
+    return match || defaultProduct;
+  });
+
+  const options = defaultProduct && !productOptions.includes(product)
+    ? [product, ...productOptions]
     : productOptions;
 
   return (
@@ -33,8 +46,24 @@ export default function ContactForm({ defaultProduct }: { defaultProduct?: strin
       <h3>Send an Enquiry</h3>
       {sent ? (
         <div className="success">
-          Thank you! Your enquiry has been received. Our team will call you back within
-          24 working hours.
+          <p>
+            <strong>Enquiry Received!</strong> Your enquiry for <em>{product}</em> has
+            been recorded.
+          </p>
+          <p style={{ marginTop: 8 }}>
+            Our sales team will contact you within 24 working hours.
+          </p>
+          <a
+            href={`https://wa.me/${company.whatsapp}?text=${encodeURIComponent(
+              `Hi K.S.G. Tools, I submitted a website enquiry for: ${product}. Please share pricing and catalogue.`
+            )}`}
+            target="_blank"
+            rel="noreferrer"
+            className="btn btn-wa"
+            style={{ marginTop: 14, display: "inline-flex", width: "auto" }}
+          >
+            <Icon name="chat" size={15} /> Chat on WhatsApp Now
+          </a>
         </div>
       ) : (
         <>
