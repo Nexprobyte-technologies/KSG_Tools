@@ -261,16 +261,20 @@
 }
 
 .hp-actions {
-  display: grid;
-  grid-template-columns: 1fr 1.25fr;
-  gap: 8px;
+  display: flex;
   margin-top: 4px;
 }
 
 .hp-btn-details {
-  padding: 9px 12px;
-  font-size: 13px;
+  width: 100%;
+  padding: 10px 14px;
+  font-size: 13.5px;
+  font-weight: 700;
   justify-content: center;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  gap: 6px;
 }
 
 .hp-btn-wa {

@@ -1817,16 +1817,22 @@ img {
 }
 
 .product-actions {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
+  display: flex;
   padding: 16px 20px 20px;
   margin-top: auto;
 }
 
 .product-actions .btn {
-  padding: 11px 12px;
+  width: 100%;
+  padding: 11px 16px;
   font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  border-radius: 8px;
 }
 
 @media (max-width: 1024px) {

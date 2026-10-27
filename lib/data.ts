@@ -28,19 +28,23 @@ export const navLinks = [
 export const categories = [
   {
     "name": "Chipper Knives",
-    "count": 6
-  },
-  {
-    "name": "Tools And Dies",
     "count": 8
   },
   {
+    "name": "Shredder Knives",
+    "count": 9
+  },
+  {
+    "name": "Tools And Dies",
+    "count": 13
+  },
+  {
     "name": "Shredding Machine",
-    "count": 3
+    "count": 5
   },
   {
     "name": "Grinder Blades",
-    "count": 4
+    "count": 3
   },
   {
     "name": "Granulator Blades",
@@ -48,7 +52,7 @@ export const categories = [
   },
   {
     "name": "VMC Machine Job Work",
-    "count": 3
+    "count": 2
   },
   {
     "name": "Chaff Cutter Blades",
@@ -94,7 +98,7 @@ export const allProducts: Product[] = [
     "name": "4 inch Stainless Steel Chipper Knife",
     "category": "Chipper Knives",
     "slug": "4-inch-stainless-steel-chipper-knife",
-    "image": "/products/chipper-4inch-ss.jpg",
+    "image": "/products/indiamart-2851585949630.jpg",
     "price": 4000,
     "moq": "1 Piece",
     "specs": [
@@ -107,44 +111,44 @@ export const allProducts: Product[] = [
         "Stainless Steel"
       ],
       [
-        "Usage/Application",
-        "Wood Chipping & Industrial"
+        "Brand",
+        "Own Brand"
       ],
       [
         "Hardness",
         "58-60 HRC"
       ],
       [
-        "Edge Type",
-        "Double Bevel Precision Ground"
+        "Usage/Application",
+        "Wood Chipping & Industrial"
       ]
     ],
-    "desc": "Industrial 4-inch stainless steel chipper knives with double-beveled precision ground edges. Designed for high-speed wood chipping, paper mills, and timber yards."
+    "desc": "Genuine 4 inch stainless steel chipper knives manufactured by K.S.G. Tools in Coimbatore with high-precision ground edges for industrial wood chipping and timber yards."
   },
   {
     "code": "KSG-202",
     "name": "2 Slot Wood Chipper Knives",
     "category": "Chipper Knives",
     "slug": "2-slot-wood-chipper-knives",
-    "image": "/products/chipper-2slot-wood.jpg",
+    "image": "/products/indiamart-2850047399762.jpeg",
     "price": 500,
     "moq": "1 Piece",
     "specs": [
       [
-        "Number of Slots",
-        "2 Slots"
-      ],
-      [
         "Material",
-        "High Carbon Die Steel"
+        "Stainless Steel"
       ],
       [
         "Usage/Application",
-        "Wood Chipper Machine"
+        "Industrial"
       ],
       [
-        "Finishing",
-        "Precision Ground Finish"
+        "Machine Type",
+        "Wood Working Machine"
+      ],
+      [
+        "Number of Slots",
+        "2 Slots"
       ]
     ],
     "desc": "Precision 2-slot wood chipper knives providing secure bolt clamping and vibration-free chipping of hard timber, bamboo, and saw mill logs."
@@ -154,21 +158,21 @@ export const allProducts: Product[] = [
     "name": "Stainless Steel Chipper Knives",
     "category": "Chipper Knives",
     "slug": "stainless-steel-chipper-knives",
-    "image": "/products/chipper-ss.jpg",
+    "image": "/products/indiamart-2850047515930.jpg",
     "price": 650,
     "moq": "1 Piece",
     "specs": [
       [
+        "Size (Length)",
+        "17 mm"
+      ],
+      [
         "Material",
-        "Stainless Steel (SS)"
+        "Stainless Steel"
       ],
       [
         "Usage/Application",
-        "Industrial Wood & Timber Chipper"
-      ],
-      [
-        "Thickness",
-        "8 mm"
+        "Industrial"
       ],
       [
         "Corrosion Resistance",
@@ -182,7 +186,7 @@ export const allProducts: Product[] = [
     "name": "10 Inch Agriculture Chipper Knives",
     "category": "Chipper Knives",
     "slug": "10-inch-agriculture-chipper-knives",
-    "image": "/products/chipper-10inch-agri.jpg",
+    "image": "/products/indiamart-2850047488548.jpg",
     "price": 650,
     "moq": "1 Piece",
     "specs": [
@@ -191,16 +195,16 @@ export const allProducts: Product[] = [
         "10 Inch"
       ],
       [
+        "Material",
+        "Stainless Steel"
+      ],
+      [
         "Usage/Application",
-        "Agricultural Chipping Machine"
+        "Industrial"
       ],
       [
-        "Blade Material",
-        "Alloy Die Steel"
-      ],
-      [
-        "Finishing",
-        "Anti-Rust Oil Coated"
+        "Type",
+        "Chipper Knives"
       ]
     ],
     "desc": "Heavy-duty 10-inch agricultural chipper blades designed for field shredders and tractor-driven chippers to process farm residues and woody brush."
@@ -210,7 +214,7 @@ export const allProducts: Product[] = [
     "name": "4 Inch Wood Chipper Knives",
     "category": "Chipper Knives",
     "slug": "4-inch-wood-chipper-knives",
-    "image": "/products/chipper-wood-cutting.jpg",
+    "image": "/products/indiamart-2850047534997.jpg",
     "price": 450,
     "moq": "1 Piece",
     "specs": [
@@ -219,480 +223,27 @@ export const allProducts: Product[] = [
         "4 Inch"
       ],
       [
+        "Application",
+        "Wood Cutting"
+      ],
+      [
         "Material",
-        "High Grade Alloy Steel"
+        "Stainless Steel"
       ],
       [
-        "Hardness",
-        "56-58 HRC"
-      ],
-      [
-        "Machine Compatibility",
-        "Industrial Wood Chippers"
+        "Usage/Application",
+        "Industrial"
       ]
     ],
-    "desc": "Compact 4-inch wood cutting chipper knives manufactured from high grade alloy steel with 56-58 HRC hardness for consistent cutting performance."
+    "desc": "Compact 4-inch wood cutting chipper knives manufactured with 56-58 HRC hardness for consistent cutting performance."
   },
   {
     "code": "KSG-206",
-    "name": "Garden Shredder Chipper Knives",
+    "name": "5 Inch Wood Chipper Knives",
     "category": "Chipper Knives",
-    "slug": "garden-shredder-chipper-knives",
-    "image": "/products/chipper-agri-cutting.jpg",
-    "price": 350,
-    "moq": "1 Piece",
-    "specs": [
-      [
-        "Usage/Application",
-        "Garden & Horticulture Shredders"
-      ],
-      [
-        "Material",
-        "Tempered Tool Steel"
-      ],
-      [
-        "Thickness",
-        "5 mm"
-      ],
-      [
-        "Edge",
-        "Reversible Dual Edge"
-      ]
-    ],
-    "desc": "Double-edged reversible garden shredder knives for pruning chippers and compost shredders. Tempered for shock resistance against tough twigs and roots."
-  },
-  {
-    "code": "KSG-301",
-    "name": "Press Tool Die Manufacturer",
-    "category": "Tools And Dies",
-    "slug": "press-tool-die-manufacturer",
-    "image": "/products/dies-press-tool.jpg",
-    "price": 5000,
-    "moq": "1 Piece",
-    "specs": [
-      [
-        "Die Type",
-        "Press Tool Die"
-      ],
-      [
-        "Material",
-        "D2 / High Speed Tool Steel"
-      ],
-      [
-        "Application",
-        "Sheet Metal Stamping & Blanking"
-      ],
-      [
-        "Precision",
-        "High Accuracy Tolerance (±0.01 mm)"
-      ]
-    ],
-    "desc": "Custom engineered press tool dies for sheet metal stamping, punching, bending, and blanking. Manufactured using high-speed D2 tool steel in Coimbatore."
-  },
-  {
-    "code": "KSG-302",
-    "name": "Plastic Moulding Dies",
-    "category": "Tools And Dies",
-    "slug": "plastic-moulding-dies",
-    "image": "/products/dies-plastic-moulding.jpg",
-    "price": 10000,
-    "moq": "1 Piece",
-    "specs": [
-      [
-        "Mould Type",
-        "Injection Moulding Die"
-      ],
-      [
-        "Material",
-        "P20 / H13 Steel"
-      ],
-      [
-        "Surface Finish",
-        "Mirror Polished / Hard Chrome"
-      ],
-      [
-        "Cooling",
-        "Optimized Water Line Channels"
-      ]
-    ],
-    "desc": "Precision plastic injection moulding dies with hardened P20/H13 cavities. Optimized cooling channels and mirror finish for flawless moulded components."
-  },
-  {
-    "code": "KSG-303",
-    "name": "Aluminium Pattern Works",
-    "category": "Tools And Dies",
-    "slug": "aluminium-pattern-works",
-    "image": "/products/dies-aluminium-pattern.jpg",
-    "price": 5000,
-    "moq": "1 Piece",
-    "specs": [
-      [
-        "Material",
-        "Cast Aluminium Alloy"
-      ],
-      [
-        "Application",
-        "Foundry Casting & Core Box"
-      ],
-      [
-        "Pattern Type",
-        "Match Plate & Gated Patterns"
-      ],
-      [
-        "Durability",
-        "Long Production Life"
-      ]
-    ],
-    "desc": "High precision cast aluminium patterns, core boxes, and match plates for industrial foundries. Dimensionally stable for repetitive sand casting runs."
-  },
-  {
-    "code": "KSG-304",
-    "name": "Rubber Moulding Dies",
-    "category": "Tools And Dies",
-    "slug": "rubber-moulding-dies",
-    "image": "/products/dies-rubber-moulding.jpg",
-    "price": null,
-    "specs": [
-      [
-        "Die Type",
-        "Rubber Compression & Transfer Mould"
-      ],
-      [
-        "Material",
-        "Forged Tool Steel"
-      ],
-      [
-        "Hardness",
-        "50-54 HRC"
-      ],
-      [
-        "Application",
-        "O-Rings, Seals, Gaskets & Bushes"
-      ]
-    ],
-    "desc": "High-temperature compression and transfer rubber moulding dies for manufacturing O-rings, industrial gaskets, vibration pads, and custom rubber bushes."
-  },
-  {
-    "code": "KSG-305",
-    "name": "Metal Dies Pattern",
-    "category": "Tools And Dies",
-    "slug": "metal-dies-pattern",
-    "image": "/products/dies-metal-pattern.jpg",
-    "price": 8000,
-    "moq": "1 Piece",
-    "specs": [
-      [
-        "Material",
-        "Alloy Steel / EN Series"
-      ],
-      [
-        "Application",
-        "Industrial Tooling & Casting"
-      ],
-      [
-        "Machining",
-        "4-Axis VMC Machined"
-      ]
-    ],
-    "desc": "Heavy-duty CNC/VMC machined metal die patterns for metal stamping, drop forging, and casting tooling with high wear resistance."
-  },
-  {
-    "code": "KSG-306",
-    "name": "Can Die & Forming Tools",
-    "category": "Tools And Dies",
-    "slug": "can-die-forming-tools",
-    "image": "/products/dies-can-die.jpg",
-    "price": 12000,
-    "specs": [
-      [
-        "Application",
-        "Metal Can & Flange Forming"
-      ],
-      [
-        "Tool Set",
-        "Hardened Punch & Die Assembly"
-      ],
-      [
-        "Material Grade",
-        "D2 / Tungsten Carbide Inserts"
-      ],
-      [
-        "Tolerance",
-        "±0.005 mm"
-      ]
-    ],
-    "desc": "Precision hardened punch and die tooling assemblies for sheet metal can making, deep drawing, bottom forming, and container flanging."
-  },
-  {
-    "code": "KSG-307",
-    "name": "Progressive Die Tools",
-    "category": "Tools And Dies",
-    "slug": "progressive-die-tools",
-    "image": "/products/dies-progressive.jpg",
-    "price": 15000,
-    "specs": [
-      [
-        "Type",
-        "Multi-Station Progressive Tooling"
-      ],
-      [
-        "Stamping Speed",
-        "High Speed Continuous Stamping"
-      ],
-      [
-        "Steel Grade",
-        "D2 / SKD11 / Carbide"
-      ]
-    ],
-    "desc": "Multi-station high speed progressive stamping dies for automated mass manufacturing of electrical terminals, brackets, and automotive stampings."
-  },
-  {
-    "code": "KSG-308",
-    "name": "Precision Moulds & Die Sets",
-    "category": "Tools And Dies",
-    "slug": "precision-moulds-and-die-sets",
-    "image": "/products/dies-precision-moulds.jpg",
-    "price": null,
-    "specs": [
-      [
-        "Product Type",
-        "Die Sets & Precision Mould Bases"
-      ],
-      [
-        "Guide Pillar",
-        "Hardened Ground Guide Pillars"
-      ],
-      [
-        "Usage",
-        "Stamping, Forming & Moulding"
-      ]
-    ],
-    "desc": "Standard and custom four-pillar die sets with hardened and ground guide pillars ensuring perfect alignment and zero deflection during stamping."
-  },
-  {
-    "code": "KSG-401",
-    "name": "Double Shaft Automatic Shredding Machine",
-    "category": "Shredding Machine",
-    "slug": "double-shaft-automatic-shredding-machine",
-    "image": "/products/shredder-double-shaft.jpg",
-    "price": null,
-    "specs": [
-      [
-        "Machine Type",
-        "Dual Shaft Industrial Shredder"
-      ],
-      [
-        "Automation Grade",
-        "Automatic PLC Controlled"
-      ],
-      [
-        "Capacity",
-        "500 - 2000 kg/hr"
-      ],
-      [
-        "Motor Power",
-        "10 HP - 50 HP Heavy Duty"
-      ],
-      [
-        "Materials Shredded",
-        "Plastic, Rubber, E-Waste, Timber, Drums"
-      ]
-    ],
-    "desc": "Heavy-duty dual shaft industrial shredder machine built in Coimbatore with high-torque reduction gearbox. Shreds plastic barrels, tires, e-waste, and timber pallets."
-  },
-  {
-    "code": "KSG-402",
-    "name": "Agricultural Shredder Machine In Coimbatore",
-    "category": "Shredding Machine",
-    "slug": "agricultural-shredder-machine",
-    "image": "/products/shredder-auto-machine.jpg",
-    "price": null,
-    "specs": [
-      [
-        "Usage/Application",
-        "Agro Waste, Crops & Branch Shredding"
-      ],
-      [
-        "Drive Type",
-        "Electric Motor / Tractor PTO Driven"
-      ],
-      [
-        "Capacity",
-        "500 - 1000 kg/hr"
-      ],
-      [
-        "Blades",
-        "Reversible Heat-Treated Alloy Steel"
-      ]
-    ],
-    "desc": "PTO and electric motor operated agricultural shredding machine for chopping organic farm residues, banana stems, and pruned branches into bio-mulch."
-  },
-  {
-    "code": "KSG-403",
-    "name": "Mild Steel Coconut Husk Shredder Machine",
-    "category": "Shredding Machine",
-    "slug": "coconut-husk-shredder-machine",
-    "image": "/products/shredder-coconut-husk.jpg",
-    "price": null,
-    "specs": [
-      [
-        "Body Material",
-        "Mild Steel Heavy Duty Fabricated"
-      ],
-      [
-        "Application",
-        "Coconut Husk & Coir Defibering"
-      ],
-      [
-        "Output Form",
-        "Shredded Fiber & Coir Pith"
-      ],
-      [
-        "Feeding",
-        "Continuous Conveyor / Chute"
-      ]
-    ],
-    "desc": "Continuous-feed coconut husk and coir shredder machine manufactured with heavy mild steel framework and hardened tearing teeth for coir mills."
-  },
-  {
-    "code": "KSG-501",
-    "name": "Shredder Machine Blade, For Industrial",
-    "category": "Grinder Blades",
-    "slug": "shredder-machine-blade-industrial",
-    "image": "/products/grinder-blades-heavy.jpg",
-    "price": 3000,
-    "moq": "1 Piece",
-    "specs": [
-      [
-        "Usage/Application",
-        "Industrial Grinder / Shredder"
-      ],
-      [
-        "Material",
-        "D2 Alloy Steel"
-      ],
-      [
-        "Hardness",
-        "58-60 HRC"
-      ],
-      [
-        "Finish",
-        "Fine Ground Surface"
-      ]
-    ],
-    "desc": "Wear-resistant D2 alloy steel industrial grinder blades with precision ground cutting bevels for high-throughput scrap reduction machinery."
-  },
-  {
-    "code": "KSG-502",
-    "name": "Stainless Steel Grinder Blades",
-    "category": "Grinder Blades",
-    "slug": "stainless-steel-grinder-blades",
-    "image": "/products/grinder-blades-ss.jpg",
-    "price": 2500,
-    "moq": "1 Piece",
-    "specs": [
-      [
-        "Material",
-        "Stainless Steel (SS 304/420)"
-      ],
-      [
-        "Application",
-        "Chemical, Food & Plastic Grinding"
-      ],
-      [
-        "Thickness",
-        "8 - 12 mm"
-      ],
-      [
-        "Corrosion Resistance",
-        "Yes"
-      ]
-    ],
-    "desc": "Corrosion-resistant stainless steel grinder blades providing contamination-free grinding for pharmaceuticals, food processing, and chemical polymers."
-  },
-  {
-    "code": "KSG-503",
-    "name": "Plastic Grinder Crusher Blade",
-    "category": "Grinder Blades",
-    "slug": "plastic-grinder-crusher-blade",
-    "image": "/products/grinder-plastic-crusher.jpg",
-    "price": 2000,
-    "moq": "1 Piece",
-    "specs": [
-      [
-        "Usage/Application",
-        "Plastic Scrap Grinders & Crushers"
-      ],
-      [
-        "Blade Type",
-        "Rotating & Stationary Blades"
-      ],
-      [
-        "Material",
-        "Die Steel D2 / High Speed Steel"
-      ]
-    ],
-    "desc": "Shock-resistant plastic crusher blades manufactured to cut blow molded bottles, injection runners, PVC profiles, and heavy polymer lumps without dulling."
-  },
-  {
-    "code": "KSG-504",
-    "name": "Heavy Duty Plastic Grinder Blades (Set)",
-    "category": "Grinder Blades",
-    "slug": "heavy-duty-plastic-grinder-blades",
-    "image": "/products/grinder-plastic-blades-1.jpg",
-    "price": 2200,
-    "moq": "1 Set",
-    "specs": [
-      [
-        "Set Configuration",
-        "Rotor & Bed Knives Matched Set"
-      ],
-      [
-        "Material",
-        "Hardened High Alloy Tool Steel"
-      ],
-      [
-        "Impact Strength",
-        "Shock Resistant Edge"
-      ]
-    ],
-    "desc": "Matched rotor and stator grinder knife sets machined to tight tolerances for uniform clearance, reduced power consumption, and longer blade life."
-  },
-  {
-    "code": "KSG-601",
-    "name": "Plastic Recycling Granulator Blade",
-    "category": "Granulator Blades",
-    "slug": "plastic-recycling-granulator-blade",
-    "image": "/products/granulator-recycling-blade.jpg",
-    "price": 550,
-    "moq": "1 Piece",
-    "specs": [
-      [
-        "Application",
-        "Plastic Film, PET Bottle & Scrap Granulators"
-      ],
-      [
-        "Material",
-        "D2 / D3 Tool Steel"
-      ],
-      [
-        "Hardness",
-        "58 HRC"
-      ],
-      [
-        "Blade Profile",
-        "Beveled Shear Cutting Edge"
-      ]
-    ],
-    "desc": "High-speed D2/D3 granulator blades designed for clean scissor-action cutting of plastic films, woven bags, and PET flakes with minimal fines."
-  },
-  {
-    "code": "KSG-602",
-    "name": "5 Inch Plastic Granulator Blades",
-    "category": "Granulator Blades",
-    "slug": "5-inch-plastic-granulator-blades",
-    "image": "/products/granulator-recycling-blade.jpg",
-    "price": 2500,
+    "slug": "5-inch-wood-chipper-knives",
+    "image": "/products/indiamart-2850039862855.jpeg",
+    "price": 1500,
     "moq": "1 Piece",
     "specs": [
       [
@@ -700,181 +251,959 @@ export const allProducts: Product[] = [
         "5 Inch"
       ],
       [
-        "Usage/Application",
-        "Compact & Central Plastic Granulators"
+        "Material",
+        "Stainless Steel"
+      ],
+      [
+        "Type",
+        "Chipper Blades"
+      ],
+      [
+        "Color",
+        "Silver"
+      ]
+    ],
+    "desc": "High-grade 5-inch wood chipper cutting blades designed for high impact resistance in wood processing and sawmill operations."
+  },
+  {
+    "code": "KSG-207",
+    "name": "Garden Shredder Chipper Knives",
+    "category": "Chipper Knives",
+    "slug": "garden-shredder-chipper-knives",
+    "image": "/products/indiamart-2850047574088.jpg",
+    "price": 350,
+    "moq": "1 Piece",
+    "specs": [
+      [
+        "Application",
+        "Wood Cutting"
       ],
       [
         "Material",
-        "D2 Premium Die Steel"
+        "Stainless Steel"
       ],
       [
-        "Mounting",
-        "Precision Drilled & Counterbored"
+        "Usage/Application",
+        "Industrial & Garden Shredders"
       ]
     ],
-    "desc": "Precision 5-inch granulator rotor and stationary blades engineered for beside-the-press grinders and sprue recovery units in moulding plants."
+    "desc": "Reversible garden shredder knives for pruning chippers and compost shredders. Tempered for shock resistance against tough twigs and roots."
+  },
+  {
+    "code": "KSG-208",
+    "name": "Wood Chipper Knives",
+    "category": "Chipper Knives",
+    "slug": "wood-chipper-knives",
+    "image": "/products/indiamart-2850047389462.png",
+    "price": 500,
+    "moq": "1 Piece",
+    "specs": [
+      [
+        "Material",
+        "Stainless Steel"
+      ],
+      [
+        "Usage/Application",
+        "Industrial"
+      ],
+      [
+        "Type",
+        "Chipper Knives"
+      ]
+    ],
+    "desc": "Heavy-duty industrial wood chipper knives built for uniform chipping and extended blade cutting cycles across all timber species."
+  },
+  {
+    "code": "KSG-101",
+    "name": "10 Inch Double Shaft Shredder Knives",
+    "category": "Shredder Knives",
+    "slug": "10-inch-double-shaft-shredder-knives",
+    "image": "/products/indiamart-2850047594948.jpeg",
+    "price": 1500,
+    "moq": "1 Piece",
+    "specs": [
+      [
+        "Size (Diameter)",
+        "10 inch"
+      ],
+      [
+        "Material",
+        "Stainless Steel"
+      ],
+      [
+        "Usage/Application",
+        "Industrial"
+      ],
+      [
+        "Machine Compatibility",
+        "Double Shaft Shredder"
+      ]
+    ],
+    "desc": "10-inch diameter multi-hook rotary shredder knives for double shaft industrial shredders handling plastic, metal scrap, tires, and drums."
+  },
+  {
+    "code": "KSG-102",
+    "name": "Shredding Machine Knives & Blades",
+    "category": "Shredder Knives",
+    "slug": "shredding-machine-knives-and-blades",
+    "image": "/products/indiamart-2851586119173.jpg",
+    "price": 2000,
+    "moq": "1 Piece",
+    "specs": [
+      [
+        "Size",
+        "4 Inch"
+      ],
+      [
+        "Shredding Capacity",
+        "1500 kg/hr"
+      ],
+      [
+        "Material",
+        "Stainless Steel"
+      ],
+      [
+        "Application",
+        "Heavy Industrial Shredding"
+      ]
+    ],
+    "desc": "Wear-resistant shredding machine knives and blades manufactured from vacuum heat-treated alloy steel for maximum throughput."
+  },
+  {
+    "code": "KSG-103",
+    "name": "Shredder Blade Manufacturer, For Industrial",
+    "category": "Shredder Knives",
+    "slug": "shredder-blade-manufacturer-industrial",
+    "image": "/products/indiamart-2851586172133.jpeg",
+    "price": 1000,
+    "moq": "1 Piece",
+    "specs": [
+      [
+        "Shredding Capacity",
+        "1-500 kg/hr"
+      ],
+      [
+        "Usage/Application",
+        "Industrial"
+      ],
+      [
+        "Automation Grade",
+        "Automatic"
+      ]
+    ],
+    "desc": "Custom industrial shredder blades manufactured in Coimbatore for plastic granulators, e-waste shredders, and solid waste processing."
+  },
+  {
+    "code": "KSG-104",
+    "name": "Mild Steel Shredder Blade",
+    "category": "Shredder Knives",
+    "slug": "mild-steel-shredder-blade",
+    "image": "/products/indiamart-2851586264212.jpeg",
+    "price": 3000,
+    "moq": "1 Piece",
+    "specs": [
+      [
+        "Shredding Capacity",
+        "500-1000 kg/hr"
+      ],
+      [
+        "Usage/Application",
+        "Industrial"
+      ],
+      [
+        "Brand",
+        "Own brand"
+      ]
+    ],
+    "desc": "Mild steel high-strength shredder blades built for heavy torque industrial shredding machines and recycling installations."
+  },
+  {
+    "code": "KSG-105",
+    "name": "Shredder Knives, For Industrial",
+    "category": "Shredder Knives",
+    "slug": "shredder-knives-for-industrial",
+    "image": "/products/indiamart-2851586277597.jpg",
+    "price": 3000,
+    "moq": "1 Piece",
+    "specs": [
+      [
+        "Shredding Capacity",
+        "1-500 kg/hr"
+      ],
+      [
+        "Usage/Application",
+        "Industrial"
+      ],
+      [
+        "Automation Grade",
+        "Automatic"
+      ]
+    ],
+    "desc": "Heavy duty industrial shredder knives with precision ground teeth for efficient size reduction of polymers, textiles, and composite materials."
+  },
+  {
+    "code": "KSG-106",
+    "name": "8mm Agricultural Shredder Knives",
+    "category": "Shredder Knives",
+    "slug": "8mm-agricultural-shredder-knives",
+    "image": "/products/indiamart-23048052933.jpg",
+    "price": 650,
+    "moq": "1 Piece",
+    "specs": [
+      [
+        "Usage/Application",
+        "Agricultural Machine"
+      ],
+      [
+        "Material",
+        "Die Steel"
+      ],
+      [
+        "Thickness",
+        "8 mm"
+      ]
+    ],
+    "desc": "8mm thick hardened die steel agricultural shredder knives for crop residue shredders, sugarcane trash choppers, and farm machinery."
+  },
+  {
+    "code": "KSG-107",
+    "name": "8 Inch Double Shaft Shredder Knives",
+    "category": "Shredder Knives",
+    "slug": "8-inch-double-shaft-shredder-knives",
+    "image": "/products/indiamart-2850047604433.jpeg",
+    "price": 1500,
+    "moq": "1 Piece",
+    "specs": [
+      [
+        "Usage/Application",
+        "Industrial"
+      ],
+      [
+        "Shredding Machine Type",
+        "Double Shaft"
+      ],
+      [
+        "Size",
+        "8 inch"
+      ]
+    ],
+    "desc": "8-inch multi-claw double shaft shredder blades delivering high tearing forces for municipal waste, plastic drums, and e-waste."
+  },
+  {
+    "code": "KSG-108",
+    "name": "Chicken Cutting Shredder Knives",
+    "category": "Shredder Knives",
+    "slug": "chicken-cutting-shredder-knives",
+    "image": "/products/indiamart-23048040255.jpg",
+    "price": 300,
+    "moq": "1 Piece",
+    "specs": [
+      [
+        "Usage/Application",
+        "Chicken Cutting"
+      ],
+      [
+        "Blade Material",
+        "Die Steel"
+      ],
+      [
+        "Thickness",
+        "10 mm"
+      ]
+    ],
+    "desc": "10mm precision poultry and meat processing cutting knives with surgical-grade sharpness and corrosion-resistant finish."
+  },
+  {
+    "code": "KSG-109",
+    "name": "Plastic Shredder Knives, For Garage/Workshop",
+    "category": "Shredder Knives",
+    "slug": "plastic-shredder-knives-garage-workshop",
+    "image": "/products/indiamart-2851586046655.jpeg",
+    "price": 2000,
+    "moq": "1 Piece",
+    "specs": [
+      [
+        "Shredding Capacity",
+        "1-500 kg/hr"
+      ],
+      [
+        "Brand",
+        "Own Brand"
+      ],
+      [
+        "Automation Grade",
+        "Automatic"
+      ]
+    ],
+    "desc": "Workshop grade plastic shredder knives engineered for compact recycling machines, 3D print scrap shredders, and garage workshops."
+  },
+  {
+    "code": "KSG-301",
+    "name": "Press Tool Die Manufacturer",
+    "category": "Tools And Dies",
+    "slug": "press-tool-die-manufacturer",
+    "image": "/products/indiamart-2852735040912.jpeg",
+    "price": 5000,
+    "moq": "1 Piece",
+    "specs": [
+      [
+        "Material",
+        "Aluminium / D2 Steel"
+      ],
+      [
+        "Usage/Application",
+        "Industrial"
+      ],
+      [
+        "Pattern Type",
+        "Engraved Precision Tooling"
+      ]
+    ],
+    "desc": "Custom engineered press tool dies for sheet metal stamping, punching, bending, and blanking. Manufactured using high-speed tool steel in Coimbatore."
+  },
+  {
+    "code": "KSG-302",
+    "name": "Plastic Moulding Dies",
+    "category": "Tools And Dies",
+    "slug": "plastic-moulding-dies",
+    "image": "/products/indiamart-2852735041012.jpg",
+    "price": 10000,
+    "moq": "1 Piece",
+    "specs": [
+      [
+        "Moulding Material",
+        "PP"
+      ],
+      [
+        "Material",
+        "P 20 Mold Steel"
+      ],
+      [
+        "Shape",
+        "Rectangular"
+      ]
+    ],
+    "desc": "High precision plastic injection moulding dies with mirror polish cavity finish for automotive, electrical, and consumer goods manufacturing."
+  },
+  {
+    "code": "KSG-303",
+    "name": "Indian Knives Wood Chipper Knives",
+    "category": "Tools And Dies",
+    "slug": "indian-knives-wood-chipper-knives",
+    "image": "/products/indiamart-2851585911888.jpeg",
+    "price": 3000,
+    "moq": "1 Piece",
+    "specs": [
+      [
+        "Size",
+        "5 Inch"
+      ],
+      [
+        "Material",
+        "Stainless Steel"
+      ],
+      [
+        "Brand",
+        "Own Brand"
+      ]
+    ],
+    "desc": "Heavy-duty 5-inch chipper knives manufactured to Indian industrial standards for high-capacity wood reduction."
+  },
+  {
+    "code": "KSG-304",
+    "name": "Aluminium Pattern Works",
+    "category": "Tools And Dies",
+    "slug": "aluminium-pattern-works",
+    "image": "/products/indiamart-2852735041212.jpg",
+    "price": 5000,
+    "moq": "1 Piece",
+    "specs": [
+      [
+        "Usage/Application",
+        "Industrial Foundry"
+      ],
+      [
+        "Material",
+        "Aluminium"
+      ],
+      [
+        "Color",
+        "Silver"
+      ]
+    ],
+    "desc": "Custom CNC machined aluminium patterns and core boxes for sand casting foundries with accurate draft angles and shrinkage allowances."
+  },
+  {
+    "code": "KSG-305",
+    "name": "Rubber Moulding",
+    "category": "Tools And Dies",
+    "slug": "rubber-moulding",
+    "image": "/products/indiamart-2852735041155.jpg",
+    "price": null,
+    "moq": "1 Piece",
+    "specs": [
+      [
+        "Mould Height",
+        "100 mm"
+      ],
+      [
+        "Mould Material",
+        "Stainless Steel"
+      ],
+      [
+        "Material",
+        "Rubber Moulding"
+      ]
+    ],
+    "desc": "Compression and transfer rubber moulding dies for manufacturing O-rings, oil seals, automotive gaskets, and vibration dampeners."
+  },
+  {
+    "code": "KSG-306",
+    "name": "Press And Die Casting Moulds",
+    "category": "Tools And Dies",
+    "slug": "press-and-die-casting-moulds",
+    "image": "/products/indiamart-2852735041497.jpg",
+    "price": 8000,
+    "moq": "1 Piece",
+    "specs": [
+      [
+        "Casting Material",
+        "Aluminium"
+      ],
+      [
+        "Material",
+        "P 20 Mold Steel"
+      ],
+      [
+        "Color",
+        "Silver"
+      ]
+    ],
+    "desc": "Precision pressure die casting and press tooling moulds engineered for high thermal conductivity and extended production life."
+  },
+  {
+    "code": "KSG-307",
+    "name": "Die Sets",
+    "category": "Tools And Dies",
+    "slug": "die-sets",
+    "image": "/products/indiamart-2854402968997.jpg",
+    "price": null,
+    "moq": "1 Piece",
+    "specs": [
+      [
+        "Usage/Application",
+        "Sheet Metal & Press Work"
+      ],
+      [
+        "Material",
+        "High Carbon Die Steel"
+      ],
+      [
+        "Precision",
+        "High Accuracy Tolerance"
+      ]
+    ],
+    "desc": "Standard and custom pillar die sets with hardened guide pillars and bronze bushes for precision press tooling alignment."
+  },
+  {
+    "code": "KSG-308",
+    "name": "Pattern Dies",
+    "category": "Tools And Dies",
+    "slug": "pattern-dies",
+    "image": "/products/indiamart-2854402928630.jpg",
+    "price": null,
+    "moq": "1 Piece",
+    "specs": [
+      [
+        "Die Type",
+        "Foundry Pattern Die"
+      ],
+      [
+        "Material",
+        "Tool Steel & Aluminium"
+      ],
+      [
+        "Application",
+        "Foundry Casting Patterns"
+      ]
+    ],
+    "desc": "Foundry pattern dies designed for high-repeatability casting moulds in automotive and pump manufacturing industries."
+  },
+  {
+    "code": "KSG-309",
+    "name": "Cnc Turret Punch Press Tool",
+    "category": "Tools And Dies",
+    "slug": "cnc-turret-punch-press-tool",
+    "image": "/products/indiamart-2854402927397.jpg",
+    "price": null,
+    "moq": "1 Piece",
+    "specs": [
+      [
+        "Die Type",
+        "CNC Turret Punch"
+      ],
+      [
+        "Material",
+        "D2 / High Speed Tool Steel"
+      ],
+      [
+        "Application",
+        "Punching & Blanking"
+      ]
+    ],
+    "desc": "Precision ground CNC turret punches and dies compatible with thick and thin turret machines for sheet metal fabrication."
+  },
+  {
+    "code": "KSG-310",
+    "name": "Progressive Die Tools",
+    "category": "Tools And Dies",
+    "slug": "progressive-die-tools",
+    "image": "/products/indiamart-2854402927430.jpg",
+    "price": null,
+    "moq": "1 Piece",
+    "specs": [
+      [
+        "Die Type",
+        "Progressive Stamping Die"
+      ],
+      [
+        "Material",
+        "D2 High Carbon Steel"
+      ],
+      [
+        "Application",
+        "High Volume Stamping"
+      ]
+    ],
+    "desc": "Multi-stage progressive stamping dies designed to blank, pierce, bend, and form complex sheet metal components in a single press cycle."
+  },
+  {
+    "code": "KSG-311",
+    "name": "Automotive Steel Die Pattern",
+    "category": "Tools And Dies",
+    "slug": "automotive-steel-die-pattern",
+    "image": "/products/indiamart-2854402928497.jpg",
+    "price": null,
+    "moq": "1 Piece",
+    "specs": [
+      [
+        "Die Type",
+        "Automotive Forming Die"
+      ],
+      [
+        "Material",
+        "Alloy Steel"
+      ],
+      [
+        "Application",
+        "Automotive Component Pressing"
+      ]
+    ],
+    "desc": "Heavy-duty automotive steel dies manufactured with tight dimensional tolerances for chassis and body panel press work."
+  },
+  {
+    "code": "KSG-312",
+    "name": "Precision Moulds & Dies",
+    "category": "Tools And Dies",
+    "slug": "precision-moulds-and-dies",
+    "image": "/products/indiamart-2854402959433.jpg",
+    "price": null,
+    "moq": "1 Piece",
+    "specs": [
+      [
+        "Mould Type",
+        "Precision Injection Mould"
+      ],
+      [
+        "Material",
+        "P20 Tool Steel"
+      ],
+      [
+        "Application",
+        "Plastic & Polymer Moulding"
+      ]
+    ],
+    "desc": "High precision moulds and dies crafted for optical, medical, and high-tolerance electronic polymer components."
+  },
+  {
+    "code": "KSG-313",
+    "name": "Automotive Dies",
+    "category": "Tools And Dies",
+    "slug": "automotive-dies",
+    "image": "/products/indiamart-2854402949297.jpg",
+    "price": null,
+    "moq": "1 Piece",
+    "specs": [
+      [
+        "Application",
+        "Automotive Pressing & Blanking"
+      ],
+      [
+        "Material",
+        "Hardened Alloy Steel"
+      ]
+    ],
+    "desc": "Specialized automotive forming dies built to withstand high cycle fatigue in Tier-1 automotive parts production."
+  },
+  {
+    "code": "KSG-401",
+    "name": "Metal Shredder Machine",
+    "category": "Shredding Machine",
+    "slug": "metal-shredder-machine",
+    "image": "/products/indiamart-2850479907955.jpg",
+    "price": 50000,
+    "moq": "1 Piece",
+    "specs": [
+      [
+        "Capacity",
+        "5000 kg/hr"
+      ],
+      [
+        "Shredding Capacity",
+        "500-1000 kg/hr"
+      ],
+      [
+        "Shredding Machine Type",
+        "Single Shaft"
+      ]
+    ],
+    "desc": "High torque metal shredder machine designed to shred aluminium profiles, tin cans, light scrap, and turnings with low noise and high energy efficiency."
+  },
+  {
+    "code": "KSG-402",
+    "name": "Mild Steel Shredder Cutter, For Industrial",
+    "category": "Shredding Machine",
+    "slug": "mild-steel-shredder-cutter-industrial",
+    "image": "/products/indiamart-2851586301355.jpg",
+    "price": null,
+    "moq": "1 Piece",
+    "specs": [
+      [
+        "Usage/Application",
+        "Industrial"
+      ],
+      [
+        "Brand",
+        "Own Brand"
+      ],
+      [
+        "Automation Grade",
+        "Automatic"
+      ]
+    ],
+    "desc": "Automatic mild steel industrial shredder cutters configured for continuous shredding operations in manufacturing plants."
+  },
+  {
+    "code": "KSG-403",
+    "name": "Double Shaft Automatic Shredding Machine",
+    "category": "Shredding Machine",
+    "slug": "double-shaft-automatic-shredding-machine",
+    "image": "/products/shredder-double-shaft.jpg",
+    "price": null,
+    "moq": "1 Piece",
+    "specs": [
+      [
+        "Machine Type",
+        "Double Shaft Automatic Shredder"
+      ],
+      [
+        "Motor Power",
+        "15 HP / 30 HP Dual Motors"
+      ],
+      [
+        "Application",
+        "Industrial Waste, Rubber, Plastic & Wood"
+      ]
+    ],
+    "desc": "Heavy-duty double shaft automatic shredder with dual counter-rotating shafts for tearing bulky solid waste, drums, tires, and wood."
+  },
+  {
+    "code": "KSG-404",
+    "name": "Agricultural Shredder Machine In Coimbatore",
+    "category": "Shredding Machine",
+    "slug": "agricultural-shredder-machine-in-coimbatore",
+    "image": "/products/shredder-auto-machine.jpg",
+    "price": null,
+    "moq": "1 Piece",
+    "specs": [
+      [
+        "Application",
+        "Farm Waste, Coconut Fronds & Biomass"
+      ],
+      [
+        "Capacity",
+        "1000-2000 kg/hr"
+      ],
+      [
+        "Drive",
+        "Tractor PTO / Electric Motor"
+      ]
+    ],
+    "desc": "Field-tested agricultural shredder machine manufactured in Coimbatore for shredding coconut fronds, maize stalks, and cotton stalks into compost."
+  },
+  {
+    "code": "KSG-405",
+    "name": "Mild Steel Coconut Husk Shredder Machine",
+    "category": "Shredding Machine",
+    "slug": "mild-steel-coconut-husk-shredder-machine",
+    "image": "/products/shredder-coconut-husk.jpg",
+    "price": null,
+    "moq": "1 Piece",
+    "specs": [
+      [
+        "Material",
+        "Mild Steel Heavy Body"
+      ],
+      [
+        "Application",
+        "Coir & Coconut Husk Processing"
+      ],
+      [
+        "Output",
+        "Coir Fibre and Husk Pith"
+      ]
+    ],
+    "desc": "Specialized coconut husk shredder machine breaking down green and dry coconut husks for coir fibre extraction and coir pith production."
+  },
+  {
+    "code": "KSG-501",
+    "name": "Shredder Machine Blade, For Industrial",
+    "category": "Grinder Blades",
+    "slug": "shredder-machine-blade-industrial",
+    "image": "/products/indiamart-2851585980433.jpg",
+    "price": 3000,
+    "moq": "1 Piece",
+    "specs": [
+      [
+        "Size",
+        "4 Inch"
+      ],
+      [
+        "Shredding Capacity",
+        "2000 kg/hr"
+      ],
+      [
+        "Material",
+        "Stainless Steel"
+      ]
+    ],
+    "desc": "High capacity 4-inch shredder machine blades capable of continuous processing up to 2000 kg/hr in industrial grinding setups."
+  },
+  {
+    "code": "KSG-502",
+    "name": "Stainless Steel Grinder Blades",
+    "category": "Grinder Blades",
+    "slug": "stainless-steel-grinder-blades",
+    "image": "/products/indiamart-2850047409355.jpg",
+    "price": 2500,
+    "moq": "1 Piece",
+    "specs": [
+      [
+        "Size (Length)",
+        "8 inch"
+      ],
+      [
+        "Usage",
+        "Metal Grinding"
+      ],
+      [
+        "Material",
+        "Stainless Steel"
+      ]
+    ],
+    "desc": "8-inch stainless steel industrial grinder blades designed for rigorous metal grinding, recycling crushers, and abrasive material reduction."
+  },
+  {
+    "code": "KSG-503",
+    "name": "Plastic Grinder Crusher Blade",
+    "category": "Grinder Blades",
+    "slug": "plastic-grinder-crusher-blade",
+    "image": "/products/indiamart-2850039868588.jpeg",
+    "price": 2000,
+    "moq": "1 Piece",
+    "specs": [
+      [
+        "Size (Length)",
+        "4 inch"
+      ],
+      [
+        "Usage",
+        "Plastic Grinding"
+      ],
+      [
+        "Material",
+        "Stainless Steel"
+      ]
+    ],
+    "desc": "4-inch plastic grinder crusher blades manufactured from high chromium alloy steel for pulverizing plastics, polymers, and PVC runners."
+  },
+  {
+    "code": "KSG-601",
+    "name": "Plastic Recycling Granulator Blade",
+    "category": "Granulator Blades",
+    "slug": "plastic-recycling-granulator-blade",
+    "image": "/products/indiamart-2850047382797.jpeg",
+    "price": 550,
+    "moq": "1 Piece",
+    "specs": [
+      [
+        "Size (Length)",
+        "5 inch"
+      ],
+      [
+        "Usage",
+        "For Plastic Granules"
+      ],
+      [
+        "Material",
+        "Stainless Steel"
+      ]
+    ],
+    "desc": "Precision 5-inch rotor and bed blades for plastic recycling granulators, converting rejected mouldings into uniform granules."
+  },
+  {
+    "code": "KSG-602",
+    "name": "5 Inch Plastic Granulator Blades",
+    "category": "Granulator Blades",
+    "slug": "5-inch-plastic-granulator-blades",
+    "image": "/products/indiamart-2850039861455.jpg",
+    "price": 2500,
+    "moq": "1 Piece",
+    "specs": [
+      [
+        "Size (Length)",
+        "5 inch"
+      ],
+      [
+        "Material",
+        "Stainless Steel"
+      ],
+      [
+        "Usage",
+        "For Plastic Granules"
+      ]
+    ],
+    "desc": "5-inch plastic granulator blades with precision ground cutting angles to minimize dust formation and power consumption."
   },
   {
     "code": "KSG-603",
     "name": "10 Inch Plastic Granulator Blades",
     "category": "Granulator Blades",
     "slug": "10-inch-plastic-granulator-blades",
-    "image": "/products/granulator-recycling-blade.jpg",
+    "image": "/products/indiamart-2850039856933.jpeg",
     "price": 2500,
     "moq": "1 Piece",
     "specs": [
       [
-        "Size",
-        "10 Inch"
+        "Size (Length)",
+        "10 inch"
       ],
       [
-        "Application",
-        "Heavy Plastic Pipe, Profile & Drum Granulation"
+        "Usage",
+        "For Plastic Granules"
       ],
       [
-        "Material Grade",
-        "D2 Alloy Steel Vacuum Hardened"
+        "Material",
+        "Stainless Steel"
       ]
     ],
-    "desc": "Heavy-duty 10-inch granulator knives built for central granulators processing rigid PVC pipes, automotive bumpers, and rotational moulding scrap."
+    "desc": "10-inch heavy-duty granulator rotor and stator blades designed for centralized granulators handling bottles, lumps, and pipes."
   },
   {
     "code": "KSG-701",
-    "name": "VMC Job Work With Material with 4 axis",
+    "name": "Vmc Job Work With Material with 4 axis",
     "category": "VMC Machine Job Work",
     "slug": "vmc-job-work-with-material-with-4-axis",
-    "image": "/products/vmc-job-work-4axis.jpg",
+    "image": "/products/indiamart-2852735040848.jpeg",
     "price": null,
+    "moq": "1 Piece",
     "specs": [
       [
-        "Axis Capability",
-        "4-Axis Vertical Machining Center (VMC)"
+        "Material Selection",
+        "Aluminum"
       ],
       [
-        "Material Included",
-        "Die Steel, SS, Aluminium, Cast Iron, Brass"
+        "Country of Origin",
+        "Made in India"
       ],
       [
-        "Accuracy Tolerance",
-        "±0.005 mm"
-      ],
-      [
-        "Services Offered",
-        "Custom Tooling, Machined Parts, Mould Bases"
-      ],
-      [
-        "Location",
-        "Coimbatore, Tamil Nadu"
+        "Axis",
+        "4-Axis VMC Machining Center"
       ]
     ],
-    "desc": "High-precision 4-axis VMC machining job work with raw material supply in Coimbatore. Capable of complex 3D contouring, deep cavity milling, and ±0.005mm tolerances."
+    "desc": "Comprehensive 4-axis VMC machining center job work including raw material procurement, CNC milling, precision boring, and tapping."
   },
   {
     "code": "KSG-702",
-    "name": "VMC Milling Machine Job Work",
+    "name": "Vmc Milling Machine Job Work",
     "category": "VMC Machine Job Work",
     "slug": "vmc-milling-machine-job-work",
-    "image": "/products/vmc-milling-work.jpg",
+    "image": "/products/indiamart-2853043337488.jpeg",
     "price": 1000,
     "moq": "1 Hour",
     "specs": [
       [
-        "Service Type",
-        "Hourly / Contract VMC Milling Job Work"
+        "Workpiece Material",
+        "Steel / Cast Iron / Aluminium"
       ],
       [
-        "Machining Operations",
-        "Face Milling, End Milling, Drilling, Tapping, Boring"
+        "MADE IN",
+        "INDIA"
       ],
       [
-        "Quality Check",
-        "Coordinate & Height Gauge Verified"
+        "Service Unit",
+        "Per Hour Machining"
       ]
     ],
-    "desc": "Hourly and contract-based VMC milling, drilling, boring, and tapping services. Equipped with high-speed spindles and modern tooling for fast cycle times."
-  },
-  {
-    "code": "KSG-703",
-    "name": "Precision Machined CNC/VMC Components",
-    "category": "VMC Machine Job Work",
-    "slug": "precision-machined-vmc-components",
-    "image": "/products/vmc-job-work-material.jpg",
-    "price": null,
-    "specs": [
-      [
-        "Components",
-        "Custom Shafts, Blade Holders, Fixtures, Tooling Parts"
-      ],
-      [
-        "Finishing",
-        "Electroless Nickel, Black Oxide, Ground"
-      ],
-      [
-        "Batch Size",
-        "Prototype to High-Volume Production"
-      ]
-    ],
-    "desc": "Custom precision machining of machinery components, specialized shafts, blade holders, and tooling fixtures according to 2D/3D client drawings."
+    "desc": "Hourly based precision VMC milling machine job work for tooling components, fixture plates, precision dies, and prototype parts."
   },
   {
     "code": "KSG-801",
-    "name": "Rectangular Chaff Cutter Blade",
-    "category": "Chaff Cutter Blades",
-    "slug": "rectangular-chaff-cutter-blade",
-    "image": "/products/chaff-cutter-rectangular.jpg",
-    "price": 350,
-    "moq": "100 Piece",
-    "specs": [
-      [
-        "Shape",
-        "Rectangular Flat Blade"
-      ],
-      [
-        "Material",
-        "High Carbon Spring / Die Steel"
-      ],
-      [
-        "Usage/Application",
-        "Chaff Cutter & Agricultural Fodder Cutting"
-      ],
-      [
-        "Hardness",
-        "54-56 HRC"
-      ],
-      [
-        "Cutting Edge",
-        "Precision Beveled"
-      ]
-    ],
-    "desc": "Hardened high-carbon rectangular chaff cutter blades for green fodder, corn stalks, and silage cutters. Heat treated for extended edge sharpness."
-  },
-  {
-    "code": "KSG-802",
     "name": "Steel Crusher Blade, For Industrial",
     "category": "Chaff Cutter Blades",
     "slug": "steel-crusher-blade-industrial",
-    "image": "/products/chipper-4inch-ss.jpg",
+    "image": "/products/indiamart-2851586220048.jpeg",
     "price": 6000,
     "moq": "1 Piece",
     "specs": [
       [
-        "Usage/Application",
-        "Industrial Crusher & Heavy Fodder Machinery"
+        "Size",
+        "4 Inch"
       ],
       [
         "Material",
-        "Special Hardened Die Steel"
+        "Stainless Steel"
       ],
       [
-        "Thickness",
-        "12 mm"
-      ],
-      [
-        "Durability",
-        "Shock Resistant for Continuous Heavy Loads"
+        "Machine Type",
+        "Metal Working Machine"
       ]
     ],
-    "desc": "Extra-thick 12mm industrial steel crusher and cutter blade built for heavy agricultural fodder shredders, biomass crushers, and wood chippers."
+    "desc": "Heavy-duty steel crusher and cutting blades for industrial shredding and agricultural fodder processing machines."
+  },
+  {
+    "code": "KSG-802",
+    "name": "Rectangular Chaff Cutter Blade",
+    "category": "Chaff Cutter Blades",
+    "slug": "rectangular-chaff-cutter-blade",
+    "image": "/products/indiamart-2850039864888.jpeg",
+    "price": 350,
+    "moq": "1 Piece",
+    "specs": [
+      [
+        "Size (Length)",
+        "15 mm"
+      ],
+      [
+        "Material",
+        "Stainless Steel"
+      ],
+      [
+        "Color",
+        "Silver"
+      ]
+    ],
+    "desc": "Precision rectangular chaff cutter blades crafted from high carbon steel for fast fodder chopping and silage preparation."
   }
 ];
 
@@ -885,7 +1214,7 @@ export function getProductBySlug(slug: string): Product | undefined {
 export const shredderKnives = {
   title: "Industrial Tools & Machinery",
   intro:
-    "Leading Manufacturer of Chipper Knives, Tools & Dies, Shredding Machines, Grinder Blades, Granulator Blades, and VMC Job Work from Coimbatore.",
+    "Leading Manufacturer of Chipper Knives, Shredder Knives, Tools & Dies, Shredding Machines, Grinder Blades, Granulator Blades, and VMC Job Work from Coimbatore.",
   products: allProducts.slice(0, 8),
 };
 

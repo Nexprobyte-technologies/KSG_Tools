@@ -173,23 +173,11 @@ export default function HeroProductSlider() {
             ))}
           </div>
 
-          {/* Action Buttons */}
+          {/* Action Button - single clean View Details button */}
           <div className="hp-actions">
-            <Link href={`/products/${curr.slug}`} className="btn btn-primary hp-btn-details">
-              View Details
+            <Link href={`/products/${curr.slug}`} className="btn btn-primary hp-btn-details w-full">
+              View Details →
             </Link>
-            <a
-              href={`https://wa.me/${company.whatsapp}?text=${encodeURIComponent(
-                `Hi K.S.G. Tools, I am interested in: ${curr.name} (Product Code: ${curr.code}). Please share pricing and catalogue.`
-              )}`}
-              target="_blank"
-              rel="noreferrer"
-              className="btn hp-btn-wa"
-              title="Enquire on WhatsApp with Product Code"
-            >
-              <Icon name="chat" size={15} />
-              <span>Enquire ({curr.code})</span>
-            </a>
           </div>
         </div>
       </div>

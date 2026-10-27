@@ -10,6 +10,8 @@ const CATEGORY_INTROS: Record<string, string> = {
   All: "Explore our complete range of precision chipper knives, press tool dies, shredding machinery, industrial grinder blades, and VMC job work from Coimbatore.",
   "Chipper Knives":
     "High-grade Stainless Steel and Alloy Chipper Knives, 2-Slot Wood Chipper Blades, and Agricultural Chipping Knives.",
+  "Shredder Knives":
+    "Heavy-duty double shaft shredder knives, rotary claw blades, and industrial shredding machinery knives.",
   "Tools And Dies":
     "Precision Press Tool Dies, Plastic Injection Moulding Dies, Aluminium Foundry Patterns, and Custom Progressive Tooling.",
   "Shredding Machine":
@@ -187,16 +189,18 @@ export default function ShredderCatalog() {
             {filteredProducts.map((p) => (
               <div className="product-card modern-card" key={p.slug}>
                 {/* Image with Category Badge */}
-                <div className="product-media">
-                  <Image
-                    src={p.image}
-                    alt={p.name}
-                    fill
-                    sizes="(max-width: 700px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                    style={{ objectFit: "cover" }}
-                  />
-                  {p.category && <span className="product-cat-pill">{p.category}</span>}
-                </div>
+                <Link href={`/products/${p.slug}`} className="product-media-link" aria-label={`View ${p.name}`}>
+                  <div className="product-media">
+                    <Image
+                      src={p.image}
+                      alt={p.name}
+                      fill
+                      sizes="(max-width: 700px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                      style={{ objectFit: "cover" }}
+                    />
+                    {p.category && <span className="product-cat-pill">{p.category}</span>}
+                  </div>
+                </Link>
 
                 {/* Card Title & Pricing */}
                 <div className="product-top">
@@ -229,27 +233,11 @@ export default function ShredderCatalog() {
                   ))}
                 </div>
 
-                {/* Action Buttons */}
+                {/* Single Clean View Details Action */}
                 <div className="product-actions">
-                  <Link href={`/products/${p.slug}`} className="btn btn-primary">
-                    View Details
+                  <Link href={`/products/${p.slug}`} className="btn btn-primary btn-product-view">
+                    View Details →
                   </Link>
-                  <a
-                    href={`https://wa.me/${company.whatsapp}?text=${encodeURIComponent(
-                      `Hi K.S.G. Tools, I am interested in ${p.name} (Product Code: ${p.code}).\nPrice: ${
-                        p.price === null ? "Ask Price" : `₹ ${p.price.toLocaleString("en-IN")} / Piece`
-                      }\nPlease share technical specifications and best quote.`
-                    )}`}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="btn btn-wa-catalog"
-                    title="Enquire on WhatsApp with Product Code"
-                  >
-                    <Icon name="chat" size={15} /> WhatsApp
-                  </a>
-                  <a href={`tel:${company.phoneLink}`} className="btn btn-dark" title="Call Sales">
-                    Call
-                  </a>
                 </div>
               </div>
             ))}
