@@ -25,9 +25,8 @@ export async function generateMetadata({
   if (!product) return { title: "Product Not Found | K.S.G. Tools" };
   return {
     title: `${product.name} | K.S.G. Tools`,
-    description: `${product.name} by ${company.name}, Coimbatore. ${
-      product.price === null ? "Ask for price" : `Price ₹ ${product.price} / Piece.`
-    } Get best quote for your requirement.`,
+    description: `${product.name} by ${company.name}, Coimbatore. ${product.price === null ? "Ask for price" : `Price ₹ ${product.price} / Piece.`
+      } Get best quote for your requirement.`,
   };
 }
 
@@ -81,7 +80,9 @@ export default async function ProductPage({
                 <div className="capability-item-title">
                   <Icon name="tag" size={13} /> Category
                 </div>
-                <div className="capability-item-desc">{product.category ?? "Industrial Tools"}</div>
+                <div className="capability-item-desc">
+                  {product.subCategory ? `${product.category} · ${product.subCategory}` : (product.category ?? "Industrial Tools")}
+                </div>
               </div>
               <div className="capability-item">
                 <div className="capability-item-title">
@@ -93,8 +94,7 @@ export default async function ProductPage({
             <div className="capability-actions">
               <a
                 href={`https://wa.me/${company.whatsapp}?text=${encodeURIComponent(
-                  `Hi K.S.G. Tools, I want to order/enquire about ${product.name} (Code: ${product.code}).\nPrice: ${
-                    product.price === null ? "Ask Price" : `₹ ${product.price.toLocaleString("en-IN")} / Piece`
+                  `Hi K.S.G. Tools, I want to order/enquire about ${product.name} (Code: ${product.code}).\nPrice: ${product.price === null ? "Ask Price" : `₹ ${product.price.toLocaleString("en-IN")} / Piece`
                   }\nPlease share technical drawing and quote.`
                 )}`}
                 target="_blank"

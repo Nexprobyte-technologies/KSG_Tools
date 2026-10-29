@@ -15,7 +15,7 @@ export default function Home() {
     <>
       <Hero />
       <ProductsSection />
-      <ShredderCatalog />
+      <ShredderCatalog isHome={true} limit={6} />
       <StatsBand />
       <ServicesSection />
       <VideosSection />

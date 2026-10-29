@@ -417,10 +417,10 @@ export default function PageHeader({
         speed={0.35}
         squareSize={42}
         borderColor="rgba(148, 163, 184, 0.16)"
-        hoverFillColor="rgba(217, 119, 36, 0.1)"
+        hoverFillColor="rgba(56, 189, 248, 0.16)"
         shape="square"
         hoverTrailAmount={6}
-        backgroundColor="rgba(11, 18, 32, 0.65)"
+        backgroundColor="rgba(7, 13, 30, 0.65)"
       />
       <div className="container">
         <div className="page-hero-grid">

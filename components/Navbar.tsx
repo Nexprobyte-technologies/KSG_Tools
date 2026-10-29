@@ -49,7 +49,7 @@ export default function Navbar() {
             </span>
             <span className="topbar-divider">|</span>
             <span>
-              <Icon name="check" size={13} /> Verified IndiaMART Manufacturer
+              <Icon name="check" size={13} /> Verified Precision Manufacturer
             </span>
           </div>
         </div>

@@ -38,12 +38,49 @@ const CATEGORY_ICONS: Record<string, string> = {
   "Chaff Cutter Blades": "grass",
 };
 
-export default function ShredderCatalog() {
+// Hand-picked top flagship products representing each core category for home preview
+const HOME_FEATURED_CODES = [
+  "KSG-101", // 10 Inch Double Shaft Shredder Knives (Shredder Knives)
+  "KSG-201", // 4 inch Stainless Steel Chipper Knife (Chipper Knives)
+  "KSG-401", // Metal Shredder Machine (Shredding Machine)
+  "KSG-301", // Press Tool Die Manufacturer (Tools And Dies)
+  "KSG-601", // Plastic Recycling Granulator Blade (Granulator Blades)
+  "KSG-701", // Vmc Job Work With Material with 4 axis (VMC Machine Job Work)
+  "KSG-501", // Shredder Machine Blade, For Industrial (Grinder Blades)
+  "KSG-801", // Steel Crusher Blade, For Industrial (Chaff Cutter Blades)
+];
+
+interface ShredderCatalogProps {
+  isHome?: boolean;
+  limit?: number;
+}
+
+export default function ShredderCatalog({ isHome = false, limit = 6 }: ShredderCatalogProps) {
   const [activeCategory, setActiveCategory] = useState<string>("All");
   const [search, setSearch] = useState<string>("");
   const [sortBy, setSortBy] = useState<"featured" | "price-asc" | "price-desc">("featured");
+  const [visibleCount, setVisibleCount] = useState<number>(isHome ? limit : 18);
+
+  const handleCategoryChange = (cat: string) => {
+    setActiveCategory(cat);
+    setVisibleCount(isHome ? limit : 18);
+  };
+
+  const handleSearchChange = (val: string) => {
+    setSearch(val);
+    setVisibleCount(isHome ? limit : 18);
+  };
 
   const filteredProducts = useMemo(() => {
+    // If on homepage and viewing "All" without search, showcase the diverse flagship products
+    if (isHome && activeCategory === "All" && !search.trim()) {
+      const codeMap = new Map(allProducts.map((p) => [p.code, p]));
+      const featured = HOME_FEATURED_CODES
+        .map((c) => codeMap.get(c))
+        .filter((p): p is (typeof allProducts)[number] => Boolean(p));
+      return featured;
+    }
+
     let list = [...allProducts];
 
     // Filter by Category
@@ -58,8 +95,9 @@ export default function ShredderCatalog() {
         const inCode = p.code.toLowerCase().includes(q) || p.code.toLowerCase().replace("-", "").includes(q);
         const inName = p.name.toLowerCase().includes(q);
         const inCat = p.category?.toLowerCase().includes(q);
+        const inSubCat = p.subCategory?.toLowerCase().includes(q);
         const inSpecs = p.specs.some(([k, v]) => k.toLowerCase().includes(q) || v.toLowerCase().includes(q));
-        return inCode || inName || inCat || inSpecs;
+        return inCode || inName || inCat || inSubCat || inSpecs;
       });
     }
 
@@ -71,18 +109,32 @@ export default function ShredderCatalog() {
     }
 
     return list;
-  }, [activeCategory, search, sortBy]);
+  }, [activeCategory, search, sortBy, isHome]);
+
+  const displayedProducts = isHome ? filteredProducts.slice(0, limit) : filteredProducts.slice(0, visibleCount);
 
   return (
     <section id="shredder-knives" className="section section-alt catalog-section">
       <div className="container">
         {/* Section Header */}
         <div className="section-head center">
-          <span className="eyebrow">Verified IndiaMART Catalog</span>
-          <h2>Products &amp; Industrial Services</h2>
-          <p className="sub">
-            Direct from manufacturer in Coimbatore · {allProducts.length} Products &amp; Services available · All prices in Indian Rupees (₹)
-          </p>
+          {isHome ? (
+            <>
+              <span className="eyebrow">Featured Products &amp; Services</span>
+              <h2>Precision Industrial Tools &amp; Machinery</h2>
+              <p className="sub">
+                Manufacturer of Double Shaft Shredder Knives, Chipper Blades, Press Tool Dies &amp; Industrial Shredders in Coimbatore.
+              </p>
+            </>
+          ) : (
+            <>
+              <span className="eyebrow">Verified Industrial Product Catalog</span>
+              <h2>Products &amp; Industrial Services</h2>
+              <p className="sub">
+                Direct from manufacturer in Coimbatore · {allProducts.length} Products &amp; Services available · All prices in Indian Rupees (₹)
+              </p>
+            </>
+          )}
         </div>
 
         {/* Category Navigation Tabs */}
@@ -91,7 +143,7 @@ export default function ShredderCatalog() {
             <button
               type="button"
               className={`cat-tab ${activeCategory === "All" ? "active" : ""}`}
-              onClick={() => setActiveCategory("All")}
+              onClick={() => handleCategoryChange("All")}
             >
               <Icon name="gear" size={16} />
               <span>All Products</span>
@@ -102,7 +154,7 @@ export default function ShredderCatalog() {
                 type="button"
                 key={c.name}
                 className={`cat-tab ${activeCategory === c.name ? "active" : ""}`}
-                onClick={() => setActiveCategory(c.name)}
+                onClick={() => handleCategoryChange(c.name)}
               >
                 <Icon name={CATEGORY_ICONS[c.name] ?? "gear"} size={16} />
                 <span>{c.name}</span>
@@ -112,60 +164,64 @@ export default function ShredderCatalog() {
           </div>
         </div>
 
-        {/* Search, Sort and Controls Bar */}
-        <div className="catalog-toolbar">
-          <div className="catalog-search-box">
-            <Icon name="zoom" size={18} className="search-icon" />
-            <input
-              type="text"
-              placeholder="Search by product name, item code (e.g. KSG-201), material or specs..."
-              value={search}
-              onChange={(e) => setSearch(e.target.value)}
-              className="catalog-search-input"
-            />
-            {search && (
-              <button
-                type="button"
-                onClick={() => setSearch("")}
-                className="clear-search-btn"
-                title="Clear Search"
-              >
-                <Icon name="close" size={14} />
-              </button>
-            )}
-          </div>
-
-          <div className="catalog-sort-box">
-            <label htmlFor="catalog-sort-select">Sort by:</label>
-            <select
-              id="catalog-sort-select"
-              value={sortBy}
-              onChange={(e) => setSortBy(e.target.value as any)}
-              className="catalog-select"
-            >
-              <option value="featured">Featured Order</option>
-              <option value="price-asc">Price: Low to High</option>
-              <option value="price-desc">Price: High to Low</option>
-            </select>
-          </div>
-        </div>
-
-        {/* Active Category Description Banner */}
-        <div className="product-intro modern-intro">
-          <div className="intro-left">
-            <div className="intro-category-badge">
-              <Icon name={CATEGORY_ICONS[activeCategory] ?? "gear"} size={18} />
-              <span>{activeCategory}</span>
+        {/* Search, Sort and Controls Bar (shown on full Products page) */}
+        {!isHome && (
+          <div className="catalog-toolbar">
+            <div className="catalog-search-box">
+              <Icon name="zoom" size={18} className="search-icon" />
+              <input
+                type="text"
+                placeholder="Search by product name, item code (e.g. KSG-201), material or specs..."
+                value={search}
+                onChange={(e) => handleSearchChange(e.target.value)}
+                className="catalog-search-input"
+              />
+              {search && (
+                <button
+                  type="button"
+                  onClick={() => handleSearchChange("")}
+                  className="clear-search-btn"
+                  title="Clear Search"
+                >
+                  <Icon name="close" size={14} />
+                </button>
+              )}
             </div>
-            <p className="intro-desc">
-              {CATEGORY_INTROS[activeCategory] ?? CATEGORY_INTROS.All}
-            </p>
+
+            <div className="catalog-sort-box">
+              <label htmlFor="catalog-sort-select">Sort by:</label>
+              <select
+                id="catalog-sort-select"
+                value={sortBy}
+                onChange={(e) => setSortBy(e.target.value as any)}
+                className="catalog-select"
+              >
+                <option value="featured">Featured Order</option>
+                <option value="price-asc">Price: Low to High</option>
+                <option value="price-desc">Price: High to Low</option>
+              </select>
+            </div>
           </div>
-          <div className="intro-stats">
-            <span className="stats-num">{filteredProducts.length}</span>
-            <span className="stats-label">Items Shown</span>
+        )}
+
+        {/* Active Category Description Banner (shown on full Products page) */}
+        {!isHome && (
+          <div className="product-intro modern-intro">
+            <div className="intro-left">
+              <div className="intro-category-badge">
+                <Icon name={CATEGORY_ICONS[activeCategory] ?? "gear"} size={18} />
+                <span>{activeCategory}</span>
+              </div>
+              <p className="intro-desc">
+                {CATEGORY_INTROS[activeCategory] ?? CATEGORY_INTROS.All}
+              </p>
+            </div>
+            <div className="intro-stats">
+              <span className="stats-num">{filteredProducts.length}</span>
+              <span className="stats-label">Items Shown</span>
+            </div>
           </div>
-        </div>
+        )}
 
         {/* Product Cards Grid */}
         {filteredProducts.length === 0 ? (
@@ -177,71 +233,106 @@ export default function ShredderCatalog() {
               type="button"
               className="btn btn-primary"
               onClick={() => {
-                setActiveCategory("All");
-                setSearch("");
+                handleCategoryChange("All");
+                handleSearchChange("");
               }}
             >
               Reset Filters
             </button>
           </div>
         ) : (
-          <div className="product-grid">
-            {filteredProducts.map((p) => (
-              <div className="product-card modern-card" key={p.slug}>
-                {/* Image with Category Badge */}
-                <Link href={`/products/${p.slug}`} className="product-media-link" aria-label={`View ${p.name}`}>
-                  <div className="product-media">
-                    <Image
-                      src={p.image}
-                      alt={p.name}
-                      fill
-                      sizes="(max-width: 700px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                      style={{ objectFit: "cover" }}
-                    />
-                    {p.category && <span className="product-cat-pill">{p.category}</span>}
-                  </div>
-                </Link>
-
-                {/* Card Title & Pricing */}
-                <div className="product-top">
-                  <div className="product-code-row">
-                    <span className="product-code-chip">{p.code}</span>
-                    <span className="product-code-label">Product Code</span>
-                  </div>
-                  <h3>
-                    <Link href={`/products/${p.slug}`} className="product-title-link">
-                      {p.name}
-                    </Link>
-                  </h3>
-                  <div className="product-price">
-                    <span className={`price-tag${p.price === null ? " ask" : ""}`}>
-                      {p.price === null
-                        ? "Ask Price"
-                        : `₹ ${p.price.toLocaleString("en-IN")} / Piece`}
-                    </span>
-                    {p.moq && <span className="moq-tag">MOQ: {p.moq}</span>}
-                  </div>
-                </div>
-
-                {/* Specifications Preview */}
-                <div className="spec-list">
-                  {p.specs.slice(0, 3).map(([k, v]) => (
-                    <div className="spec-row" key={k}>
-                      <span className="k">{k}</span>
-                      <span className="v">{v}</span>
+          <>
+            <div className="product-grid">
+              {displayedProducts.map((p) => (
+                <div className="product-card modern-card" key={p.slug}>
+                  {/* Image with Category Badge */}
+                  <Link href={`/products/${p.slug}`} className="product-media-link" aria-label={`View ${p.name}`}>
+                    <div className="product-media">
+                      <Image
+                        src={p.image}
+                        alt={p.name}
+                        fill
+                        sizes="(max-width: 700px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                        style={{ objectFit: "cover" }}
+                      />
+                      <span className="product-cat-pill">
+                        {p.subCategory ?? p.category}
+                      </span>
                     </div>
-                  ))}
-                </div>
-
-                {/* Single Clean View Details Action */}
-                <div className="product-actions">
-                  <Link href={`/products/${p.slug}`} className="btn btn-primary btn-product-view">
-                    View Details →
                   </Link>
+
+                  {/* Card Title & Pricing */}
+                  <div className="product-top">
+                    <div className="product-code-row">
+                      <span className="product-code-chip">{p.code}</span>
+                      <span className="product-code-label">Product Code</span>
+                    </div>
+                    <h3>
+                      <Link href={`/products/${p.slug}`} className="product-title-link">
+                        {p.name}
+                      </Link>
+                    </h3>
+                    <div className="product-price">
+                      <span className={`price-tag${p.price === null ? " ask" : ""}`}>
+                        {p.price === null
+                          ? "Ask Price"
+                          : `₹ ${p.price.toLocaleString("en-IN")} / Piece`}
+                      </span>
+                      {p.moq && <span className="moq-tag">MOQ: {p.moq}</span>}
+                    </div>
+                  </div>
+
+                  {/* Specifications Preview */}
+                  <div className="spec-list">
+                    {p.specs.slice(0, 3).map(([k, v]) => (
+                      <div className="spec-row" key={k}>
+                        <span className="k">{k}</span>
+                        <span className="v">{v}</span>
+                      </div>
+                    ))}
+                  </div>
+
+                  {/* Single Clean View Details Action */}
+                  <div className="product-actions">
+                    <Link href={`/products/${p.slug}`} className="btn btn-primary btn-product-view">
+                      View Details →
+                    </Link>
+                  </div>
                 </div>
+              ))}
+            </div>
+
+            {/* Show More Button (Home Page Preview) */}
+            {isHome && (
+              <div className="catalog-show-more-wrap">
+                <p className="catalog-show-more-note">
+                  Showing {displayedProducts.length} of {allProducts.length} items from our manufacturing catalogue
+                </p>
+                <Link
+                  href="/products"
+                  className="catalog-show-more-btn"
+                  title="View complete catalogue with search and filter"
+                >
+                  <span>Show More</span>
+                  <Icon name="arrowRight" size={18} />
+                </Link>
               </div>
-            ))}
-          </div>
+            )}
+
+            {/* Pagination / Load More Button (Full Products Page) */}
+            {!isHome && visibleCount < filteredProducts.length && (
+              <div className="catalog-load-more" style={{ textAlign: "center", marginTop: 40 }}>
+                <button
+                  type="button"
+                  className="btn btn-primary"
+                  onClick={() => setVisibleCount((prev) => prev + 18)}
+                  style={{ minWidth: 260, padding: "14px 28px", fontSize: 16 }}
+                >
+                  Load More Products ({filteredProducts.length - visibleCount} remaining)
+                </button>
+              </div>
+            )}
+          </>
         )}
       </div>
     </section>

@@ -12,10 +12,10 @@ export default function Hero() {
         speed={0.5}
         squareSize={46}
         borderColor="rgba(148, 163, 184, 0.3)"
-        hoverFillColor="rgba(251, 191, 36, 0.14)"
+        hoverFillColor="rgba(56, 189, 248, 0.18)"
         shape="hexagon"
         hoverTrailAmount={8}
-        backgroundColor="rgba(11, 18, 32, 0.45)"
+        backgroundColor="rgba(7, 13, 30, 0.45)"
       />
       <div className="container">
         <div>
@@ -37,8 +37,7 @@ export default function Hero() {
             </span>
           </div>
           <p className="lead">
-            {company.tagline} Trusted partner for the recycling and wood-processing
-            industries since {company.estd}.
+            <strong>{company.tagline}</strong> Trusted industrial partner for recycling and wood-processing industries since {company.estd}.
           </p>
           <div className="hero-stats">
             <div className="stat-card">

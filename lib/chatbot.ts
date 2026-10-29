@@ -17,12 +17,12 @@ export interface Lead {
 export interface BotState {
   mode: "idle" | "capture";
   step:
-    | "ask-name"
-    | "ask-phone"
-    | "ask-address"
-    | "ask-product"
-    | "ask-details"
-    | "done";
+  | "ask-name"
+  | "ask-phone"
+  | "ask-address"
+  | "ask-product"
+  | "ask-details"
+  | "done";
   lead: Partial<Lead>;
 }
 
@@ -69,7 +69,7 @@ const LEAD_INTENT = [
 const PRODUCT_LABEL = (price: number | null): string =>
   price === null ? "Ask Price" : `₹ ${price.toLocaleString("en-IN")}/Piece`;
 
-const SPECS_TEXT = (specs: [string, string][], moq?: string): string => {
+const SPECS_TEXT = (specs: [string, string][], moq?: string | null): string => {
   const rows = specs.map(([k, v]) => `${k}: ${v}`).join(" · ");
   return moq ? `${rows} · MOQ: ${moq}` : rows;
 };
@@ -105,44 +105,44 @@ const CATEGORY_TOPICS: {
   count: number;
   note: string;
 }[] = [
-  {
-    match: ["granulator"],
-    name: "Granulator Blades",
-    count: 3,
-    note: "Ask for plastic granulator blade sizes and grades.",
-  },
-  {
-    match: ["chipper", "wood chipper"],
-    name: "Chipper Knives",
-    count: 8,
-    note: "Wood chipper and chipper knives available.",
-  },
-  {
-    match: ["chaff"],
-    name: "Chaff Cutter Blades",
-    count: 2,
-    note: "Agricultural chaff cutter blades.",
-  },
-  {
-    match: ["vmc", "job work"],
-    name: "VMC Machine Job Work",
-    count: 2,
-    note: "Precision VMC machining services.",
-  },
-  {
-    match: ["grinder"],
-    name: "Grinder Blades",
-    count: 3,
-    note: "Grinder blades for industrial grinding.",
-  },
-  {
-    match: ["shredding machine", "machine"],
-    name: "Shredding Machine",
-    count: 13,
-    note: "A wide range of shredding machines.",
-  },
-  { match: ["tool", "dies", "die"], name: "Tools And Dies", count: 8, note: "Industrial tools and dies." },
-];
+    {
+      match: ["granulator"],
+      name: "Granulator Blades",
+      count: 3,
+      note: "Ask for plastic granulator blade sizes and grades.",
+    },
+    {
+      match: ["chipper", "wood chipper"],
+      name: "Chipper Knives",
+      count: 8,
+      note: "Wood chipper and chipper knives available.",
+    },
+    {
+      match: ["chaff"],
+      name: "Chaff Cutter Blades",
+      count: 2,
+      note: "Agricultural chaff cutter blades.",
+    },
+    {
+      match: ["vmc", "job work"],
+      name: "VMC Machine Job Work",
+      count: 2,
+      note: "Precision VMC machining services.",
+    },
+    {
+      match: ["grinder"],
+      name: "Grinder Blades",
+      count: 3,
+      note: "Grinder blades for industrial grinding.",
+    },
+    {
+      match: ["shredding machine", "machine"],
+      name: "Shredding Machine",
+      count: 13,
+      note: "A wide range of shredding machines.",
+    },
+    { match: ["tool", "dies", "die"], name: "Tools And Dies", count: 8, note: "Industrial tools and dies." },
+  ];
 
 function captureReply(
   state: BotState,
@@ -185,9 +185,8 @@ function captureReply(
     lead.details = input.toLowerCase() === "none" ? undefined : input;
     nextStep = "done";
     const complete = lead as Lead;
-    text = `All set, ${complete.name}! Here is a summary:\n\nName: ${complete.name}\nPhone: ${complete.phone}\nAddress: ${complete.address}\nProduct: ${complete.product}${
-      complete.details ? `\nDetails: ${complete.details}` : ""
-    }\n\nTap "Send to WhatsApp" below and the details will reach our team instantly.`;
+    text = `All set, ${complete.name}! Here is a summary:\n\nName: ${complete.name}\nPhone: ${complete.phone}\nAddress: ${complete.address}\nProduct: ${complete.product}${complete.details ? `\nDetails: ${complete.details}` : ""
+      }\n\nTap "Send to WhatsApp" below and the details will reach our team instantly.`;
   }
 
   const next: BotState = {
