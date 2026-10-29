@@ -59,7 +59,7 @@ export default async function ProductPage({
         aside={
           <div className="hero-capability-card">
             <div className="capability-card-head">
-              <span className="capability-badge">Item #{product.code}</span>
+              <span className="capability-badge">{product.category}</span>
               <span className="capability-verified">
                 <Icon name="check" size={13} /> Genuine Spec
               </span>
@@ -94,7 +94,7 @@ export default async function ProductPage({
             <div className="capability-actions">
               <a
                 href={`https://wa.me/${company.whatsapp}?text=${encodeURIComponent(
-                  `Hi K.S.G. Tools, I want to order/enquire about ${product.name} (Code: ${product.code}).\nPrice: ${product.price === null ? "Ask Price" : `₹ ${product.price.toLocaleString("en-IN")} / Piece`
+                  `Hi K.S.G. Tools, I want to order/enquire about ${product.name}.\nPrice: ${product.price === null ? "Ask Price" : `₹ ${product.price.toLocaleString("en-IN")} / Piece`
                   }\nPlease share technical drawing and quote.`
                 )}`}
                 target="_blank"
@@ -124,7 +124,7 @@ export default async function ProductPage({
                   style={{ objectFit: "cover" }}
                   priority
                 />
-                <span className="tag">Product #{product.code}</span>
+                <span className="tag">{product.subCategory ?? product.category}</span>
               </div>
 
               <div className="detail-video">
@@ -143,10 +143,6 @@ export default async function ProductPage({
               <div className="detail-card">
                 <h3>Product Specifications</h3>
                 <div className="spec-list full">
-                  <div className="spec-row highlight-code-row">
-                    <span className="k">Product Code / SKU</span>
-                    <span className="v code-val">{product.code}</span>
-                  </div>
                   {product.specs.map(([k, v]) => (
                     <div className="spec-row" key={k}>
                       <span className="k">{k}</span>
@@ -170,8 +166,8 @@ export default async function ProductPage({
             <aside className="detail-side">
               <div className="detail-pricecard">
                 <div className="detail-code-banner">
-                  <span className="code-label">Product Code</span>
-                  <span className="code-value">{product.code}</span>
+                  <span className="code-label">Direct Manufacturer</span>
+                  <span className="code-value">{company.city}</span>
                 </div>
                 <div className="detail-price">
                   {product.price === null ? (
@@ -195,17 +191,17 @@ export default async function ProductPage({
                   </span>
                 </div>
                 <a
-                  href={`/contact?product=${encodeURIComponent(`${product.name} [${product.code}]`)}&code=${encodeURIComponent(product.code)}`}
+                  href={`/contact?product=${encodeURIComponent(product.name)}`}
                   className="btn btn-primary w100"
                 >
-                  Get Best Quote ({product.code})
+                  Get Best Quote
                 </a>
                 <a href={`tel:${company.phoneLink}`} className="btn btn-dark w100">
                   Call Now
                 </a>
                 <a
                   href={`https://wa.me/${company.whatsapp}?text=${encodeURIComponent(
-                    `Hi K.S.G. Tools, I am interested in: ${product.name} (Product Code: ${product.code})\nPrice: ${product.price === null ? "Ask Price" : `₹ ${product.price.toLocaleString("en-IN")} / Piece`}\nPlease share technical specifications and best quote.`
+                    `Hi K.S.G. Tools, I am interested in: ${product.name}\nPrice: ${product.price === null ? "Ask Price" : `₹ ${product.price.toLocaleString("en-IN")} / Piece`}\nPlease share technical specifications and best quote.`
                   )}`}
                   target="_blank"
                   rel="noreferrer"

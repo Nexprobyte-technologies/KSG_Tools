@@ -45,7 +45,7 @@ export default function Hero() {
               <div className="label">Years of Experience</div>
             </div>
             <div className="stat-card">
-              <div className="val">29+</div>
+              <div className="val">83+</div>
               <div className="label">Products &amp; Services</div>
             </div>
             <div className="stat-card">

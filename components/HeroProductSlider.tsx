@@ -142,8 +142,7 @@ export default function HeroProductSlider() {
           />
           <div className="hp-badges-overlay">
             <span className="hp-code-pill">
-              <span className="hash">#</span>
-              {curr.code}
+              {curr.subCategory ?? curr.category}
             </span>
             <span className={`hp-price-tag${curr.price === null ? " ask" : ""}`}>
               {curr.price === null
@@ -156,7 +155,7 @@ export default function HeroProductSlider() {
         {/* Product Details */}
         <div className="hp-info-box">
           <div className="hp-title-row">
-            <span className="hp-code-label">Item Code: <strong>{curr.code}</strong></span>
+            <span className="hp-code-label">Category: <strong>{curr.category}</strong></span>
             {curr.moq && <span className="hp-moq-chip">MOQ: {curr.moq}</span>}
           </div>
 
@@ -190,8 +189,8 @@ export default function HeroProductSlider() {
             type="button"
             className={`slider-dot ${i === currentIdx ? "active" : ""}`}
             onClick={() => handleSelect(i)}
-            aria-label={`Go to ${p.name} (${p.code})`}
-            title={`${p.name} (${p.code})`}
+            aria-label={`Go to ${p.name}`}
+            title={p.name}
           />
         ))}
       </div>

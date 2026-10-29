@@ -171,7 +171,7 @@ export default function ShredderCatalog({ isHome = false, limit = 6 }: ShredderC
               <Icon name="zoom" size={18} className="search-icon" />
               <input
                 type="text"
-                placeholder="Search by product name, item code (e.g. KSG-201), material or specs..."
+                placeholder="Search by product name, category, material or specifications..."
                 value={search}
                 onChange={(e) => handleSearchChange(e.target.value)}
                 className="catalog-search-input"
@@ -243,8 +243,12 @@ export default function ShredderCatalog({ isHome = false, limit = 6 }: ShredderC
         ) : (
           <>
             <div className="product-grid">
-              {displayedProducts.map((p) => (
-                <div className="product-card modern-card" key={p.slug}>
+              {displayedProducts.map((p, idx) => (
+                <div
+                  className="product-card modern-card animated-product-card"
+                  key={p.slug}
+                  style={{ animationDelay: `${(idx % 6) * 0.08}s` }}
+                >
                   {/* Image with Category Badge */}
                   <Link href={`/products/${p.slug}`} className="product-media-link" aria-label={`View ${p.name}`}>
                     <div className="product-media">
@@ -263,10 +267,6 @@ export default function ShredderCatalog({ isHome = false, limit = 6 }: ShredderC
 
                   {/* Card Title & Pricing */}
                   <div className="product-top">
-                    <div className="product-code-row">
-                      <span className="product-code-chip">{p.code}</span>
-                      <span className="product-code-label">Product Code</span>
-                    </div>
                     <h3>
                       <Link href={`/products/${p.slug}`} className="product-title-link">
                         {p.name}

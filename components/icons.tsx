@@ -1,5 +1,5 @@
 const PATHS: Record<string, string[]> = {
-  arrowRight: ["M5 12h14", "m12 5 7-7-7-7"],
+  arrowRight: ["M5 12h14", "M12 5l7 7-7 7"],
   download: [
     "M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4",
     "m7 10 5 5 5-5",

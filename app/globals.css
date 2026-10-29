@@ -4595,52 +4595,348 @@ img {
   }
 }
 
+/* ===================================================
+   RICH MODERN ANIMATIONS & MICRO-INTERACTIONS
+   =================================================== */
+
+@keyframes shimmerSweep {
+  0% {
+    left: -130%;
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.65;
+  }
+  60% {
+    left: 140%;
+    opacity: 0.65;
+  }
+  100% {
+    left: 140%;
+    opacity: 0;
+  }
+}
+
+@keyframes btnPulseGlow {
+  0%, 100% {
+    box-shadow: 0 10px 26px -4px rgba(29, 78, 216, 0.42), 0 0 16px -2px rgba(6, 182, 212, 0.28);
+    border-color: rgba(255, 255, 255, 0.3);
+  }
+  50% {
+    box-shadow: 0 14px 36px -2px rgba(29, 78, 216, 0.62), 0 0 28px 4px rgba(6, 182, 212, 0.48);
+    border-color: rgba(255, 255, 255, 0.5);
+  }
+}
+
+@keyframes floatSubtle {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+@keyframes textGradientFlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes cardFadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(22px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes radarPulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(29, 78, 216, 0.65), 0 10px 28px rgba(29, 78, 216, 0.45);
+  }
+  65% {
+    box-shadow: 0 0 0 18px rgba(29, 78, 216, 0), 0 10px 28px rgba(29, 78, 216, 0.45);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(29, 78, 216, 0), 0 10px 28px rgba(29, 78, 216, 0.45);
+  }
+}
+
+@keyframes scrollBounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-8px);
+  }
+  60% {
+    transform: translateY(-4px);
+  }
+}
+
+/* Hero Section High-Impact Animations */
+.hero-badge {
+  animation: floatSubtle 4.5s ease-in-out infinite;
+}
+
+.hero h1 .accent {
+  background: linear-gradient(135deg, #38bdf8 0%, #60a5fa 45%, #06b6d4 100%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textGradientFlow 4s ease infinite;
+  display: inline-block;
+}
+
+.hero-tech-pill {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.hero-tech-pill:hover {
+  transform: translateY(-3px) scale(1.02);
+  border-color: rgba(56, 189, 248, 0.55);
+  box-shadow: 0 6px 16px rgba(56, 189, 248, 0.22);
+  background: rgba(15, 23, 42, 0.85);
+}
+
+.hero-stats .stat-card {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.hero-stats .stat-card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #38bdf8, #2563eb);
+  opacity: 0;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: all 0.35s ease;
+}
+
+.hero-stats .stat-card:hover {
+  transform: translateY(-5px) scale(1.02);
+  border-color: rgba(56, 189, 248, 0.45);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.35), 0 0 20px -2px rgba(56, 189, 248, 0.2);
+}
+
+.hero-stats .stat-card:hover::after {
+  opacity: 1;
+  transform: scaleX(1);
+}
+
+.hero-scroll {
+  animation: scrollBounce 2.5s infinite;
+}
+
+/* Category Tabs Animations */
+.cat-tab {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.cat-tab:hover {
+  transform: translateY(-2px);
+  border-color: rgba(37, 99, 235, 0.4);
+  box-shadow: 0 6px 14px rgba(37, 99, 235, 0.12);
+}
+
+.cat-tab.active {
+  transform: scale(1.02);
+  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.28);
+}
+
+.cat-tab.active svg {
+  transform: rotate(12deg);
+  transition: transform 0.3s ease;
+}
+
+/* Product Cards Animations & Elevation */
+.animated-product-card {
+  animation: cardFadeInUp 0.65s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.product-card {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.35s cubic-bezier(0.2, 0.8, 0.2, 1),
+              box-shadow 0.35s cubic-bezier(0.2, 0.8, 0.2, 1),
+              border-color 0.3s ease;
+}
+
+.product-card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3.5px;
+  background: linear-gradient(90deg, #2563eb, #06b6d4, #1d4ed8);
+  opacity: 0;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: opacity 0.3s ease, transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  z-index: 5;
+}
+
+.product-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 38px -10px rgba(15, 23, 42, 0.14), 0 0 24px -2px rgba(37, 99, 235, 0.2);
+  border-color: rgba(37, 99, 235, 0.45);
+}
+
+.product-card:hover::after {
+  opacity: 1;
+  transform: scaleX(1);
+}
+
+.product-media {
+  position: relative;
+  overflow: hidden;
+}
+
+.product-media img {
+  transition: transform 0.5s cubic-bezier(0.2, 0.8, 0.2, 1), filter 0.35s ease;
+}
+
+.product-card:hover .product-media img {
+  transform: scale(1.08);
+  filter: brightness(1.02);
+}
+
+/* Media gloss light reflection sweep */
+.product-media::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -120%;
+  width: 55%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.28), transparent);
+  transform: skewX(-20deg);
+  pointer-events: none;
+}
+
+.product-card:hover .product-media::after {
+  left: 160%;
+  transition: left 0.75s ease;
+}
+
+.product-cat-pill {
+  transition: all 0.25s ease;
+}
+
+.product-card:hover .product-cat-pill {
+  background: rgba(37, 99, 235, 0.9);
+  border-color: rgba(255, 255, 255, 0.4);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-product-view {
+  transition: all 0.25s ease;
+}
+
+.product-card:hover .btn-product-view {
+  background: linear-gradient(135deg, var(--primary-hover), var(--primary));
+  box-shadow: 0 6px 18px rgba(29, 78, 216, 0.35);
+  transform: translateY(-1px);
+}
+
 /* Homepage Catalog Show More Button & Note */
 .catalog-show-more-wrap {
   text-align: center;
-  margin-top: 48px;
+  margin-top: 52px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 14px;
+  gap: 16px;
 }
 
 .catalog-show-more-note {
-  font-size: 0.92rem;
+  font-size: 0.94rem;
   color: var(--muted);
   font-weight: 500;
   margin: 0;
+  letter-spacing: 0.2px;
 }
 
 .catalog-show-more-btn {
+  position: relative;
+  overflow: hidden;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
-  padding: 16px 40px;
-  font-size: 1.05rem;
+  gap: 12px;
+  padding: 16px 44px;
+  font-size: 1.08rem;
   font-weight: 700;
-  border-radius: 10px;
-  background: linear-gradient(135deg, var(--primary), #2563eb);
+  border-radius: 12px;
+  background: linear-gradient(135deg, #1d4ed8 0%, #2563eb 50%, #0284c7 100%);
+  background-size: 200% auto;
   color: #ffffff !important;
-  border: 1px solid var(--primary-dark);
-  box-shadow: 0 10px 24px -4px rgba(29, 78, 216, 0.35);
-  transition: all 0.25s ease;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  animation: btnPulseGlow 3.2s ease-in-out infinite;
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
   text-decoration: none;
   cursor: pointer;
+  letter-spacing: 0.3px;
+}
+
+/* Shimmer beam sweep across button */
+.catalog-show-more-btn::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -120%;
+  width: 50%;
+  height: 200%;
+  background: linear-gradient(
+    115deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0) 25%,
+    rgba(255, 255, 255, 0.45) 50%,
+    rgba(255, 255, 255, 0) 75%,
+    transparent 100%
+  );
+  transform: rotate(25deg);
+  animation: shimmerSweep 3.6s ease-in-out infinite;
+  pointer-events: none;
 }
 
 .catalog-show-more-btn:hover {
-  background: linear-gradient(135deg, var(--primary-hover), var(--primary));
-  transform: translateY(-2px);
-  box-shadow: 0 14px 30px -2px rgba(29, 78, 216, 0.45);
-  color: #ffffff !important;
+  background-position: right center;
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 18px 36px -4px rgba(29, 78, 216, 0.58), 0 0 28px rgba(6, 182, 212, 0.45);
+}
+
+.catalog-show-more-btn:active {
+  transform: translateY(0) scale(0.98);
 }
 
 .catalog-show-more-btn svg {
-  transition: transform 0.2s ease;
+  transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
 .catalog-show-more-btn:hover svg {
-  transform: translateX(4px);
+  transform: translateX(6px) scale(1.15);
+}
+
+/* Floating Chatbot Pulse Animation */
+.chat-toggle {
+  animation: radarPulse 3.5s infinite;
 }

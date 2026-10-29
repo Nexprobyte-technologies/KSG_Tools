@@ -5,7 +5,7 @@ import Icon from "@/components/icons";
 import { company, allProducts } from "@/lib/data";
 
 const specificProductOptions = allProducts.map(
-  (p) => `[${p.code}] ${p.name}`
+  (p) => p.name
 );
 
 const generalCategories = [
