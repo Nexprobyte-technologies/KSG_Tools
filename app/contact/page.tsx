@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Icon from "@/components/icons";
 import PageHeader from "@/components/PageHeader";
 import ContactForm from "@/components/ContactForm";
+import LocationMapSection from "@/components/sections/LocationMapSection";
 import CtaBand from "@/components/sections/CtaBand";
 import ContactSection from "@/components/sections/ContactSection";
 import { company, factsheet } from "@/lib/data";
@@ -23,7 +24,7 @@ export default async function ContactPage({
       <PageHeader
         eyebrow="Get in Touch"
         title="Contact Us"
-        subtitle="Reach our team for prices, specifications and orders. We respond within 24 working hours."
+        subtitle="Reach our team for prices, specifications and custom tooling orders. We respond within 24 working hours."
       />
       <section className="section">
         <div className="container">
@@ -36,7 +37,7 @@ export default async function ContactPage({
                 </div>
                 <div>
                   <div className="t">Our Location</div>
-                  <div className="d">{company.city}, Tamil Nadu, India</div>
+                  <div className="d">{company.shortAddress}</div>
                 </div>
               </div>
               <div className="contact-cell">
@@ -83,23 +84,10 @@ export default async function ContactPage({
         </div>
       </section>
 
-      <section className="section section-alt" style={{ paddingTop: 0 }}>
-        <div className="container">
-          <div className="section-head center">
-            <span className="eyebrow">Find Us</span>
-            <h2>Our Location on Map</h2>
-            <p className="sub">{company.city}, Tamil Nadu, India</p>
-          </div>
-          <div className="map-wrap">
-            <iframe
-              src="https://maps.google.com/maps?q=Coimbatore%2C%20Tamil%20Nadu%2C%20India&z=12&output=embed"
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              title="K.S.G. Tools location map"
-            />
-          </div>
-        </div>
-      </section>
+      <LocationMapSection
+        title="Find Our Factory & Workshop"
+        subtitle="We welcome clients and procurement managers for live tool inspections and technical discussions."
+      />
       <CtaBand />
       <ContactSection />
     </>

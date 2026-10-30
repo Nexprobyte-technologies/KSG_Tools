@@ -16,10 +16,12 @@ function animateValue(to: number, duration: number, onUpdate: (v: number) => voi
 function Stat({
   to,
   duration,
+  label,
   render,
 }: {
   to: number;
   duration: number;
+  label: string;
   render: (v: number) => string;
 }) {
   const [val, setVal] = useState(0);
@@ -46,15 +48,7 @@ function Stat({
   return (
     <div className="stat" ref={ref}>
       <div className="val">{started ? render(val) : render(0)}</div>
-      <div className="label">
-        {to === 2009
-          ? "Established"
-          : to === 49
-            ? "Products & Services"
-            : to === 4.5
-              ? "Customer Rating"
-              : "User Satisfaction"}
-      </div>
+      <div className="label">{label}</div>
     </div>
   );
 }
@@ -63,10 +57,10 @@ export default function StatsBand() {
   return (
     <section className="stats-band" aria-label="Company statistics">
       <div className="container">
-        <Stat to={2009} duration={1200} render={(v) => String(Math.round(v))} />
-        <Stat to={49} duration={1400} render={(v) => `${Math.round(v)}+`} />
-        <Stat to={4.5} duration={1500} render={(v) => `${v.toFixed(1)}★`} />
-        <Stat to={100} duration={1400} render={(v) => `${Math.round(v)}%`} />
+        <Stat to={2009} duration={1200} label="Established Year" render={(v) => String(Math.round(v))} />
+        <Stat to={83} duration={1400} label="Products & Services" render={(v) => `${Math.round(v)}+`} />
+        <Stat to={16} duration={1300} label="Years Manufacturing Hub" render={(v) => `${Math.round(v)}+`} />
+        <Stat to={100} duration={1400} label="Quality Tested & Direct Dispatch" render={(v) => `${Math.round(v)}%`} />
       </div>
     </section>
   );

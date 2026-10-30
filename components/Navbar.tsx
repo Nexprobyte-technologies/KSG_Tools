@@ -45,7 +45,7 @@ export default function Navbar() {
           </div>
           <div className="topbar-right">
             <span>
-              <span aria-hidden>★</span> {company.rating} Rating · {company.city}
+              <Icon name="factory" size={13} /> Direct Manufacturer · {company.city}
             </span>
             <span className="topbar-divider">|</span>
             <span>

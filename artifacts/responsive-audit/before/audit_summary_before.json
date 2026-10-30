@@ -1,0 +1,4785 @@
+[
+  {
+    "route": "/",
+    "routeName": "home",
+    "viewport": "Mobile-320x568",
+    "category": "Mobile",
+    "dimensions": "320x568",
+    "status": 200,
+    "loadError": null,
+    "metrics": {
+      "winWidth": 320,
+      "scrollWidth": 320,
+      "hasHorizontalOverflow": false,
+      "overflowAmount": 0,
+      "overflowElements": [],
+      "smallTargetsCount": 18,
+      "smallTargetsSample": [
+        {
+          "tag": "BUTTON",
+          "text": "←",
+          "width": 30,
+          "height": 30
+        },
+        {
+          "tag": "BUTTON",
+          "text": "→",
+          "width": 30,
+          "height": 30
+        },
+        {
+          "tag": "BUTTON",
+          "text": "Go to 4 inch Stainle",
+          "width": 22,
+          "height": 7
+        }
+      ]
+    },
+    "consoleErrors": [
+      "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    ],
+    "navMenuTest": null,
+    "screenshot": "artifacts/responsive-audit/before/home_Mobile-320x568.png",
+    "passed": true
+  },
+  {
+    "route": "/",
+    "routeName": "home",
+    "viewport": "Mobile-360x800",
+    "category": "Mobile",
+    "dimensions": "360x800",
+    "status": 200,
+    "loadError": null,
+    "metrics": {
+      "winWidth": 360,
+      "scrollWidth": 360,
+      "hasHorizontalOverflow": false,
+      "overflowAmount": 0,
+      "overflowElements": [],
+      "smallTargetsCount": 19,
+      "smallTargetsSample": [
+        {
+          "tag": "BUTTON",
+          "text": "←",
+          "width": 30,
+          "height": 30
+        },
+        {
+          "tag": "BUTTON",
+          "text": "→",
+          "width": 30,
+          "height": 30
+        },
+        {
+          "tag": "BUTTON",
+          "text": "Go to 4 inch Stainle",
+          "width": 22,
+          "height": 7
+        }
+      ]
+    },
+    "consoleErrors": [],
+    "navMenuTest": null,
+    "screenshot": "artifacts/responsive-audit/before/home_Mobile-360x800.png",
+    "passed": true
+  },
+  {
+    "route": "/",
+    "routeName": "home",
+    "viewport": "Mobile-375x812",
+    "category": "Mobile",
+    "dimensions": "375x812",
+    "status": 200,
+    "loadError": null,
+    "metrics": {
+      "winWidth": 375,
+      "scrollWidth": 375,
+      "hasHorizontalOverflow": false,
+      "overflowAmount": 0,
+      "overflowElements": [],
+      "smallTargetsCount": 19,
+      "smallTargetsSample": [
+        {
+          "tag": "BUTTON",
+          "text": "←",
+          "width": 30,
+          "height": 30
+        },
+        {
+          "tag": "BUTTON",
+          "text": "→",
+          "width": 30,
+          "height": 30
+        },
+        {
+          "tag": "BUTTON",
+          "text": "Go to 4 inch Stainle",
+          "width": 22,
+          "height": 7
+        }
+      ]
+    },
+    "consoleErrors": [],
+    "navMenuTest": null,
+    "screenshot": null,
+    "passed": true
+  },
+  {
+    "route": "/",
+    "routeName": "home",
+    "viewport": "Mobile-390x844",
+    "category": "Mobile",
+    "dimensions": "390x844",
+    "status": 200,
+    "loadError": null,
+    "metrics": {
+      "winWidth": 390,
+      "scrollWidth": 390,
+      "hasHorizontalOverflow": false,
+      "overflowAmount": 0,
+      "overflowElements": [],
+      "smallTargetsCount": 19,
+      "smallTargetsSample": [
+        {
+          "tag": "BUTTON",
+          "text": "←",
+          "width": 30,
+          "height": 30
+        },
+        {
+          "tag": "BUTTON",
+          "text": "→",
+          "width": 30,
+          "height": 30
+        },
+        {
+          "tag": "BUTTON",
+          "text": "Go to 4 inch Stainle",
+          "width": 22,
+          "height": 7
+        }
+      ]
+    },
+    "consoleErrors": [],
+    "navMenuTest": null,
+    "screenshot": null,
+    "passed": true
+  },
+  {
+    "route": "/",
+    "routeName": "home",
+    "viewport": "Mobile-430x932",
+    "category": "Mobile",
+    "dimensions": "430x932",
+    "status": 200,
+    "loadError": null,
+    "metrics": {
+      "winWidth": 430,
+      "scrollWidth": 430,
+      "hasHorizontalOverflow": false,
+      "overflowAmount": 0,
+      "overflowElements": [],
+      "smallTargetsCount": 23,
+      "smallTargetsSample": [
+        {
+          "tag": "BUTTON",
+          "text": "←",
+          "width": 30,
+          "height": 30
+        },
+        {
+          "tag": "BUTTON",
+          "text": "→",
+          "width": 30,
+          "height": 30
+        },
+        {
+          "tag": "A",
+          "text": "4 inch Stainless Ste",
+          "width": 296,
+          "height": 24
+        }
+      ]
+    },
+    "consoleErrors": [],
+    "navMenuTest": null,
+    "screenshot": null,
+    "passed": true
+  },
+  {
+    "route": "/",
+    "routeName": "home",
+    "viewport": "Tablet-600x960",
+    "category": "Tablet",
+    "dimensions": "600x960",
+    "status": 200,
+    "loadError": null,
+    "metrics": {
+      "winWidth": 600,
+      "scrollWidth": 600,
+      "hasHorizontalOverflow": false,
+      "overflowAmount": 0,
+      "overflowElements": [],
+      "smallTargetsCount": 25,
+      "smallTargetsSample": [
+        {
+          "tag": "BUTTON",
+          "text": "←",
+          "width": 30,
+          "height": 30
+        },
+        {
+          "tag": "BUTTON",
+          "text": "→",
+          "width": 30,
+          "height": 30
+        },
+        {
+          "tag": "A",
+          "text": "4 inch Stainless Ste",
+          "width": 296,
+          "height": 24
+        }
+      ]
+    },
+    "consoleErrors": [],
+    "navMenuTest": null,
+    "screenshot": null,
+    "passed": true
+  },
+  {
+    "route": "/",
+    "routeName": "home",
+    "viewport": "Tablet-768x1024",
+    "category": "Tablet",
+    "dimensions": "768x1024",
+    "status": 200,
+    "loadError": null,
+    "metrics": {
+      "winWidth": 768,
+      "scrollWidth": 768,
+      "hasHorizontalOverflow": false,
+      "overflowAmount": 0,
+      "overflowElements": [],
+      "smallTargetsCount": 24,
+      "smallTargetsSample": [
+        {
+          "tag": "BUTTON",
+          "text": "←",
+          "width": 30,
+          "height": 30
+        },
+        {
+          "tag": "BUTTON",
+          "text": "→",
+          "width": 30,
+          "height": 30
+        },
+        {
+          "tag": "A",
+          "text": "4 inch Stainless Ste",
+          "width": 296,
+          "height": 24
+        }
+      ]
+    },
+    "consoleErrors": [],
+    "navMenuTest": null,
+    "screenshot": "artifacts/responsive-audit/before/home_Tablet-768x1024.png",
+    "passed": true
+  },
+  {
+    "route": "/",
+    "routeName": "home",
+    "viewport": "Tablet-820x1180",
+    "category": "Tablet",
+    "dimensions": "820x1180",
+    "status": 200,
+    "loadError": null,
+    "metrics": {
+      "winWidth": 820,
+      "scrollWidth": 820,
+      "hasHorizontalOverflow": false,
+      "overflowAmount": 0,
+      "overflowElements": [
+        {
+          "selector": "div.catalog-tabs",
+          "right": 1940,
+          "width": 1915,
+          "winWidth": 820,
+          "overflowBy": 1120,
+          "snippet": "All Products 83 Chipper Knives"
+        },
+        {
+          "selector": "button.cat-tab",
+          "right": 1050,
+          "width": 223,
+          "winWidth": 820,
+          "overflowBy": 230,
+          "snippet": "Shredding Machine 12"
+        },
+        {
+          "selector": "svg",
+          "right": 862,
+          "width": 16,
+          "winWidth": 820,
+          "overflowBy": 42,
+          "snippet": ""
+        },
+        {
+          "selector": "path",
+          "right": 860,
+          "width": 13,
+          "winWidth": 820,
+          "overflowBy": 40,
+          "snippet": ""
+        },
+        {
+          "selector": "span",
+          "right": 994,
+          "width": 125,
+          "winWidth": 820,
+          "overflowBy": 174,
+          "snippet": "Shredding Machine"
+        }
+      ],
+      "smallTargetsCount": 25,
+      "smallTargetsSample": [
+        {
+          "tag": "BUTTON",
+          "text": "←",
+          "width": 30,
+          "height": 30
+        },
+        {
+          "tag": "BUTTON",
+          "text": "→",
+          "width": 30,
+          "height": 30
+        },
+        {
+          "tag": "A",
+          "text": "4 inch Stainless Ste",
+          "width": 296,
+          "height": 24
+        }
+      ]
+    },
+    "consoleErrors": [],
+    "navMenuTest": null,
+    "screenshot": null,
+    "passed": true
+  },
+  {
+    "route": "/",
+    "routeName": "home",
+    "viewport": "Tablet-1024x768",
+    "category": "Tablet",
+    "dimensions": "1024x768",
+    "status": 200,
+    "loadError": null,
+    "metrics": {
+      "winWidth": 1024,
+      "scrollWidth": 1024,
+      "hasHorizontalOverflow": false,
+      "overflowAmount": 0,
+      "overflowElements": [
+        {
+          "selector": "div.catalog-tabs",
+          "right": 1947,
+          "width": 1915,
+          "winWidth": 1024,
+          "overflowBy": 923,
+          "snippet": "All Products 83 Chipper Knives"
+        },
+        {
+          "selector": "button.cat-tab",
+          "right": 1057,
+          "width": 223,
+          "winWidth": 1024,
+          "overflowBy": 33,
+          "snippet": "Shredding Machine 12"
+        },
+        {
+          "selector": "span.cat-count",
+          "right": 1038,
+          "width": 29,
+          "winWidth": 1024,
+          "overflowBy": 14,
+          "snippet": "12"
+        },
+        {
+          "selector": "button.cat-tab",
+          "right": 1253,
+          "width": 188,
+          "winWidth": 1024,
+          "overflowBy": 229,
+          "snippet": "Grinder Blades 3"
+        },
+        {
+          "selector": "svg",
+          "right": 1100,
+          "width": 16,
+          "winWidth": 1024,
+          "overflowBy": 76,
+          "snippet": ""
+        }
+      ],
+      "smallTargetsCount": 25,
+      "smallTargetsSample": [
+        {
+          "tag": "BUTTON",
+          "text": "←",
+          "width": 30,
+          "height": 30
+        },
+        {
+          "tag": "BUTTON",
+          "text": "→",
+          "width": 30,
+          "height": 30
+        },
+        {
+          "tag": "A",
+          "text": "4 inch Stainless Ste",
+          "width": 296,
+          "height": 24
+        }
+      ]
+    },
+    "consoleErrors": [],
+    "navMenuTest": null,
+    "screenshot": null,
+    "passed": true
+  },
+  {
+    "route": "/",
+    "routeName": "home",
+    "viewport": "Laptop-1280x720",
+    "category": "Laptop/Desktop",
+    "dimensions": "1280x720",
+    "status": 200,
+    "loadError": null,
+    "metrics": {
+      "winWidth": 1280,
+      "scrollWidth": 1280,
+      "hasHorizontalOverflow": false,
+      "overflowAmount": 0,
+      "overflowElements": [
+        {
+          "selector": "div.catalog-tabs",
+          "right": 1966,
+          "width": 1915,
+          "winWidth": 1280,
+          "overflowBy": 686,
+          "snippet": "All Products 83 Chipper Knives"
+        },
+        {
+          "selector": "button.cat-tab",
+          "right": 1489,
+          "width": 208,
+          "winWidth": 1280,
+          "overflowBy": 209,
+          "snippet": "Granulator Blades 3"
+        },
+        {
+          "selector": "svg",
+          "right": 1316,
+          "width": 16,
+          "winWidth": 1280,
+          "overflowBy": 36,
+          "snippet": ""
+        },
+        {
+          "selector": "path",
+          "right": 1308,
+          "width": 6,
+          "winWidth": 1280,
+          "overflowBy": 28,
+          "snippet": ""
+        },
+        {
+          "selector": "path",
+          "right": 1310,
+          "width": 3,
+          "winWidth": 1280,
+          "overflowBy": 30,
+          "snippet": ""
+        }
+      ],
+      "smallTargetsCount": 30,
+      "smallTargetsSample": [
+        {
+          "tag": "A",
+          "text": "Home",
+          "width": 40,
+          "height": 23
+        },
+        {
+          "tag": "A",
+          "text": "Products & Services",
+          "width": 130,
+          "height": 23
+        },
+        {
+          "tag": "A",
+          "text": "About Us",
+          "width": 61,
+          "height": 23
+        }
+      ]
+    },
+    "consoleErrors": [],
+    "navMenuTest": null,
+    "screenshot": null,
+    "passed": true
+  },
+  {
+    "route": "/",
+    "routeName": "home",
+    "viewport": "Laptop-1366x768",
+    "category": "Laptop/Desktop",
+    "dimensions": "1366x768",
+    "status": 200,
+    "loadError": null,
+    "metrics": {
+      "winWidth": 1366,
+      "scrollWidth": 1366,
+      "hasHorizontalOverflow": false,
+      "overflowAmount": 0,
+      "overflowElements": [
+        {
+          "selector": "div.catalog-tabs",
+          "right": 2008,
+          "width": 1915,
+          "winWidth": 1366,
+          "overflowBy": 642,
+          "snippet": "All Products 83 Chipper Knives"
+        },
+        {
+          "selector": "button.cat-tab",
+          "right": 1531,
+          "width": 208,
+          "winWidth": 1366,
+          "overflowBy": 165,
+          "snippet": "Granulator Blades 3"
+        },
+        {
+          "selector": "span",
+          "right": 1482,
+          "width": 117,
+          "winWidth": 1366,
+          "overflowBy": 116,
+          "snippet": "Granulator Blades"
+        },
+        {
+          "selector": "span.cat-count",
+          "right": 1512,
+          "width": 21,
+          "winWidth": 1366,
+          "overflowBy": 146,
+          "snippet": "3"
+        },
+        {
+          "selector": "button.cat-tab",
+          "right": 1783,
+          "width": 244,
+          "winWidth": 1366,
+          "overflowBy": 417,
+          "snippet": "VMC Machine Job Work 7"
+        }
+      ],
+      "smallTargetsCount": 30,
+      "smallTargetsSample": [
+        {
+          "tag": "A",
+          "text": "Home",
+          "width": 40,
+          "height": 23
+        },
+        {
+          "tag": "A",
+          "text": "Products & Services",
+          "width": 130,
+          "height": 23
+        },
+        {
+          "tag": "A",
+          "text": "About Us",
+          "width": 61,
+          "height": 23
+        }
+      ]
+    },
+    "consoleErrors": [],
+    "navMenuTest": null,
+    "screenshot": null,
+    "passed": true
+  },
+  {
+    "route": "/",
+    "routeName": "home",
+    "viewport": "Desktop-1440x900",
+    "category": "Laptop/Desktop",
+    "dimensions": "1440x900",
+    "status": 200,
+    "loadError": null,
+    "metrics": {
+      "winWidth": 1440,
+      "scrollWidth": 1440,
+      "hasHorizontalOverflow": false,
+      "overflowAmount": 0,
+      "overflowElements": [
+        {
+          "selector": "div.catalog-tabs",
+          "right": 2045,
+          "width": 1915,
+          "winWidth": 1440,
+          "overflowBy": 605,
+          "snippet": "All Products 83 Chipper Knives"
+        },
+        {
+          "selector": "button.cat-tab",
+          "right": 1568,
+          "width": 208,
+          "winWidth": 1440,
+          "overflowBy": 128,
+          "snippet": "Granulator Blades 3"
+        },
+        {
+          "selector": "span",
+          "right": 1519,
+          "width": 117,
+          "winWidth": 1440,
+          "overflowBy": 79,
+          "snippet": "Granulator Blades"
+        },
+        {
+          "selector": "span.cat-count",
+          "right": 1549,
+          "width": 21,
+          "winWidth": 1440,
+          "overflowBy": 109,
+          "snippet": "3"
+        },
+        {
+          "selector": "button.cat-tab",
+          "right": 1820,
+          "width": 244,
+          "winWidth": 1440,
+          "overflowBy": 380,
+          "snippet": "VMC Machine Job Work 7"
+        }
+      ],
+      "smallTargetsCount": 30,
+      "smallTargetsSample": [
+        {
+          "tag": "A",
+          "text": "Home",
+          "width": 40,
+          "height": 23
+        },
+        {
+          "tag": "A",
+          "text": "Products & Services",
+          "width": 130,
+          "height": 23
+        },
+        {
+          "tag": "A",
+          "text": "About Us",
+          "width": 61,
+          "height": 23
+        }
+      ]
+    },
+    "consoleErrors": [],
+    "navMenuTest": null,
+    "screenshot": "artifacts/responsive-audit/before/home_Desktop-1440x900.png",
+    "passed": true
+  },
+  {
+    "route": "/",
+    "routeName": "home",
+    "viewport": "Desktop-1920x1080",
+    "category": "Laptop/Desktop",
+    "dimensions": "1920x1080",
+    "status": 200,
+    "loadError": null,
+    "metrics": {
+      "winWidth": 1920,
+      "scrollWidth": 1920,
+      "hasHorizontalOverflow": false,
+      "overflowAmount": 0,
+      "overflowElements": [
+        {
+          "selector": "div.catalog-tabs",
+          "right": 2285,
+          "width": 1915,
+          "winWidth": 1920,
+          "overflowBy": 365,
+          "snippet": "All Products 83 Chipper Knives"
+        },
+        {
+          "selector": "button.cat-tab",
+          "right": 2060,
+          "width": 244,
+          "winWidth": 1920,
+          "overflowBy": 140,
+          "snippet": "VMC Machine Job Work 7"
+        },
+        {
+          "selector": "span",
+          "right": 2012,
+          "width": 153,
+          "winWidth": 1920,
+          "overflowBy": 92,
+          "snippet": "VMC Machine Job Work"
+        },
+        {
+          "selector": "span.cat-count",
+          "right": 2041,
+          "width": 21,
+          "winWidth": 1920,
+          "overflowBy": 121,
+          "snippet": "7"
+        },
+        {
+          "selector": "button.cat-tab",
+          "right": 2285,
+          "width": 217,
+          "winWidth": 1920,
+          "overflowBy": 365,
+          "snippet": "Chaff Cutter Blades 2"
+        }
+      ],
+      "smallTargetsCount": 30,
+      "smallTargetsSample": [
+        {
+          "tag": "A",
+          "text": "Home",
+          "width": 40,
+          "height": 23
+        },
+        {
+          "tag": "A",
+          "text": "Products & Services",
+          "width": 130,
+          "height": 23
+        },
+        {
+          "tag": "A",
+          "text": "About Us",
+          "width": 61,
+          "height": 23
+        }
+      ]
+    },
+    "consoleErrors": [],
+    "navMenuTest": null,
+    "screenshot": null,
+    "passed": true
+  },
+  {
+    "route": "/products",
+    "routeName": "products",
+    "viewport": "Mobile-320x568",
+    "category": "Mobile",
+    "dimensions": "320x568",
+    "status": 200,
+    "loadError": null,
+    "metrics": {
+      "winWidth": 320,
+      "scrollWidth": 320,
+      "hasHorizontalOverflow": false,
+      "overflowAmount": 0,
+      "overflowElements": [],
+      "smallTargetsCount": 11,
+      "smallTargetsSample": [
+        {
+          "tag": "A",
+          "text": "Home",
+          "width": 36,
+          "height": 21
+        },
+        {
+          "tag": "A",
+          "text": "Wood Chipper Knives",
+          "width": 187,
+          "height": 23
+        },
+        {
+          "tag": "A",
+          "text": "Mild Steel Shredder ",
+          "width": 224,
+          "height": 23
+        }
+      ]
+    },
+    "consoleErrors": [],
+    "navMenuTest": null,
+    "screenshot": "artifacts/responsive-audit/before/products_Mobile-320x568.png",
+    "passed": true
+  },
+  {
+    "route": "/products",
+    "routeName": "products",
+    "viewport": "Mobile-360x800",
+    "category": "Mobile",
+    "dimensions": "360x800",
+    "status": 200,
+    "loadError": null,
+    "metrics": {
+      "winWidth": 360,
+      "scrollWidth": 360,
+      "hasHorizontalOverflow": false,
+      "overflowAmount": 0,
+      "overflowElements": [],
+      "smallTargetsCount": 16,
+      "smallTargetsSample": [
+        {
+          "tag": "A",
+          "text": "Home",
+          "width": 36,
+          "height": 21
+        },
+        {
+          "tag": "A",
+          "text": "2 Slot Wood Chipper ",
+          "width": 241,
+          "height": 23
+        },
+        {
+          "tag": "A",
+          "text": "Stainless Steel Chip",
+          "width": 258,
+          "height": 23
+        }
+      ]
+    },
+    "consoleErrors": [],
+    "navMenuTest": null,
+    "screenshot": "artifacts/responsive-audit/before/products_Mobile-360x800.png",
+    "passed": true
+  },
+  {
+    "route": "/products",
+    "routeName": "products",
+    "viewport": "Mobile-375x812",
+    "category": "Mobile",
+    "dimensions": "375x812",
+    "status": 200,
+    "loadError": null,
+    "metrics": {
+      "winWidth": 375,
+      "scrollWidth": 375,
+      "hasHorizontalOverflow": false,
+      "overflowAmount": 0,
+      "overflowElements": [],
+      "smallTargetsCount": 17,
+      "smallTargetsSample": [
+        {
+          "tag": "A",
+          "text": "Home",
+          "width": 36,
+          "height": 21
+        },
+        {
+          "tag": "A",
+          "text": "2 Slot Wood Chipper ",
+          "width": 241,
+          "height": 23
+        },
+        {
+          "tag": "A",
+          "text": "Stainless Steel Chip",
+          "width": 258,
+          "height": 23
+        }
+      ]
+    },
+    "consoleErrors": [],
+    "navMenuTest": null,
+    "screenshot": null,
+    "passed": true
+  },
+  {
+    "route": "/products",
+    "routeName": "products",
+    "viewport": "Mobile-390x844",
+    "category": "Mobile",
+    "dimensions": "390x844",
+    "status": 200,
+    "loadError": null,
+    "metrics": {
+      "winWidth": 390,
+      "scrollWidth": 390,
+      "hasHorizontalOverflow": false,
+      "overflowAmount": 0,
+      "overflowElements": [],
+      "smallTargetsCount": 19,
+      "smallTargetsSample": [
+        {
+          "tag": "A",
+          "text": "Home",
+          "width": 36,
+          "height": 21
+        },
+        {
+          "tag": "A",
+          "text": "2 Slot Wood Chipper ",
+          "width": 241,
+          "height": 23
+        },
+        {
+          "tag": "A",
+          "text": "Stainless Steel Chip",
+          "width": 258,
+          "height": 23
+        }
+      ]
+    },
+    "consoleErrors": [],
+    "navMenuTest": null,
+    "screenshot": null,
+    "passed": true
+  },
+  {
+    "route": "/products",
+    "routeName": "products",
+    "viewport": "Mobile-430x932",
+    "category": "Mobile",
+    "dimensions": "430x932",
+    "status": 200,
+    "loadError": null,
+    "metrics": {
+      "winWidth": 430,
+      "scrollWidth": 430,
+      "hasHorizontalOverflow": false,
+      "overflowAmount": 0,
+      "overflowElements": [],
+      "smallTargetsCount": 25,
+      "smallTargetsSample": [
+        {
+          "tag": "A",
+          "text": "Home",
+          "width": 36,
+          "height": 21
+        },
+        {
+          "tag": "A",
+          "text": "4 inch Stainless Ste",
+          "width": 303,
+          "height": 23
+        },
+        {
+          "tag": "A",
+          "text": "2 Slot Wood Chipper ",
+          "width": 241,
+          "height": 23
+        }
+      ]
+    },
+    "consoleErrors": [],
+    "navMenuTest": null,
+    "screenshot": null,
+    "passed": true
+  },
+  {
+    "route": "/products",
+    "routeName": "products",
+    "viewport": "Tablet-600x960",
+    "category": "Tablet",
+    "dimensions": "600x960",
+    "status": 200,
+    "loadError": null,
+    "metrics": {
+      "winWidth": 600,
+      "scrollWidth": 600,
+      "hasHorizontalOverflow": false,
+      "overflowAmount": 0,
+      "overflowElements": [],
+      "smallTargetsCount": 28,
+      "smallTargetsSample": [
+        {
+          "tag": "A",
+          "text": "Home",
+          "width": 36,
+          "height": 21
+        },
+        {
+          "tag": "A",
+          "text": "4 inch Stainless Ste",
+          "width": 303,
+          "height": 23
+        },
+        {
+          "tag": "A",
+          "text": "2 Slot Wood Chipper ",
+          "width": 241,
+          "height": 23
+        }
+      ]
+    },
+    "consoleErrors": [],
+    "navMenuTest": null,
+    "screenshot": null,
+    "passed": true
+  },
+  {
+    "route": "/products",
+    "routeName": "products",
+    "viewport": "Tablet-768x1024",
+    "category": "Tablet",
+    "dimensions": "768x1024",
+    "status": 200,
+    "loadError": null,
+    "metrics": {
+      "winWidth": 768,
+      "scrollWidth": 768,
+      "hasHorizontalOverflow": false,
+      "overflowAmount": 0,
+      "overflowElements": [],
+      "smallTargetsCount": 24,
+      "smallTargetsSample": [
+        {
+          "tag": "A",
+          "text": "Home",
+          "width": 36,
+          "height": 21
+        },
+        {
+          "tag": "A",
+          "text": "4 inch Stainless Ste",
+          "width": 303,
+          "height": 23
+        },
+        {
+          "tag": "A",
+          "text": "2 Slot Wood Chipper ",
+          "width": 241,
+          "height": 23
+        }
+      ]
+    },
+    "consoleErrors": [],
+    "navMenuTest": null,
+    "screenshot": "artifacts/responsive-audit/before/products_Tablet-768x1024.png",
+    "passed": true
+  },
+  {
+    "route": "/products",
+    "routeName": "products",
+    "viewport": "Tablet-820x1180",
+    "category": "Tablet",
+    "dimensions": "820x1180",
+    "status": 200,
+    "loadError": null,
+    "metrics": {
+      "winWidth": 820,
+      "scrollWidth": 820,
+      "hasHorizontalOverflow": false,
+      "overflowAmount": 0,
+      "overflowElements": [
+        {
+          "selector": "div.catalog-tabs",
+          "right": 1940,
+          "width": 1915,
+          "winWidth": 820,
+          "overflowBy": 1120,
+          "snippet": "All Products 83 Chipper Knives"
+        },
+        {
+          "selector": "button.cat-tab",
+          "right": 1050,
+          "width": 223,
+          "winWidth": 820,
+          "overflowBy": 230,
+          "snippet": "Shredding Machine 12"
+        },
+        {
+          "selector": "svg",
+          "right": 862,
+          "width": 16,
+          "winWidth": 820,
+          "overflowBy": 42,
+          "snippet": ""
+        },
+        {
+          "selector": "path",
+          "right": 860,
+          "width": 13,
+          "winWidth": 820,
+          "overflowBy": 40,
+          "snippet": ""
+        },
+        {
+          "selector": "span",
+          "right": 994,
+          "width": 125,
+          "winWidth": 820,
+          "overflowBy": 174,
+          "snippet": "Shredding Machine"
+        }
+      ],
+      "smallTargetsCount": 26,
+      "smallTargetsSample": [
+        {
+          "tag": "A",
+          "text": "Home",
+          "width": 36,
+          "height": 21
+        },
+        {
+          "tag": "A",
+          "text": "4 inch Stainless Ste",
+          "width": 303,
+          "height": 23
+        },
+        {
+          "tag": "A",
+          "text": "2 Slot Wood Chipper ",
+          "width": 241,
+          "height": 23
+        }
+      ]
+    },
+    "consoleErrors": [],
+    "navMenuTest": null,
+    "screenshot": null,
+    "passed": true
+  },
+  {
+    "route": "/products",
+    "routeName": "products",
+    "viewport": "Tablet-1024x768",
+    "category": "Tablet",
+    "dimensions": "1024x768",
+    "status": 200,
+    "loadError": null,
+    "metrics": {
+      "winWidth": 1024,
+      "scrollWidth": 1024,
+      "hasHorizontalOverflow": false,
+      "overflowAmount": 0,
+      "overflowElements": [
+        {
+          "selector": "div.catalog-tabs",
+          "right": 1947,
+          "width": 1915,
+          "winWidth": 1024,
+          "overflowBy": 923,
+          "snippet": "All Products 83 Chipper Knives"
+        },
+        {
+          "selector": "button.cat-tab",
+          "right": 1057,
+          "width": 223,
+          "winWidth": 1024,
+          "overflowBy": 33,
+          "snippet": "Shredding Machine 12"
+        },
+        {
+          "selector": "span.cat-count",
+          "right": 1038,
+          "width": 29,
+          "winWidth": 1024,
+          "overflowBy": 14,
+          "snippet": "12"
+        },
+        {
+          "selector": "button.cat-tab",
+          "right": 1253,
+          "width": 188,
+          "winWidth": 1024,
+          "overflowBy": 229,
+          "snippet": "Grinder Blades 3"
+        },
+        {
+          "selector": "svg",
+          "right": 1100,
+          "width": 16,
+          "winWidth": 1024,
+          "overflowBy": 76,
+          "snippet": ""
+        }
+      ],
+      "smallTargetsCount": 27,
+      "smallTargetsSample": [
+        {
+          "tag": "A",
+          "text": "Home",
+          "width": 36,
+          "height": 21
+        },
+        {
+          "tag": "A",
+          "text": "4 inch Stainless Ste",
+          "width": 303,
+          "height": 23
+        },
+        {
+          "tag": "A",
+          "text": "2 Slot Wood Chipper ",
+          "width": 241,
+          "height": 23
+        }
+      ]
+    },
+    "consoleErrors": [],
+    "navMenuTest": null,
+    "screenshot": null,
+    "passed": true
+  },
+  {
+    "route": "/products",
+    "routeName": "products",
+    "viewport": "Laptop-1280x720",
+    "category": "Laptop/Desktop",
+    "dimensions": "1280x720",
+    "status": 200,
+    "loadError": null,
+    "metrics": {
+      "winWidth": 1280,
+      "scrollWidth": 1280,
+      "hasHorizontalOverflow": false,
+      "overflowAmount": 0,
+      "overflowElements": [
+        {
+          "selector": "div.catalog-tabs",
+          "right": 1966,
+          "width": 1915,
+          "winWidth": 1280,
+          "overflowBy": 686,
+          "snippet": "All Products 83 Chipper Knives"
+        },
+        {
+          "selector": "button.cat-tab",
+          "right": 1489,
+          "width": 208,
+          "winWidth": 1280,
+          "overflowBy": 209,
+          "snippet": "Granulator Blades 3"
+        },
+        {
+          "selector": "svg",
+          "right": 1316,
+          "width": 16,
+          "winWidth": 1280,
+          "overflowBy": 36,
+          "snippet": ""
+        },
+        {
+          "selector": "path",
+          "right": 1308,
+          "width": 6,
+          "winWidth": 1280,
+          "overflowBy": 28,
+          "snippet": ""
+        },
+        {
+          "selector": "path",
+          "right": 1310,
+          "width": 3,
+          "winWidth": 1280,
+          "overflowBy": 30,
+          "snippet": ""
+        }
+      ],
+      "smallTargetsCount": 31,
+      "smallTargetsSample": [
+        {
+          "tag": "A",
+          "text": "Home",
+          "width": 40,
+          "height": 23
+        },
+        {
+          "tag": "A",
+          "text": "Products & Services",
+          "width": 130,
+          "height": 23
+        },
+        {
+          "tag": "A",
+          "text": "About Us",
+          "width": 61,
+          "height": 23
+        }
+      ]
+    },
+    "consoleErrors": [],
+    "navMenuTest": null,
+    "screenshot": null,
+    "passed": true
+  },
+  {
+    "route": "/products",
+    "routeName": "products",
+    "viewport": "Laptop-1366x768",
+    "category": "Laptop/Desktop",
+    "dimensions": "1366x768",
+    "status": 200,
+    "loadError": null,
+    "metrics": {
+      "winWidth": 1366,
+      "scrollWidth": 1366,
+      "hasHorizontalOverflow": false,
+      "overflowAmount": 0,
+      "overflowElements": [
+        {
+          "selector": "div.catalog-tabs",
+          "right": 2008,
+          "width": 1915,
+          "winWidth": 1366,
+          "overflowBy": 642,
+          "snippet": "All Products 83 Chipper Knives"
+        },
+        {
+          "selector": "button.cat-tab",
+          "right": 1531,
+          "width": 208,
+          "winWidth": 1366,
+          "overflowBy": 165,
+          "snippet": "Granulator Blades 3"
+        },
+        {
+          "selector": "span",
+          "right": 1482,
+          "width": 117,
+          "winWidth": 1366,
+          "overflowBy": 116,
+          "snippet": "Granulator Blades"
+        },
+        {
+          "selector": "span.cat-count",
+          "right": 1512,
+          "width": 21,
+          "winWidth": 1366,
+          "overflowBy": 146,
+          "snippet": "3"
+        },
+        {
+          "selector": "button.cat-tab",
+          "right": 1783,
+          "width": 244,
+          "winWidth": 1366,
+          "overflowBy": 417,
+          "snippet": "VMC Machine Job Work 7"
+        }
+      ],
+      "smallTargetsCount": 31,
+      "smallTargetsSample": [
+        {
+          "tag": "A",
+          "text": "Home",
+          "width": 40,
+          "height": 23
+        },
+        {
+          "tag": "A",
+          "text": "Products & Services",
+          "width": 130,
+          "height": 23
+        },
+        {
+          "tag": "A",
+          "text": "About Us",
+          "width": 61,
+          "height": 23
+        }
+      ]
+    },
+    "consoleErrors": [],
+    "navMenuTest": null,
+    "screenshot": null,
+    "passed": true
+  },
+  {
+    "route": "/products",
+    "routeName": "products",
+    "viewport": "Desktop-1440x900",
+    "category": "Laptop/Desktop",
+    "dimensions": "1440x900",
+    "status": 200,
+    "loadError": null,
+    "metrics": {
+      "winWidth": 1440,
+      "scrollWidth": 1440,
+      "hasHorizontalOverflow": false,
+      "overflowAmount": 0,
+      "overflowElements": [
+        {
+          "selector": "div.catalog-tabs",
+          "right": 2045,
+          "width": 1915,
+          "winWidth": 1440,
+          "overflowBy": 605,
+          "snippet": "All Products 83 Chipper Knives"
+        },
+        {
+          "selector": "button.cat-tab",
+          "right": 1568,
+          "width": 208,
+          "winWidth": 1440,
+          "overflowBy": 128,
+          "snippet": "Granulator Blades 3"
+        },
+        {
+          "selector": "span",
+          "right": 1519,
+          "width": 117,
+          "winWidth": 1440,
+          "overflowBy": 79,
+          "snippet": "Granulator Blades"
+        },
+        {
+          "selector": "span.cat-count",
+          "right": 1549,
+          "width": 21,
+          "winWidth": 1440,
+          "overflowBy": 109,
+          "snippet": "3"
+        },
+        {
+          "selector": "button.cat-tab",
+          "right": 1820,
+          "width": 244,
+          "winWidth": 1440,
+          "overflowBy": 380,
+          "snippet": "VMC Machine Job Work 7"
+        }
+      ],
+      "smallTargetsCount": 31,
+      "smallTargetsSample": [
+        {
+          "tag": "A",
+          "text": "Home",
+          "width": 40,
+          "height": 23
+        },
+        {
+          "tag": "A",
+          "text": "Products & Services",
+          "width": 130,
+          "height": 23
+        },
+        {
+          "tag": "A",
+          "text": "About Us",
+          "width": 61,
+          "height": 23
+        }
+      ]
+    },
+    "consoleErrors": [],
+    "navMenuTest": null,
+    "screenshot": "artifacts/responsive-audit/before/products_Desktop-1440x900.png",
+    "passed": true
+  },
+  {
+    "route": "/products",
+    "routeName": "products",
+    "viewport": "Desktop-1920x1080",
+    "category": "Laptop/Desktop",
+    "dimensions": "1920x1080",
+    "status": 200,
+    "loadError": null,
+    "metrics": {
+      "winWidth": 1920,
+      "scrollWidth": 1920,
+      "hasHorizontalOverflow": false,
+      "overflowAmount": 0,
+      "overflowElements": [
+        {
+          "selector": "div.catalog-tabs",
+          "right": 2285,
+          "width": 1915,
+          "winWidth": 1920,
+          "overflowBy": 365,
+          "snippet": "All Products 83 Chipper Knives"
+        },
+        {
+          "selector": "button.cat-tab",
+          "right": 2060,
+          "width": 244,
+          "winWidth": 1920,
+          "overflowBy": 140,
+          "snippet": "VMC Machine Job Work 7"
+        },
+        {
+          "selector": "span",
+          "right": 2012,
+          "width": 153,
+          "winWidth": 1920,
+          "overflowBy": 92,
+          "snippet": "VMC Machine Job Work"
+        },
+        {
+          "selector": "span.cat-count",
+          "right": 2041,
+          "width": 21,
+          "winWidth": 1920,
+          "overflowBy": 121,
+          "snippet": "7"
+        },
+        {
+          "selector": "button.cat-tab",
+          "right": 2285,
+          "width": 217,
+          "winWidth": 1920,
+          "overflowBy": 365,
+          "snippet": "Chaff Cutter Blades 2"
+        }
+      ],
+      "smallTargetsCount": 31,
+      "smallTargetsSample": [
+        {
+          "tag": "A",
+          "text": "Home",
+          "width": 40,
+          "height": 23
+        },
+        {
+          "tag": "A",
+          "text": "Products & Services",
+          "width": 130,
+          "height": 23
+        },
+        {
+          "tag": "A",
+          "text": "About Us",
+          "width": 61,
+          "height": 23
+        }
+      ]
+    },
+    "consoleErrors": [],
+    "navMenuTest": null,
+    "screenshot": null,
+    "passed": true
+  },
+  {
+    "route": "/products/4-inch-stainless-steel-chipper-knife",
+    "routeName": "product-detail",
+    "viewport": "Mobile-320x568",
+    "category": "Mobile",
+    "dimensions": "320x568",
+    "status": 200,
+    "loadError": null,
+    "metrics": {
+      "winWidth": 320,
+      "scrollWidth": 320,
+      "hasHorizontalOverflow": false,
+      "overflowAmount": 0,
+      "overflowElements": [],
+      "smallTargetsCount": 10,
+      "smallTargetsSample": [
+        {
+          "tag": "A",
+          "text": "Home",
+          "width": 36,
+          "height": 17
+        },
+        {
+          "tag": "A",
+          "text": "Products",
+          "width": 52,
+          "height": 17
+        },
+        {
+          "tag": "A",
+          "text": "+91 99447 44509",
+          "width": 114,
+          "height": 19
+        }
+      ]
+    },
+    "consoleErrors": [],
+    "navMenuTest": null,
+    "screenshot": "artifacts/responsive-audit/before/product-detail_Mobile-320x568.png",
+    "passed": true
+  },
+  {
+    "route": "/products/4-inch-stainless-steel-chipper-knife",
+    "routeName": "product-detail",
+    "viewport": "Mobile-360x800",
+    "category": "Mobile",
+    "dimensions": "360x800",
+    "status": 200,
+    "loadError": null,
+    "metrics": {
+      "winWidth": 360,
+      "scrollWidth": 360,
+      "hasHorizontalOverflow": false,
+      "overflowAmount": 0,
+      "overflowElements": [],
+      "smallTargetsCount": 10,
+      "smallTargetsSample": [
+        {
+          "tag": "A",
+          "text": "Home",
+          "width": 36,
+          "height": 17
+        },
+        {
+          "tag": "A",
+          "text": "Products",
+          "width": 52,
+          "height": 17
+        },
+        {
+          "tag": "A",
+          "text": "+91 99447 44509",
+          "width": 114,
+          "height": 19
+        }
+      ]
+    },
+    "consoleErrors": [],
+    "navMenuTest": null,
+    "screenshot": "artifacts/responsive-audit/before/product-detail_Mobile-360x800.png",
+    "passed": true
+  },
+  {
+    "route": "/products/4-inch-stainless-steel-chipper-knife",
+    "routeName": "product-detail",
+    "viewport": "Mobile-375x812",
+    "category": "Mobile",
+    "dimensions": "375x812",
+    "status": 200,
+    "loadError": null,
+    "metrics": {
+      "winWidth": 375,
+      "scrollWidth": 375,
+      "hasHorizontalOverflow": false,
+      "overflowAmount": 0,
+      "overflowElements": [],
+      "smallTargetsCount": 10,
+      "smallTargetsSample": [
+        {
+          "tag": "A",
+          "text": "Home",
+          "width": 36,
+          "height": 17
+        },
+        {
+          "tag": "A",
+          "text": "Products",
+          "width": 52,
+          "height": 17
+        },
+        {
+          "tag": "A",
+          "text": "+91 99447 44509",
+          "width": 114,
+          "height": 19
+        }
+      ]
+    },
+    "consoleErrors": [],
+    "navMenuTest": null,
+    "screenshot": null,
+    "passed": true
+  },
+  {
+    "route": "/products/4-inch-stainless-steel-chipper-knife",
+    "routeName": "product-detail",
+    "viewport": "Mobile-390x844",
+    "category": "Mobile",
+    "dimensions": "390x844",
+    "status": 200,
+    "loadError": null,
+    "metrics": {
+      "winWidth": 390,
+      "scrollWidth": 390,
+      "hasHorizontalOverflow": false,
+      "overflowAmount": 0,
+      "overflowElements": [],
+      "smallTargetsCount": 10,
+      "smallTargetsSample": [
+        {
+          "tag": "A",
+          "text": "Home",
+          "width": 36,
+          "height": 17
+        },
+        {
+          "tag": "A",
+          "text": "Products",
+          "width": 52,
+          "height": 17
+        },
+        {
+          "tag": "A",
+          "text": "+91 99447 44509",
+          "width": 114,
+          "height": 19
+        }
+      ]
+    },
+    "consoleErrors": [],
+    "navMenuTest": null,
+    "screenshot": null,
+    "passed": true
+  },
+  {
+    "route": "/products/4-inch-stainless-steel-chipper-knife",
+    "routeName": "product-detail",
+    "viewport": "Mobile-430x932",
+    "category": "Mobile",
+    "dimensions": "430x932",
+    "status": 200,
+    "loadError": null,
+    "metrics": {
+      "winWidth": 430,
+      "scrollWidth": 430,
+      "hasHorizontalOverflow": false,
+      "overflowAmount": 0,
+      "overflowElements": [],
+      "smallTargetsCount": 10,
+      "smallTargetsSample": [
+        {
+          "tag": "A",
+          "text": "Home",
+          "width": 36,
+          "height": 17
+        },
+        {
+          "tag": "A",
+          "text": "Products",
+          "width": 52,
+          "height": 17
+        },
+        {
+          "tag": "A",
+          "text": "+91 99447 44509",
+          "width": 114,
+          "height": 19
+        }
+      ]
+    },
+    "consoleErrors": [],
+    "navMenuTest": null,
+    "screenshot": null,
+    "passed": true
+  },
+  {
+    "route": "/products/4-inch-stainless-steel-chipper-knife",
+    "routeName": "product-detail",
+    "viewport": "Tablet-600x960",
+    "category": "Tablet",
+    "dimensions": "600x960",
+    "status": 200,
+    "loadError": null,
+    "metrics": {
+      "winWidth": 600,
+      "scrollWidth": 600,
+      "hasHorizontalOverflow": false,
+      "overflowAmount": 0,
+      "overflowElements": [],
+      "smallTargetsCount": 11,
+      "smallTargetsSample": [
+        {
+          "tag": "A",
+          "text": "Home",
+          "width": 36,
+          "height": 17
+        },
+        {
+          "tag": "A",
+          "text": "Products",
+          "width": 52,
+          "height": 17
+        },
+        {
+          "tag": "A",
+          "text": "📍 Sivanandhapuram, ",
+          "width": 430,
+          "height": 19
+        }
+      ]
+    },
+    "consoleErrors": [],
+    "navMenuTest": null,
+    "screenshot": null,
+    "passed": true
+  },
+  {
+    "route": "/products/4-inch-stainless-steel-chipper-knife",
+    "routeName": "product-detail",
+    "viewport": "Tablet-768x1024",
+    "category": "Tablet",
+    "dimensions": "768x1024",
+    "status": 200,
+    "loadError": null,
+    "metrics": {
+      "winWidth": 768,
+      "scrollWidth": 768,
+      "hasHorizontalOverflow": false,
+      "overflowAmount": 0,
+      "overflowElements": [],
+      "smallTargetsCount": 11,
+      "smallTargetsSample": [
+        {
+          "tag": "A",
+          "text": "Home",
+          "width": 36,
+          "height": 17
+        },
+        {
+          "tag": "A",
+          "text": "Products",
+          "width": 52,
+          "height": 17
+        },
+        {
+          "tag": "A",
+          "text": "📍 Sivanandhapuram, ",
+          "width": 430,
+          "height": 19
+        }
+      ]
+    },
+    "consoleErrors": [],
+    "navMenuTest": null,
+    "screenshot": "artifacts/responsive-audit/before/product-detail_Tablet-768x1024.png",
+    "passed": true
+  },
+  {
+    "route": "/products/4-inch-stainless-steel-chipper-knife",
+    "routeName": "product-detail",
+    "viewport": "Tablet-820x1180",
+    "category": "Tablet",
+    "dimensions": "820x1180",
+    "status": 200,
+    "loadError": null,
+    "metrics": {
+      "winWidth": 820,
+      "scrollWidth": 820,
+      "hasHorizontalOverflow": false,
+      "overflowAmount": 0,
+      "overflowElements": [],
+      "smallTargetsCount": 11,
+      "smallTargetsSample": [
+        {
+          "tag": "A",
+          "text": "Home",
+          "width": 36,
+          "height": 17
+        },
+        {
+          "tag": "A",
+          "text": "Products",
+          "width": 52,
+          "height": 17
+        },
+        {
+          "tag": "A",
+          "text": "📍 Sivanandhapuram, ",
+          "width": 430,
+          "height": 19
+        }
+      ]
+    },
+    "consoleErrors": [],
+    "navMenuTest": null,
+    "screenshot": null,
+    "passed": true
+  },
+  {
+    "route": "/products/4-inch-stainless-steel-chipper-knife",
+    "routeName": "product-detail",
+    "viewport": "Tablet-1024x768",
+    "category": "Tablet",
+    "dimensions": "1024x768",
+    "status": 200,
+    "loadError": null,
+    "metrics": {
+      "winWidth": 1024,
+      "scrollWidth": 1024,
+      "hasHorizontalOverflow": false,
+      "overflowAmount": 0,
+      "overflowElements": [],
+      "smallTargetsCount": 10,
+      "smallTargetsSample": [
+        {
+          "tag": "A",
+          "text": "Home",
+          "width": 36,
+          "height": 17
+        },
+        {
+          "tag": "A",
+          "text": "Products",
+          "width": 52,
+          "height": 17
+        },
+        {
+          "tag": "A",
+          "text": "+91 99447 44509",
+          "width": 114,
+          "height": 19
+        }
+      ]
+    },
+    "consoleErrors": [],
+    "navMenuTest": null,
+    "screenshot": null,
+    "passed": true
+  },
+  {
+    "route": "/products/4-inch-stainless-steel-chipper-knife",
+    "routeName": "product-detail",
+    "viewport": "Laptop-1280x720",
+    "category": "Laptop/Desktop",
+    "dimensions": "1280x720",
+    "status": 200,
+    "loadError": null,
+    "metrics": {
+      "winWidth": 1280,
+      "scrollWidth": 1280,
+      "hasHorizontalOverflow": false,
+      "overflowAmount": 0,
+      "overflowElements": [],
+      "smallTargetsCount": 16,
+      "smallTargetsSample": [
+        {
+          "tag": "A",
+          "text": "Home",
+          "width": 40,
+          "height": 23
+        },
+        {
+          "tag": "A",
+          "text": "Products & Services",
+          "width": 130,
+          "height": 23
+        },
+        {
+          "tag": "A",
+          "text": "About Us",
+          "width": 61,
+          "height": 23
+        }
+      ]
+    },
+    "consoleErrors": [],
+    "navMenuTest": null,
+    "screenshot": null,
+    "passed": true
+  },
+  {
+    "route": "/products/4-inch-stainless-steel-chipper-knife",
+    "routeName": "product-detail",
+    "viewport": "Laptop-1366x768",
+    "category": "Laptop/Desktop",
+    "dimensions": "1366x768",
+    "status": 200,
+    "loadError": null,
+    "metrics": {
+      "winWidth": 1366,
+      "scrollWidth": 1366,
+      "hasHorizontalOverflow": false,
+      "overflowAmount": 0,
+      "overflowElements": [],
+      "smallTargetsCount": 16,
+      "smallTargetsSample": [
+        {
+          "tag": "A",
+          "text": "Home",
+          "width": 40,
+          "height": 23
+        },
+        {
+          "tag": "A",
+          "text": "Products & Services",
+          "width": 130,
+          "height": 23
+        },
+        {
+          "tag": "A",
+          "text": "About Us",
+          "width": 61,
+          "height": 23
+        }
+      ]
+    },
+    "consoleErrors": [],
+    "navMenuTest": null,
+    "screenshot": null,
+    "passed": true
+  },
+  {
+    "route": "/products/4-inch-stainless-steel-chipper-knife",
+    "routeName": "product-detail",
+    "viewport": "Desktop-1440x900",
+    "category": "Laptop/Desktop",
+    "dimensions": "1440x900",
+    "status": 200,
+    "loadError": null,
+    "metrics": {
+      "winWidth": 1440,
+      "scrollWidth": 1440,
+      "hasHorizontalOverflow": false,
+      "overflowAmount": 0,
+      "overflowElements": [],
+      "smallTargetsCount": 16,
+      "smallTargetsSample": [
+        {
+          "tag": "A",
+          "text": "Home",
+          "width": 40,
+          "height": 23
+        },
+        {
+          "tag": "A",
+          "text": "Products & Services",
+          "width": 130,
+          "height": 23
+        },
+        {
+          "tag": "A",
+          "text": "About Us",
+          "width": 61,
+          "height": 23
+        }
+      ]
+    },
+    "consoleErrors": [],
+    "navMenuTest": null,
+    "screenshot": "artifacts/responsive-audit/before/product-detail_Desktop-1440x900.png",
+    "passed": true
+  },
+  {
+    "route": "/products/4-inch-stainless-steel-chipper-knife",
+    "routeName": "product-detail",
+    "viewport": "Desktop-1920x1080",
+    "category": "Laptop/Desktop",
+    "dimensions": "1920x1080",
+    "status": 200,
+    "loadError": null,
+    "metrics": {
+      "winWidth": 1920,
+      "scrollWidth": 1920,
+      "hasHorizontalOverflow": false,
+      "overflowAmount": 0,
+      "overflowElements": [],
+      "smallTargetsCount": 16,
+      "smallTargetsSample": [
+        {
+          "tag": "A",
+          "text": "Home",
+          "width": 40,
+          "height": 23
+        },
+        {
+          "tag": "A",
+          "text": "Products & Services",
+          "width": 130,
+          "height": 23
+        },
+        {
+          "tag": "A",
+          "text": "About Us",
+          "width": 61,
+          "height": 23
+        }
+      ]
+    },
+    "consoleErrors": [],
+    "navMenuTest": null,
+    "screenshot": null,
+    "passed": true
+  },
+  {
+    "route": "/about",
+    "routeName": "about",
+    "viewport": "Mobile-320x568",
+    "category": "Mobile",
+    "dimensions": "320x568",
+    "status": 200,
+    "loadError": null,
+    "metrics": {
+      "winWidth": 320,
+      "scrollWidth": 320,
+      "hasHorizontalOverflow": false,
+      "overflowAmount": 0,
+      "overflowElements": [],
+      "smallTargetsCount": 9,
+      "smallTargetsSample": [
+        {
+          "tag": "A",
+          "text": "Home",
+          "width": 36,
+          "height": 21
+        },
+        {
+          "tag": "A",
+          "text": "+91 99447 44509",
+          "width": 114,
+          "height": 19
+        },
+        {
+          "tag": "A",
+          "text": "sales@ksgtools.examp",
+          "width": 192,
+          "height": 19
+        }
+      ]
+    },
+    "consoleErrors": [],
+    "navMenuTest": null,
+    "screenshot": "artifacts/responsive-audit/before/about_Mobile-320x568.png",
+    "passed": true
+  },
+  {
+    "route": "/about",
+    "routeName": "about",
+    "viewport": "Mobile-360x800",
+    "category": "Mobile",
+    "dimensions": "360x800",
+    "status": 200,
+    "loadError": null,
+    "metrics": {
+      "winWidth": 360,
+      "scrollWidth": 360,
+      "hasHorizontalOverflow": false,
+      "overflowAmount": 0,
+      "overflowElements": [],
+      "smallTargetsCount": 9,
+      "smallTargetsSample": [
+        {
+          "tag": "A",
+          "text": "Home",
+          "width": 36,
+          "height": 21
+        },
+        {
+          "tag": "A",
+          "text": "+91 99447 44509",
+          "width": 114,
+          "height": 19
+        },
+        {
+          "tag": "A",
+          "text": "sales@ksgtools.examp",
+          "width": 192,
+          "height": 19
+        }
+      ]
+    },
+    "consoleErrors": [],
+    "navMenuTest": null,
+    "screenshot": "artifacts/responsive-audit/before/about_Mobile-360x800.png",
+    "passed": true
+  },
+  {
+    "route": "/about",
+    "routeName": "about",
+    "viewport": "Mobile-375x812",
+    "category": "Mobile",
+    "dimensions": "375x812",
+    "status": 200,
+    "loadError": null,
+    "metrics": {
+      "winWidth": 375,
+      "scrollWidth": 375,
+      "hasHorizontalOverflow": false,
+      "overflowAmount": 0,
+      "overflowElements": [],
+      "smallTargetsCount": 9,
+      "smallTargetsSample": [
+        {
+          "tag": "A",
+          "text": "Home",
+          "width": 36,
+          "height": 21
+        },
+        {
+          "tag": "A",
+          "text": "+91 99447 44509",
+          "width": 114,
+          "height": 19
+        },
+        {
+          "tag": "A",
+          "text": "sales@ksgtools.examp",
+          "width": 192,
+          "height": 19
+        }
+      ]
+    },
+    "consoleErrors": [],
+    "navMenuTest": null,
+    "screenshot": null,
+    "passed": true
+  },
+  {
+    "route": "/about",
+    "routeName": "about",
+    "viewport": "Mobile-390x844",
+    "category": "Mobile",
+    "dimensions": "390x844",
+    "status": 200,
+    "loadError": null,
+    "metrics": {
+      "winWidth": 390,
+      "scrollWidth": 390,
+      "hasHorizontalOverflow": false,
+      "overflowAmount": 0,
+      "overflowElements": [],
+      "smallTargetsCount": 9,
+      "smallTargetsSample": [
+        {
+          "tag": "A",
+          "text": "Home",
+          "width": 36,
+          "height": 21
+        },
+        {
+          "tag": "A",
+          "text": "+91 99447 44509",
+          "width": 114,
+          "height": 19
+        },
+        {
+          "tag": "A",
+          "text": "sales@ksgtools.examp",
+          "width": 192,
+          "height": 19
+        }
+      ]
+    },
+    "consoleErrors": [],
+    "navMenuTest": null,
+    "screenshot": null,
+    "passed": true
+  },
+  {
+    "route": "/about",
+    "routeName": "about",
+    "viewport": "Mobile-430x932",
+    "category": "Mobile",
+    "dimensions": "430x932",
+    "status": 200,
+    "loadError": null,
+    "metrics": {
+      "winWidth": 430,
+      "scrollWidth": 430,
+      "hasHorizontalOverflow": false,
+      "overflowAmount": 0,
+      "overflowElements": [],
+      "smallTargetsCount": 9,
+      "smallTargetsSample": [
+        {
+          "tag": "A",
+          "text": "Home",
+          "width": 36,
+          "height": 21
+        },
+        {
+          "tag": "A",
+          "text": "+91 99447 44509",
+          "width": 114,
+          "height": 19
+        },
+        {
+          "tag": "A",
+          "text": "sales@ksgtools.examp",
+          "width": 192,
+          "height": 19
+        }
+      ]
+    },
+    "consoleErrors": [],
+    "navMenuTest": null,
+    "screenshot": null,
+    "passed": true
+  },
+  {
+    "route": "/about",
+    "routeName": "about",
+    "viewport": "Tablet-600x960",
+    "category": "Tablet",
+    "dimensions": "600x960",
+    "status": 200,
+    "loadError": null,
+    "metrics": {
+      "winWidth": 600,
+      "scrollWidth": 600,
+      "hasHorizontalOverflow": false,
+      "overflowAmount": 0,
+      "overflowElements": [],
+      "smallTargetsCount": 10,
+      "smallTargetsSample": [
+        {
+          "tag": "A",
+          "text": "Home",
+          "width": 36,
+          "height": 21
+        },
+        {
+          "tag": "A",
+          "text": "📍 Sivanandhapuram, ",
+          "width": 430,
+          "height": 19
+        },
+        {
+          "tag": "A",
+          "text": "+91 99447 44509",
+          "width": 114,
+          "height": 19
+        }
+      ]
+    },
+    "consoleErrors": [],
+    "navMenuTest": null,
+    "screenshot": null,
+    "passed": true
+  },
+  {
+    "route": "/about",
+    "routeName": "about",
+    "viewport": "Tablet-768x1024",
+    "category": "Tablet",
+    "dimensions": "768x1024",
+    "status": 200,
+    "loadError": null,
+    "metrics": {
+      "winWidth": 768,
+      "scrollWidth": 768,
+      "hasHorizontalOverflow": false,
+      "overflowAmount": 0,
+      "overflowElements": [],
+      "smallTargetsCount": 11,
+      "smallTargetsSample": [
+        {
+          "tag": "A",
+          "text": "Home",
+          "width": 36,
+          "height": 21
+        },
+        {
+          "tag": "BUTTON",
+          "text": "Copy",
+          "width": 75,
+          "height": 28
+        },
+        {
+          "tag": "A",
+          "text": "📍 Sivanandhapuram, ",
+          "width": 430,
+          "height": 19
+        }
+      ]
+    },
+    "consoleErrors": [],
+    "navMenuTest": null,
+    "screenshot": "artifacts/responsive-audit/before/about_Tablet-768x1024.png",
+    "passed": true
+  },
+  {
+    "route": "/about",
+    "routeName": "about",
+    "viewport": "Tablet-820x1180",
+    "category": "Tablet",
+    "dimensions": "820x1180",
+    "status": 200,
+    "loadError": null,
+    "metrics": {
+      "winWidth": 820,
+      "scrollWidth": 820,
+      "hasHorizontalOverflow": false,
+      "overflowAmount": 0,
+      "overflowElements": [],
+      "smallTargetsCount": 11,
+      "smallTargetsSample": [
+        {
+          "tag": "A",
+          "text": "Home",
+          "width": 36,
+          "height": 21
+        },
+        {
+          "tag": "BUTTON",
+          "text": "Copy",
+          "width": 75,
+          "height": 28
+        },
+        {
+          "tag": "A",
+          "text": "📍 Sivanandhapuram, ",
+          "width": 430,
+          "height": 19
+        }
+      ]
+    },
+    "consoleErrors": [],
+    "navMenuTest": null,
+    "screenshot": null,
+    "passed": true
+  },
+  {
+    "route": "/about",
+    "routeName": "about",
+    "viewport": "Tablet-1024x768",
+    "category": "Tablet",
+    "dimensions": "1024x768",
+    "status": 200,
+    "loadError": null,
+    "metrics": {
+      "winWidth": 1024,
+      "scrollWidth": 1024,
+      "hasHorizontalOverflow": false,
+      "overflowAmount": 0,
+      "overflowElements": [],
+      "smallTargetsCount": 10,
+      "smallTargetsSample": [
+        {
+          "tag": "A",
+          "text": "Home",
+          "width": 36,
+          "height": 21
+        },
+        {
+          "tag": "BUTTON",
+          "text": "Copy",
+          "width": 75,
+          "height": 28
+        },
+        {
+          "tag": "A",
+          "text": "+91 99447 44509",
+          "width": 114,
+          "height": 19
+        }
+      ]
+    },
+    "consoleErrors": [],
+    "navMenuTest": null,
+    "screenshot": null,
+    "passed": true
+  },
+  {
+    "route": "/about",
+    "routeName": "about",
+    "viewport": "Laptop-1280x720",
+    "category": "Laptop/Desktop",
+    "dimensions": "1280x720",
+    "status": 200,
+    "loadError": null,
+    "metrics": {
+      "winWidth": 1280,
+      "scrollWidth": 1280,
+      "hasHorizontalOverflow": false,
+      "overflowAmount": 0,
+      "overflowElements": [],
+      "smallTargetsCount": 16,
+      "smallTargetsSample": [
+        {
+          "tag": "A",
+          "text": "Home",
+          "width": 40,
+          "height": 23
+        },
+        {
+          "tag": "A",
+          "text": "Products & Services",
+          "width": 130,
+          "height": 23
+        },
+        {
+          "tag": "A",
+          "text": "About Us",
+          "width": 61,
+          "height": 23
+        }
+      ]
+    },
+    "consoleErrors": [],
+    "navMenuTest": null,
+    "screenshot": null,
+    "passed": true
+  },
+  {
+    "route": "/about",
+    "routeName": "about",
+    "viewport": "Laptop-1366x768",
+    "category": "Laptop/Desktop",
+    "dimensions": "1366x768",
+    "status": 200,
+    "loadError": null,
+    "metrics": {
+      "winWidth": 1366,
+      "scrollWidth": 1366,
+      "hasHorizontalOverflow": false,
+      "overflowAmount": 0,
+      "overflowElements": [],
+      "smallTargetsCount": 16,
+      "smallTargetsSample": [
+        {
+          "tag": "A",
+          "text": "Home",
+          "width": 40,
+          "height": 23
+        },
+        {
+          "tag": "A",
+          "text": "Products & Services",
+          "width": 130,
+          "height": 23
+        },
+        {
+          "tag": "A",
+          "text": "About Us",
+          "width": 61,
+          "height": 23
+        }
+      ]
+    },
+    "consoleErrors": [],
+    "navMenuTest": null,
+    "screenshot": null,
+    "passed": true
+  },
+  {
+    "route": "/about",
+    "routeName": "about",
+    "viewport": "Desktop-1440x900",
+    "category": "Laptop/Desktop",
+    "dimensions": "1440x900",
+    "status": 200,
+    "loadError": null,
+    "metrics": {
+      "winWidth": 1440,
+      "scrollWidth": 1440,
+      "hasHorizontalOverflow": false,
+      "overflowAmount": 0,
+      "overflowElements": [],
+      "smallTargetsCount": 16,
+      "smallTargetsSample": [
+        {
+          "tag": "A",
+          "text": "Home",
+          "width": 40,
+          "height": 23
+        },
+        {
+          "tag": "A",
+          "text": "Products & Services",
+          "width": 130,
+          "height": 23
+        },
+        {
+          "tag": "A",
+          "text": "About Us",
+          "width": 61,
+          "height": 23
+        }
+      ]
+    },
+    "consoleErrors": [],
+    "navMenuTest": null,
+    "screenshot": "artifacts/responsive-audit/before/about_Desktop-1440x900.png",
+    "passed": true
+  },
+  {
+    "route": "/about",
+    "routeName": "about",
+    "viewport": "Desktop-1920x1080",
+    "category": "Laptop/Desktop",
+    "dimensions": "1920x1080",
+    "status": 200,
+    "loadError": null,
+    "metrics": {
+      "winWidth": 1920,
+      "scrollWidth": 1920,
+      "hasHorizontalOverflow": false,
+      "overflowAmount": 0,
+      "overflowElements": [],
+      "smallTargetsCount": 16,
+      "smallTargetsSample": [
+        {
+          "tag": "A",
+          "text": "Home",
+          "width": 40,
+          "height": 23
+        },
+        {
+          "tag": "A",
+          "text": "Products & Services",
+          "width": 130,
+          "height": 23
+        },
+        {
+          "tag": "A",
+          "text": "About Us",
+          "width": 61,
+          "height": 23
+        }
+      ]
+    },
+    "consoleErrors": [],
+    "navMenuTest": null,
+    "screenshot": null,
+    "passed": true
+  },
+  {
+    "route": "/videos",
+    "routeName": "videos",
+    "viewport": "Mobile-320x568",
+    "category": "Mobile",
+    "dimensions": "320x568",
+    "status": 200,
+    "loadError": null,
+    "metrics": {
+      "winWidth": 320,
+      "scrollWidth": 320,
+      "hasHorizontalOverflow": false,
+      "overflowAmount": 0,
+      "overflowElements": [],
+      "smallTargetsCount": 9,
+      "smallTargetsSample": [
+        {
+          "tag": "A",
+          "text": "Home",
+          "width": 36,
+          "height": 21
+        },
+        {
+          "tag": "A",
+          "text": "+91 99447 44509",
+          "width": 114,
+          "height": 19
+        },
+        {
+          "tag": "A",
+          "text": "sales@ksgtools.examp",
+          "width": 192,
+          "height": 19
+        }
+      ]
+    },
+    "consoleErrors": [],
+    "navMenuTest": null,
+    "screenshot": "artifacts/responsive-audit/before/videos_Mobile-320x568.png",
+    "passed": true
+  },
+  {
+    "route": "/videos",
+    "routeName": "videos",
+    "viewport": "Mobile-360x800",
+    "category": "Mobile",
+    "dimensions": "360x800",
+    "status": 200,
+    "loadError": null,
+    "metrics": {
+      "winWidth": 360,
+      "scrollWidth": 360,
+      "hasHorizontalOverflow": false,
+      "overflowAmount": 0,
+      "overflowElements": [],
+      "smallTargetsCount": 9,
+      "smallTargetsSample": [
+        {
+          "tag": "A",
+          "text": "Home",
+          "width": 36,
+          "height": 21
+        },
+        {
+          "tag": "A",
+          "text": "+91 99447 44509",
+          "width": 114,
+          "height": 19
+        },
+        {
+          "tag": "A",
+          "text": "sales@ksgtools.examp",
+          "width": 192,
+          "height": 19
+        }
+      ]
+    },
+    "consoleErrors": [],
+    "navMenuTest": null,
+    "screenshot": "artifacts/responsive-audit/before/videos_Mobile-360x800.png",
+    "passed": true
+  },
+  {
+    "route": "/videos",
+    "routeName": "videos",
+    "viewport": "Mobile-375x812",
+    "category": "Mobile",
+    "dimensions": "375x812",
+    "status": 200,
+    "loadError": null,
+    "metrics": {
+      "winWidth": 375,
+      "scrollWidth": 375,
+      "hasHorizontalOverflow": false,
+      "overflowAmount": 0,
+      "overflowElements": [],
+      "smallTargetsCount": 9,
+      "smallTargetsSample": [
+        {
+          "tag": "A",
+          "text": "Home",
+          "width": 36,
+          "height": 21
+        },
+        {
+          "tag": "A",
+          "text": "+91 99447 44509",
+          "width": 114,
+          "height": 19
+        },
+        {
+          "tag": "A",
+          "text": "sales@ksgtools.examp",
+          "width": 192,
+          "height": 19
+        }
+      ]
+    },
+    "consoleErrors": [],
+    "navMenuTest": null,
+    "screenshot": null,
+    "passed": true
+  },
+  {
+    "route": "/videos",
+    "routeName": "videos",
+    "viewport": "Mobile-390x844",
+    "category": "Mobile",
+    "dimensions": "390x844",
+    "status": 200,
+    "loadError": null,
+    "metrics": {
+      "winWidth": 390,
+      "scrollWidth": 390,
+      "hasHorizontalOverflow": false,
+      "overflowAmount": 0,
+      "overflowElements": [],
+      "smallTargetsCount": 9,
+      "smallTargetsSample": [
+        {
+          "tag": "A",
+          "text": "Home",
+          "width": 36,
+          "height": 21
+        },
+        {
+          "tag": "A",
+          "text": "+91 99447 44509",
+          "width": 114,
+          "height": 19
+        },
+        {
+          "tag": "A",
+          "text": "sales@ksgtools.examp",
+          "width": 192,
+          "height": 19
+        }
+      ]
+    },
+    "consoleErrors": [],
+    "navMenuTest": null,
+    "screenshot": null,
+    "passed": true
+  },
+  {
+    "route": "/videos",
+    "routeName": "videos",
+    "viewport": "Mobile-430x932",
+    "category": "Mobile",
+    "dimensions": "430x932",
+    "status": 200,
+    "loadError": null,
+    "metrics": {
+      "winWidth": 430,
+      "scrollWidth": 430,
+      "hasHorizontalOverflow": false,
+      "overflowAmount": 0,
+      "overflowElements": [],
+      "smallTargetsCount": 9,
+      "smallTargetsSample": [
+        {
+          "tag": "A",
+          "text": "Home",
+          "width": 36,
+          "height": 21
+        },
+        {
+          "tag": "A",
+          "text": "+91 99447 44509",
+          "width": 114,
+          "height": 19
+        },
+        {
+          "tag": "A",
+          "text": "sales@ksgtools.examp",
+          "width": 192,
+          "height": 19
+        }
+      ]
+    },
+    "consoleErrors": [],
+    "navMenuTest": null,
+    "screenshot": null,
+    "passed": true
+  },
+  {
+    "route": "/videos",
+    "routeName": "videos",
+    "viewport": "Tablet-600x960",
+    "category": "Tablet",
+    "dimensions": "600x960",
+    "status": 200,
+    "loadError": null,
+    "metrics": {
+      "winWidth": 600,
+      "scrollWidth": 600,
+      "hasHorizontalOverflow": false,
+      "overflowAmount": 0,
+      "overflowElements": [],
+      "smallTargetsCount": 10,
+      "smallTargetsSample": [
+        {
+          "tag": "A",
+          "text": "Home",
+          "width": 36,
+          "height": 21
+        },
+        {
+          "tag": "A",
+          "text": "📍 Sivanandhapuram, ",
+          "width": 430,
+          "height": 19
+        },
+        {
+          "tag": "A",
+          "text": "+91 99447 44509",
+          "width": 114,
+          "height": 19
+        }
+      ]
+    },
+    "consoleErrors": [],
+    "navMenuTest": null,
+    "screenshot": null,
+    "passed": true
+  },
+  {
+    "route": "/videos",
+    "routeName": "videos",
+    "viewport": "Tablet-768x1024",
+    "category": "Tablet",
+    "dimensions": "768x1024",
+    "status": 200,
+    "loadError": null,
+    "metrics": {
+      "winWidth": 768,
+      "scrollWidth": 768,
+      "hasHorizontalOverflow": false,
+      "overflowAmount": 0,
+      "overflowElements": [],
+      "smallTargetsCount": 10,
+      "smallTargetsSample": [
+        {
+          "tag": "A",
+          "text": "Home",
+          "width": 36,
+          "height": 21
+        },
+        {
+          "tag": "A",
+          "text": "📍 Sivanandhapuram, ",
+          "width": 430,
+          "height": 19
+        },
+        {
+          "tag": "A",
+          "text": "+91 99447 44509",
+          "width": 114,
+          "height": 19
+        }
+      ]
+    },
+    "consoleErrors": [],
+    "navMenuTest": null,
+    "screenshot": "artifacts/responsive-audit/before/videos_Tablet-768x1024.png",
+    "passed": true
+  },
+  {
+    "route": "/videos",
+    "routeName": "videos",
+    "viewport": "Tablet-820x1180",
+    "category": "Tablet",
+    "dimensions": "820x1180",
+    "status": 200,
+    "loadError": null,
+    "metrics": {
+      "winWidth": 820,
+      "scrollWidth": 820,
+      "hasHorizontalOverflow": false,
+      "overflowAmount": 0,
+      "overflowElements": [],
+      "smallTargetsCount": 10,
+      "smallTargetsSample": [
+        {
+          "tag": "A",
+          "text": "Home",
+          "width": 36,
+          "height": 21
+        },
+        {
+          "tag": "A",
+          "text": "📍 Sivanandhapuram, ",
+          "width": 430,
+          "height": 19
+        },
+        {
+          "tag": "A",
+          "text": "+91 99447 44509",
+          "width": 114,
+          "height": 19
+        }
+      ]
+    },
+    "consoleErrors": [],
+    "navMenuTest": null,
+    "screenshot": null,
+    "passed": true
+  },
+  {
+    "route": "/videos",
+    "routeName": "videos",
+    "viewport": "Tablet-1024x768",
+    "category": "Tablet",
+    "dimensions": "1024x768",
+    "status": 200,
+    "loadError": null,
+    "metrics": {
+      "winWidth": 1024,
+      "scrollWidth": 1024,
+      "hasHorizontalOverflow": false,
+      "overflowAmount": 0,
+      "overflowElements": [],
+      "smallTargetsCount": 9,
+      "smallTargetsSample": [
+        {
+          "tag": "A",
+          "text": "Home",
+          "width": 36,
+          "height": 21
+        },
+        {
+          "tag": "A",
+          "text": "+91 99447 44509",
+          "width": 114,
+          "height": 19
+        },
+        {
+          "tag": "A",
+          "text": "sales@ksgtools.examp",
+          "width": 192,
+          "height": 19
+        }
+      ]
+    },
+    "consoleErrors": [],
+    "navMenuTest": null,
+    "screenshot": null,
+    "passed": true
+  },
+  {
+    "route": "/videos",
+    "routeName": "videos",
+    "viewport": "Laptop-1280x720",
+    "category": "Laptop/Desktop",
+    "dimensions": "1280x720",
+    "status": 200,
+    "loadError": null,
+    "metrics": {
+      "winWidth": 1280,
+      "scrollWidth": 1280,
+      "hasHorizontalOverflow": false,
+      "overflowAmount": 0,
+      "overflowElements": [],
+      "smallTargetsCount": 15,
+      "smallTargetsSample": [
+        {
+          "tag": "A",
+          "text": "Home",
+          "width": 40,
+          "height": 23
+        },
+        {
+          "tag": "A",
+          "text": "Products & Services",
+          "width": 130,
+          "height": 23
+        },
+        {
+          "tag": "A",
+          "text": "About Us",
+          "width": 61,
+          "height": 23
+        }
+      ]
+    },
+    "consoleErrors": [],
+    "navMenuTest": null,
+    "screenshot": null,
+    "passed": true
+  },
+  {
+    "route": "/videos",
+    "routeName": "videos",
+    "viewport": "Laptop-1366x768",
+    "category": "Laptop/Desktop",
+    "dimensions": "1366x768",
+    "status": 200,
+    "loadError": null,
+    "metrics": {
+      "winWidth": 1366,
+      "scrollWidth": 1366,
+      "hasHorizontalOverflow": false,
+      "overflowAmount": 0,
+      "overflowElements": [],
+      "smallTargetsCount": 15,
+      "smallTargetsSample": [
+        {
+          "tag": "A",
+          "text": "Home",
+          "width": 40,
+          "height": 23
+        },
+        {
+          "tag": "A",
+          "text": "Products & Services",
+          "width": 130,
+          "height": 23
+        },
+        {
+          "tag": "A",
+          "text": "About Us",
+          "width": 61,
+          "height": 23
+        }
+      ]
+    },
+    "consoleErrors": [],
+    "navMenuTest": null,
+    "screenshot": null,
+    "passed": true
+  },
+  {
+    "route": "/videos",
+    "routeName": "videos",
+    "viewport": "Desktop-1440x900",
+    "category": "Laptop/Desktop",
+    "dimensions": "1440x900",
+    "status": 200,
+    "loadError": null,
+    "metrics": {
+      "winWidth": 1440,
+      "scrollWidth": 1440,
+      "hasHorizontalOverflow": false,
+      "overflowAmount": 0,
+      "overflowElements": [],
+      "smallTargetsCount": 15,
+      "smallTargetsSample": [
+        {
+          "tag": "A",
+          "text": "Home",
+          "width": 40,
+          "height": 23
+        },
+        {
+          "tag": "A",
+          "text": "Products & Services",
+          "width": 130,
+          "height": 23
+        },
+        {
+          "tag": "A",
+          "text": "About Us",
+          "width": 61,
+          "height": 23
+        }
+      ]
+    },
+    "consoleErrors": [],
+    "navMenuTest": null,
+    "screenshot": "artifacts/responsive-audit/before/videos_Desktop-1440x900.png",
+    "passed": true
+  },
+  {
+    "route": "/videos",
+    "routeName": "videos",
+    "viewport": "Desktop-1920x1080",
+    "category": "Laptop/Desktop",
+    "dimensions": "1920x1080",
+    "status": 0,
+    "loadError": "page.goto: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3000/videos\", waiting until \"networkidle\"\u001b[22m\n",
+    "metrics": null,
+    "consoleErrors": [],
+    "navMenuTest": null,
+    "screenshot": null,
+    "passed": false
+  },
+  {
+    "route": "/photos",
+    "routeName": "photos",
+    "viewport": "Mobile-320x568",
+    "category": "Mobile",
+    "dimensions": "320x568",
+    "status": 200,
+    "loadError": null,
+    "metrics": {
+      "winWidth": 320,
+      "scrollWidth": 320,
+      "hasHorizontalOverflow": false,
+      "overflowAmount": 0,
+      "overflowElements": [],
+      "smallTargetsCount": 9,
+      "smallTargetsSample": [
+        {
+          "tag": "A",
+          "text": "Home",
+          "width": 36,
+          "height": 21
+        },
+        {
+          "tag": "A",
+          "text": "+91 99447 44509",
+          "width": 114,
+          "height": 19
+        },
+        {
+          "tag": "A",
+          "text": "sales@ksgtools.examp",
+          "width": 192,
+          "height": 19
+        }
+      ]
+    },
+    "consoleErrors": [],
+    "navMenuTest": null,
+    "screenshot": "artifacts/responsive-audit/before/photos_Mobile-320x568.png",
+    "passed": true
+  },
+  {
+    "route": "/photos",
+    "routeName": "photos",
+    "viewport": "Mobile-360x800",
+    "category": "Mobile",
+    "dimensions": "360x800",
+    "status": 200,
+    "loadError": null,
+    "metrics": {
+      "winWidth": 360,
+      "scrollWidth": 360,
+      "hasHorizontalOverflow": false,
+      "overflowAmount": 0,
+      "overflowElements": [],
+      "smallTargetsCount": 9,
+      "smallTargetsSample": [
+        {
+          "tag": "A",
+          "text": "Home",
+          "width": 36,
+          "height": 21
+        },
+        {
+          "tag": "A",
+          "text": "+91 99447 44509",
+          "width": 114,
+          "height": 19
+        },
+        {
+          "tag": "A",
+          "text": "sales@ksgtools.examp",
+          "width": 192,
+          "height": 19
+        }
+      ]
+    },
+    "consoleErrors": [],
+    "navMenuTest": null,
+    "screenshot": "artifacts/responsive-audit/before/photos_Mobile-360x800.png",
+    "passed": true
+  },
+  {
+    "route": "/photos",
+    "routeName": "photos",
+    "viewport": "Mobile-375x812",
+    "category": "Mobile",
+    "dimensions": "375x812",
+    "status": 200,
+    "loadError": null,
+    "metrics": {
+      "winWidth": 375,
+      "scrollWidth": 375,
+      "hasHorizontalOverflow": false,
+      "overflowAmount": 0,
+      "overflowElements": [],
+      "smallTargetsCount": 9,
+      "smallTargetsSample": [
+        {
+          "tag": "A",
+          "text": "Home",
+          "width": 36,
+          "height": 21
+        },
+        {
+          "tag": "A",
+          "text": "+91 99447 44509",
+          "width": 114,
+          "height": 19
+        },
+        {
+          "tag": "A",
+          "text": "sales@ksgtools.examp",
+          "width": 192,
+          "height": 19
+        }
+      ]
+    },
+    "consoleErrors": [],
+    "navMenuTest": null,
+    "screenshot": null,
+    "passed": true
+  },
+  {
+    "route": "/photos",
+    "routeName": "photos",
+    "viewport": "Mobile-390x844",
+    "category": "Mobile",
+    "dimensions": "390x844",
+    "status": 200,
+    "loadError": null,
+    "metrics": {
+      "winWidth": 390,
+      "scrollWidth": 390,
+      "hasHorizontalOverflow": false,
+      "overflowAmount": 0,
+      "overflowElements": [],
+      "smallTargetsCount": 9,
+      "smallTargetsSample": [
+        {
+          "tag": "A",
+          "text": "Home",
+          "width": 36,
+          "height": 21
+        },
+        {
+          "tag": "A",
+          "text": "+91 99447 44509",
+          "width": 114,
+          "height": 19
+        },
+        {
+          "tag": "A",
+          "text": "sales@ksgtools.examp",
+          "width": 192,
+          "height": 19
+        }
+      ]
+    },
+    "consoleErrors": [],
+    "navMenuTest": null,
+    "screenshot": null,
+    "passed": true
+  },
+  {
+    "route": "/photos",
+    "routeName": "photos",
+    "viewport": "Mobile-430x932",
+    "category": "Mobile",
+    "dimensions": "430x932",
+    "status": 200,
+    "loadError": null,
+    "metrics": {
+      "winWidth": 430,
+      "scrollWidth": 430,
+      "hasHorizontalOverflow": false,
+      "overflowAmount": 0,
+      "overflowElements": [],
+      "smallTargetsCount": 9,
+      "smallTargetsSample": [
+        {
+          "tag": "A",
+          "text": "Home",
+          "width": 36,
+          "height": 21
+        },
+        {
+          "tag": "A",
+          "text": "+91 99447 44509",
+          "width": 114,
+          "height": 19
+        },
+        {
+          "tag": "A",
+          "text": "sales@ksgtools.examp",
+          "width": 192,
+          "height": 19
+        }
+      ]
+    },
+    "consoleErrors": [],
+    "navMenuTest": null,
+    "screenshot": null,
+    "passed": true
+  },
+  {
+    "route": "/photos",
+    "routeName": "photos",
+    "viewport": "Tablet-600x960",
+    "category": "Tablet",
+    "dimensions": "600x960",
+    "status": 200,
+    "loadError": null,
+    "metrics": {
+      "winWidth": 600,
+      "scrollWidth": 600,
+      "hasHorizontalOverflow": false,
+      "overflowAmount": 0,
+      "overflowElements": [],
+      "smallTargetsCount": 10,
+      "smallTargetsSample": [
+        {
+          "tag": "A",
+          "text": "Home",
+          "width": 36,
+          "height": 21
+        },
+        {
+          "tag": "A",
+          "text": "📍 Sivanandhapuram, ",
+          "width": 430,
+          "height": 19
+        },
+        {
+          "tag": "A",
+          "text": "+91 99447 44509",
+          "width": 114,
+          "height": 19
+        }
+      ]
+    },
+    "consoleErrors": [],
+    "navMenuTest": null,
+    "screenshot": null,
+    "passed": true
+  },
+  {
+    "route": "/photos",
+    "routeName": "photos",
+    "viewport": "Tablet-768x1024",
+    "category": "Tablet",
+    "dimensions": "768x1024",
+    "status": 200,
+    "loadError": null,
+    "metrics": {
+      "winWidth": 768,
+      "scrollWidth": 768,
+      "hasHorizontalOverflow": false,
+      "overflowAmount": 0,
+      "overflowElements": [],
+      "smallTargetsCount": 10,
+      "smallTargetsSample": [
+        {
+          "tag": "A",
+          "text": "Home",
+          "width": 36,
+          "height": 21
+        },
+        {
+          "tag": "A",
+          "text": "📍 Sivanandhapuram, ",
+          "width": 430,
+          "height": 19
+        },
+        {
+          "tag": "A",
+          "text": "+91 99447 44509",
+          "width": 114,
+          "height": 19
+        }
+      ]
+    },
+    "consoleErrors": [],
+    "navMenuTest": null,
+    "screenshot": "artifacts/responsive-audit/before/photos_Tablet-768x1024.png",
+    "passed": true
+  },
+  {
+    "route": "/photos",
+    "routeName": "photos",
+    "viewport": "Tablet-820x1180",
+    "category": "Tablet",
+    "dimensions": "820x1180",
+    "status": 200,
+    "loadError": null,
+    "metrics": {
+      "winWidth": 820,
+      "scrollWidth": 820,
+      "hasHorizontalOverflow": false,
+      "overflowAmount": 0,
+      "overflowElements": [],
+      "smallTargetsCount": 10,
+      "smallTargetsSample": [
+        {
+          "tag": "A",
+          "text": "Home",
+          "width": 36,
+          "height": 21
+        },
+        {
+          "tag": "A",
+          "text": "📍 Sivanandhapuram, ",
+          "width": 430,
+          "height": 19
+        },
+        {
+          "tag": "A",
+          "text": "+91 99447 44509",
+          "width": 114,
+          "height": 19
+        }
+      ]
+    },
+    "consoleErrors": [],
+    "navMenuTest": null,
+    "screenshot": null,
+    "passed": true
+  },
+  {
+    "route": "/photos",
+    "routeName": "photos",
+    "viewport": "Tablet-1024x768",
+    "category": "Tablet",
+    "dimensions": "1024x768",
+    "status": 200,
+    "loadError": null,
+    "metrics": {
+      "winWidth": 1024,
+      "scrollWidth": 1024,
+      "hasHorizontalOverflow": false,
+      "overflowAmount": 0,
+      "overflowElements": [],
+      "smallTargetsCount": 9,
+      "smallTargetsSample": [
+        {
+          "tag": "A",
+          "text": "Home",
+          "width": 36,
+          "height": 21
+        },
+        {
+          "tag": "A",
+          "text": "+91 99447 44509",
+          "width": 114,
+          "height": 19
+        },
+        {
+          "tag": "A",
+          "text": "sales@ksgtools.examp",
+          "width": 192,
+          "height": 19
+        }
+      ]
+    },
+    "consoleErrors": [],
+    "navMenuTest": null,
+    "screenshot": null,
+    "passed": true
+  },
+  {
+    "route": "/photos",
+    "routeName": "photos",
+    "viewport": "Laptop-1280x720",
+    "category": "Laptop/Desktop",
+    "dimensions": "1280x720",
+    "status": 200,
+    "loadError": null,
+    "metrics": {
+      "winWidth": 1280,
+      "scrollWidth": 1280,
+      "hasHorizontalOverflow": false,
+      "overflowAmount": 0,
+      "overflowElements": [],
+      "smallTargetsCount": 15,
+      "smallTargetsSample": [
+        {
+          "tag": "A",
+          "text": "Home",
+          "width": 40,
+          "height": 23
+        },
+        {
+          "tag": "A",
+          "text": "Products & Services",
+          "width": 130,
+          "height": 23
+        },
+        {
+          "tag": "A",
+          "text": "About Us",
+          "width": 61,
+          "height": 23
+        }
+      ]
+    },
+    "consoleErrors": [],
+    "navMenuTest": null,
+    "screenshot": null,
+    "passed": true
+  },
+  {
+    "route": "/photos",
+    "routeName": "photos",
+    "viewport": "Laptop-1366x768",
+    "category": "Laptop/Desktop",
+    "dimensions": "1366x768",
+    "status": 200,
+    "loadError": null,
+    "metrics": {
+      "winWidth": 1366,
+      "scrollWidth": 1366,
+      "hasHorizontalOverflow": false,
+      "overflowAmount": 0,
+      "overflowElements": [],
+      "smallTargetsCount": 15,
+      "smallTargetsSample": [
+        {
+          "tag": "A",
+          "text": "Home",
+          "width": 40,
+          "height": 23
+        },
+        {
+          "tag": "A",
+          "text": "Products & Services",
+          "width": 130,
+          "height": 23
+        },
+        {
+          "tag": "A",
+          "text": "About Us",
+          "width": 61,
+          "height": 23
+        }
+      ]
+    },
+    "consoleErrors": [],
+    "navMenuTest": null,
+    "screenshot": null,
+    "passed": true
+  },
+  {
+    "route": "/photos",
+    "routeName": "photos",
+    "viewport": "Desktop-1440x900",
+    "category": "Laptop/Desktop",
+    "dimensions": "1440x900",
+    "status": 200,
+    "loadError": null,
+    "metrics": {
+      "winWidth": 1440,
+      "scrollWidth": 1440,
+      "hasHorizontalOverflow": false,
+      "overflowAmount": 0,
+      "overflowElements": [],
+      "smallTargetsCount": 15,
+      "smallTargetsSample": [
+        {
+          "tag": "A",
+          "text": "Home",
+          "width": 40,
+          "height": 23
+        },
+        {
+          "tag": "A",
+          "text": "Products & Services",
+          "width": 130,
+          "height": 23
+        },
+        {
+          "tag": "A",
+          "text": "About Us",
+          "width": 61,
+          "height": 23
+        }
+      ]
+    },
+    "consoleErrors": [],
+    "navMenuTest": null,
+    "screenshot": "artifacts/responsive-audit/before/photos_Desktop-1440x900.png",
+    "passed": true
+  },
+  {
+    "route": "/photos",
+    "routeName": "photos",
+    "viewport": "Desktop-1920x1080",
+    "category": "Laptop/Desktop",
+    "dimensions": "1920x1080",
+    "status": 200,
+    "loadError": null,
+    "metrics": {
+      "winWidth": 1920,
+      "scrollWidth": 1920,
+      "hasHorizontalOverflow": false,
+      "overflowAmount": 0,
+      "overflowElements": [],
+      "smallTargetsCount": 15,
+      "smallTargetsSample": [
+        {
+          "tag": "A",
+          "text": "Home",
+          "width": 40,
+          "height": 23
+        },
+        {
+          "tag": "A",
+          "text": "Products & Services",
+          "width": 130,
+          "height": 23
+        },
+        {
+          "tag": "A",
+          "text": "About Us",
+          "width": 61,
+          "height": 23
+        }
+      ]
+    },
+    "consoleErrors": [],
+    "navMenuTest": null,
+    "screenshot": null,
+    "passed": true
+  },
+  {
+    "route": "/contact",
+    "routeName": "contact",
+    "viewport": "Mobile-320x568",
+    "category": "Mobile",
+    "dimensions": "320x568",
+    "status": 200,
+    "loadError": null,
+    "metrics": {
+      "winWidth": 434,
+      "scrollWidth": 434,
+      "hasHorizontalOverflow": false,
+      "overflowAmount": 0,
+      "overflowElements": [],
+      "smallTargetsCount": 11,
+      "smallTargetsSample": [
+        {
+          "tag": "A",
+          "text": "Home",
+          "width": 36,
+          "height": 21
+        },
+        {
+          "tag": "A",
+          "text": "+91 99447 44509",
+          "width": 114,
+          "height": 19
+        },
+        {
+          "tag": "A",
+          "text": "sales@ksgtools.examp",
+          "width": 192,
+          "height": 19
+        }
+      ]
+    },
+    "consoleErrors": [
+      "Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. Plastic Shredder Knives, For Garage/Workshop"
+    ],
+    "navMenuTest": null,
+    "screenshot": "artifacts/responsive-audit/before/contact_Mobile-320x568.png",
+    "passed": true
+  },
+  {
+    "route": "/contact",
+    "routeName": "contact",
+    "viewport": "Mobile-360x800",
+    "category": "Mobile",
+    "dimensions": "360x800",
+    "status": 200,
+    "loadError": null,
+    "metrics": {
+      "winWidth": 435,
+      "scrollWidth": 435,
+      "hasHorizontalOverflow": false,
+      "overflowAmount": 0,
+      "overflowElements": [],
+      "smallTargetsCount": 11,
+      "smallTargetsSample": [
+        {
+          "tag": "A",
+          "text": "Home",
+          "width": 36,
+          "height": 21
+        },
+        {
+          "tag": "A",
+          "text": "+91 99447 44509",
+          "width": 114,
+          "height": 19
+        },
+        {
+          "tag": "A",
+          "text": "sales@ksgtools.examp",
+          "width": 192,
+          "height": 19
+        }
+      ]
+    },
+    "consoleErrors": [
+      "Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. Plastic Shredder Knives, For Garage/Workshop"
+    ],
+    "navMenuTest": null,
+    "screenshot": "artifacts/responsive-audit/before/contact_Mobile-360x800.png",
+    "passed": true
+  },
+  {
+    "route": "/contact",
+    "routeName": "contact",
+    "viewport": "Mobile-375x812",
+    "category": "Mobile",
+    "dimensions": "375x812",
+    "status": 200,
+    "loadError": null,
+    "metrics": {
+      "winWidth": 436,
+      "scrollWidth": 436,
+      "hasHorizontalOverflow": false,
+      "overflowAmount": 0,
+      "overflowElements": [],
+      "smallTargetsCount": 11,
+      "smallTargetsSample": [
+        {
+          "tag": "A",
+          "text": "Home",
+          "width": 36,
+          "height": 21
+        },
+        {
+          "tag": "A",
+          "text": "+91 99447 44509",
+          "width": 114,
+          "height": 19
+        },
+        {
+          "tag": "A",
+          "text": "sales@ksgtools.examp",
+          "width": 192,
+          "height": 19
+        }
+      ]
+    },
+    "consoleErrors": [
+      "Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. Plastic Shredder Knives, For Garage/Workshop"
+    ],
+    "navMenuTest": null,
+    "screenshot": null,
+    "passed": true
+  },
+  {
+    "route": "/contact",
+    "routeName": "contact",
+    "viewport": "Mobile-390x844",
+    "category": "Mobile",
+    "dimensions": "390x844",
+    "status": 200,
+    "loadError": null,
+    "metrics": {
+      "winWidth": 437,
+      "scrollWidth": 437,
+      "hasHorizontalOverflow": false,
+      "overflowAmount": 0,
+      "overflowElements": [],
+      "smallTargetsCount": 11,
+      "smallTargetsSample": [
+        {
+          "tag": "A",
+          "text": "Home",
+          "width": 36,
+          "height": 21
+        },
+        {
+          "tag": "A",
+          "text": "+91 99447 44509",
+          "width": 114,
+          "height": 19
+        },
+        {
+          "tag": "A",
+          "text": "sales@ksgtools.examp",
+          "width": 192,
+          "height": 19
+        }
+      ]
+    },
+    "consoleErrors": [
+      "Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. Plastic Shredder Knives, For Garage/Workshop"
+    ],
+    "navMenuTest": null,
+    "screenshot": null,
+    "passed": true
+  },
+  {
+    "route": "/contact",
+    "routeName": "contact",
+    "viewport": "Mobile-430x932",
+    "category": "Mobile",
+    "dimensions": "430x932",
+    "status": 200,
+    "loadError": null,
+    "metrics": {
+      "winWidth": 438,
+      "scrollWidth": 438,
+      "hasHorizontalOverflow": false,
+      "overflowAmount": 0,
+      "overflowElements": [],
+      "smallTargetsCount": 11,
+      "smallTargetsSample": [
+        {
+          "tag": "A",
+          "text": "Home",
+          "width": 36,
+          "height": 21
+        },
+        {
+          "tag": "A",
+          "text": "+91 99447 44509",
+          "width": 114,
+          "height": 19
+        },
+        {
+          "tag": "A",
+          "text": "sales@ksgtools.examp",
+          "width": 192,
+          "height": 19
+        }
+      ]
+    },
+    "consoleErrors": [
+      "Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. Plastic Shredder Knives, For Garage/Workshop"
+    ],
+    "navMenuTest": null,
+    "screenshot": null,
+    "passed": true
+  },
+  {
+    "route": "/contact",
+    "routeName": "contact",
+    "viewport": "Tablet-600x960",
+    "category": "Tablet",
+    "dimensions": "600x960",
+    "status": 200,
+    "loadError": null,
+    "metrics": {
+      "winWidth": 600,
+      "scrollWidth": 600,
+      "hasHorizontalOverflow": false,
+      "overflowAmount": 0,
+      "overflowElements": [],
+      "smallTargetsCount": 12,
+      "smallTargetsSample": [
+        {
+          "tag": "A",
+          "text": "Home",
+          "width": 36,
+          "height": 21
+        },
+        {
+          "tag": "A",
+          "text": "+91 99447 44509",
+          "width": 114,
+          "height": 19
+        },
+        {
+          "tag": "A",
+          "text": "sales@ksgtools.examp",
+          "width": 192,
+          "height": 19
+        }
+      ]
+    },
+    "consoleErrors": [
+      "Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. Plastic Shredder Knives, For Garage/Workshop"
+    ],
+    "navMenuTest": null,
+    "screenshot": null,
+    "passed": true
+  },
+  {
+    "route": "/contact",
+    "routeName": "contact",
+    "viewport": "Tablet-768x1024",
+    "category": "Tablet",
+    "dimensions": "768x1024",
+    "status": 200,
+    "loadError": null,
+    "metrics": {
+      "winWidth": 768,
+      "scrollWidth": 768,
+      "hasHorizontalOverflow": false,
+      "overflowAmount": 0,
+      "overflowElements": [],
+      "smallTargetsCount": 12,
+      "smallTargetsSample": [
+        {
+          "tag": "A",
+          "text": "Home",
+          "width": 36,
+          "height": 21
+        },
+        {
+          "tag": "A",
+          "text": "+91 99447 44509",
+          "width": 114,
+          "height": 19
+        },
+        {
+          "tag": "A",
+          "text": "sales@ksgtools.examp",
+          "width": 192,
+          "height": 19
+        }
+      ]
+    },
+    "consoleErrors": [
+      "Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. Plastic Shredder Knives, For Garage/Workshop"
+    ],
+    "navMenuTest": null,
+    "screenshot": "artifacts/responsive-audit/before/contact_Tablet-768x1024.png",
+    "passed": true
+  },
+  {
+    "route": "/contact",
+    "routeName": "contact",
+    "viewport": "Tablet-820x1180",
+    "category": "Tablet",
+    "dimensions": "820x1180",
+    "status": 200,
+    "loadError": null,
+    "metrics": {
+      "winWidth": 820,
+      "scrollWidth": 820,
+      "hasHorizontalOverflow": false,
+      "overflowAmount": 0,
+      "overflowElements": [],
+      "smallTargetsCount": 12,
+      "smallTargetsSample": [
+        {
+          "tag": "A",
+          "text": "Home",
+          "width": 36,
+          "height": 21
+        },
+        {
+          "tag": "A",
+          "text": "+91 99447 44509",
+          "width": 114,
+          "height": 19
+        },
+        {
+          "tag": "A",
+          "text": "sales@ksgtools.examp",
+          "width": 192,
+          "height": 19
+        }
+      ]
+    },
+    "consoleErrors": [
+      "Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. Plastic Shredder Knives, For Garage/Workshop"
+    ],
+    "navMenuTest": null,
+    "screenshot": null,
+    "passed": true
+  },
+  {
+    "route": "/contact",
+    "routeName": "contact",
+    "viewport": "Tablet-1024x768",
+    "category": "Tablet",
+    "dimensions": "1024x768",
+    "status": 200,
+    "loadError": null,
+    "metrics": {
+      "winWidth": 1024,
+      "scrollWidth": 1024,
+      "hasHorizontalOverflow": false,
+      "overflowAmount": 0,
+      "overflowElements": [],
+      "smallTargetsCount": 11,
+      "smallTargetsSample": [
+        {
+          "tag": "A",
+          "text": "Home",
+          "width": 36,
+          "height": 21
+        },
+        {
+          "tag": "A",
+          "text": "+91 99447 44509",
+          "width": 114,
+          "height": 19
+        },
+        {
+          "tag": "A",
+          "text": "sales@ksgtools.examp",
+          "width": 192,
+          "height": 19
+        }
+      ]
+    },
+    "consoleErrors": [
+      "Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. Plastic Shredder Knives, For Garage/Workshop"
+    ],
+    "navMenuTest": null,
+    "screenshot": null,
+    "passed": true
+  },
+  {
+    "route": "/contact",
+    "routeName": "contact",
+    "viewport": "Laptop-1280x720",
+    "category": "Laptop/Desktop",
+    "dimensions": "1280x720",
+    "status": 200,
+    "loadError": null,
+    "metrics": {
+      "winWidth": 1280,
+      "scrollWidth": 1280,
+      "hasHorizontalOverflow": false,
+      "overflowAmount": 0,
+      "overflowElements": [],
+      "smallTargetsCount": 17,
+      "smallTargetsSample": [
+        {
+          "tag": "A",
+          "text": "Home",
+          "width": 40,
+          "height": 23
+        },
+        {
+          "tag": "A",
+          "text": "Products & Services",
+          "width": 130,
+          "height": 23
+        },
+        {
+          "tag": "A",
+          "text": "About Us",
+          "width": 61,
+          "height": 23
+        }
+      ]
+    },
+    "consoleErrors": [
+      "Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. Plastic Shredder Knives, For Garage/Workshop"
+    ],
+    "navMenuTest": null,
+    "screenshot": null,
+    "passed": true
+  },
+  {
+    "route": "/contact",
+    "routeName": "contact",
+    "viewport": "Laptop-1366x768",
+    "category": "Laptop/Desktop",
+    "dimensions": "1366x768",
+    "status": 200,
+    "loadError": null,
+    "metrics": {
+      "winWidth": 1366,
+      "scrollWidth": 1366,
+      "hasHorizontalOverflow": false,
+      "overflowAmount": 0,
+      "overflowElements": [],
+      "smallTargetsCount": 17,
+      "smallTargetsSample": [
+        {
+          "tag": "A",
+          "text": "Home",
+          "width": 40,
+          "height": 23
+        },
+        {
+          "tag": "A",
+          "text": "Products & Services",
+          "width": 130,
+          "height": 23
+        },
+        {
+          "tag": "A",
+          "text": "About Us",
+          "width": 61,
+          "height": 23
+        }
+      ]
+    },
+    "consoleErrors": [
+      "Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. Plastic Shredder Knives, For Garage/Workshop"
+    ],
+    "navMenuTest": null,
+    "screenshot": null,
+    "passed": true
+  },
+  {
+    "route": "/contact",
+    "routeName": "contact",
+    "viewport": "Desktop-1440x900",
+    "category": "Laptop/Desktop",
+    "dimensions": "1440x900",
+    "status": 200,
+    "loadError": null,
+    "metrics": {
+      "winWidth": 1440,
+      "scrollWidth": 1440,
+      "hasHorizontalOverflow": false,
+      "overflowAmount": 0,
+      "overflowElements": [],
+      "smallTargetsCount": 17,
+      "smallTargetsSample": [
+        {
+          "tag": "A",
+          "text": "Home",
+          "width": 40,
+          "height": 23
+        },
+        {
+          "tag": "A",
+          "text": "Products & Services",
+          "width": 130,
+          "height": 23
+        },
+        {
+          "tag": "A",
+          "text": "About Us",
+          "width": 61,
+          "height": 23
+        }
+      ]
+    },
+    "consoleErrors": [
+      "Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. Plastic Shredder Knives, For Garage/Workshop"
+    ],
+    "navMenuTest": null,
+    "screenshot": "artifacts/responsive-audit/before/contact_Desktop-1440x900.png",
+    "passed": true
+  },
+  {
+    "route": "/contact",
+    "routeName": "contact",
+    "viewport": "Desktop-1920x1080",
+    "category": "Laptop/Desktop",
+    "dimensions": "1920x1080",
+    "status": 200,
+    "loadError": null,
+    "metrics": {
+      "winWidth": 1920,
+      "scrollWidth": 1920,
+      "hasHorizontalOverflow": false,
+      "overflowAmount": 0,
+      "overflowElements": [],
+      "smallTargetsCount": 17,
+      "smallTargetsSample": [
+        {
+          "tag": "A",
+          "text": "Home",
+          "width": 40,
+          "height": 23
+        },
+        {
+          "tag": "A",
+          "text": "Products & Services",
+          "width": 130,
+          "height": 23
+        },
+        {
+          "tag": "A",
+          "text": "About Us",
+          "width": 61,
+          "height": 23
+        }
+      ]
+    },
+    "consoleErrors": [
+      "Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. Plastic Shredder Knives, For Garage/Workshop"
+    ],
+    "navMenuTest": null,
+    "screenshot": null,
+    "passed": true
+  },
+  {
+    "route": "/non-existent-page-test",
+    "routeName": "not-found",
+    "viewport": "Mobile-320x568",
+    "category": "Mobile",
+    "dimensions": "320x568",
+    "status": 404,
+    "loadError": null,
+    "metrics": {
+      "winWidth": 320,
+      "scrollWidth": 320,
+      "hasHorizontalOverflow": false,
+      "overflowAmount": 0,
+      "overflowElements": [],
+      "smallTargetsCount": 6,
+      "smallTargetsSample": [
+        {
+          "tag": "A",
+          "text": "Home",
+          "width": 38,
+          "height": 19
+        },
+        {
+          "tag": "A",
+          "text": "Products & Services",
+          "width": 123,
+          "height": 19
+        },
+        {
+          "tag": "A",
+          "text": "About Us",
+          "width": 58,
+          "height": 19
+        }
+      ]
+    },
+    "consoleErrors": [
+      "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    ],
+    "navMenuTest": null,
+    "screenshot": "artifacts/responsive-audit/before/not-found_Mobile-320x568.png",
+    "passed": true
+  },
+  {
+    "route": "/non-existent-page-test",
+    "routeName": "not-found",
+    "viewport": "Mobile-360x800",
+    "category": "Mobile",
+    "dimensions": "360x800",
+    "status": 404,
+    "loadError": null,
+    "metrics": {
+      "winWidth": 360,
+      "scrollWidth": 360,
+      "hasHorizontalOverflow": false,
+      "overflowAmount": 0,
+      "overflowElements": [],
+      "smallTargetsCount": 6,
+      "smallTargetsSample": [
+        {
+          "tag": "A",
+          "text": "Home",
+          "width": 38,
+          "height": 19
+        },
+        {
+          "tag": "A",
+          "text": "Products & Services",
+          "width": 123,
+          "height": 19
+        },
+        {
+          "tag": "A",
+          "text": "About Us",
+          "width": 58,
+          "height": 19
+        }
+      ]
+    },
+    "consoleErrors": [
+      "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    ],
+    "navMenuTest": null,
+    "screenshot": "artifacts/responsive-audit/before/not-found_Mobile-360x800.png",
+    "passed": true
+  },
+  {
+    "route": "/non-existent-page-test",
+    "routeName": "not-found",
+    "viewport": "Mobile-375x812",
+    "category": "Mobile",
+    "dimensions": "375x812",
+    "status": 404,
+    "loadError": null,
+    "metrics": {
+      "winWidth": 375,
+      "scrollWidth": 375,
+      "hasHorizontalOverflow": false,
+      "overflowAmount": 0,
+      "overflowElements": [],
+      "smallTargetsCount": 6,
+      "smallTargetsSample": [
+        {
+          "tag": "A",
+          "text": "Home",
+          "width": 38,
+          "height": 19
+        },
+        {
+          "tag": "A",
+          "text": "Products & Services",
+          "width": 123,
+          "height": 19
+        },
+        {
+          "tag": "A",
+          "text": "About Us",
+          "width": 58,
+          "height": 19
+        }
+      ]
+    },
+    "consoleErrors": [
+      "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    ],
+    "navMenuTest": null,
+    "screenshot": null,
+    "passed": true
+  },
+  {
+    "route": "/non-existent-page-test",
+    "routeName": "not-found",
+    "viewport": "Mobile-390x844",
+    "category": "Mobile",
+    "dimensions": "390x844",
+    "status": 404,
+    "loadError": null,
+    "metrics": {
+      "winWidth": 390,
+      "scrollWidth": 390,
+      "hasHorizontalOverflow": false,
+      "overflowAmount": 0,
+      "overflowElements": [],
+      "smallTargetsCount": 6,
+      "smallTargetsSample": [
+        {
+          "tag": "A",
+          "text": "Home",
+          "width": 38,
+          "height": 19
+        },
+        {
+          "tag": "A",
+          "text": "Products & Services",
+          "width": 123,
+          "height": 19
+        },
+        {
+          "tag": "A",
+          "text": "About Us",
+          "width": 58,
+          "height": 19
+        }
+      ]
+    },
+    "consoleErrors": [
+      "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    ],
+    "navMenuTest": null,
+    "screenshot": null,
+    "passed": true
+  },
+  {
+    "route": "/non-existent-page-test",
+    "routeName": "not-found",
+    "viewport": "Mobile-430x932",
+    "category": "Mobile",
+    "dimensions": "430x932",
+    "status": 404,
+    "loadError": null,
+    "metrics": {
+      "winWidth": 430,
+      "scrollWidth": 430,
+      "hasHorizontalOverflow": false,
+      "overflowAmount": 0,
+      "overflowElements": [],
+      "smallTargetsCount": 6,
+      "smallTargetsSample": [
+        {
+          "tag": "A",
+          "text": "Home",
+          "width": 38,
+          "height": 19
+        },
+        {
+          "tag": "A",
+          "text": "Products & Services",
+          "width": 123,
+          "height": 19
+        },
+        {
+          "tag": "A",
+          "text": "About Us",
+          "width": 58,
+          "height": 19
+        }
+      ]
+    },
+    "consoleErrors": [
+      "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    ],
+    "navMenuTest": null,
+    "screenshot": null,
+    "passed": true
+  },
+  {
+    "route": "/non-existent-page-test",
+    "routeName": "not-found",
+    "viewport": "Tablet-600x960",
+    "category": "Tablet",
+    "dimensions": "600x960",
+    "status": 404,
+    "loadError": null,
+    "metrics": {
+      "winWidth": 600,
+      "scrollWidth": 600,
+      "hasHorizontalOverflow": false,
+      "overflowAmount": 0,
+      "overflowElements": [],
+      "smallTargetsCount": 6,
+      "smallTargetsSample": [
+        {
+          "tag": "A",
+          "text": "Home",
+          "width": 38,
+          "height": 19
+        },
+        {
+          "tag": "A",
+          "text": "Products & Services",
+          "width": 123,
+          "height": 19
+        },
+        {
+          "tag": "A",
+          "text": "About Us",
+          "width": 58,
+          "height": 19
+        }
+      ]
+    },
+    "consoleErrors": [
+      "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    ],
+    "navMenuTest": null,
+    "screenshot": null,
+    "passed": true
+  },
+  {
+    "route": "/non-existent-page-test",
+    "routeName": "not-found",
+    "viewport": "Tablet-768x1024",
+    "category": "Tablet",
+    "dimensions": "768x1024",
+    "status": 404,
+    "loadError": null,
+    "metrics": {
+      "winWidth": 768,
+      "scrollWidth": 768,
+      "hasHorizontalOverflow": false,
+      "overflowAmount": 0,
+      "overflowElements": [],
+      "smallTargetsCount": 6,
+      "smallTargetsSample": [
+        {
+          "tag": "A",
+          "text": "Home",
+          "width": 38,
+          "height": 19
+        },
+        {
+          "tag": "A",
+          "text": "Products & Services",
+          "width": 123,
+          "height": 19
+        },
+        {
+          "tag": "A",
+          "text": "About Us",
+          "width": 58,
+          "height": 19
+        }
+      ]
+    },
+    "consoleErrors": [
+      "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    ],
+    "navMenuTest": null,
+    "screenshot": "artifacts/responsive-audit/before/not-found_Tablet-768x1024.png",
+    "passed": true
+  },
+  {
+    "route": "/non-existent-page-test",
+    "routeName": "not-found",
+    "viewport": "Tablet-820x1180",
+    "category": "Tablet",
+    "dimensions": "820x1180",
+    "status": 404,
+    "loadError": null,
+    "metrics": {
+      "winWidth": 820,
+      "scrollWidth": 820,
+      "hasHorizontalOverflow": false,
+      "overflowAmount": 0,
+      "overflowElements": [],
+      "smallTargetsCount": 6,
+      "smallTargetsSample": [
+        {
+          "tag": "A",
+          "text": "Home",
+          "width": 38,
+          "height": 19
+        },
+        {
+          "tag": "A",
+          "text": "Products & Services",
+          "width": 123,
+          "height": 19
+        },
+        {
+          "tag": "A",
+          "text": "About Us",
+          "width": 58,
+          "height": 19
+        }
+      ]
+    },
+    "consoleErrors": [
+      "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    ],
+    "navMenuTest": null,
+    "screenshot": null,
+    "passed": true
+  },
+  {
+    "route": "/non-existent-page-test",
+    "routeName": "not-found",
+    "viewport": "Tablet-1024x768",
+    "category": "Tablet",
+    "dimensions": "1024x768",
+    "status": 404,
+    "loadError": null,
+    "metrics": {
+      "winWidth": 1024,
+      "scrollWidth": 1024,
+      "hasHorizontalOverflow": false,
+      "overflowAmount": 0,
+      "overflowElements": [],
+      "smallTargetsCount": 6,
+      "smallTargetsSample": [
+        {
+          "tag": "A",
+          "text": "Home",
+          "width": 38,
+          "height": 19
+        },
+        {
+          "tag": "A",
+          "text": "Products & Services",
+          "width": 123,
+          "height": 19
+        },
+        {
+          "tag": "A",
+          "text": "About Us",
+          "width": 58,
+          "height": 19
+        }
+      ]
+    },
+    "consoleErrors": [
+      "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    ],
+    "navMenuTest": null,
+    "screenshot": null,
+    "passed": true
+  },
+  {
+    "route": "/non-existent-page-test",
+    "routeName": "not-found",
+    "viewport": "Laptop-1280x720",
+    "category": "Laptop/Desktop",
+    "dimensions": "1280x720",
+    "status": 404,
+    "loadError": null,
+    "metrics": {
+      "winWidth": 1280,
+      "scrollWidth": 1280,
+      "hasHorizontalOverflow": false,
+      "overflowAmount": 0,
+      "overflowElements": [],
+      "smallTargetsCount": 12,
+      "smallTargetsSample": [
+        {
+          "tag": "A",
+          "text": "Home",
+          "width": 40,
+          "height": 23
+        },
+        {
+          "tag": "A",
+          "text": "Products & Services",
+          "width": 130,
+          "height": 23
+        },
+        {
+          "tag": "A",
+          "text": "About Us",
+          "width": 61,
+          "height": 23
+        }
+      ]
+    },
+    "consoleErrors": [
+      "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    ],
+    "navMenuTest": null,
+    "screenshot": null,
+    "passed": true
+  },
+  {
+    "route": "/non-existent-page-test",
+    "routeName": "not-found",
+    "viewport": "Laptop-1366x768",
+    "category": "Laptop/Desktop",
+    "dimensions": "1366x768",
+    "status": 404,
+    "loadError": null,
+    "metrics": {
+      "winWidth": 1366,
+      "scrollWidth": 1366,
+      "hasHorizontalOverflow": false,
+      "overflowAmount": 0,
+      "overflowElements": [],
+      "smallTargetsCount": 12,
+      "smallTargetsSample": [
+        {
+          "tag": "A",
+          "text": "Home",
+          "width": 40,
+          "height": 23
+        },
+        {
+          "tag": "A",
+          "text": "Products & Services",
+          "width": 130,
+          "height": 23
+        },
+        {
+          "tag": "A",
+          "text": "About Us",
+          "width": 61,
+          "height": 23
+        }
+      ]
+    },
+    "consoleErrors": [
+      "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    ],
+    "navMenuTest": null,
+    "screenshot": null,
+    "passed": true
+  },
+  {
+    "route": "/non-existent-page-test",
+    "routeName": "not-found",
+    "viewport": "Desktop-1440x900",
+    "category": "Laptop/Desktop",
+    "dimensions": "1440x900",
+    "status": 404,
+    "loadError": null,
+    "metrics": {
+      "winWidth": 1440,
+      "scrollWidth": 1440,
+      "hasHorizontalOverflow": false,
+      "overflowAmount": 0,
+      "overflowElements": [],
+      "smallTargetsCount": 12,
+      "smallTargetsSample": [
+        {
+          "tag": "A",
+          "text": "Home",
+          "width": 40,
+          "height": 23
+        },
+        {
+          "tag": "A",
+          "text": "Products & Services",
+          "width": 130,
+          "height": 23
+        },
+        {
+          "tag": "A",
+          "text": "About Us",
+          "width": 61,
+          "height": 23
+        }
+      ]
+    },
+    "consoleErrors": [
+      "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    ],
+    "navMenuTest": null,
+    "screenshot": "artifacts/responsive-audit/before/not-found_Desktop-1440x900.png",
+    "passed": true
+  },
+  {
+    "route": "/non-existent-page-test",
+    "routeName": "not-found",
+    "viewport": "Desktop-1920x1080",
+    "category": "Laptop/Desktop",
+    "dimensions": "1920x1080",
+    "status": 404,
+    "loadError": null,
+    "metrics": {
+      "winWidth": 1920,
+      "scrollWidth": 1920,
+      "hasHorizontalOverflow": false,
+      "overflowAmount": 0,
+      "overflowElements": [],
+      "smallTargetsCount": 12,
+      "smallTargetsSample": [
+        {
+          "tag": "A",
+          "text": "Home",
+          "width": 40,
+          "height": 23
+        },
+        {
+          "tag": "A",
+          "text": "Products & Services",
+          "width": 130,
+          "height": 23
+        },
+        {
+          "tag": "A",
+          "text": "About Us",
+          "width": 61,
+          "height": 23
+        }
+      ]
+    },
+    "consoleErrors": [
+      "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    ],
+    "navMenuTest": null,
+    "screenshot": null,
+    "passed": true
+  }
+]

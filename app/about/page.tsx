@@ -3,7 +3,6 @@ import PageHeader from "@/components/PageHeader";
 import AboutSection from "@/components/sections/AboutSection";
 import StatsBand from "@/components/sections/StatsBand";
 import FactsheetSection from "@/components/sections/FactsheetSection";
-import ReviewsSection from "@/components/sections/ReviewsSection";
 import CtaBand from "@/components/sections/CtaBand";
 import ContactSection from "@/components/sections/ContactSection";
 
@@ -24,7 +23,6 @@ export default function AboutPage() {
       <AboutSection />
       <StatsBand />
       <FactsheetSection />
-      <ReviewsSection />
       <CtaBand />
       <ContactSection />
     </>

@@ -181,15 +181,6 @@ export default async function ProductPage({
                 {product.moq && (
                   <div className="detail-moq">Minimum order quantity: {product.moq}</div>
                 )}
-                <div className="detail-rating">
-                  <span className="stars">
-                    {"★".repeat(2)}
-                    {"☆".repeat(3)}
-                  </span>
-                  <span className="rating-note">
-                    {company.rating} / 5 · {company.totalRatings} ratings
-                  </span>
-                </div>
                 <a
                   href={`/contact?product=${encodeURIComponent(product.name)}`}
                   className="btn btn-primary w100"

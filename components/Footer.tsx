@@ -38,7 +38,17 @@ export default function Footer() {
           <div>
             <h4>Reach Us</h4>
             <ul>
-              <li>{company.city}, Tamil Nadu, India</li>
+              <li>
+                <a
+                  href={company.mapUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                  style={{ color: "var(--accent-glow)", textDecoration: "none", fontWeight: 700 }}
+                  title="Open exact workshop location in Google Maps"
+                >
+                  📍 {company.shortAddress} ↗
+                </a>
+              </li>
               <li>{company.phone}</li>
               <li>{company.email}</li>
             </ul>

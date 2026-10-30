@@ -11,8 +11,17 @@ export default function ContactSection() {
               <Icon name="pin" size={20} />
             </div>
             <div>
-              <div className="t">Our Location</div>
-              <div className="d">{company.city}, Tamil Nadu, India</div>
+              <div className="t">Workshop &amp; Factory Location</div>
+              <a
+                className="d link"
+                href={company.mapUrl}
+                target="_blank"
+                rel="noreferrer"
+                title="View exact location on Google Maps"
+                style={{ fontWeight: 800, color: "var(--primary)" }}
+              >
+                📍 {company.shortAddress} ↗
+              </a>
             </div>
           </div>
           <div className="contact-cell">

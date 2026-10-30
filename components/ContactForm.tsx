@@ -4,8 +4,8 @@ import { useState } from "react";
 import Icon from "@/components/icons";
 import { company, allProducts } from "@/lib/data";
 
-const specificProductOptions = allProducts.map(
-  (p) => p.name
+const specificProductOptions = Array.from(
+  new Set(allProducts.map((p) => p.name))
 );
 
 const generalCategories = [
@@ -19,7 +19,9 @@ const generalCategories = [
   "Other / General Enquiry",
 ];
 
-const productOptions = [...specificProductOptions, ...generalCategories];
+const productOptions = Array.from(
+  new Set([...specificProductOptions, ...generalCategories])
+);
 
 export default function ContactForm({ defaultProduct }: { defaultProduct?: string }) {
   const [sent, setSent] = useState(false);
@@ -87,8 +89,10 @@ export default function ContactForm({ defaultProduct }: { defaultProduct?: strin
               value={product}
               onChange={(e) => setProduct(e.target.value)}
             >
-              {options.map((o) => (
-                <option key={o}>{o}</option>
+              {options.map((o, idx) => (
+                <option key={`${o}-${idx}`} value={o}>
+                  {o}
+                </option>
               ))}
             </select>
           </div>
