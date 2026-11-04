@@ -4,9 +4,9 @@ export const company = {
   city: "Coimbatore",
   address: "Ksg Tools, Prozone Mall, 4th St, Sivanandhapuram, Sivanadha Puram, Saravanampatti, Coimbatore, Tamil Nadu 641035",
   shortAddress: "Sivanandhapuram, Saravanampatti, Coimbatore - 641035",
-  mapUrl: "https://maps.app.goo.gl/utTU13C3ArqoE3nd7?g_st=aw",
+  mapUrl: "https://www.google.com/maps/dir/?api=1&destination=11.0533174,76.9950886",
   mapEmbedUrl:
-    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3915.68812674062!2d76.9928522!3d11.0533943!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba8f7df3bc4425b%3A0x743dfa266b215ac8!2sKsg%20Tools!5e0!3m2!1sen!2sin!4v1714000000000!5m2!1sen!2sin",
+    "https://maps.google.com/maps?q=11.0533174,76.9950886&t=&z=17&ie=UTF8&iwloc=&output=embed",
   estd: 2009,
   tagline:
     "Manufacturing, Sampling, Recycling Machine Spares, Shredded Blade, Wood Chipper Blades, Plastic Grinder Blades.",
