@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Chatbot from "@/components/Chatbot";
+import FloatingQuickActions from "@/components/FloatingQuickActions";
 import JsonLd from "@/components/JsonLd";
 import "./globals.css";
 import "./hero-slider.css";
@@ -78,6 +79,7 @@ export default function RootLayout({
         <main>{children}</main>
         <Footer />
         <Chatbot />
+        <FloatingQuickActions />
         <JsonLd />
       </body>
     </html>

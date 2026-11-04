@@ -4,10 +4,8 @@ import Image from "next/image";
 import Link from "next/link";
 import Icon from "@/components/icons";
 import PageHeader from "@/components/PageHeader";
-import ShapeGrid from "@/components/ShapeGrid";
 import CtaBand from "@/components/sections/CtaBand";
-import ContactSection from "@/components/sections/ContactSection";
-import { allProducts, getProductBySlug, company, videos } from "@/lib/data";
+import { allProducts, getProductBySlug, company } from "@/lib/data";
 
 export const dynamicParams = false;
 
@@ -25,8 +23,7 @@ export async function generateMetadata({
   if (!product) return { title: "Product Not Found | K.S.G. Tools" };
   return {
     title: `${product.name} | K.S.G. Tools`,
-    description: `${product.name} by ${company.name}, Coimbatore. ${product.price === null ? "Ask for price" : `Price ₹ ${product.price} / Piece.`
-      } Get best quote for your requirement.`,
+    description: `${product.name} precision manufactured by ${company.name}, Coimbatore. Direct manufacturer quote, custom sampling and fast road delivery.`,
   };
 }
 
@@ -44,12 +41,19 @@ export default async function ProductPage({
     .concat(allProducts.filter((p) => p.slug !== product.slug && p.category !== product.category))
     .slice(0, 4);
 
+  const waText = encodeURIComponent(
+    `Hi K.S.G. Tools, I want to enquire about:\n*${product.name}*\n` +
+      `Category: ${product.category ?? "Industrial Tools"}\n` +
+      (product.moq ? `MOQ: ${product.moq}\n` : "") +
+      `Please share technical drawings, pricing, and dispatch schedule.`
+  );
+
   return (
     <>
       <PageHeader
-        eyebrow="Product Details"
+        eyebrow="Precision Tooling"
         title={product.name}
-        subtitle={`Precision manufactured by ${company.name}, ${company.city} with high-grade wear-resistant tool steels and precision ground edges.`}
+        subtitle={`Engineered and manufactured by ${company.name}, ${company.city} using wear-resistant tool steels with precision ground edges.`}
         pageType="product-detail"
         breadcrumbs={[
           { label: "Home", href: "/" },
@@ -65,11 +69,9 @@ export default async function ProductPage({
               </span>
             </div>
             <div className="detail-hero-price-row">
-              <div className="detail-hero-price">
-                <span className="detail-hero-price-num">
-                  {product.price === null ? "Ask Price" : `₹ ${product.price.toLocaleString("en-IN")}`}
-                </span>
-                <span className="detail-hero-price-unit">{product.price === null ? "" : " / Piece"}</span>
+              <div className="detail-hero-quote-badge">
+                <Icon name="award" size={14} />
+                <span>Custom Quote on Request</span>
               </div>
               {product.moq && (
                 <span className="detail-hero-moq">MOQ: {product.moq}</span>
@@ -88,15 +90,12 @@ export default async function ProductPage({
                 <div className="capability-item-title">
                   <Icon name="truck" size={13} /> Dispatch Mode
                 </div>
-                <div className="capability-item-desc">By Road from Coimbatore</div>
+                <div className="capability-item-desc">Palletized by Road from Coimbatore</div>
               </div>
             </div>
             <div className="capability-actions">
               <a
-                href={`https://wa.me/${company.whatsapp}?text=${encodeURIComponent(
-                  `Hi K.S.G. Tools, I want to order/enquire about ${product.name}.\nPrice: ${product.price === null ? "Ask Price" : `₹ ${product.price.toLocaleString("en-IN")} / Piece`
-                  }\nPlease share technical drawing and quote.`
-                )}`}
+                href={`https://wa.me/${company.whatsapp}?text=${waText}`}
                 target="_blank"
                 rel="noreferrer"
                 className="btn-hero-wa"
@@ -115,6 +114,7 @@ export default async function ProductPage({
         <div className="container">
           <div className="product-detail-layout">
             <div className="detail-main">
+              {/* Product Image Gallery Box */}
               <div className="detail-gallery">
                 <Image
                   src={product.image}
@@ -125,23 +125,31 @@ export default async function ProductPage({
                   priority
                 />
                 <span className="tag">{product.subCategory ?? product.category}</span>
+                <span className="detail-origin-badge">Coimbatore Made</span>
               </div>
 
+              {/* Verified Machinery Operation Demos Link */}
               <div className="detail-video">
                 <div className="detail-video-thumb">
-                  <Icon name="play" size={30} />
+                  <Icon name="play" size={24} />
                 </div>
                 <div className="detail-video-info">
-                  <strong>Product Video</strong>
+                  <strong>Live Machine Operation Trials</strong>
                   <span>
-                    {videos[0]?.desc ?? "Video coming soon for this product."} A demo video
-                    is being prepared — coming soon.
+                    Watch our heavy-duty shredders and industrial knives running in real workshop trials.
                   </span>
                 </div>
+                <Link href="/videos" className="btn btn-outline-dark" style={{ padding: "8px 16px", fontSize: 13 }}>
+                  Watch Videos →
+                </Link>
               </div>
 
+              {/* Verified Product Specifications Table */}
               <div className="detail-card">
-                <h3>Product Specifications</h3>
+                <div className="detail-card-head">
+                  <Icon name="wrench" size={20} />
+                  <h3>Verified Technical Specifications</h3>
+                </div>
                 <div className="spec-list full">
                   {product.specs.map(([k, v]) => (
                     <div className="spec-row" key={k}>
@@ -149,65 +157,98 @@ export default async function ProductPage({
                       <span className="v">{v}</span>
                     </div>
                   ))}
+                  {product.moq && (
+                    <div className="spec-row">
+                      <span className="k">Minimum Order Quantity (MOQ)</span>
+                      <span className="v">{product.moq}</span>
+                    </div>
+                  )}
+                  <div className="spec-row">
+                    <span className="k">Supply Origin</span>
+                    <span className="v">{company.shortAddress}</span>
+                  </div>
+                  <div className="spec-row">
+                    <span className="k">Machining Tolerance</span>
+                    <span className="v">&plusmn;0.02mm CNC Accuracy</span>
+                  </div>
                 </div>
               </div>
 
+              {/* Engineering Description & Applications */}
               <div className="detail-card">
-                <h3>Product Description</h3>
+                <div className="detail-card-head">
+                  <Icon name="document" size={20} />
+                  <h3>Product Description &amp; Engineering Fitment</h3>
+                </div>
                 <p>{product.desc}</p>
                 <p className="muted-p">
-                  {company.name} is a trusted manufacturer and supplier based in{" "}
-                  {company.city}, Tamil Nadu. Every blade is offered in customized sizes,
-                  materials and finishes to suit your machine and application.
+                  {company.name} is a dedicated manufacturer based in {company.city}, Tamil Nadu.
+                  Every blade is engineered with specialized bevel angles, custom bolt hole pitches,
+                  and selected tool steels (D2 / HCHCr / High Carbon / SS304) to match your machine
+                  specifications and maximize production uptime.
                 </p>
+
+                {/* Engineering Highlights Grid */}
+                <div className="engineering-highlights-grid">
+                  <div className="highlight-pill">
+                    <Icon name="check" size={14} />
+                    <span>D2 / HCHCr High-Wear Tool Steels</span>
+                  </div>
+                  <div className="highlight-pill">
+                    <Icon name="check" size={14} />
+                    <span>Optical Edge Hardness Checked</span>
+                  </div>
+                  <div className="highlight-pill">
+                    <Icon name="check" size={14} />
+                    <span>Custom Sampling to Customer Drawing</span>
+                  </div>
+                  <div className="highlight-pill">
+                    <Icon name="check" size={14} />
+                    <span>Direct Factory Value from Coimbatore</span>
+                  </div>
+                </div>
               </div>
             </div>
 
+            {/* Sticky Pricing & RFQ Sidebar */}
             <aside className="detail-side">
               <div className="detail-pricecard">
                 <div className="detail-code-banner">
                   <span className="code-label">Direct Manufacturer</span>
                   <span className="code-value">{company.city}</span>
                 </div>
-                <div className="detail-price">
-                  {product.price === null ? (
-                    "Ask Price"
-                  ) : (
-                    <>
-                      ₹ <strong>{product.price.toLocaleString("en-IN")}</strong> / Piece
-                    </>
-                  )}
+                <div className="detail-quote-heading">
+                  <div className="detail-quote-title">Direct Factory Quote</div>
+                  <div className="detail-quote-subtitle">Custom dimensions, hole pitch &amp; material grades</div>
                 </div>
                 {product.moq && (
                   <div className="detail-moq">Minimum order quantity: {product.moq}</div>
                 )}
-                <a
+                <Link
                   href={`/contact?product=${encodeURIComponent(product.name)}`}
                   className="btn btn-primary w100"
                 >
-                  Get Best Quote
-                </a>
-                <a href={`tel:${company.phoneLink}`} className="btn btn-dark w100">
-                  Call Now
-                </a>
+                  Request Official RFQ
+                </Link>
                 <a
-                  href={`https://wa.me/${company.whatsapp}?text=${encodeURIComponent(
-                    `Hi K.S.G. Tools, I am interested in: ${product.name}\nPrice: ${product.price === null ? "Ask Price" : `₹ ${product.price.toLocaleString("en-IN")} / Piece`}\nPlease share technical specifications and best quote.`
-                  )}`}
+                  href={`https://wa.me/${company.whatsapp}?text=${waText}`}
                   target="_blank"
                   rel="noreferrer"
                   className="btn btn-wa w100"
                 >
-                  <Icon name="chat" size={16} /> WhatsApp Enquiry
+                  <Icon name="chat" size={16} /> Instant WhatsApp Quote
+                </a>
+                <a href={`tel:${company.phoneLink}`} className="btn btn-dark w100">
+                  <Icon name="phone" size={15} /> Call Sales: {company.phone}
                 </a>
                 <p className="form-note">
-                  GST+ &amp; handling charges extra as applicable. Shipment by{" "}
-                  {company.city} via road transport.
+                  Direct manufacturer supply. Safe road transport dispatch across India.
                 </p>
               </div>
 
+              {/* Related Tooling */}
               <div className="detail-card related-title">
-                <h3>Related Products</h3>
+                <h3>Related Tooling &amp; Spares</h3>
               </div>
               <div className="related-list">
                 {related.map((r) => (
@@ -227,10 +268,8 @@ export default async function ProductPage({
                     </span>
                     <span className="related-body">
                       <span className="related-name">{r.name}</span>
-                      <span className="related-price">
-                        {r.price === null
-                          ? "Ask Price"
-                          : `₹ ${r.price.toLocaleString("en-IN")} / Piece`}
+                      <span className="related-category-tag">
+                        {r.subCategory ?? r.category}
                       </span>
                     </span>
                     <Icon name="chevronDown" size={16} className="related-arrow" />
@@ -242,7 +281,6 @@ export default async function ProductPage({
         </div>
       </section>
       <CtaBand />
-      <ContactSection />
     </>
   );
 }

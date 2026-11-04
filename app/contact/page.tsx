@@ -4,7 +4,6 @@ import PageHeader from "@/components/PageHeader";
 import ContactForm from "@/components/ContactForm";
 import LocationMapSection from "@/components/sections/LocationMapSection";
 import CtaBand from "@/components/sections/CtaBand";
-import ContactSection from "@/components/sections/ContactSection";
 import { company, factsheet } from "@/lib/data";
 
 export const metadata: Metadata = {
@@ -13,23 +12,18 @@ export const metadata: Metadata = {
     "Contact K.S.G. Tools, Coimbatore for Shredder Knives, Granulator Blades and industrial cutting tools. Call, email or send an enquiry.",
 };
 
-export default async function ContactPage({
-  searchParams,
-}: {
-  searchParams: Promise<{ product?: string }>;
-}) {
-  const { product } = await searchParams;
+export default function ContactPage() {
   return (
     <>
       <PageHeader
         eyebrow="Get in Touch"
         title="Contact Us"
-        subtitle="Reach our team for prices, specifications and custom tooling orders. We respond within 24 working hours."
+        subtitle="Reach our team for quotations, specifications and custom tooling orders. We respond within 24 working hours."
       />
       <section className="section">
         <div className="container">
           <div className="contact-layout">
-            <ContactForm defaultProduct={product} />
+            <ContactForm />
             <div className="contact-side">
               <div className="contact-cell">
                 <div className="ico" aria-hidden>
@@ -89,7 +83,6 @@ export default async function ContactPage({
         subtitle="We welcome clients and procurement managers for live tool inspections and technical discussions."
       />
       <CtaBand />
-      <ContactSection />
     </>
   );
 }

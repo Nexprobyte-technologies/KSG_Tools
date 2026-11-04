@@ -66,8 +66,7 @@ const LEAD_INTENT = [
   "call back",
 ];
 
-const PRODUCT_LABEL = (price: number | null): string =>
-  price === null ? "Ask Price" : `₹ ${price.toLocaleString("en-IN")}/Piece`;
+const PRODUCT_LABEL = (): string => "Custom Quote on Request";
 
 const SPECS_TEXT = (specs: [string, string][], moq?: string | null): string => {
   const rows = specs.map(([k, v]) => `${k}: ${v}`).join(" · ");
@@ -78,24 +77,23 @@ const matchProduct = (q: string) => {
   const qClean = q.toLowerCase();
   for (const p of allProducts) {
     if (
-      qClean.includes(p.code.toLowerCase()) ||
-      qClean.includes(p.code.toLowerCase().replace("-", "")) ||
-      qClean.includes(p.name.toLowerCase())
+      qClean.includes(p.name.toLowerCase()) ||
+      (p.subCategory && qClean.includes(p.subCategory.toLowerCase()))
     ) {
       return p;
     }
   }
   const has = (words: string[]) => words.some((w) => qClean.includes(w));
-  if (has(["vmc", "4 axis", "4-axis"])) return allProducts.find((p) => p.code === "KSG-701");
-  if (has(["press tool", "die manufacturer"])) return allProducts.find((p) => p.code === "KSG-301");
-  if (has(["moulding die", "moulding dies"])) return allProducts.find((p) => p.code === "KSG-302");
-  if (has(["chipper", "wood chipper"])) return allProducts.find((p) => p.code === "KSG-201");
-  if (has(["chaff", "chaff cutter"])) return allProducts.find((p) => p.code === "KSG-801");
-  if (has(["granulator"])) return allProducts.find((p) => p.code === "KSG-601");
-  if (has(["shredding machine", "automatic shredder"])) return allProducts.find((p) => p.code === "KSG-401");
-  if (has(["coconut husk", "coir"])) return allProducts.find((p) => p.code === "KSG-403");
-  if (has(["grinder", "plastic crusher"])) return allProducts.find((p) => p.code === "KSG-501");
-  if (has(["aluminium pattern"])) return allProducts.find((p) => p.code === "KSG-303");
+  if (has(["vmc", "4 axis", "4-axis"])) return allProducts.find((p) => p.slug === "vmc-job-work-with-material-with-4-axis");
+  if (has(["press tool", "die manufacturer"])) return allProducts.find((p) => p.slug === "press-tool-die-manufacturer");
+  if (has(["moulding die", "moulding dies"])) return allProducts.find((p) => p.slug === "plastic-moulding-dies");
+  if (has(["chipper", "wood chipper"])) return allProducts.find((p) => p.slug === "4-inch-stainless-steel-chipper-knife");
+  if (has(["chaff", "chaff cutter"])) return allProducts.find((p) => p.slug === "steel-crusher-blade-for-industrial");
+  if (has(["granulator"])) return allProducts.find((p) => p.slug === "plastic-recycling-granulator-blade");
+  if (has(["shredding machine", "automatic shredder"])) return allProducts.find((p) => p.slug === "metal-shredder-machine");
+  if (has(["coconut husk", "coir"])) return allProducts.find((p) => p.slug === "double-shaft-automatic-shredding-machine");
+  if (has(["grinder", "plastic crusher"])) return allProducts.find((p) => p.slug === "shredder-machine-blade-for-industrial");
+  if (has(["aluminium pattern"])) return allProducts.find((p) => p.slug === "aluminium-pattern-works");
   return null;
 };
 
@@ -215,7 +213,7 @@ export function getBotReply(
     if (state.step === "done") {
       return {
         text: "Your enquiry has been prepared. Tap the WhatsApp button below to send it. You can also start a fresh enquiry anytime by typing 'enquiry'.",
-        suggestions: ["Start new enquiry", "Our products", "Prices"],
+        suggestions: ["Start new enquiry", "Our products", "Catalogue"],
         next: INITIAL_STATE,
       };
     }
@@ -243,7 +241,7 @@ export function getBotReply(
   if (product) {
     const spec = SPECS_TEXT(product.specs, product.moq);
     return {
-      text: `[Item Code: ${product.code}] ${product.name}\nPrice: ${PRODUCT_LABEL(product.price)}\nSpecification: ${spec}\n\n${product.desc ?? ""}\n\nType 'enquiry' to order this on WhatsApp with Product Code #${product.code}.`,
+      text: `*${product.name}*\nSpecification: ${spec}\n\n${product.desc ?? ""}\n\nType 'enquiry' to order this on WhatsApp.`,
       suggestions: ["Order now", "MOQ details", "More products"],
       next: INITIAL_STATE,
     };
@@ -254,8 +252,8 @@ export function getBotReply(
   for (const topic of CATEGORY_TOPICS) {
     if (has(...topic.match)) {
       return {
-        text: `${topic.name}: ${topic.count} product${topic.count > 1 ? "s" : ""} available.\n${topic.note}\n\nFor a full price list and catalogue, contact our team.`,
-        suggestions: ["Full price list", "Shredder Knives", "Send enquiry"],
+        text: `${topic.name}: ${topic.count} product${topic.count > 1 ? "s" : ""} available.\n${topic.note}\n\nFor our full product catalogue and quotation, contact our team.`,
+        suggestions: ["Download Catalogue", "Shredder Knives", "Send enquiry"],
         next: INITIAL_STATE,
       };
     }
@@ -265,27 +263,24 @@ export function getBotReply(
     words.some((word) => new RegExp(`(?:^|[^a-z])${word}(?=$|[^a-z])`, "i").test(q));
   if (hasWord("hi", "hello", "hey", "vanakkam", "namaste", "namaskaram", "good morning", "good afternoon", "good evening")) {
     return {
-      text: `Hello! Welcome to ${company.name}, ${company.city}. I can help with products, prices, specifications, GST details, payments and shipping. You can also leave your details here and get an instant WhatsApp order enquiry. How can I assist?`,
-      suggestions: ["Our products", "Prices", "GST details", "Send enquiry"],
+      text: `Hello! Welcome to ${company.name}, ${company.city}. I can help with products, specifications, catalogue, GST details, payments and shipping. You can also leave your details here and get an instant WhatsApp order enquiry. How can I assist?`,
+      suggestions: ["Our products", "Catalogue", "GST details", "Send enquiry"],
       next: INITIAL_STATE,
     };
   }
 
   if (has("price", "prices", "cost", "rate", "rates", "quote", "quotation", "best price", "cheap")) {
-    const list = allProducts.slice(0, 6)
-      .map((p) => `• [${p.code}] ${p.name} — ${PRODUCT_LABEL(p.price)}`)
-      .join("\n");
     return {
-      text: `Here is our indicative product price list with Item Codes:\n${list}\n\nFinal prices depend on quantity, material and customisation — type 'enquiry' to get a best quote on WhatsApp!`,
-      suggestions: ["Chipper Knives", "Tools & Dies", "MOQ details", "Send enquiry"],
+      text: `All ${company.name} products are custom manufactured to your machine's exact dimensions, hole pitch, and steel grade (AISI D2, HCHCr, Carbide, High Speed Steel). Quotations are tailored based on order quantities and technical drawings.\n\nType 'enquiry' to get an instant direct factory quote on WhatsApp, or download our full PDF catalogue!`,
+      suggestions: ["Download Catalogue", "Chipper Knives", "Tools & Dies", "Send enquiry"],
       next: INITIAL_STATE,
     };
   }
 
   if (has("moq", "minimum order", "order quantity", "bulk", "wholesale")) {
     return {
-      text: `Minimum Order Quantity is 100 Piece for most Shredder Knives. We also support wholesale and bulk orders with competitive pricing and timely delivery.`,
-      suggestions: ["Prices", "Payment modes", "Shipment", "Send enquiry"],
+      text: `Minimum Order Quantity is 100 Piece for most Shredder Knives. We also support wholesale and bulk orders with direct factory supply and timely delivery.`,
+      suggestions: ["Catalogue", "Payment modes", "Shipment", "Send enquiry"],
       next: INITIAL_STATE,
     };
   }
@@ -301,8 +296,8 @@ export function getBotReply(
   if (has("product", "catalogue", "catalog", "range", "offering", "services", "everything")) {
     const cats = categories.map((c) => `${c.name} (${c.count})`).join(", ");
     return {
-      text: `We offer a wide range:\n\n${cats}\n\nAsk me about any range, prices or specifications.`,
-      suggestions: ["Shredder Knives", "Granulator Blades", "Prices"],
+      text: `We offer a wide range:\n\n${cats}\n\nAsk me about any range, specifications or catalogue.`,
+      suggestions: ["Shredder Knives", "Granulator Blades", "Catalogue"],
       next: INITIAL_STATE,
     };
   }
@@ -342,7 +337,7 @@ export function getBotReply(
   if (has("why", "advantage", "benefit", "quality", "trust", "best", "reliable", "warranty", "guarantee")) {
     return {
       text: `Why our clients choose ${company.name}:\n\n${whyUsPoints.map((p) => `• ${p}`).join("\n")}`,
-      suggestions: ["Reviews", "About us", "Prices"],
+      suggestions: ["Reviews", "About us", "Catalogue"],
       next: INITIAL_STATE,
     };
   }
@@ -374,7 +369,7 @@ export function getBotReply(
   if (has("contact", "phone", "number", "mobile", "call", "whatsapp", "email", "mail", "reach")) {
     return {
       text: `You can reach us:\n\nPhone / WhatsApp: ${company.phone}\nEmail: ${company.email}\nLocation: Coimbatore, Tamil Nadu, India\nHours: Mon - Sat, 9 AM - 7 PM\n\nYou can also type 'enquiry' and I will send your order details to our WhatsApp instantly.`,
-      suggestions: ["Send enquiry", "Products", "Prices"],
+      suggestions: ["Send enquiry", "Products", "Catalogue"],
       next: INITIAL_STATE,
     };
   }
@@ -388,8 +383,8 @@ export function getBotReply(
   }
 
   return {
-    text: `I'm sorry, I didn't fully understand that. I can help with:\n\n• Our products & prices\n• Specifications & MOQ\n• GST, payment and shipping\n• About us, reviews and contact details\n\nYou can also type 'enquiry' to place an order on WhatsApp. Try one of the quick options below.`,
-    suggestions: ["Our products", "Prices", "GST details", "Send enquiry"],
+    text: `I'm sorry, I didn't fully understand that. I can help with:\n\n• Our products & specifications\n• Specifications & MOQ\n• GST, payment and shipping\n• About us, reviews and contact details\n\nYou can also type 'enquiry' to place an order on WhatsApp. Try one of the quick options below.`,
+    suggestions: ["Our products", "Catalogue", "GST details", "Send enquiry"],
     next: INITIAL_STATE,
   };
 }

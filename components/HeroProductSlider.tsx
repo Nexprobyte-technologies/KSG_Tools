@@ -1,83 +1,53 @@
 "use client";
 
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import Icon from "@/components/icons";
-import { allProducts, company } from "@/lib/data";
+import { allProducts, company, type Product } from "@/lib/data";
 
-const INTERVAL_MS = 3800;
+const FEATURED_SLUGS = [
+  "4-inch-stainless-steel-chipper-knife",
+  "press-tool-die-manufacturer",
+  "metal-shredder-machine",
+  "plastic-recycling-granulator-blade",
+  "vmc-job-work-with-material-with-4-axis",
+];
+
+const FEATURED_PRODUCTS: Product[] = FEATURED_SLUGS.map((slug) =>
+  allProducts.find((p) => p.slug === slug)
+).filter(Boolean) as Product[];
+
+const INTERVAL_MS = 4000;
 
 export default function HeroProductSlider() {
-  const products = [
-    allProducts.find((p) => p.code === "KSG-201"),
-    allProducts.find((p) => p.code === "KSG-301"),
-    allProducts.find((p) => p.code === "KSG-401"),
-    allProducts.find((p) => p.code === "KSG-501"),
-    allProducts.find((p) => p.code === "KSG-601"),
-    allProducts.find((p) => p.code === "KSG-701"),
-    allProducts.find((p) => p.code === "KSG-801"),
-  ].filter(Boolean) as typeof allProducts;
   const [currentIdx, setCurrentIdx] = useState(0);
   const [isPaused, setIsPaused] = useState(false);
-  const [progress, setProgress] = useState(0);
-  const timerRef = useRef<NodeJS.Timeout | null>(null);
-  const animFrameRef = useRef<number | null>(null);
-  const startTimeRef = useRef<number>(Date.now());
 
-  // Auto-rotation effect
+  // Auto-advance in the exact same place every 4 seconds (pauses on hover)
   useEffect(() => {
-    if (isPaused) {
-      if (timerRef.current) clearInterval(timerRef.current);
-      return;
-    }
+    if (isPaused) return;
 
-    startTimeRef.current = Date.now();
-    setProgress(0);
-
-    const updateProgress = () => {
-      const elapsed = Date.now() - startTimeRef.current;
-      const pct = Math.min(100, (elapsed / INTERVAL_MS) * 100);
-      setProgress(pct);
-
-      if (elapsed < INTERVAL_MS) {
-        animFrameRef.current = requestAnimationFrame(updateProgress);
-      }
-    };
-
-    animFrameRef.current = requestAnimationFrame(updateProgress);
-
-    timerRef.current = setInterval(() => {
-      setCurrentIdx((prev) => (prev + 1) % products.length);
-      startTimeRef.current = Date.now();
-      setProgress(0);
+    const timer = setInterval(() => {
+      setCurrentIdx((prev) => (prev + 1) % FEATURED_PRODUCTS.length);
     }, INTERVAL_MS);
 
-    return () => {
-      if (timerRef.current) clearInterval(timerRef.current);
-      if (animFrameRef.current) cancelAnimationFrame(animFrameRef.current);
-    };
-  }, [currentIdx, isPaused, products.length]);
+    return () => clearInterval(timer);
+  }, [isPaused, currentIdx]);
 
   const handleNext = () => {
-    setCurrentIdx((prev) => (prev + 1) % products.length);
-    startTimeRef.current = Date.now();
-    setProgress(0);
+    setCurrentIdx((prev) => (prev + 1) % FEATURED_PRODUCTS.length);
   };
 
   const handlePrev = () => {
-    setCurrentIdx((prev) => (prev - 1 + products.length) % products.length);
-    startTimeRef.current = Date.now();
-    setProgress(0);
+    setCurrentIdx((prev) => (prev - 1 + FEATURED_PRODUCTS.length) % FEATURED_PRODUCTS.length);
   };
 
   const handleSelect = (idx: number) => {
     setCurrentIdx(idx);
-    startTimeRef.current = Date.now();
-    setProgress(0);
   };
 
-  const curr = products[currentIdx];
+  const curr = FEATURED_PRODUCTS[currentIdx] || FEATURED_PRODUCTS[0];
 
   return (
     <div
@@ -96,7 +66,7 @@ export default function HeroProductSlider() {
         <div className="slider-counter">
           <span className="current-num">{String(currentIdx + 1).padStart(2, "0")}</span>
           <span className="sep">/</span>
-          <span className="total-num">{String(products.length).padStart(2, "0")}</span>
+          <span className="total-num">{String(FEATURED_PRODUCTS.length).padStart(2, "0")}</span>
         </div>
         <div className="slider-nav-btns">
           <button
@@ -123,14 +93,14 @@ export default function HeroProductSlider() {
       {/* Progress Bar indicating auto-slide */}
       <div className="slider-progress-track">
         <div
-          className="slider-progress-bar"
-          style={{ width: isPaused ? "100%" : `${progress}%` }}
+          key={currentIdx}
+          className={`slider-progress-bar${isPaused ? " is-paused" : ""}`}
         />
       </div>
 
-      {/* Main Animated Card */}
-      <div className="hero-product-card" key={curr.code}>
-        {/* Media with Code Tag and Price */}
+      {/* In-Place Product Card (stays in the exact same place, changes smoothly) */}
+      <div className="hero-product-card" key={curr.slug}>
+        {/* Media with Code Tag and Badge */}
         <div className="hp-media-box">
           <Image
             src={curr.image}
@@ -144,10 +114,8 @@ export default function HeroProductSlider() {
             <span className="hp-code-pill">
               {curr.subCategory ?? curr.category}
             </span>
-            <span className={`hp-price-tag${curr.price === null ? " ask" : ""}`}>
-              {curr.price === null
-                ? "Ask Price"
-                : `₹ ${curr.price.toLocaleString("en-IN")}`}
+            <span className="hp-quote-tag">
+              Factory Direct
             </span>
           </div>
         </div>
@@ -155,8 +123,12 @@ export default function HeroProductSlider() {
         {/* Product Details */}
         <div className="hp-info-box">
           <div className="hp-title-row">
-            <span className="hp-code-label">Category: <strong>{curr.category}</strong></span>
-            {curr.moq && <span className="hp-moq-chip">MOQ: {curr.moq}</span>}
+            <span className="hp-code-label">
+              Category: <strong>{curr.category}</strong>
+            </span>
+            {curr.moq && (
+              <span className="hp-moq-chip">MOQ: {curr.moq}</span>
+            )}
           </div>
 
           <h3 className="hp-name">
@@ -172,9 +144,12 @@ export default function HeroProductSlider() {
             ))}
           </div>
 
-          {/* Action Button - single clean View Details button */}
+          {/* Action Button */}
           <div className="hp-actions">
-            <Link href={`/products/${curr.slug}`} className="btn btn-primary hp-btn-details w-full">
+            <Link
+              href={`/products/${curr.slug}`}
+              className="btn btn-primary hp-btn-details w-full"
+            >
               View Details →
             </Link>
           </div>
@@ -183,9 +158,9 @@ export default function HeroProductSlider() {
 
       {/* Pagination Dots */}
       <div className="slider-dots">
-        {products.map((p, i) => (
+        {FEATURED_PRODUCTS.map((p, i) => (
           <button
-            key={p.code}
+            key={p.slug}
             type="button"
             className={`slider-dot ${i === currentIdx ? "active" : ""}`}
             onClick={() => handleSelect(i)}
@@ -201,7 +176,7 @@ export default function HeroProductSlider() {
           <Icon name="check" size={13} /> {company.city} Factory Direct
         </span>
         <span>
-          <Icon name="check" size={13} /> All Products Enquirable by Code
+          <Icon name="check" size={13} /> Custom Sizes & Specifications Supported
         </span>
       </div>
     </div>

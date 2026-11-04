@@ -18,7 +18,7 @@ interface Msg {
   lead?: Lead;
 }
 
-const DEFAULT_SUGGESTIONS = ["Our products", "Prices", "GST details", "Send enquiry"];
+const DEFAULT_SUGGESTIONS = ["Our products", "Specifications", "Catalogue", "Send enquiry"];
 
 function getContextProduct(pathname: string): string | undefined {
   const match = pathname.match(/^\/products\/([^/]+)/);
@@ -96,7 +96,7 @@ export default function Chatbot() {
             {msgs.length === 0 && (
               <div className="chat-msg bot">
                 Vanakkam! Welcome to K.S.G. Tools, Coimbatore. I can help with our
-                products, prices, specifications, GST, payments and more. You can also
+                products, specifications, catalogue, GST, payments and more. You can also
                 type &quot;enquiry&quot; to place an order on WhatsApp.
               </div>
             )}

@@ -1,60 +1,64 @@
+import Image from "next/image";
+import Link from "next/link";
 import Icon from "@/components/icons";
-import ShapeGrid from "@/components/ShapeGrid";
-import HeroProductSlider from "@/components/HeroProductSlider";
 import { company } from "@/lib/data";
 
 export default function Hero() {
   return (
-    <section id="home" className="hero">
-      <ShapeGrid
-        className="hero-canvas"
-        direction="diagonal"
-        speed={0.5}
-        squareSize={46}
-        borderColor="rgba(148, 163, 184, 0.3)"
-        hoverFillColor="rgba(56, 189, 248, 0.18)"
-        shape="hexagon"
-        hoverTrailAmount={8}
-        backgroundColor="rgba(7, 13, 30, 0.45)"
-      />
-      <div className="container">
-        <div>
+    <section id="home" className="hero" aria-label="Hero Introduction">
+      {/* Genuine Factory Infrastructure Background Image with slow zoom */}
+      <div className="hero-bg-media" aria-hidden="true">
+        <Image
+          src="/infrastructure/feeler-vmp-45a-machining-center.webp"
+          alt="K.S.G. Tools FEELER VMP-45A Precision CNC Machining Center"
+          fill
+          priority
+          sizes="100vw"
+          className="hero-bg-img"
+        />
+        <div className="hero-overlay" />
+      </div>
+
+      <div className="container hero-container-centered">
+        <div className="hero-content-centered">
           <span className="hero-badge">
             <Icon name="factory" size={14} /> Estd. 2009 · Industrial Tool Manufacturer · Coimbatore
           </span>
           <h1>
-            Precision Components Manufacturing and Tradings by <span className="accent">K.S.G. Tools</span>
+            Industrial Cutting Tools, Shredder Knives &amp; VMC Machining by{" "}
+            <span className="accent">K.S.G. Tools</span>
           </h1>
           <p className="lead">
-            <strong>Manufacturing, Sampling, Recycling Machine Spares, Shredded Blade, Wood Chipper Blades, Plastic Grinder Blades.</strong>
+            Coimbatore-based direct manufacturer of high-wear Chipper Knives, Shredder Blades,
+            Granulator Cutters, Precision Tools &amp; Dies, and 4-Axis CNC VMC Machining.
           </p>
 
           <div className="hero-stats">
             <div className="stat-card">
               <div className="val">{company.years}+</div>
-              <div className="label">Years of Experience</div>
+              <div className="label">Years Manufacturing Hub</div>
             </div>
             <div className="stat-card">
               <div className="val">83+</div>
-              <div className="label">Products &amp; Services</div>
+              <div className="label">Product &amp; Service Lines</div>
+            </div>
+            <div className="stat-card">
+              <div className="val">&plusmn;0.02mm</div>
+              <div className="label">Machining Precision</div>
             </div>
             <div className="stat-card">
               <div className="val">100%</div>
-              <div className="label">Quality Tested</div>
-            </div>
-            <div className="stat-card">
-              <div className="val">100%</div>
-              <div className="label">Direct Dispatch</div>
+              <div className="label">Direct Factory Supply</div>
             </div>
           </div>
 
           <div className="hero-actions">
-            <a href="/products" className="btn btn-primary hero-btn-primary">
-              <Icon name="blade" size={16} /> View Products &amp; Services
-            </a>
-            <a href="/contact" className="btn btn-outline hero-btn-outline">
-              <Icon name="phone" size={16} /> Contact Supplier
-            </a>
+            <Link href="/products" className="btn btn-primary hero-btn-primary">
+              <Icon name="blade" size={16} /> Explore Products
+            </Link>
+            <Link href="/contact" className="btn btn-outline hero-btn-outline">
+              <Icon name="tag" size={16} /> Request a Quote
+            </Link>
           </div>
 
           <div className="hero-feature-tags">
@@ -62,19 +66,14 @@ export default function Hero() {
               <Icon name="check" size={13} /> D2 &amp; HCHCr High-Grade Tool Steels
             </span>
             <span className="hero-tag-item">
-              <Icon name="gear" size={13} /> 4-Axis VMC &amp; Custom Sampling
+              <Icon name="gear" size={13} /> 4-Axis CNC VMC &amp; Custom Sampling
             </span>
             <span className="hero-tag-item">
-              <Icon name="truck" size={13} /> Direct Manufacturer Pricing
+              <Icon name="truck" size={13} /> All-India Road Dispatch
             </span>
           </div>
         </div>
-
-        <div className="hero-slider-column">
-          <HeroProductSlider />
-        </div>
       </div>
-      <div className="hero-scroll">Scroll to explore ↓</div>
     </section>
   );
 }

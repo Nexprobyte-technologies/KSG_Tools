@@ -47,7 +47,7 @@ export default function LocationMapSection({
               </a>
               <a
                 href={`tel:${company.phoneLink}`}
-                className="btn btn-outline btn-call-hero"
+                className="btn btn-outline-dark btn-call-hero"
                 title="Call our workshop"
               >
                 <Icon name="phone" size={16} /> Call: {company.phone}

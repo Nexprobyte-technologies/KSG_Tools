@@ -8,65 +8,67 @@ import { navLinks, company } from "@/lib/data";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
   const pathname = usePathname();
 
-  const isActive = (href: string) =>
-    href === "/" ? pathname === "/" : pathname.startsWith(href);
+  const isActive = (href: string) => {
+    if (href === "/") return pathname === "/";
+    if (href.startsWith("/#")) return false;
+    return pathname.startsWith(href);
+  };
+
+  // Scroll detection for sticky header transition
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 20);
+    };
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    handleScroll();
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   // Auto-close on page navigation
   useEffect(() => {
     setOpen(false);
   }, [pathname]);
 
-  // Lock body scroll when mobile menu is open
+  // Lock body scroll and handle Escape key when mobile menu is open
   useEffect(() => {
     if (open) {
       document.body.style.overflow = "hidden";
+      const handleKeyDown = (e: KeyboardEvent) => {
+        if (e.key === "Escape") setOpen(false);
+      };
+      window.addEventListener("keydown", handleKeyDown);
+      return () => {
+        document.body.style.overflow = "";
+        window.removeEventListener("keydown", handleKeyDown);
+      };
     } else {
       document.body.style.overflow = "";
     }
-    return () => {
-      document.body.style.overflow = "";
-    };
   }, [open]);
 
   return (
     <>
-      <div className="topbar">
+      <header
+        className={`navbar${scrolled ? " scrolled" : ""}`}
+        role="banner"
+      >
         <div className="container">
-          <div className="topbar-left">
-            <span>
-              <Icon name="award" size={13} /> Estd. {company.estd} · 16+ Years Industrial Toolmaking
-            </span>
-            <span className="topbar-divider">|</span>
-            <span>
-              <Icon name="shield" size={13} /> GST: {company.gst}
-            </span>
-          </div>
-          <div className="topbar-right">
-            <span>
-              <Icon name="factory" size={13} /> Direct Manufacturer · {company.city}
-            </span>
-            <span className="topbar-divider">|</span>
-            <span>
-              <Icon name="check" size={13} /> Verified Precision Manufacturer
-            </span>
-          </div>
-        </div>
-      </div>
-
-      <header className="navbar">
-        <div className="container">
-          <Link href="/" className="brand" onClick={() => setOpen(false)}>
-            <span className="brand-mark">KSG</span>
-            <span className="brand-title-wrap">
-              <span className="brand-name">K.S.G. Tools</span>
-              <span className="brand-badge">Precision Tooling · Coimbatore</span>
-            </span>
+          <Link
+            href="/"
+            className="brand"
+            onClick={() => setOpen(false)}
+            aria-label="K.S.G. Tools Home"
+          >
+            <span className="brand-mark" aria-hidden="true">KSG</span>
+            <span className="brand-name">K.S.G. Tools</span>
           </Link>
 
-          <nav>
-            <ul className={`nav-links${open ? " open" : ""}`}>
+          {/* Desktop Navigation */}
+          <nav aria-label="Main Navigation">
+            <ul className="nav-links">
               {navLinks.map((l) => (
                 <li key={l.href}>
                   <Link
@@ -78,43 +80,17 @@ export default function Navbar() {
                   </Link>
                 </li>
               ))}
-              <li className="nav-mobile-cta">
-                <a
-                  href={`https://wa.me/${company.whatsapp}?text=${encodeURIComponent(
-                    "Hi K.S.G. Tools, please share your product catalogue."
-                  )}`}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="btn btn-primary nav-mobile-download-btn"
-                  onClick={() => setOpen(false)}
-                >
-                  <Icon name="download" size={16} /> Download Full Catalogue
-                </a>
-                <a
-                  href={`tel:${company.phoneLink}`}
-                  className="phone-pill phone-pill-mobile"
-                  onClick={() => setOpen(false)}
-                >
-                  <Icon name="phone" size={16} /> Call {company.phone}
-                </a>
-              </li>
             </ul>
           </nav>
 
+          {/* Header Action CTAs */}
           <div className="nav-cta">
-            <a href={`tel:${company.phoneLink}`} className="phone-pill">
-              <Icon name="phone" size={14} />
-              <span className="phone-pill-text">{company.phone}</span>
-            </a>
             <a
-              href={`https://wa.me/${company.whatsapp}?text=${encodeURIComponent(
-                "Hi K.S.G. Tools, please share your product catalogue."
-              )}`}
-              target="_blank"
-              rel="noreferrer"
+              href="/api/download-catalogue"
+              download="KSG-Tools-Product-Catalogue.pdf"
               className="btn btn-primary nav-download-btn"
-              title="Download Catalogue"
-              aria-label="Download Catalogue"
+              title="Download Product Catalogue (PDF)"
+              aria-label="Download Product Catalogue (PDF)"
             >
               <Icon name="download" size={14} />
               <span className="btn-text-full">Download Catalogue</span>
@@ -122,11 +98,13 @@ export default function Navbar() {
             </a>
           </div>
 
+          {/* Accessible Mobile Menu Button */}
           <button
             className="burger"
             type="button"
-            aria-label="Toggle menu"
+            aria-label={open ? "Close navigation menu" : "Open navigation menu"}
             aria-expanded={open}
+            aria-controls="mobile-nav-drawer"
             onClick={() => setOpen((v) => !v)}
           >
             {open ? "✕" : "☰"}
@@ -134,12 +112,76 @@ export default function Navbar() {
         </div>
       </header>
 
+      {/* Accessible Mobile Navigation Drawer */}
       {open && (
-        <div
-          className="nav-backdrop"
-          onClick={() => setOpen(false)}
-          aria-hidden="true"
-        />
+        <>
+          <div
+            className="nav-backdrop"
+            onClick={() => setOpen(false)}
+            aria-hidden="true"
+          />
+          <aside
+            id="mobile-nav-drawer"
+            className="mobile-drawer"
+            role="dialog"
+            aria-modal="true"
+            aria-label="Navigation Menu"
+          >
+            <div className="mobile-drawer-head">
+              <div className="mobile-drawer-brand">
+                <span className="brand-mark small" aria-hidden="true">KSG</span>
+                <span className="mobile-drawer-name">K.S.G. Tools</span>
+              </div>
+              <button
+                type="button"
+                className="mobile-drawer-close"
+                onClick={() => setOpen(false)}
+                aria-label="Close navigation menu"
+              >
+                ✕
+              </button>
+            </div>
+
+            <nav aria-label="Mobile Navigation Links">
+              <ul className="mobile-drawer-links">
+                {navLinks.map((l) => (
+                  <li key={l.href}>
+                    <Link
+                      href={l.href}
+                      className={isActive(l.href) ? "active" : ""}
+                      onClick={() => setOpen(false)}
+                    >
+                      <span>{l.label}</span>
+                      <span className="arrow" aria-hidden="true">→</span>
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </nav>
+
+            <div className="mobile-drawer-cta">
+              <a
+                href="/api/download-catalogue"
+                download="KSG-Tools-Product-Catalogue.pdf"
+                className="btn btn-primary mobile-cta-download"
+                onClick={() => setOpen(false)}
+              >
+                <Icon name="download" size={16} /> Download Full Catalogue (PDF)
+              </a>
+              <a
+                href={`https://wa.me/${company.whatsapp}?text=${encodeURIComponent(
+                  "Hi K.S.G. Tools, I would like to request technical specifications and custom quote."
+                )}`}
+                target="_blank"
+                rel="noreferrer"
+                className="btn btn-wa mobile-cta-wa"
+                onClick={() => setOpen(false)}
+              >
+                <Icon name="chat" size={16} /> Chat on WhatsApp
+              </a>
+            </div>
+          </aside>
+        </>
       )}
     </>
   );

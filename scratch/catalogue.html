@@ -1,0 +1,4488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>K.S.G. Tools — Official Industrial Product Catalogue</title>
+  <style>
+    @page {
+      size: A4 portrait;
+      margin: 14mm 12mm 16mm 12mm;
+      @bottom-right {
+        content: counter(page);
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      color: #0f172a;
+      background: #ffffff;
+      font-size: 11pt;
+      line-height: 1.45;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+
+    /* Print page breaks */
+    .page-break {
+      page-break-before: always;
+      break-before: page;
+    }
+
+    .avoid-break {
+      page-break-inside: avoid;
+      break-inside: avoid;
+    }
+
+    /* Running Header & Footer simulation */
+    .catalog-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 8px;
+      margin-bottom: 14px;
+      border-bottom: 2px solid #0284c7;
+      font-size: 8.5pt;
+      color: #64748b;
+    }
+    .catalog-header strong {
+      color: #0f172a;
+      font-size: 9.5pt;
+    }
+    .catalog-header .badge {
+      background: #0284c7;
+      color: #ffffff;
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-weight: 700;
+      font-size: 8pt;
+    }
+
+    /* ================= COVER PAGE ================= */
+    .cover-page {
+      min-height: 255mm;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      background: linear-gradient(145deg, #090f1d 0%, #0f172a 60%, #1e293b 100%);
+      color: #ffffff;
+      padding: 28mm 18mm;
+      border-radius: 12px;
+      position: relative;
+      overflow: hidden;
+    }
+    .cover-page::before {
+      content: "";
+      position: absolute;
+      top: -100px;
+      right: -100px;
+      width: 400px;
+      height: 400px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(2, 132, 199, 0.25) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .cover-top {
+      position: relative;
+      z-index: 2;
+    }
+    .cover-brand {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 28px;
+    }
+    .cover-mark {
+      background: linear-gradient(135deg, #0284c7, #2563eb);
+      color: #ffffff;
+      font-weight: 900;
+      font-size: 26pt;
+      padding: 8px 18px;
+      border-radius: 10px;
+      letter-spacing: 1px;
+      box-shadow: 0 8px 24px rgba(2, 132, 199, 0.4);
+    }
+    .cover-brand-text h1 {
+      font-size: 24pt;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      color: #ffffff;
+      line-height: 1.1;
+    }
+    .cover-brand-text span {
+      font-size: 10.5pt;
+      color: #38bdf8;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+    .cover-title-box {
+      margin-top: 40px;
+      padding-left: 20px;
+      border-left: 6px solid #38bdf8;
+    }
+    .cover-eyebrow {
+      display: inline-block;
+      font-size: 10pt;
+      color: #f59e0b;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+    .cover-main-title {
+      font-size: 32pt;
+      font-weight: 900;
+      line-height: 1.1;
+      color: #ffffff;
+      margin-bottom: 12px;
+    }
+    .cover-subtitle {
+      font-size: 12pt;
+      color: #cbd5e1;
+      max-width: 520px;
+      line-height: 1.5;
+    }
+
+    .cover-stats-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+      margin-top: 50px;
+    }
+    .cover-stat-card {
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 8px;
+      padding: 14px 12px;
+      text-align: center;
+    }
+    .cover-stat-num {
+      display: block;
+      font-size: 20pt;
+      font-weight: 800;
+      color: #38bdf8;
+      line-height: 1;
+      margin-bottom: 4px;
+    }
+    .cover-stat-label {
+      font-size: 8pt;
+      color: #94a3b8;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      font-weight: 600;
+    }
+
+    .cover-bottom {
+      position: relative;
+      z-index: 2;
+      border-top: 1px solid rgba(255, 255, 255, 0.15);
+      padding-top: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      font-size: 9pt;
+      color: #94a3b8;
+    }
+    .cover-contact-item {
+      margin-bottom: 4px;
+    }
+    .cover-contact-item strong {
+      color: #ffffff;
+    }
+    .cover-badge-tag {
+      background: rgba(56, 189, 248, 0.15);
+      border: 1px solid #38bdf8;
+      color: #38bdf8;
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 9pt;
+      font-weight: 700;
+      text-align: right;
+    }
+
+    /* ================= INDEX / COMPANY PROFILE PAGE ================= */
+    .section-title {
+      font-size: 18pt;
+      font-weight: 800;
+      color: #0f172a;
+      border-bottom: 3px solid #0284c7;
+      padding-bottom: 6px;
+      margin-bottom: 16px;
+    }
+    .intro-block {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      padding: 16px;
+      margin-bottom: 20px;
+      font-size: 10pt;
+      color: #334155;
+    }
+    .intro-block p {
+      margin-bottom: 8px;
+    }
+    .intro-block p:last-child {
+      margin-bottom: 0;
+    }
+
+    .toc-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin-bottom: 24px;
+    }
+    .toc-card {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 14px;
+      background: #ffffff;
+      border: 1px solid #cbd5e1;
+      border-left: 4px solid #0284c7;
+      border-radius: 6px;
+    }
+    .toc-name {
+      font-weight: 700;
+      font-size: 10.5pt;
+      color: #0f172a;
+    }
+    .toc-count {
+      background: #f1f5f9;
+      color: #0369a1;
+      font-size: 8.5pt;
+      font-weight: 700;
+      padding: 3px 8px;
+      border-radius: 12px;
+    }
+
+    .capabilities-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      margin-top: 16px;
+    }
+    .cap-box {
+      border: 1px solid #e2e8f0;
+      background: #fafafa;
+      padding: 12px;
+      border-radius: 6px;
+    }
+    .cap-box h4 {
+      font-size: 9.5pt;
+      font-weight: 800;
+      color: #0f172a;
+      margin-bottom: 6px;
+    }
+    .cap-box p {
+      font-size: 8.5pt;
+      color: #64748b;
+      line-height: 1.4;
+    }
+
+    /* ================= CATEGORY HEADER ================= */
+    .cat-divider {
+      background: linear-gradient(90deg, #0f172a 0%, #1e293b 100%);
+      color: #ffffff;
+      padding: 12px 16px;
+      border-radius: 8px;
+      margin-top: 10px;
+      margin-bottom: 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .cat-divider h2 {
+      font-size: 14pt;
+      font-weight: 800;
+      color: #ffffff;
+      letter-spacing: -0.3px;
+    }
+    .cat-divider span {
+      background: #0284c7;
+      color: #ffffff;
+      font-size: 8.5pt;
+      font-weight: 700;
+      padding: 3px 10px;
+      border-radius: 12px;
+    }
+
+    /* ================= PRODUCT CARD ================= */
+    .product-row-card {
+      display: block;
+      border: 1px solid #e2e8f0;
+      border-left: 4px solid #0284c7;
+      border-radius: 8px;
+      padding: 12px 14px;
+      margin-bottom: 11px;
+      background: #ffffff;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+    }
+    .prod-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .prod-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 4px;
+    }
+    .prod-title {
+      font-size: 11pt;
+      font-weight: 800;
+      color: #0f172a;
+      line-height: 1.25;
+      margin-right: 8px;
+    }
+    .prod-badges {
+      display: flex;
+      gap: 6px;
+      flex-shrink: 0;
+    }
+    .mfg-pill {
+      background: #f0f9ff;
+      color: #0369a1;
+      font-size: 7.5pt;
+      font-weight: 700;
+      padding: 2px 7px;
+      border-radius: 4px;
+      border: 1px solid #bae6fd;
+    }
+    .moq-pill {
+      background: #f1f5f9;
+      color: #475569;
+      font-size: 7.5pt;
+      font-weight: 600;
+      padding: 2px 6px;
+      border-radius: 4px;
+      border: 1px solid #e2e8f0;
+    }
+    .prod-subcat {
+      font-size: 8pt;
+      color: #0284c7;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.3px;
+      margin-bottom: 6px;
+    }
+
+    /* Specs table */
+    .specs-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 6px;
+      font-size: 8pt;
+    }
+    .specs-table td {
+      padding: 2px 6px;
+      border-bottom: 1px solid #f1f5f9;
+    }
+    .specs-table td.k {
+      width: 28%;
+      color: #64748b;
+      font-weight: 600;
+    }
+    .specs-table td.v {
+      width: 72%;
+      color: #0f172a;
+      font-weight: 600;
+    }
+    .specs-table tr:nth-child(even) {
+      background: #f8fafc;
+    }
+
+    .prod-desc-text {
+      font-size: 8pt;
+      color: #475569;
+      line-height: 1.35;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    .prod-footer-meta {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 6px;
+      padding-top: 6px;
+      border-top: 1px dashed #e2e8f0;
+      font-size: 7.5pt;
+      color: #64748b;
+    }
+    .prod-footer-meta strong {
+      color: #0284c7;
+    }
+
+    /* ================= BACK COVER ================= */
+    .back-cover {
+      min-height: 255mm;
+      background: #0f172a;
+      color: #ffffff;
+      padding: 24mm 18mm;
+      border-radius: 12px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .back-cover h2 {
+      font-size: 24pt;
+      font-weight: 800;
+      color: #ffffff;
+      margin-bottom: 8px;
+    }
+    .back-cover p.lead {
+      font-size: 11pt;
+      color: #94a3b8;
+      margin-bottom: 24px;
+    }
+    .back-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin-bottom: 30px;
+    }
+    .back-card {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 8px;
+      padding: 16px;
+    }
+    .back-card h3 {
+      font-size: 11pt;
+      font-weight: 700;
+      color: #38bdf8;
+      margin-bottom: 10px;
+    }
+    .back-card ul {
+      list-style: none;
+      font-size: 8.5pt;
+      color: #cbd5e1;
+    }
+    .back-card ul li {
+      margin-bottom: 6px;
+      padding-left: 14px;
+      position: relative;
+    }
+    .back-card ul li::before {
+      content: "✔";
+      position: absolute;
+      left: 0;
+      color: #38bdf8;
+      font-size: 8pt;
+    }
+    .contact-hero-box {
+      background: linear-gradient(135deg, #0284c7, #1d4ed8);
+      border-radius: 8px;
+      padding: 20px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .contact-hero-box h3 {
+      font-size: 15pt;
+      font-weight: 800;
+      color: #ffffff;
+      margin-bottom: 6px;
+    }
+    .contact-hero-box p {
+      font-size: 10pt;
+      color: #e0f2fe;
+      margin-bottom: 12px;
+    }
+    .contact-hero-phone {
+      font-size: 18pt;
+      font-weight: 900;
+      color: #ffffff;
+      letter-spacing: 1px;
+    }
+    .back-footer-notes {
+      font-size: 8pt;
+      color: #64748b;
+      text-align: center;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      padding-top: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ==================== PAGE 1: COVER ==================== -->
+  <div class="cover-page">
+    <div class="cover-top">
+      <div class="cover-brand">
+        <div class="cover-mark">KSG</div>
+        <div class="cover-brand-text">
+          <h1>K.S.G. TOOLS</h1>
+          <span>Direct Precision Tool Manufacturer · Coimbatore</span>
+        </div>
+      </div>
+
+      <div class="cover-title-box">
+        <span class="cover-eyebrow">Manufacturing Edition</span>
+        <h2 class="cover-main-title">PRODUCT<br>CATALOGUE</h2>
+        <p class="cover-subtitle">
+          Complete verified range of Industrial Shredder Knives, Wood Chipper Blades, Granulator Knives, Press Tool Dies &amp; Custom Industrial Machinery.
+        </p>
+      </div>
+
+      <div class="cover-stats-grid">
+        <div class="cover-stat-card">
+          <span class="cover-stat-num">83</span>
+          <span class="cover-stat-label">Industrial Products</span>
+        </div>
+        <div class="cover-stat-card">
+          <span class="cover-stat-num">8</span>
+          <span class="cover-stat-label">Product Categories</span>
+        </div>
+        <div class="cover-stat-card">
+          <span class="cover-stat-num">16+</span>
+          <span class="cover-stat-label">Years of Toolmaking</span>
+        </div>
+        <div class="cover-stat-card">
+          <span class="cover-stat-num">100%</span>
+          <span class="cover-stat-label">In-House Manufacturing</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="cover-bottom">
+      <div>
+        <div class="cover-contact-item"><strong>Works &amp; Office:</strong> Sivanandhapuram, Saravanampatti, Coimbatore - 641035</div>
+        <div class="cover-contact-item"><strong>Direct Phone / WhatsApp:</strong> +91 99447 44509</div>
+        <div class="cover-contact-item"><strong>GST Registration:</strong> 33CEYPS0366D2Z6</div>
+      </div>
+      <div>
+        <div class="cover-badge-tag">ISO / Industry Grade Steel</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== PAGE 2: TABLE OF CONTENTS & CAPABILITIES ==================== -->
+  <div class="page-break"></div>
+  <div class="catalog-header">
+    <span><strong>K.S.G. Tools</strong> · Official Catalogue</span>
+    <span class="badge">Directory &amp; Capabilities</span>
+  </div>
+
+  <h2 class="section-title">Product Categories &amp; Overview</h2>
+
+  <div class="intro-block">
+    <p>
+      <strong>K.S.G. Tools</strong> (Estd. 2009) is a leading industrial tool manufacturer based in Coimbatore, Tamil Nadu. We specialize in precision-engineered industrial cutting knives, replacement shredder blades, granulator blades, sheet metal press tool dies, and custom-designed shredding machines.
+    </p>
+    <p>
+      All blades are manufactured from premier alloy steels including AISI D2, HCHCr (D3), High Speed Steel (HSS), and EN-31, vacuum hardened and precision ground to 56–62 HRC for maximum wear resistance, edge retention, and impact toughness.
+    </p>
+  </div>
+
+  <div class="toc-grid">
+    
+      <div class="toc-card">
+        <span class="toc-name">Chipper Knives</span>
+        <span class="toc-count">9 Products</span>
+      </div>
+    
+      <div class="toc-card">
+        <span class="toc-name">Shredder Knives</span>
+        <span class="toc-count">10 Products</span>
+      </div>
+    
+      <div class="toc-card">
+        <span class="toc-name">Tools And Dies</span>
+        <span class="toc-count">37 Products</span>
+      </div>
+    
+      <div class="toc-card">
+        <span class="toc-name">Shredding Machine</span>
+        <span class="toc-count">12 Products</span>
+      </div>
+    
+      <div class="toc-card">
+        <span class="toc-name">Grinder Blades</span>
+        <span class="toc-count">3 Products</span>
+      </div>
+    
+      <div class="toc-card">
+        <span class="toc-name">Granulator Blades</span>
+        <span class="toc-count">3 Products</span>
+      </div>
+    
+      <div class="toc-card">
+        <span class="toc-name">VMC Machine Job Work</span>
+        <span class="toc-count">7 Products</span>
+      </div>
+    
+      <div class="toc-card">
+        <span class="toc-name">Chaff Cutter Blades</span>
+        <span class="toc-count">2 Products</span>
+      </div>
+    
+  </div>
+
+  <h2 class="section-title" style="margin-top: 10px;">Engineering &amp; Manufacturing Capabilities</h2>
+  <div class="capabilities-grid">
+    <div class="cap-box">
+      <h4>High-Grade Tool Steels</h4>
+      <p>AISI D2, HCHCr D3, EN-31, and carbide-tipped alloys selected for extreme impact resistance and extended cutting lifespan.</p>
+    </div>
+    <div class="cap-box">
+      <h4>Controlled Heat Treatment</h4>
+      <p>Precision vacuum furnace hardening and multi-stage tempering achieving uniform 58–62 HRC hardness without surface brittleness.</p>
+    </div>
+    <div class="cap-box">
+      <h4>VMC &amp; CNC Machining</h4>
+      <p>4-Axis VMC milling and precision CNC surface grinding ensuring ±0.01mm tolerance on mounting holes and cutting edges.</p>
+    </div>
+    <div class="cap-box">
+      <h4>Dynamic Balancing</h4>
+      <p>Individual and gang-balancing of multi-blade shredder assemblies to eliminate machine vibration and premature shaft bearing wear.</p>
+    </div>
+    <div class="cap-box">
+      <h4>Custom Tool Sampling</h4>
+      <p>Rapid reverse engineering, sample development, and custom profiling based on physical worn samples or CAD drawings.</p>
+    </div>
+    <div class="cap-box">
+      <h4>All-India Road Dispatch</h4>
+      <p>Carefully oiled, rust-proof wrapped, and wooden-pallet packed for safe transit via road transport from Coimbatore across India.</p>
+    </div>
+  </div>
+
+  <!-- ==================== CATEGORY PAGES & PRODUCTS ==================== -->
+  
+      <div class="page-break"></div>
+      <div class="catalog-header">
+        <span><strong>K.S.G. Tools</strong> · Industrial Catalogue</span>
+        <span class="badge">Chipper Knives</span>
+      </div>
+
+      <div class="cat-divider">
+        <h2>Chipper Knives</h2>
+        <span>9 Items Listed</span>
+      </div>
+
+      <div class="products-list">
+        
+            <div class="product-row-card avoid-break">
+              <div class="prod-content">
+                <div>
+                  <div class="prod-head">
+                    <div class="prod-title">4 inch Stainless Steel Chipper Knife</div>
+                    <div class="prod-badges">
+                      <span class="moq-pill">MOQ: 1 Piece</span>
+                      <span class="mfg-pill">Direct Workshop</span>
+                    </div>
+                  </div>
+                  <div class="prod-subcat">Chipper Knives</div>
+
+                  <table class="specs-table">
+                    <tbody>
+                      
+                        <tr>
+                          <td class="k">Size</td>
+                          <td class="v">4 Inch</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Material</td>
+                          <td class="v">Stainless Steel</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Brand</td>
+                          <td class="v">Own Brand</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Hardness</td>
+                          <td class="v">58-60 HRC</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Usage/Application</td>
+                          <td class="v">Wood Chipping &amp; Industrial</td>
+                        </tr>
+                      
+                    </tbody>
+                  </table>
+
+                  <p class="prod-desc-text">Genuine 4 inch stainless steel chipper knives manufactured by K.S.G. Tools in Coimbatore with high-precision ground edges for industrial wood chipping and timber yards.</p>
+                </div>
+
+                <div class="prod-footer-meta">
+                  <span>Direct Factory Supply · <strong>Coimbatore Workshop</strong></span>
+                  <span>Custom Sizes, Tolerances &amp; Sampling Supported</span>
+                </div>
+              </div>
+            </div>
+          
+            <div class="product-row-card avoid-break">
+              <div class="prod-content">
+                <div>
+                  <div class="prod-head">
+                    <div class="prod-title">2 Slot Wood Chipper Knives</div>
+                    <div class="prod-badges">
+                      <span class="moq-pill">MOQ: 1 Piece</span>
+                      <span class="mfg-pill">Direct Workshop</span>
+                    </div>
+                  </div>
+                  <div class="prod-subcat">Chipper Knives</div>
+
+                  <table class="specs-table">
+                    <tbody>
+                      
+                        <tr>
+                          <td class="k">Material</td>
+                          <td class="v">Stainless Steel</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Usage/Application</td>
+                          <td class="v">Industrial</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Machine Type</td>
+                          <td class="v">Wood Working Machine</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Number of Slots</td>
+                          <td class="v">2 Slots</td>
+                        </tr>
+                      
+                    </tbody>
+                  </table>
+
+                  <p class="prod-desc-text">Precision 2-slot wood chipper knives providing secure bolt clamping and vibration-free chipping of hard timber, bamboo, and saw mill logs.</p>
+                </div>
+
+                <div class="prod-footer-meta">
+                  <span>Direct Factory Supply · <strong>Coimbatore Workshop</strong></span>
+                  <span>Custom Sizes, Tolerances &amp; Sampling Supported</span>
+                </div>
+              </div>
+            </div>
+          
+            <div class="product-row-card avoid-break">
+              <div class="prod-content">
+                <div>
+                  <div class="prod-head">
+                    <div class="prod-title">Stainless Steel Chipper Knives</div>
+                    <div class="prod-badges">
+                      <span class="moq-pill">MOQ: 1 Piece</span>
+                      <span class="mfg-pill">Direct Workshop</span>
+                    </div>
+                  </div>
+                  <div class="prod-subcat">Chipper Knives</div>
+
+                  <table class="specs-table">
+                    <tbody>
+                      
+                        <tr>
+                          <td class="k">Size (Length)</td>
+                          <td class="v">17 mm</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Material</td>
+                          <td class="v">Stainless Steel</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Usage/Application</td>
+                          <td class="v">Industrial</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Corrosion Resistance</td>
+                          <td class="v">High</td>
+                        </tr>
+                      
+                    </tbody>
+                  </table>
+
+                  <p class="prod-desc-text">All-weather stainless steel chipper blades resisting sap acidity and corrosion. Delivers uniform wood chips with minimal sawdust generation.</p>
+                </div>
+
+                <div class="prod-footer-meta">
+                  <span>Direct Factory Supply · <strong>Coimbatore Workshop</strong></span>
+                  <span>Custom Sizes, Tolerances &amp; Sampling Supported</span>
+                </div>
+              </div>
+            </div>
+          
+            <div class="product-row-card avoid-break">
+              <div class="prod-content">
+                <div>
+                  <div class="prod-head">
+                    <div class="prod-title">10 Inch Agriculture Chipper Knives</div>
+                    <div class="prod-badges">
+                      <span class="moq-pill">MOQ: 1 Piece</span>
+                      <span class="mfg-pill">Direct Workshop</span>
+                    </div>
+                  </div>
+                  <div class="prod-subcat">Chipper Knives</div>
+
+                  <table class="specs-table">
+                    <tbody>
+                      
+                        <tr>
+                          <td class="k">Length</td>
+                          <td class="v">10 Inch</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Material</td>
+                          <td class="v">Stainless Steel</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Usage/Application</td>
+                          <td class="v">Industrial</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Type</td>
+                          <td class="v">Chipper Knives</td>
+                        </tr>
+                      
+                    </tbody>
+                  </table>
+
+                  <p class="prod-desc-text">Heavy-duty 10-inch agricultural chipper blades designed for field shredders and tractor-driven chippers to process farm residues and woody brush.</p>
+                </div>
+
+                <div class="prod-footer-meta">
+                  <span>Direct Factory Supply · <strong>Coimbatore Workshop</strong></span>
+                  <span>Custom Sizes, Tolerances &amp; Sampling Supported</span>
+                </div>
+              </div>
+            </div>
+          
+            <div class="product-row-card avoid-break">
+              <div class="prod-content">
+                <div>
+                  <div class="prod-head">
+                    <div class="prod-title">4 Inch Wood Chipper Knives</div>
+                    <div class="prod-badges">
+                      <span class="moq-pill">MOQ: 1 Piece</span>
+                      <span class="mfg-pill">Direct Workshop</span>
+                    </div>
+                  </div>
+                  <div class="prod-subcat">Chipper Knives</div>
+
+                  <table class="specs-table">
+                    <tbody>
+                      
+                        <tr>
+                          <td class="k">Size</td>
+                          <td class="v">4 Inch</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Application</td>
+                          <td class="v">Wood Cutting</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Material</td>
+                          <td class="v">Stainless Steel</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Usage/Application</td>
+                          <td class="v">Industrial</td>
+                        </tr>
+                      
+                    </tbody>
+                  </table>
+
+                  <p class="prod-desc-text">Compact 4-inch wood cutting chipper knives manufactured with 56-58 HRC hardness for consistent cutting performance.</p>
+                </div>
+
+                <div class="prod-footer-meta">
+                  <span>Direct Factory Supply · <strong>Coimbatore Workshop</strong></span>
+                  <span>Custom Sizes, Tolerances &amp; Sampling Supported</span>
+                </div>
+              </div>
+            </div>
+          
+            <div class="product-row-card avoid-break">
+              <div class="prod-content">
+                <div>
+                  <div class="prod-head">
+                    <div class="prod-title">5 Inch Wood Chipper Knives</div>
+                    <div class="prod-badges">
+                      <span class="moq-pill">MOQ: 1 Piece</span>
+                      <span class="mfg-pill">Direct Workshop</span>
+                    </div>
+                  </div>
+                  <div class="prod-subcat">Chipper Knives</div>
+
+                  <table class="specs-table">
+                    <tbody>
+                      
+                        <tr>
+                          <td class="k">Size</td>
+                          <td class="v">5 Inch</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Material</td>
+                          <td class="v">Stainless Steel</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Type</td>
+                          <td class="v">Chipper Blades</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Color</td>
+                          <td class="v">Silver</td>
+                        </tr>
+                      
+                    </tbody>
+                  </table>
+
+                  <p class="prod-desc-text">High-grade 5-inch wood chipper cutting blades designed for high impact resistance in wood processing and sawmill operations.</p>
+                </div>
+
+                <div class="prod-footer-meta">
+                  <span>Direct Factory Supply · <strong>Coimbatore Workshop</strong></span>
+                  <span>Custom Sizes, Tolerances &amp; Sampling Supported</span>
+                </div>
+              </div>
+            </div>
+          
+            <div class="product-row-card avoid-break">
+              <div class="prod-content">
+                <div>
+                  <div class="prod-head">
+                    <div class="prod-title">Garden Shredder Chipper Knives</div>
+                    <div class="prod-badges">
+                      <span class="moq-pill">MOQ: 1 Piece</span>
+                      <span class="mfg-pill">Direct Workshop</span>
+                    </div>
+                  </div>
+                  <div class="prod-subcat">Chipper Knives</div>
+
+                  <table class="specs-table">
+                    <tbody>
+                      
+                        <tr>
+                          <td class="k">Application</td>
+                          <td class="v">Wood Cutting</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Material</td>
+                          <td class="v">Stainless Steel</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Usage/Application</td>
+                          <td class="v">Industrial &amp; Garden Shredders</td>
+                        </tr>
+                      
+                    </tbody>
+                  </table>
+
+                  <p class="prod-desc-text">Reversible garden shredder knives for pruning chippers and compost shredders. Tempered for shock resistance against tough twigs and roots.</p>
+                </div>
+
+                <div class="prod-footer-meta">
+                  <span>Direct Factory Supply · <strong>Coimbatore Workshop</strong></span>
+                  <span>Custom Sizes, Tolerances &amp; Sampling Supported</span>
+                </div>
+              </div>
+            </div>
+          
+            <div class="product-row-card avoid-break">
+              <div class="prod-content">
+                <div>
+                  <div class="prod-head">
+                    <div class="prod-title">Wood Chipper Knives</div>
+                    <div class="prod-badges">
+                      <span class="moq-pill">MOQ: 1 Piece</span>
+                      <span class="mfg-pill">Direct Workshop</span>
+                    </div>
+                  </div>
+                  <div class="prod-subcat">Chipper Knives</div>
+
+                  <table class="specs-table">
+                    <tbody>
+                      
+                        <tr>
+                          <td class="k">Material</td>
+                          <td class="v">Stainless Steel</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Usage/Application</td>
+                          <td class="v">Industrial</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Type</td>
+                          <td class="v">Chipper Knives</td>
+                        </tr>
+                      
+                    </tbody>
+                  </table>
+
+                  <p class="prod-desc-text">Heavy-duty industrial wood chipper knives built for uniform chipping and extended blade cutting cycles across all timber species.</p>
+                </div>
+
+                <div class="prod-footer-meta">
+                  <span>Direct Factory Supply · <strong>Coimbatore Workshop</strong></span>
+                  <span>Custom Sizes, Tolerances &amp; Sampling Supported</span>
+                </div>
+              </div>
+            </div>
+          
+            <div class="product-row-card avoid-break">
+              <div class="prod-content">
+                <div>
+                  <div class="prod-head">
+                    <div class="prod-title">14 Inch Veneer Peeling Knife</div>
+                    <div class="prod-badges">
+                      <span class="moq-pill">MOQ: 1 Piece</span>
+                      <span class="mfg-pill">Direct Workshop</span>
+                    </div>
+                  </div>
+                  <div class="prod-subcat">Veneer Peeling Knife</div>
+
+                  <table class="specs-table">
+                    <tbody>
+                      
+                        <tr>
+                          <td class="k">Warranty</td>
+                          <td class="v">1 Year</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Usage/Application</td>
+                          <td class="v">Industrial</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Size</td>
+                          <td class="v">14 inch</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Color</td>
+                          <td class="v">Silver</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Grade</td>
+                          <td class="v">A</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Type</td>
+                          <td class="v">Veneer Peeling Knife</td>
+                        </tr>
+                      
+                    </tbody>
+                  </table>
+
+                  <p class="prod-desc-text">KSG Tools is dealing in best quality of materials and product to getthe customers foe long term and based on the customer requirement everything is done.</p>
+                </div>
+
+                <div class="prod-footer-meta">
+                  <span>Direct Factory Supply · <strong>Coimbatore Workshop</strong></span>
+                  <span>Custom Sizes, Tolerances &amp; Sampling Supported</span>
+                </div>
+              </div>
+            </div>
+          
+      </div>
+    
+      <div class="page-break"></div>
+      <div class="catalog-header">
+        <span><strong>K.S.G. Tools</strong> · Industrial Catalogue</span>
+        <span class="badge">Shredder Knives</span>
+      </div>
+
+      <div class="cat-divider">
+        <h2>Shredder Knives</h2>
+        <span>10 Items Listed</span>
+      </div>
+
+      <div class="products-list">
+        
+            <div class="product-row-card avoid-break">
+              <div class="prod-content">
+                <div>
+                  <div class="prod-head">
+                    <div class="prod-title">10 Inch Double Shaft Shredder Knives</div>
+                    <div class="prod-badges">
+                      <span class="moq-pill">MOQ: 1 Piece</span>
+                      <span class="mfg-pill">Direct Workshop</span>
+                    </div>
+                  </div>
+                  <div class="prod-subcat">Shredder Knives</div>
+
+                  <table class="specs-table">
+                    <tbody>
+                      
+                        <tr>
+                          <td class="k">Size (Diameter)</td>
+                          <td class="v">10 inch</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Material</td>
+                          <td class="v">Stainless Steel</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Usage/Application</td>
+                          <td class="v">Industrial</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Machine Compatibility</td>
+                          <td class="v">Double Shaft Shredder</td>
+                        </tr>
+                      
+                    </tbody>
+                  </table>
+
+                  <p class="prod-desc-text">10-inch diameter multi-hook rotary shredder knives for double shaft industrial shredders handling plastic, metal scrap, tires, and drums.</p>
+                </div>
+
+                <div class="prod-footer-meta">
+                  <span>Direct Factory Supply · <strong>Coimbatore Workshop</strong></span>
+                  <span>Custom Sizes, Tolerances &amp; Sampling Supported</span>
+                </div>
+              </div>
+            </div>
+          
+            <div class="product-row-card avoid-break">
+              <div class="prod-content">
+                <div>
+                  <div class="prod-head">
+                    <div class="prod-title">Shredding Machine Knives &amp; Blades</div>
+                    <div class="prod-badges">
+                      <span class="moq-pill">MOQ: 1 Piece</span>
+                      <span class="mfg-pill">Direct Workshop</span>
+                    </div>
+                  </div>
+                  <div class="prod-subcat">Shredder Knives</div>
+
+                  <table class="specs-table">
+                    <tbody>
+                      
+                        <tr>
+                          <td class="k">Size</td>
+                          <td class="v">4 Inch</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Shredding Capacity</td>
+                          <td class="v">1500 kg/hr</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Material</td>
+                          <td class="v">Stainless Steel</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Application</td>
+                          <td class="v">Heavy Industrial Shredding</td>
+                        </tr>
+                      
+                    </tbody>
+                  </table>
+
+                  <p class="prod-desc-text">Wear-resistant shredding machine knives and blades manufactured from vacuum heat-treated alloy steel for maximum throughput.</p>
+                </div>
+
+                <div class="prod-footer-meta">
+                  <span>Direct Factory Supply · <strong>Coimbatore Workshop</strong></span>
+                  <span>Custom Sizes, Tolerances &amp; Sampling Supported</span>
+                </div>
+              </div>
+            </div>
+          
+            <div class="product-row-card avoid-break">
+              <div class="prod-content">
+                <div>
+                  <div class="prod-head">
+                    <div class="prod-title">Shredder Blade Manufacturer, For Industrial</div>
+                    <div class="prod-badges">
+                      <span class="moq-pill">MOQ: 1 Piece</span>
+                      <span class="mfg-pill">Direct Workshop</span>
+                    </div>
+                  </div>
+                  <div class="prod-subcat">Shredder Knives</div>
+
+                  <table class="specs-table">
+                    <tbody>
+                      
+                        <tr>
+                          <td class="k">Shredding Capacity</td>
+                          <td class="v">1-500 kg/hr</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Usage/Application</td>
+                          <td class="v">Industrial</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Automation Grade</td>
+                          <td class="v">Automatic</td>
+                        </tr>
+                      
+                    </tbody>
+                  </table>
+
+                  <p class="prod-desc-text">Custom industrial shredder blades manufactured in Coimbatore for plastic granulators, e-waste shredders, and solid waste processing.</p>
+                </div>
+
+                <div class="prod-footer-meta">
+                  <span>Direct Factory Supply · <strong>Coimbatore Workshop</strong></span>
+                  <span>Custom Sizes, Tolerances &amp; Sampling Supported</span>
+                </div>
+              </div>
+            </div>
+          
+            <div class="product-row-card avoid-break">
+              <div class="prod-content">
+                <div>
+                  <div class="prod-head">
+                    <div class="prod-title">Mild Steel Shredder Blade</div>
+                    <div class="prod-badges">
+                      <span class="moq-pill">MOQ: 1 Piece</span>
+                      <span class="mfg-pill">Direct Workshop</span>
+                    </div>
+                  </div>
+                  <div class="prod-subcat">Shredder Knives</div>
+
+                  <table class="specs-table">
+                    <tbody>
+                      
+                        <tr>
+                          <td class="k">Shredding Capacity</td>
+                          <td class="v">500-1000 kg/hr</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Usage/Application</td>
+                          <td class="v">Industrial</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Brand</td>
+                          <td class="v">Own brand</td>
+                        </tr>
+                      
+                    </tbody>
+                  </table>
+
+                  <p class="prod-desc-text">Mild steel high-strength shredder blades built for heavy torque industrial shredding machines and recycling installations.</p>
+                </div>
+
+                <div class="prod-footer-meta">
+                  <span>Direct Factory Supply · <strong>Coimbatore Workshop</strong></span>
+                  <span>Custom Sizes, Tolerances &amp; Sampling Supported</span>
+                </div>
+              </div>
+            </div>
+          
+            <div class="product-row-card avoid-break">
+              <div class="prod-content">
+                <div>
+                  <div class="prod-head">
+                    <div class="prod-title">Shredder Knives, For Industrial</div>
+                    <div class="prod-badges">
+                      <span class="moq-pill">MOQ: 1 Piece</span>
+                      <span class="mfg-pill">Direct Workshop</span>
+                    </div>
+                  </div>
+                  <div class="prod-subcat">Shredder Knives</div>
+
+                  <table class="specs-table">
+                    <tbody>
+                      
+                        <tr>
+                          <td class="k">Shredding Capacity</td>
+                          <td class="v">1-500 kg/hr</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Usage/Application</td>
+                          <td class="v">Industrial</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Automation Grade</td>
+                          <td class="v">Automatic</td>
+                        </tr>
+                      
+                    </tbody>
+                  </table>
+
+                  <p class="prod-desc-text">Heavy duty industrial shredder knives with precision ground teeth for efficient size reduction of polymers, textiles, and composite materials.</p>
+                </div>
+
+                <div class="prod-footer-meta">
+                  <span>Direct Factory Supply · <strong>Coimbatore Workshop</strong></span>
+                  <span>Custom Sizes, Tolerances &amp; Sampling Supported</span>
+                </div>
+              </div>
+            </div>
+          
+            <div class="product-row-card avoid-break">
+              <div class="prod-content">
+                <div>
+                  <div class="prod-head">
+                    <div class="prod-title">8mm Agricultural Shredder Knives</div>
+                    <div class="prod-badges">
+                      <span class="moq-pill">MOQ: 1 Piece</span>
+                      <span class="mfg-pill">Direct Workshop</span>
+                    </div>
+                  </div>
+                  <div class="prod-subcat">Shredder Knives</div>
+
+                  <table class="specs-table">
+                    <tbody>
+                      
+                        <tr>
+                          <td class="k">Usage/Application</td>
+                          <td class="v">Agricultural Machine</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Material</td>
+                          <td class="v">Die Steel</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Thickness</td>
+                          <td class="v">8 mm</td>
+                        </tr>
+                      
+                    </tbody>
+                  </table>
+
+                  <p class="prod-desc-text">8mm thick hardened die steel agricultural shredder knives for crop residue shredders, sugarcane trash choppers, and farm machinery.</p>
+                </div>
+
+                <div class="prod-footer-meta">
+                  <span>Direct Factory Supply · <strong>Coimbatore Workshop</strong></span>
+                  <span>Custom Sizes, Tolerances &amp; Sampling Supported</span>
+                </div>
+              </div>
+            </div>
+          
+            <div class="product-row-card avoid-break">
+              <div class="prod-content">
+                <div>
+                  <div class="prod-head">
+                    <div class="prod-title">8 Inch Double Shaft Shredder Knives</div>
+                    <div class="prod-badges">
+                      <span class="moq-pill">MOQ: 1 Piece</span>
+                      <span class="mfg-pill">Direct Workshop</span>
+                    </div>
+                  </div>
+                  <div class="prod-subcat">Shredder Knives</div>
+
+                  <table class="specs-table">
+                    <tbody>
+                      
+                        <tr>
+                          <td class="k">Usage/Application</td>
+                          <td class="v">Industrial</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Shredding Machine Type</td>
+                          <td class="v">Double Shaft</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Size</td>
+                          <td class="v">8 inch</td>
+                        </tr>
+                      
+                    </tbody>
+                  </table>
+
+                  <p class="prod-desc-text">8-inch multi-claw double shaft shredder blades delivering high tearing forces for municipal waste, plastic drums, and e-waste.</p>
+                </div>
+
+                <div class="prod-footer-meta">
+                  <span>Direct Factory Supply · <strong>Coimbatore Workshop</strong></span>
+                  <span>Custom Sizes, Tolerances &amp; Sampling Supported</span>
+                </div>
+              </div>
+            </div>
+          
+            <div class="product-row-card avoid-break">
+              <div class="prod-content">
+                <div>
+                  <div class="prod-head">
+                    <div class="prod-title">Chicken Cutting Shredder Knives</div>
+                    <div class="prod-badges">
+                      <span class="moq-pill">MOQ: 1 Piece</span>
+                      <span class="mfg-pill">Direct Workshop</span>
+                    </div>
+                  </div>
+                  <div class="prod-subcat">Shredder Knives</div>
+
+                  <table class="specs-table">
+                    <tbody>
+                      
+                        <tr>
+                          <td class="k">Usage/Application</td>
+                          <td class="v">Chicken Cutting</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Blade Material</td>
+                          <td class="v">Die Steel</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Thickness</td>
+                          <td class="v">10 mm</td>
+                        </tr>
+                      
+                    </tbody>
+                  </table>
+
+                  <p class="prod-desc-text">10mm precision poultry and meat processing cutting knives with surgical-grade sharpness and corrosion-resistant finish.</p>
+                </div>
+
+                <div class="prod-footer-meta">
+                  <span>Direct Factory Supply · <strong>Coimbatore Workshop</strong></span>
+                  <span>Custom Sizes, Tolerances &amp; Sampling Supported</span>
+                </div>
+              </div>
+            </div>
+          
+            <div class="product-row-card avoid-break">
+              <div class="prod-content">
+                <div>
+                  <div class="prod-head">
+                    <div class="prod-title">Plastic Shredder Knives, For Garage/Workshop</div>
+                    <div class="prod-badges">
+                      <span class="moq-pill">MOQ: 1 Piece</span>
+                      <span class="mfg-pill">Direct Workshop</span>
+                    </div>
+                  </div>
+                  <div class="prod-subcat">Shredder Knives</div>
+
+                  <table class="specs-table">
+                    <tbody>
+                      
+                        <tr>
+                          <td class="k">Shredding Capacity</td>
+                          <td class="v">1-500 kg/hr</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Brand</td>
+                          <td class="v">Own Brand</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Automation Grade</td>
+                          <td class="v">Automatic</td>
+                        </tr>
+                      
+                    </tbody>
+                  </table>
+
+                  <p class="prod-desc-text">Workshop grade plastic shredder knives engineered for compact recycling machines, 3D print scrap shredders, and garage workshops.</p>
+                </div>
+
+                <div class="prod-footer-meta">
+                  <span>Direct Factory Supply · <strong>Coimbatore Workshop</strong></span>
+                  <span>Custom Sizes, Tolerances &amp; Sampling Supported</span>
+                </div>
+              </div>
+            </div>
+          
+            <div class="product-row-card avoid-break">
+              <div class="prod-content">
+                <div>
+                  <div class="prod-head">
+                    <div class="prod-title">Plastic Shredder Knives, For Garage/Workshop</div>
+                    <div class="prod-badges">
+                      
+                      <span class="mfg-pill">Direct Workshop</span>
+                    </div>
+                  </div>
+                  <div class="prod-subcat">Shredder Knives</div>
+
+                  <table class="specs-table">
+                    <tbody>
+                      
+                        <tr>
+                          <td class="k">Shredding Capacity</td>
+                          <td class="v">1-500 kg/hr</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Usage/Application</td>
+                          <td class="v">Industrial</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Brand</td>
+                          <td class="v">Own Brand</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Automation Grade</td>
+                          <td class="v">Automatic</td>
+                        </tr>
+                      
+                    </tbody>
+                  </table>
+
+                  <p class="prod-desc-text">Dual shaft shredder machine blades used for shredding of any sort of organic and inorganic waste.</p>
+                </div>
+
+                <div class="prod-footer-meta">
+                  <span>Direct Factory Supply · <strong>Coimbatore Workshop</strong></span>
+                  <span>Custom Sizes, Tolerances &amp; Sampling Supported</span>
+                </div>
+              </div>
+            </div>
+          
+      </div>
+    
+      <div class="page-break"></div>
+      <div class="catalog-header">
+        <span><strong>K.S.G. Tools</strong> · Industrial Catalogue</span>
+        <span class="badge">Tools And Dies</span>
+      </div>
+
+      <div class="cat-divider">
+        <h2>Tools And Dies</h2>
+        <span>37 Items Listed</span>
+      </div>
+
+      <div class="products-list">
+        
+            <div class="product-row-card avoid-break">
+              <div class="prod-content">
+                <div>
+                  <div class="prod-head">
+                    <div class="prod-title">Press Tool Die Manufacturer</div>
+                    <div class="prod-badges">
+                      <span class="moq-pill">MOQ: 1 Piece</span>
+                      <span class="mfg-pill">Direct Workshop</span>
+                    </div>
+                  </div>
+                  <div class="prod-subcat">Tools And Dies</div>
+
+                  <table class="specs-table">
+                    <tbody>
+                      
+                        <tr>
+                          <td class="k">Material</td>
+                          <td class="v">Aluminium / D2 Steel</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Usage/Application</td>
+                          <td class="v">Industrial</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Pattern Type</td>
+                          <td class="v">Engraved Precision Tooling</td>
+                        </tr>
+                      
+                    </tbody>
+                  </table>
+
+                  <p class="prod-desc-text">Custom engineered press tool dies for sheet metal stamping, punching, bending, and blanking. Manufactured using high-speed tool steel in Coimbatore.</p>
+                </div>
+
+                <div class="prod-footer-meta">
+                  <span>Direct Factory Supply · <strong>Coimbatore Workshop</strong></span>
+                  <span>Custom Sizes, Tolerances &amp; Sampling Supported</span>
+                </div>
+              </div>
+            </div>
+          
+            <div class="product-row-card avoid-break">
+              <div class="prod-content">
+                <div>
+                  <div class="prod-head">
+                    <div class="prod-title">Plastic Moulding Dies</div>
+                    <div class="prod-badges">
+                      <span class="moq-pill">MOQ: 1 Piece</span>
+                      <span class="mfg-pill">Direct Workshop</span>
+                    </div>
+                  </div>
+                  <div class="prod-subcat">Tools And Dies</div>
+
+                  <table class="specs-table">
+                    <tbody>
+                      
+                        <tr>
+                          <td class="k">Moulding Material</td>
+                          <td class="v">PP</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Material</td>
+                          <td class="v">P 20 Mold Steel</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Shape</td>
+                          <td class="v">Rectangular</td>
+                        </tr>
+                      
+                    </tbody>
+                  </table>
+
+                  <p class="prod-desc-text">High precision plastic injection moulding dies with mirror polish cavity finish for automotive, electrical, and consumer goods manufacturing.</p>
+                </div>
+
+                <div class="prod-footer-meta">
+                  <span>Direct Factory Supply · <strong>Coimbatore Workshop</strong></span>
+                  <span>Custom Sizes, Tolerances &amp; Sampling Supported</span>
+                </div>
+              </div>
+            </div>
+          
+            <div class="product-row-card avoid-break">
+              <div class="prod-content">
+                <div>
+                  <div class="prod-head">
+                    <div class="prod-title">Indian Knives Wood Chipper Knives</div>
+                    <div class="prod-badges">
+                      <span class="moq-pill">MOQ: 1 Piece</span>
+                      <span class="mfg-pill">Direct Workshop</span>
+                    </div>
+                  </div>
+                  <div class="prod-subcat">Tools And Dies</div>
+
+                  <table class="specs-table">
+                    <tbody>
+                      
+                        <tr>
+                          <td class="k">Size</td>
+                          <td class="v">5 Inch</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Material</td>
+                          <td class="v">Stainless Steel</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Brand</td>
+                          <td class="v">Own Brand</td>
+                        </tr>
+                      
+                    </tbody>
+                  </table>
+
+                  <p class="prod-desc-text">Heavy-duty 5-inch chipper knives manufactured to Indian industrial standards for high-capacity wood reduction.</p>
+                </div>
+
+                <div class="prod-footer-meta">
+                  <span>Direct Factory Supply · <strong>Coimbatore Workshop</strong></span>
+                  <span>Custom Sizes, Tolerances &amp; Sampling Supported</span>
+                </div>
+              </div>
+            </div>
+          
+            <div class="product-row-card avoid-break">
+              <div class="prod-content">
+                <div>
+                  <div class="prod-head">
+                    <div class="prod-title">Aluminium Pattern Works</div>
+                    <div class="prod-badges">
+                      <span class="moq-pill">MOQ: 1 Piece</span>
+                      <span class="mfg-pill">Direct Workshop</span>
+                    </div>
+                  </div>
+                  <div class="prod-subcat">Tools And Dies</div>
+
+                  <table class="specs-table">
+                    <tbody>
+                      
+                        <tr>
+                          <td class="k">Usage/Application</td>
+                          <td class="v">Industrial Foundry</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Material</td>
+                          <td class="v">Aluminium</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Color</td>
+                          <td class="v">Silver</td>
+                        </tr>
+                      
+                    </tbody>
+                  </table>
+
+                  <p class="prod-desc-text">Custom CNC machined aluminium patterns and core boxes for sand casting foundries with accurate draft angles and shrinkage allowances.</p>
+                </div>
+
+                <div class="prod-footer-meta">
+                  <span>Direct Factory Supply · <strong>Coimbatore Workshop</strong></span>
+                  <span>Custom Sizes, Tolerances &amp; Sampling Supported</span>
+                </div>
+              </div>
+            </div>
+          
+            <div class="product-row-card avoid-break">
+              <div class="prod-content">
+                <div>
+                  <div class="prod-head">
+                    <div class="prod-title">Rubber Moulding</div>
+                    <div class="prod-badges">
+                      <span class="moq-pill">MOQ: 1 Piece</span>
+                      <span class="mfg-pill">Direct Workshop</span>
+                    </div>
+                  </div>
+                  <div class="prod-subcat">Tools And Dies</div>
+
+                  <table class="specs-table">
+                    <tbody>
+                      
+                        <tr>
+                          <td class="k">Mould Height</td>
+                          <td class="v">100 mm</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Mould Material</td>
+                          <td class="v">Stainless Steel</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Material</td>
+                          <td class="v">Rubber Moulding</td>
+                        </tr>
+                      
+                    </tbody>
+                  </table>
+
+                  <p class="prod-desc-text">Compression and transfer rubber moulding dies for manufacturing O-rings, oil seals, automotive gaskets, and vibration dampeners.</p>
+                </div>
+
+                <div class="prod-footer-meta">
+                  <span>Direct Factory Supply · <strong>Coimbatore Workshop</strong></span>
+                  <span>Custom Sizes, Tolerances &amp; Sampling Supported</span>
+                </div>
+              </div>
+            </div>
+          
+            <div class="product-row-card avoid-break">
+              <div class="prod-content">
+                <div>
+                  <div class="prod-head">
+                    <div class="prod-title">Press And Die Casting Moulds</div>
+                    <div class="prod-badges">
+                      <span class="moq-pill">MOQ: 1 Piece</span>
+                      <span class="mfg-pill">Direct Workshop</span>
+                    </div>
+                  </div>
+                  <div class="prod-subcat">Tools And Dies</div>
+
+                  <table class="specs-table">
+                    <tbody>
+                      
+                        <tr>
+                          <td class="k">Casting Material</td>
+                          <td class="v">Aluminium</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Material</td>
+                          <td class="v">P 20 Mold Steel</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Color</td>
+                          <td class="v">Silver</td>
+                        </tr>
+                      
+                    </tbody>
+                  </table>
+
+                  <p class="prod-desc-text">Precision pressure die casting and press tooling moulds engineered for high thermal conductivity and extended production life.</p>
+                </div>
+
+                <div class="prod-footer-meta">
+                  <span>Direct Factory Supply · <strong>Coimbatore Workshop</strong></span>
+                  <span>Custom Sizes, Tolerances &amp; Sampling Supported</span>
+                </div>
+              </div>
+            </div>
+          
+            <div class="product-row-card avoid-break">
+              <div class="prod-content">
+                <div>
+                  <div class="prod-head">
+                    <div class="prod-title">Die Sets</div>
+                    <div class="prod-badges">
+                      <span class="moq-pill">MOQ: 1 Piece</span>
+                      <span class="mfg-pill">Direct Workshop</span>
+                    </div>
+                  </div>
+                  <div class="prod-subcat">Tools And Dies</div>
+
+                  <table class="specs-table">
+                    <tbody>
+                      
+                        <tr>
+                          <td class="k">Usage/Application</td>
+                          <td class="v">Sheet Metal &amp; Press Work</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Material</td>
+                          <td class="v">High Carbon Die Steel</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Precision</td>
+                          <td class="v">High Accuracy Tolerance</td>
+                        </tr>
+                      
+                    </tbody>
+                  </table>
+
+                  <p class="prod-desc-text">Standard and custom pillar die sets with hardened guide pillars and bronze bushes for precision press tooling alignment.</p>
+                </div>
+
+                <div class="prod-footer-meta">
+                  <span>Direct Factory Supply · <strong>Coimbatore Workshop</strong></span>
+                  <span>Custom Sizes, Tolerances &amp; Sampling Supported</span>
+                </div>
+              </div>
+            </div>
+          
+            <div class="product-row-card avoid-break">
+              <div class="prod-content">
+                <div>
+                  <div class="prod-head">
+                    <div class="prod-title">Pattern Dies</div>
+                    <div class="prod-badges">
+                      <span class="moq-pill">MOQ: 1 Piece</span>
+                      <span class="mfg-pill">Direct Workshop</span>
+                    </div>
+                  </div>
+                  <div class="prod-subcat">Moulding Dies</div>
+
+                  <table class="specs-table">
+                    <tbody>
+                      
+                        <tr>
+                          <td class="k">Die Type</td>
+                          <td class="v">Foundry Pattern Die</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Material</td>
+                          <td class="v">Tool Steel &amp; Aluminium</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Application</td>
+                          <td class="v">Foundry Casting Patterns</td>
+                        </tr>
+                      
+                    </tbody>
+                  </table>
+
+                  <p class="prod-desc-text">Foundry pattern dies designed for high-repeatability casting moulds in automotive and pump manufacturing industries.</p>
+                </div>
+
+                <div class="prod-footer-meta">
+                  <span>Direct Factory Supply · <strong>Coimbatore Workshop</strong></span>
+                  <span>Custom Sizes, Tolerances &amp; Sampling Supported</span>
+                </div>
+              </div>
+            </div>
+          
+            <div class="product-row-card avoid-break">
+              <div class="prod-content">
+                <div>
+                  <div class="prod-head">
+                    <div class="prod-title">Cnc Turret Punch Press Tool</div>
+                    <div class="prod-badges">
+                      <span class="moq-pill">MOQ: 1 Piece</span>
+                      <span class="mfg-pill">Direct Workshop</span>
+                    </div>
+                  </div>
+                  <div class="prod-subcat">Press Tools</div>
+
+                  <table class="specs-table">
+                    <tbody>
+                      
+                        <tr>
+                          <td class="k">Die Type</td>
+                          <td class="v">CNC Turret Punch</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Material</td>
+                          <td class="v">D2 / High Speed Tool Steel</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Application</td>
+                          <td class="v">Punching &amp; Blanking</td>
+                        </tr>
+                      
+                    </tbody>
+                  </table>
+
+                  <p class="prod-desc-text">Precision ground CNC turret punches and dies compatible with thick and thin turret machines for sheet metal fabrication.</p>
+                </div>
+
+                <div class="prod-footer-meta">
+                  <span>Direct Factory Supply · <strong>Coimbatore Workshop</strong></span>
+                  <span>Custom Sizes, Tolerances &amp; Sampling Supported</span>
+                </div>
+              </div>
+            </div>
+          
+            <div class="product-row-card avoid-break">
+              <div class="prod-content">
+                <div>
+                  <div class="prod-head">
+                    <div class="prod-title">Progressive Die Tools</div>
+                    <div class="prod-badges">
+                      <span class="moq-pill">MOQ: 1 Piece</span>
+                      <span class="mfg-pill">Direct Workshop</span>
+                    </div>
+                  </div>
+                  <div class="prod-subcat">Press Tools</div>
+
+                  <table class="specs-table">
+                    <tbody>
+                      
+                        <tr>
+                          <td class="k">Die Type</td>
+                          <td class="v">Progressive Stamping Die</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Material</td>
+                          <td class="v">D2 High Carbon Steel</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Application</td>
+                          <td class="v">High Volume Stamping</td>
+                        </tr>
+                      
+                    </tbody>
+                  </table>
+
+                  <p class="prod-desc-text">Multi-stage progressive stamping dies designed to blank, pierce, bend, and form complex sheet metal components in a single press cycle.</p>
+                </div>
+
+                <div class="prod-footer-meta">
+                  <span>Direct Factory Supply · <strong>Coimbatore Workshop</strong></span>
+                  <span>Custom Sizes, Tolerances &amp; Sampling Supported</span>
+                </div>
+              </div>
+            </div>
+          
+            <div class="product-row-card avoid-break">
+              <div class="prod-content">
+                <div>
+                  <div class="prod-head">
+                    <div class="prod-title">Automotive Steel Die Pattern</div>
+                    <div class="prod-badges">
+                      <span class="moq-pill">MOQ: 1 Piece</span>
+                      <span class="mfg-pill">Direct Workshop</span>
+                    </div>
+                  </div>
+                  <div class="prod-subcat">Press Tools</div>
+
+                  <table class="specs-table">
+                    <tbody>
+                      
+                        <tr>
+                          <td class="k">Die Type</td>
+                          <td class="v">Automotive Forming Die</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Material</td>
+                          <td class="v">Alloy Steel</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Application</td>
+                          <td class="v">Automotive Component Pressing</td>
+                        </tr>
+                      
+                    </tbody>
+                  </table>
+
+                  <p class="prod-desc-text">Heavy-duty automotive steel dies manufactured with tight dimensional tolerances for chassis and body panel press work.</p>
+                </div>
+
+                <div class="prod-footer-meta">
+                  <span>Direct Factory Supply · <strong>Coimbatore Workshop</strong></span>
+                  <span>Custom Sizes, Tolerances &amp; Sampling Supported</span>
+                </div>
+              </div>
+            </div>
+          
+            <div class="product-row-card avoid-break">
+              <div class="prod-content">
+                <div>
+                  <div class="prod-head">
+                    <div class="prod-title">Precision Moulds &amp; Dies</div>
+                    <div class="prod-badges">
+                      <span class="moq-pill">MOQ: 1 Piece</span>
+                      <span class="mfg-pill">Direct Workshop</span>
+                    </div>
+                  </div>
+                  <div class="prod-subcat">Plastic Moulding Die</div>
+
+                  <table class="specs-table">
+                    <tbody>
+                      
+                        <tr>
+                          <td class="k">Mould Type</td>
+                          <td class="v">Precision Injection Mould</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Material</td>
+                          <td class="v">P20 Tool Steel</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Application</td>
+                          <td class="v">Plastic &amp; Polymer Moulding</td>
+                        </tr>
+                      
+                    </tbody>
+                  </table>
+
+                  <p class="prod-desc-text">High precision moulds and dies crafted for optical, medical, and high-tolerance electronic polymer components.</p>
+                </div>
+
+                <div class="prod-footer-meta">
+                  <span>Direct Factory Supply · <strong>Coimbatore Workshop</strong></span>
+                  <span>Custom Sizes, Tolerances &amp; Sampling Supported</span>
+                </div>
+              </div>
+            </div>
+          
+            <div class="product-row-card avoid-break">
+              <div class="prod-content">
+                <div>
+                  <div class="prod-head">
+                    <div class="prod-title">Automotive Dies</div>
+                    <div class="prod-badges">
+                      <span class="moq-pill">MOQ: 1 Piece</span>
+                      <span class="mfg-pill">Direct Workshop</span>
+                    </div>
+                  </div>
+                  <div class="prod-subcat">Plastic Moulding Die</div>
+
+                  <table class="specs-table">
+                    <tbody>
+                      
+                        <tr>
+                          <td class="k">Application</td>
+                          <td class="v">Automotive Pressing &amp; Blanking</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Material</td>
+                          <td class="v">Hardened Alloy Steel</td>
+                        </tr>
+                      
+                    </tbody>
+                  </table>
+
+                  <p class="prod-desc-text">Specialized automotive forming dies built to withstand high cycle fatigue in Tier-1 automotive parts production.</p>
+                </div>
+
+                <div class="prod-footer-meta">
+                  <span>Direct Factory Supply · <strong>Coimbatore Workshop</strong></span>
+                  <span>Custom Sizes, Tolerances &amp; Sampling Supported</span>
+                </div>
+              </div>
+            </div>
+          
+            <div class="product-row-card avoid-break">
+              <div class="prod-content">
+                <div>
+                  <div class="prod-head">
+                    <div class="prod-title">Match Plate Pattern</div>
+                    <div class="prod-badges">
+                      
+                      <span class="mfg-pill">Direct Workshop</span>
+                    </div>
+                  </div>
+                  <div class="prod-subcat">Aluminium Pattern</div>
+
+                  <table class="specs-table">
+                    <tbody>
+                      
+                        <tr>
+                          <td class="k">Usage/Application</td>
+                          <td class="v">Industrial Manufacturing</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Brand</td>
+                          <td class="v">K.S.G. Tools</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Location</td>
+                          <td class="v">Coimbatore</td>
+                        </tr>
+                      
+                    </tbody>
+                  </table>
+
+                  <p class="prod-desc-text">Match Plate Pattern</p>
+                </div>
+
+                <div class="prod-footer-meta">
+                  <span>Direct Factory Supply · <strong>Coimbatore Workshop</strong></span>
+                  <span>Custom Sizes, Tolerances &amp; Sampling Supported</span>
+                </div>
+              </div>
+            </div>
+          
+            <div class="product-row-card avoid-break">
+              <div class="prod-content">
+                <div>
+                  <div class="prod-head">
+                    <div class="prod-title">Automotive Die Casting</div>
+                    <div class="prod-badges">
+                      
+                      <span class="mfg-pill">Direct Workshop</span>
+                    </div>
+                  </div>
+                  <div class="prod-subcat">Die Casting</div>
+
+                  <table class="specs-table">
+                    <tbody>
+                      
+                        <tr>
+                          <td class="k">Usage/Application</td>
+                          <td class="v">Industrial Manufacturing</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Brand</td>
+                          <td class="v">K.S.G. Tools</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Location</td>
+                          <td class="v">Coimbatore</td>
+                        </tr>
+                      
+                    </tbody>
+                  </table>
+
+                  <p class="prod-desc-text">Automotive Die Casting</p>
+                </div>
+
+                <div class="prod-footer-meta">
+                  <span>Direct Factory Supply · <strong>Coimbatore Workshop</strong></span>
+                  <span>Custom Sizes, Tolerances &amp; Sampling Supported</span>
+                </div>
+              </div>
+            </div>
+          
+            <div class="product-row-card avoid-break">
+              <div class="prod-content">
+                <div>
+                  <div class="prod-head">
+                    <div class="prod-title">Aluminum Pressure Die Casting</div>
+                    <div class="prod-badges">
+                      
+                      <span class="mfg-pill">Direct Workshop</span>
+                    </div>
+                  </div>
+                  <div class="prod-subcat">Die Casting</div>
+
+                  <table class="specs-table">
+                    <tbody>
+                      
+                        <tr>
+                          <td class="k">Usage/Application</td>
+                          <td class="v">Industrial Manufacturing</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Brand</td>
+                          <td class="v">K.S.G. Tools</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Location</td>
+                          <td class="v">Coimbatore</td>
+                        </tr>
+                      
+                    </tbody>
+                  </table>
+
+                  <p class="prod-desc-text">Aluminum Pressure Die Casting</p>
+                </div>
+
+                <div class="prod-footer-meta">
+                  <span>Direct Factory Supply · <strong>Coimbatore Workshop</strong></span>
+                  <span>Custom Sizes, Tolerances &amp; Sampling Supported</span>
+                </div>
+              </div>
+            </div>
+          
+            <div class="product-row-card avoid-break">
+              <div class="prod-content">
+                <div>
+                  <div class="prod-head">
+                    <div class="prod-title">4 Way Junction Box Aluminium Die Casting</div>
+                    <div class="prod-badges">
+                      
+                      <span class="mfg-pill">Direct Workshop</span>
+                    </div>
+                  </div>
+                  <div class="prod-subcat">Die Casting</div>
+
+                  <table class="specs-table">
+                    <tbody>
+                      
+                        <tr>
+                          <td class="k">Usage/Application</td>
+                          <td class="v">Industrial Manufacturing</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Brand</td>
+                          <td class="v">K.S.G. Tools</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Location</td>
+                          <td class="v">Coimbatore</td>
+                        </tr>
+                      
+                    </tbody>
+                  </table>
+
+                  <p class="prod-desc-text">4 Way Junction Box Aluminium Die Casting</p>
+                </div>
+
+                <div class="prod-footer-meta">
+                  <span>Direct Factory Supply · <strong>Coimbatore Workshop</strong></span>
+                  <span>Custom Sizes, Tolerances &amp; Sampling Supported</span>
+                </div>
+              </div>
+            </div>
+          
+            <div class="product-row-card avoid-break">
+              <div class="prod-content">
+                <div>
+                  <div class="prod-head">
+                    <div class="prod-title">Cnc Turrent Jewellery Dies</div>
+                    <div class="prod-badges">
+                      
+                      <span class="mfg-pill">Direct Workshop</span>
+                    </div>
+                  </div>
+                  <div class="prod-subcat">Engraving Dies</div>
+
+                  <table class="specs-table">
+                    <tbody>
+                      
+                        <tr>
+                          <td class="k">Usage/Application</td>
+                          <td class="v">Industrial Manufacturing</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Brand</td>
+                          <td class="v">K.S.G. Tools</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Location</td>
+                          <td class="v">Coimbatore</td>
+                        </tr>
+                      
+                    </tbody>
+                  </table>
+
+                  <p class="prod-desc-text">Cnc Turrent Jewellery Dies</p>
+                </div>
+
+                <div class="prod-footer-meta">
+                  <span>Direct Factory Supply · <strong>Coimbatore Workshop</strong></span>
+                  <span>Custom Sizes, Tolerances &amp; Sampling Supported</span>
+                </div>
+              </div>
+            </div>
+          
+            <div class="product-row-card avoid-break">
+              <div class="prod-content">
+                <div>
+                  <div class="prod-head">
+                    <div class="prod-title">2d &amp; 3d Cnc Steel Engraving Die Mould</div>
+                    <div class="prod-badges">
+                      
+                      <span class="mfg-pill">Direct Workshop</span>
+                    </div>
+                  </div>
+                  <div class="prod-subcat">Engraving Dies</div>
+
+                  <table class="specs-table">
+                    <tbody>
+                      
+                        <tr>
+                          <td class="k">Usage/Application</td>
+                          <td class="v">Industrial Manufacturing</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Brand</td>
+                          <td class="v">K.S.G. Tools</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Location</td>
+                          <td class="v">Coimbatore</td>
+                        </tr>
+                      
+                    </tbody>
+                  </table>
+
+                  <p class="prod-desc-text">2d &amp; 3d Cnc Steel Engraving Die Mould</p>
+                </div>
+
+                <div class="prod-footer-meta">
+                  <span>Direct Factory Supply · <strong>Coimbatore Workshop</strong></span>
+                  <span>Custom Sizes, Tolerances &amp; Sampling Supported</span>
+                </div>
+              </div>
+            </div>
+          
+            <div class="product-row-card avoid-break">
+              <div class="prod-content">
+                <div>
+                  <div class="prod-head">
+                    <div class="prod-title">Pipe Die Set</div>
+                    <div class="prod-badges">
+                      
+                      <span class="mfg-pill">Direct Workshop</span>
+                    </div>
+                  </div>
+                  <div class="prod-subcat">Hand Tools</div>
+
+                  <table class="specs-table">
+                    <tbody>
+                      
+                        <tr>
+                          <td class="k">Usage/Application</td>
+                          <td class="v">Industrial Manufacturing</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Brand</td>
+                          <td class="v">K.S.G. Tools</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Location</td>
+                          <td class="v">Coimbatore</td>
+                        </tr>
+                      
+                    </tbody>
+                  </table>
+
+                  <p class="prod-desc-text">Pipe Die Set</p>
+                </div>
+
+                <div class="prod-footer-meta">
+                  <span>Direct Factory Supply · <strong>Coimbatore Workshop</strong></span>
+                  <span>Custom Sizes, Tolerances &amp; Sampling Supported</span>
+                </div>
+              </div>
+            </div>
+          
+            <div class="product-row-card avoid-break">
+              <div class="prod-content">
+                <div>
+                  <div class="prod-head">
+                    <div class="prod-title">Tap Die Set</div>
+                    <div class="prod-badges">
+                      
+                      <span class="mfg-pill">Direct Workshop</span>
+                    </div>
+                  </div>
+                  <div class="prod-subcat">Hand Tools</div>
+
+                  <table class="specs-table">
+                    <tbody>
+                      
+                        <tr>
+                          <td class="k">Usage/Application</td>
+                          <td class="v">Industrial Manufacturing</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Brand</td>
+                          <td class="v">K.S.G. Tools</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Location</td>
+                          <td class="v">Coimbatore</td>
+                        </tr>
+                      
+                    </tbody>
+                  </table>
+
+                  <p class="prod-desc-text">Tap Die Set</p>
+                </div>
+
+                <div class="prod-footer-meta">
+                  <span>Direct Factory Supply · <strong>Coimbatore Workshop</strong></span>
+                  <span>Custom Sizes, Tolerances &amp; Sampling Supported</span>
+                </div>
+              </div>
+            </div>
+          
+            <div class="product-row-card avoid-break">
+              <div class="prod-content">
+                <div>
+                  <div class="prod-head">
+                    <div class="prod-title">Egg Tray Plastic Injection Moulding Die</div>
+                    <div class="prod-badges">
+                      
+                      <span class="mfg-pill">Direct Workshop</span>
+                    </div>
+                  </div>
+                  <div class="prod-subcat">Moulding Dies</div>
+
+                  <table class="specs-table">
+                    <tbody>
+                      
+                        <tr>
+                          <td class="k">Usage/Application</td>
+                          <td class="v">Industrial Manufacturing</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Brand</td>
+                          <td class="v">K.S.G. Tools</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Location</td>
+                          <td class="v">Coimbatore</td>
+                        </tr>
+                      
+                    </tbody>
+                  </table>
+
+                  <p class="prod-desc-text">Egg Tray Plastic Injection Moulding Die</p>
+                </div>
+
+                <div class="prod-footer-meta">
+                  <span>Direct Factory Supply · <strong>Coimbatore Workshop</strong></span>
+                  <span>Custom Sizes, Tolerances &amp; Sampling Supported</span>
+                </div>
+              </div>
+            </div>
+          
+            <div class="product-row-card avoid-break">
+              <div class="prod-content">
+                <div>
+                  <div class="prod-head">
+                    <div class="prod-title">Moulding Patterns</div>
+                    <div class="prod-badges">
+                      
+                      <span class="mfg-pill">Direct Workshop</span>
+                    </div>
+                  </div>
+                  <div class="prod-subcat">Moulding Dies</div>
+
+                  <table class="specs-table">
+                    <tbody>
+                      
+                        <tr>
+                          <td class="k">Usage/Application</td>
+                          <td class="v">Industrial Manufacturing</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Brand</td>
+                          <td class="v">K.S.G. Tools</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Location</td>
+                          <td class="v">Coimbatore</td>
+                        </tr>
+                      
+                    </tbody>
+                  </table>
+
+                  <p class="prod-desc-text">Moulding Patterns</p>
+                </div>
+
+                <div class="prod-footer-meta">
+                  <span>Direct Factory Supply · <strong>Coimbatore Workshop</strong></span>
+                  <span>Custom Sizes, Tolerances &amp; Sampling Supported</span>
+                </div>
+              </div>
+            </div>
+          
+            <div class="product-row-card avoid-break">
+              <div class="prod-content">
+                <div>
+                  <div class="prod-head">
+                    <div class="prod-title">Injection Blow Moulding Die</div>
+                    <div class="prod-badges">
+                      
+                      <span class="mfg-pill">Direct Workshop</span>
+                    </div>
+                  </div>
+                  <div class="prod-subcat">Moulding Dies</div>
+
+                  <table class="specs-table">
+                    <tbody>
+                      
+                        <tr>
+                          <td class="k">Usage/Application</td>
+                          <td class="v">Industrial Manufacturing</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Brand</td>
+                          <td class="v">K.S.G. Tools</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Location</td>
+                          <td class="v">Coimbatore</td>
+                        </tr>
+                      
+                    </tbody>
+                  </table>
+
+                  <p class="prod-desc-text">Injection Blow Moulding Die</p>
+                </div>
+
+                <div class="prod-footer-meta">
+                  <span>Direct Factory Supply · <strong>Coimbatore Workshop</strong></span>
+                  <span>Custom Sizes, Tolerances &amp; Sampling Supported</span>
+                </div>
+              </div>
+            </div>
+          
+            <div class="product-row-card avoid-break">
+              <div class="prod-content">
+                <div>
+                  <div class="prod-head">
+                    <div class="prod-title">Cavity Mould Base Plastic Moulds</div>
+                    <div class="prod-badges">
+                      
+                      <span class="mfg-pill">Direct Workshop</span>
+                    </div>
+                  </div>
+                  <div class="prod-subcat">Moulding Dies</div>
+
+                  <table class="specs-table">
+                    <tbody>
+                      
+                        <tr>
+                          <td class="k">Usage/Application</td>
+                          <td class="v">Industrial Manufacturing</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Brand</td>
+                          <td class="v">K.S.G. Tools</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Location</td>
+                          <td class="v">Coimbatore</td>
+                        </tr>
+                      
+                    </tbody>
+                  </table>
+
+                  <p class="prod-desc-text">Cavity Mould Base Plastic Moulds</p>
+                </div>
+
+                <div class="prod-footer-meta">
+                  <span>Direct Factory Supply · <strong>Coimbatore Workshop</strong></span>
+                  <span>Custom Sizes, Tolerances &amp; Sampling Supported</span>
+                </div>
+              </div>
+            </div>
+          
+            <div class="product-row-card avoid-break">
+              <div class="prod-content">
+                <div>
+                  <div class="prod-head">
+                    <div class="prod-title">Multi Cavity Injection Moulds</div>
+                    <div class="prod-badges">
+                      
+                      <span class="mfg-pill">Direct Workshop</span>
+                    </div>
+                  </div>
+                  <div class="prod-subcat">Moulding Dies</div>
+
+                  <table class="specs-table">
+                    <tbody>
+                      
+                        <tr>
+                          <td class="k">Usage/Application</td>
+                          <td class="v">Industrial Manufacturing</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Brand</td>
+                          <td class="v">K.S.G. Tools</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Location</td>
+                          <td class="v">Coimbatore</td>
+                        </tr>
+                      
+                    </tbody>
+                  </table>
+
+                  <p class="prod-desc-text">Multi Cavity Injection Moulds</p>
+                </div>
+
+                <div class="prod-footer-meta">
+                  <span>Direct Factory Supply · <strong>Coimbatore Workshop</strong></span>
+                  <span>Custom Sizes, Tolerances &amp; Sampling Supported</span>
+                </div>
+              </div>
+            </div>
+          
+            <div class="product-row-card avoid-break">
+              <div class="prod-content">
+                <div>
+                  <div class="prod-head">
+                    <div class="prod-title">Bottle Cap Mold</div>
+                    <div class="prod-badges">
+                      
+                      <span class="mfg-pill">Direct Workshop</span>
+                    </div>
+                  </div>
+                  <div class="prod-subcat">Moulding Dies</div>
+
+                  <table class="specs-table">
+                    <tbody>
+                      
+                        <tr>
+                          <td class="k">Usage/Application</td>
+                          <td class="v">Industrial Manufacturing</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Brand</td>
+                          <td class="v">K.S.G. Tools</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Location</td>
+                          <td class="v">Coimbatore</td>
+                        </tr>
+                      
+                    </tbody>
+                  </table>
+
+                  <p class="prod-desc-text">Bottle Cap Mold</p>
+                </div>
+
+                <div class="prod-footer-meta">
+                  <span>Direct Factory Supply · <strong>Coimbatore Workshop</strong></span>
+                  <span>Custom Sizes, Tolerances &amp; Sampling Supported</span>
+                </div>
+              </div>
+            </div>
+          
+            <div class="product-row-card avoid-break">
+              <div class="prod-content">
+                <div>
+                  <div class="prod-head">
+                    <div class="prod-title">Plastic Bottle Cap Mould</div>
+                    <div class="prod-badges">
+                      
+                      <span class="mfg-pill">Direct Workshop</span>
+                    </div>
+                  </div>
+                  <div class="prod-subcat">Moulding Dies</div>
+
+                  <table class="specs-table">
+                    <tbody>
+                      
+                        <tr>
+                          <td class="k">Usage/Application</td>
+                          <td class="v">Industrial Manufacturing</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Brand</td>
+                          <td class="v">K.S.G. Tools</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Location</td>
+                          <td class="v">Coimbatore</td>
+                        </tr>
+                      
+                    </tbody>
+                  </table>
+
+                  <p class="prod-desc-text">Plastic Bottle Cap Mould</p>
+                </div>
+
+                <div class="prod-footer-meta">
+                  <span>Direct Factory Supply · <strong>Coimbatore Workshop</strong></span>
+                  <span>Custom Sizes, Tolerances &amp; Sampling Supported</span>
+                </div>
+              </div>
+            </div>
+          
+            <div class="product-row-card avoid-break">
+              <div class="prod-content">
+                <div>
+                  <div class="prod-head">
+                    <div class="prod-title">Metal Dies Pattern</div>
+                    <div class="prod-badges">
+                      
+                      <span class="mfg-pill">Direct Workshop</span>
+                    </div>
+                  </div>
+                  <div class="prod-subcat">Pattern Works</div>
+
+                  <table class="specs-table">
+                    <tbody>
+                      
+                        <tr>
+                          <td class="k">Usage/Application</td>
+                          <td class="v">Industrial Manufacturing</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Brand</td>
+                          <td class="v">K.S.G. Tools</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Location</td>
+                          <td class="v">Coimbatore</td>
+                        </tr>
+                      
+                    </tbody>
+                  </table>
+
+                  <p class="prod-desc-text">Metal Dies Pattern</p>
+                </div>
+
+                <div class="prod-footer-meta">
+                  <span>Direct Factory Supply · <strong>Coimbatore Workshop</strong></span>
+                  <span>Custom Sizes, Tolerances &amp; Sampling Supported</span>
+                </div>
+              </div>
+            </div>
+          
+            <div class="product-row-card avoid-break">
+              <div class="prod-content">
+                <div>
+                  <div class="prod-head">
+                    <div class="prod-title">Aluminium Casting Pattern</div>
+                    <div class="prod-badges">
+                      
+                      <span class="mfg-pill">Direct Workshop</span>
+                    </div>
+                  </div>
+                  <div class="prod-subcat">Pattern Works</div>
+
+                  <table class="specs-table">
+                    <tbody>
+                      
+                        <tr>
+                          <td class="k">Usage/Application</td>
+                          <td class="v">Industrial Manufacturing</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Brand</td>
+                          <td class="v">K.S.G. Tools</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Location</td>
+                          <td class="v">Coimbatore</td>
+                        </tr>
+                      
+                    </tbody>
+                  </table>
+
+                  <p class="prod-desc-text">Aluminium Casting Pattern</p>
+                </div>
+
+                <div class="prod-footer-meta">
+                  <span>Direct Factory Supply · <strong>Coimbatore Workshop</strong></span>
+                  <span>Custom Sizes, Tolerances &amp; Sampling Supported</span>
+                </div>
+              </div>
+            </div>
+          
+            <div class="product-row-card avoid-break">
+              <div class="prod-content">
+                <div>
+                  <div class="prod-head">
+                    <div class="prod-title">Rubber Moulding Die</div>
+                    <div class="prod-badges">
+                      
+                      <span class="mfg-pill">Direct Workshop</span>
+                    </div>
+                  </div>
+                  <div class="prod-subcat">Plastic Moulding Die</div>
+
+                  <table class="specs-table">
+                    <tbody>
+                      
+                        <tr>
+                          <td class="k">Usage/Application</td>
+                          <td class="v">Industrial Manufacturing</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Brand</td>
+                          <td class="v">K.S.G. Tools</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Location</td>
+                          <td class="v">Coimbatore</td>
+                        </tr>
+                      
+                    </tbody>
+                  </table>
+
+                  <p class="prod-desc-text">Rubber Moulding Die</p>
+                </div>
+
+                <div class="prod-footer-meta">
+                  <span>Direct Factory Supply · <strong>Coimbatore Workshop</strong></span>
+                  <span>Custom Sizes, Tolerances &amp; Sampling Supported</span>
+                </div>
+              </div>
+            </div>
+          
+            <div class="product-row-card avoid-break">
+              <div class="prod-content">
+                <div>
+                  <div class="prod-head">
+                    <div class="prod-title">Plastic Injection Mold Die</div>
+                    <div class="prod-badges">
+                      
+                      <span class="mfg-pill">Direct Workshop</span>
+                    </div>
+                  </div>
+                  <div class="prod-subcat">Plastic Moulding Die</div>
+
+                  <table class="specs-table">
+                    <tbody>
+                      
+                        <tr>
+                          <td class="k">Usage/Application</td>
+                          <td class="v">Industrial Manufacturing</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Brand</td>
+                          <td class="v">K.S.G. Tools</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Location</td>
+                          <td class="v">Coimbatore</td>
+                        </tr>
+                      
+                    </tbody>
+                  </table>
+
+                  <p class="prod-desc-text">Plastic Injection Mold Die</p>
+                </div>
+
+                <div class="prod-footer-meta">
+                  <span>Direct Factory Supply · <strong>Coimbatore Workshop</strong></span>
+                  <span>Custom Sizes, Tolerances &amp; Sampling Supported</span>
+                </div>
+              </div>
+            </div>
+          
+            <div class="product-row-card avoid-break">
+              <div class="prod-content">
+                <div>
+                  <div class="prod-head">
+                    <div class="prod-title">Cnc Turrent Metal Dies</div>
+                    <div class="prod-badges">
+                      
+                      <span class="mfg-pill">Direct Workshop</span>
+                    </div>
+                  </div>
+                  <div class="prod-subcat">Press Tools</div>
+
+                  <table class="specs-table">
+                    <tbody>
+                      
+                        <tr>
+                          <td class="k">Usage/Application</td>
+                          <td class="v">Industrial Manufacturing</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Brand</td>
+                          <td class="v">K.S.G. Tools</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Location</td>
+                          <td class="v">Coimbatore</td>
+                        </tr>
+                      
+                    </tbody>
+                  </table>
+
+                  <p class="prod-desc-text">Cnc Turrent Metal Dies</p>
+                </div>
+
+                <div class="prod-footer-meta">
+                  <span>Direct Factory Supply · <strong>Coimbatore Workshop</strong></span>
+                  <span>Custom Sizes, Tolerances &amp; Sampling Supported</span>
+                </div>
+              </div>
+            </div>
+          
+            <div class="product-row-card avoid-break">
+              <div class="prod-content">
+                <div>
+                  <div class="prod-head">
+                    <div class="prod-title">Industrial Sheet Metal Dies</div>
+                    <div class="prod-badges">
+                      
+                      <span class="mfg-pill">Direct Workshop</span>
+                    </div>
+                  </div>
+                  <div class="prod-subcat">Sheet Metal Die</div>
+
+                  <table class="specs-table">
+                    <tbody>
+                      
+                        <tr>
+                          <td class="k">Usage/Application</td>
+                          <td class="v">Industrial Manufacturing</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Brand</td>
+                          <td class="v">K.S.G. Tools</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Location</td>
+                          <td class="v">Coimbatore</td>
+                        </tr>
+                      
+                    </tbody>
+                  </table>
+
+                  <p class="prod-desc-text">Industrial Sheet Metal Dies</p>
+                </div>
+
+                <div class="prod-footer-meta">
+                  <span>Direct Factory Supply · <strong>Coimbatore Workshop</strong></span>
+                  <span>Custom Sizes, Tolerances &amp; Sampling Supported</span>
+                </div>
+              </div>
+            </div>
+          
+            <div class="product-row-card avoid-break">
+              <div class="prod-content">
+                <div>
+                  <div class="prod-head">
+                    <div class="prod-title">Automotive Sheet Metal Dies</div>
+                    <div class="prod-badges">
+                      
+                      <span class="mfg-pill">Direct Workshop</span>
+                    </div>
+                  </div>
+                  <div class="prod-subcat">Sheet Metal Die</div>
+
+                  <table class="specs-table">
+                    <tbody>
+                      
+                        <tr>
+                          <td class="k">Usage/Application</td>
+                          <td class="v">Industrial Manufacturing</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Brand</td>
+                          <td class="v">K.S.G. Tools</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Location</td>
+                          <td class="v">Coimbatore</td>
+                        </tr>
+                      
+                    </tbody>
+                  </table>
+
+                  <p class="prod-desc-text">Automotive Sheet Metal Dies</p>
+                </div>
+
+                <div class="prod-footer-meta">
+                  <span>Direct Factory Supply · <strong>Coimbatore Workshop</strong></span>
+                  <span>Custom Sizes, Tolerances &amp; Sampling Supported</span>
+                </div>
+              </div>
+            </div>
+          
+            <div class="product-row-card avoid-break">
+              <div class="prod-content">
+                <div>
+                  <div class="prod-head">
+                    <div class="prod-title">Steel Die Pattern</div>
+                    <div class="prod-badges">
+                      
+                      <span class="mfg-pill">Direct Workshop</span>
+                    </div>
+                  </div>
+                  <div class="prod-subcat">Sheet Metal Die</div>
+
+                  <table class="specs-table">
+                    <tbody>
+                      
+                        <tr>
+                          <td class="k">Usage/Application</td>
+                          <td class="v">Industrial Manufacturing</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Brand</td>
+                          <td class="v">K.S.G. Tools</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Location</td>
+                          <td class="v">Coimbatore</td>
+                        </tr>
+                      
+                    </tbody>
+                  </table>
+
+                  <p class="prod-desc-text">steel die pattern</p>
+                </div>
+
+                <div class="prod-footer-meta">
+                  <span>Direct Factory Supply · <strong>Coimbatore Workshop</strong></span>
+                  <span>Custom Sizes, Tolerances &amp; Sampling Supported</span>
+                </div>
+              </div>
+            </div>
+          
+            <div class="product-row-card avoid-break">
+              <div class="prod-content">
+                <div>
+                  <div class="prod-head">
+                    <div class="prod-title">Tool and die Insert</div>
+                    <div class="prod-badges">
+                      
+                      <span class="mfg-pill">Direct Workshop</span>
+                    </div>
+                  </div>
+                  <div class="prod-subcat">Tools And Dies</div>
+
+                  <table class="specs-table">
+                    <tbody>
+                      
+                        <tr>
+                          <td class="k">Usage/Application</td>
+                          <td class="v">Industrial Manufacturing</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Brand</td>
+                          <td class="v">K.S.G. Tools</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Location</td>
+                          <td class="v">Coimbatore</td>
+                        </tr>
+                      
+                    </tbody>
+                  </table>
+
+                  <p class="prod-desc-text">Tool and die Insert</p>
+                </div>
+
+                <div class="prod-footer-meta">
+                  <span>Direct Factory Supply · <strong>Coimbatore Workshop</strong></span>
+                  <span>Custom Sizes, Tolerances &amp; Sampling Supported</span>
+                </div>
+              </div>
+            </div>
+          
+      </div>
+    
+      <div class="page-break"></div>
+      <div class="catalog-header">
+        <span><strong>K.S.G. Tools</strong> · Industrial Catalogue</span>
+        <span class="badge">Shredding Machine</span>
+      </div>
+
+      <div class="cat-divider">
+        <h2>Shredding Machine</h2>
+        <span>12 Items Listed</span>
+      </div>
+
+      <div class="products-list">
+        
+            <div class="product-row-card avoid-break">
+              <div class="prod-content">
+                <div>
+                  <div class="prod-head">
+                    <div class="prod-title">Metal Shredder Machine</div>
+                    <div class="prod-badges">
+                      <span class="moq-pill">MOQ: 1 Piece</span>
+                      <span class="mfg-pill">Direct Workshop</span>
+                    </div>
+                  </div>
+                  <div class="prod-subcat">Shredder Machine</div>
+
+                  <table class="specs-table">
+                    <tbody>
+                      
+                        <tr>
+                          <td class="k">Capacity</td>
+                          <td class="v">5000 kg/hr</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Shredding Capacity</td>
+                          <td class="v">500-1000 kg/hr</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Shredding Machine Type</td>
+                          <td class="v">Single Shaft</td>
+                        </tr>
+                      
+                    </tbody>
+                  </table>
+
+                  <p class="prod-desc-text">High torque metal shredder machine designed to shred aluminium profiles, tin cans, light scrap, and turnings with low noise and high energy efficiency.</p>
+                </div>
+
+                <div class="prod-footer-meta">
+                  <span>Direct Factory Supply · <strong>Coimbatore Workshop</strong></span>
+                  <span>Custom Sizes, Tolerances &amp; Sampling Supported</span>
+                </div>
+              </div>
+            </div>
+          
+            <div class="product-row-card avoid-break">
+              <div class="prod-content">
+                <div>
+                  <div class="prod-head">
+                    <div class="prod-title">Mild Steel Shredder Cutter, For Industrial</div>
+                    <div class="prod-badges">
+                      <span class="moq-pill">MOQ: 1 Piece</span>
+                      <span class="mfg-pill">Direct Workshop</span>
+                    </div>
+                  </div>
+                  <div class="prod-subcat">Shredder Machine</div>
+
+                  <table class="specs-table">
+                    <tbody>
+                      
+                        <tr>
+                          <td class="k">Usage/Application</td>
+                          <td class="v">Industrial</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Brand</td>
+                          <td class="v">Own Brand</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Automation Grade</td>
+                          <td class="v">Automatic</td>
+                        </tr>
+                      
+                    </tbody>
+                  </table>
+
+                  <p class="prod-desc-text">Automatic mild steel industrial shredder cutters configured for continuous shredding operations in manufacturing plants.</p>
+                </div>
+
+                <div class="prod-footer-meta">
+                  <span>Direct Factory Supply · <strong>Coimbatore Workshop</strong></span>
+                  <span>Custom Sizes, Tolerances &amp; Sampling Supported</span>
+                </div>
+              </div>
+            </div>
+          
+            <div class="product-row-card avoid-break">
+              <div class="prod-content">
+                <div>
+                  <div class="prod-head">
+                    <div class="prod-title">Double Shaft Automatic Shredding Machine</div>
+                    <div class="prod-badges">
+                      <span class="moq-pill">MOQ: 1 Piece</span>
+                      <span class="mfg-pill">Direct Workshop</span>
+                    </div>
+                  </div>
+                  <div class="prod-subcat">Shredding Machine</div>
+
+                  <table class="specs-table">
+                    <tbody>
+                      
+                        <tr>
+                          <td class="k">Machine Type</td>
+                          <td class="v">Double Shaft Automatic Shredder</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Motor Power</td>
+                          <td class="v">15 HP / 30 HP Dual Motors</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Application</td>
+                          <td class="v">Industrial Waste, Rubber, Plastic &amp; Wood</td>
+                        </tr>
+                      
+                    </tbody>
+                  </table>
+
+                  <p class="prod-desc-text">Heavy-duty double shaft automatic shredder with dual counter-rotating shafts for tearing bulky solid waste, drums, tires, and wood.</p>
+                </div>
+
+                <div class="prod-footer-meta">
+                  <span>Direct Factory Supply · <strong>Coimbatore Workshop</strong></span>
+                  <span>Custom Sizes, Tolerances &amp; Sampling Supported</span>
+                </div>
+              </div>
+            </div>
+          
+            <div class="product-row-card avoid-break">
+              <div class="prod-content">
+                <div>
+                  <div class="prod-head">
+                    <div class="prod-title">Agricultural Shredder Machine In Coimbatore</div>
+                    <div class="prod-badges">
+                      <span class="moq-pill">MOQ: 1 Piece</span>
+                      <span class="mfg-pill">Direct Workshop</span>
+                    </div>
+                  </div>
+                  <div class="prod-subcat">Shredding Machine</div>
+
+                  <table class="specs-table">
+                    <tbody>
+                      
+                        <tr>
+                          <td class="k">Application</td>
+                          <td class="v">Farm Waste, Coconut Fronds &amp; Biomass</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Capacity</td>
+                          <td class="v">1000-2000 kg/hr</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Drive</td>
+                          <td class="v">Tractor PTO / Electric Motor</td>
+                        </tr>
+                      
+                    </tbody>
+                  </table>
+
+                  <p class="prod-desc-text">Field-tested agricultural shredder machine manufactured in Coimbatore for shredding coconut fronds, maize stalks, and cotton stalks into compost.</p>
+                </div>
+
+                <div class="prod-footer-meta">
+                  <span>Direct Factory Supply · <strong>Coimbatore Workshop</strong></span>
+                  <span>Custom Sizes, Tolerances &amp; Sampling Supported</span>
+                </div>
+              </div>
+            </div>
+          
+            <div class="product-row-card avoid-break">
+              <div class="prod-content">
+                <div>
+                  <div class="prod-head">
+                    <div class="prod-title">Mild Steel Coconut Husk Shredder Machine</div>
+                    <div class="prod-badges">
+                      <span class="moq-pill">MOQ: 1 Piece</span>
+                      <span class="mfg-pill">Direct Workshop</span>
+                    </div>
+                  </div>
+                  <div class="prod-subcat">Shredding Machine</div>
+
+                  <table class="specs-table">
+                    <tbody>
+                      
+                        <tr>
+                          <td class="k">Material</td>
+                          <td class="v">Mild Steel Heavy Body</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Application</td>
+                          <td class="v">Coir &amp; Coconut Husk Processing</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Output</td>
+                          <td class="v">Coir Fibre and Husk Pith</td>
+                        </tr>
+                      
+                    </tbody>
+                  </table>
+
+                  <p class="prod-desc-text">Specialized coconut husk shredder machine breaking down green and dry coconut husks for coir fibre extraction and coir pith production.</p>
+                </div>
+
+                <div class="prod-footer-meta">
+                  <span>Direct Factory Supply · <strong>Coimbatore Workshop</strong></span>
+                  <span>Custom Sizes, Tolerances &amp; Sampling Supported</span>
+                </div>
+              </div>
+            </div>
+          
+            <div class="product-row-card avoid-break">
+              <div class="prod-content">
+                <div>
+                  <div class="prod-head">
+                    <div class="prod-title">Granulator Machine</div>
+                    <div class="prod-badges">
+                      <span class="moq-pill">MOQ: 1 Piece</span>
+                      <span class="mfg-pill">Direct Workshop</span>
+                    </div>
+                  </div>
+                  <div class="prod-subcat">Granulator Machine</div>
+
+                  <table class="specs-table">
+                    <tbody>
+                      
+                        <tr>
+                          <td class="k">Type of Machine</td>
+                          <td class="v">Metal Granulator Machine</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Type of Grinding Machine</td>
+                          <td class="v">CNC Grinding Machine</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Grinding Material</td>
+                          <td class="v">Metal</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Automation Grade</td>
+                          <td class="v">Automatic</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">I Deal In</td>
+                          <td class="v">New Only</td>
+                        </tr>
+                      
+                    </tbody>
+                  </table>
+
+                  <p class="prod-desc-text">KSG Tools is dealing in best quality of materials and product to getthe customers foe long term and based on the customer requirement everything is done.</p>
+                </div>
+
+                <div class="prod-footer-meta">
+                  <span>Direct Factory Supply · <strong>Coimbatore Workshop</strong></span>
+                  <span>Custom Sizes, Tolerances &amp; Sampling Supported</span>
+                </div>
+              </div>
+            </div>
+          
+            <div class="product-row-card avoid-break">
+              <div class="prod-content">
+                <div>
+                  <div class="prod-head">
+                    <div class="prod-title">Tyre Shredders</div>
+                    <div class="prod-badges">
+                      
+                      <span class="mfg-pill">Direct Workshop</span>
+                    </div>
+                  </div>
+                  <div class="prod-subcat">Shredder Machine</div>
+
+                  <table class="specs-table">
+                    <tbody>
+                      
+                        <tr>
+                          <td class="k">Number of Motors</td>
+                          <td class="v">2</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Shredding Machine Type</td>
+                          <td class="v">Single Shaft</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Automation Grade</td>
+                          <td class="v">Semi-Automatic</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Condition</td>
+                          <td class="v">New</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Country of Origin</td>
+                          <td class="v">Made in India</td>
+                        </tr>
+                      
+                    </tbody>
+                  </table>
+
+                  <p class="prod-desc-text">KSG Tools is dealing in best quality of materials and product to getthe customers foe long term and based on the customer requirement everything is done.</p>
+                </div>
+
+                <div class="prod-footer-meta">
+                  <span>Direct Factory Supply · <strong>Coimbatore Workshop</strong></span>
+                  <span>Custom Sizes, Tolerances &amp; Sampling Supported</span>
+                </div>
+              </div>
+            </div>
+          
+            <div class="product-row-card avoid-break">
+              <div class="prod-content">
+                <div>
+                  <div class="prod-head">
+                    <div class="prod-title">5 HP Compact Shredding Machine, For Industrial</div>
+                    <div class="prod-badges">
+                      
+                      <span class="mfg-pill">Direct Workshop</span>
+                    </div>
+                  </div>
+                  <div class="prod-subcat">Shredding Machine</div>
+
+                  <table class="specs-table">
+                    <tbody>
+                      
+                        <tr>
+                          <td class="k">Usage/Application</td>
+                          <td class="v">Industrial Manufacturing</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Brand</td>
+                          <td class="v">K.S.G. Tools</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Location</td>
+                          <td class="v">Coimbatore</td>
+                        </tr>
+                      
+                    </tbody>
+                  </table>
+
+                  <p class="prod-desc-text">5 HP Compact Shredding Machine, For Industrial</p>
+                </div>
+
+                <div class="prod-footer-meta">
+                  <span>Direct Factory Supply · <strong>Coimbatore Workshop</strong></span>
+                  <span>Custom Sizes, Tolerances &amp; Sampling Supported</span>
+                </div>
+              </div>
+            </div>
+          
+            <div class="product-row-card avoid-break">
+              <div class="prod-content">
+                <div>
+                  <div class="prod-head">
+                    <div class="prod-title">Industrial Shredders In Coimbatore</div>
+                    <div class="prod-badges">
+                      
+                      <span class="mfg-pill">Direct Workshop</span>
+                    </div>
+                  </div>
+                  <div class="prod-subcat">Shredding Machine</div>
+
+                  <table class="specs-table">
+                    <tbody>
+                      
+                        <tr>
+                          <td class="k">Usage/Application</td>
+                          <td class="v">Industrial Manufacturing</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Brand</td>
+                          <td class="v">K.S.G. Tools</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Location</td>
+                          <td class="v">Coimbatore</td>
+                        </tr>
+                      
+                    </tbody>
+                  </table>
+
+                  <p class="prod-desc-text">Industrial Shredders In Coimbatore</p>
+                </div>
+
+                <div class="prod-footer-meta">
+                  <span>Direct Factory Supply · <strong>Coimbatore Workshop</strong></span>
+                  <span>Custom Sizes, Tolerances &amp; Sampling Supported</span>
+                </div>
+              </div>
+            </div>
+          
+            <div class="product-row-card avoid-break">
+              <div class="prod-content">
+                <div>
+                  <div class="prod-head">
+                    <div class="prod-title">Industrial Plastic Shredder Machine</div>
+                    <div class="prod-badges">
+                      
+                      <span class="mfg-pill">Direct Workshop</span>
+                    </div>
+                  </div>
+                  <div class="prod-subcat">Shredding Machine</div>
+
+                  <table class="specs-table">
+                    <tbody>
+                      
+                        <tr>
+                          <td class="k">Usage/Application</td>
+                          <td class="v">Industrial Manufacturing</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Brand</td>
+                          <td class="v">K.S.G. Tools</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Location</td>
+                          <td class="v">Coimbatore</td>
+                        </tr>
+                      
+                    </tbody>
+                  </table>
+
+                  <p class="prod-desc-text">Industrial Plastic Shredder Machine</p>
+                </div>
+
+                <div class="prod-footer-meta">
+                  <span>Direct Factory Supply · <strong>Coimbatore Workshop</strong></span>
+                  <span>Custom Sizes, Tolerances &amp; Sampling Supported</span>
+                </div>
+              </div>
+            </div>
+          
+            <div class="product-row-card avoid-break">
+              <div class="prod-content">
+                <div>
+                  <div class="prod-head">
+                    <div class="prod-title">Wood Shredding Machine</div>
+                    <div class="prod-badges">
+                      
+                      <span class="mfg-pill">Direct Workshop</span>
+                    </div>
+                  </div>
+                  <div class="prod-subcat">Shredding Machine</div>
+
+                  <table class="specs-table">
+                    <tbody>
+                      
+                        <tr>
+                          <td class="k">Usage/Application</td>
+                          <td class="v">Industrial Manufacturing</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Brand</td>
+                          <td class="v">K.S.G. Tools</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Location</td>
+                          <td class="v">Coimbatore</td>
+                        </tr>
+                      
+                    </tbody>
+                  </table>
+
+                  <p class="prod-desc-text">Wood Shredding Machine</p>
+                </div>
+
+                <div class="prod-footer-meta">
+                  <span>Direct Factory Supply · <strong>Coimbatore Workshop</strong></span>
+                  <span>Custom Sizes, Tolerances &amp; Sampling Supported</span>
+                </div>
+              </div>
+            </div>
+          
+            <div class="product-row-card avoid-break">
+              <div class="prod-content">
+                <div>
+                  <div class="prod-head">
+                    <div class="prod-title">Paper Shredding Machine</div>
+                    <div class="prod-badges">
+                      
+                      <span class="mfg-pill">Direct Workshop</span>
+                    </div>
+                  </div>
+                  <div class="prod-subcat">Shredding Machine</div>
+
+                  <table class="specs-table">
+                    <tbody>
+                      
+                        <tr>
+                          <td class="k">Usage/Application</td>
+                          <td class="v">Industrial Manufacturing</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Brand</td>
+                          <td class="v">K.S.G. Tools</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Location</td>
+                          <td class="v">Coimbatore</td>
+                        </tr>
+                      
+                    </tbody>
+                  </table>
+
+                  <p class="prod-desc-text">Paper Shredding Machine</p>
+                </div>
+
+                <div class="prod-footer-meta">
+                  <span>Direct Factory Supply · <strong>Coimbatore Workshop</strong></span>
+                  <span>Custom Sizes, Tolerances &amp; Sampling Supported</span>
+                </div>
+              </div>
+            </div>
+          
+      </div>
+    
+      <div class="page-break"></div>
+      <div class="catalog-header">
+        <span><strong>K.S.G. Tools</strong> · Industrial Catalogue</span>
+        <span class="badge">Grinder Blades</span>
+      </div>
+
+      <div class="cat-divider">
+        <h2>Grinder Blades</h2>
+        <span>3 Items Listed</span>
+      </div>
+
+      <div class="products-list">
+        
+            <div class="product-row-card avoid-break">
+              <div class="prod-content">
+                <div>
+                  <div class="prod-head">
+                    <div class="prod-title">Shredder Machine Blade, For Industrial</div>
+                    <div class="prod-badges">
+                      <span class="moq-pill">MOQ: 1 Piece</span>
+                      <span class="mfg-pill">Direct Workshop</span>
+                    </div>
+                  </div>
+                  <div class="prod-subcat">Grinder Blades</div>
+
+                  <table class="specs-table">
+                    <tbody>
+                      
+                        <tr>
+                          <td class="k">Size</td>
+                          <td class="v">4 Inch</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Shredding Capacity</td>
+                          <td class="v">2000 kg/hr</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Material</td>
+                          <td class="v">Stainless Steel</td>
+                        </tr>
+                      
+                    </tbody>
+                  </table>
+
+                  <p class="prod-desc-text">High capacity 4-inch shredder machine blades capable of continuous processing up to 2000 kg/hr in industrial grinding setups.</p>
+                </div>
+
+                <div class="prod-footer-meta">
+                  <span>Direct Factory Supply · <strong>Coimbatore Workshop</strong></span>
+                  <span>Custom Sizes, Tolerances &amp; Sampling Supported</span>
+                </div>
+              </div>
+            </div>
+          
+            <div class="product-row-card avoid-break">
+              <div class="prod-content">
+                <div>
+                  <div class="prod-head">
+                    <div class="prod-title">Stainless Steel Grinder Blades</div>
+                    <div class="prod-badges">
+                      <span class="moq-pill">MOQ: 1 Piece</span>
+                      <span class="mfg-pill">Direct Workshop</span>
+                    </div>
+                  </div>
+                  <div class="prod-subcat">Grinder Blades</div>
+
+                  <table class="specs-table">
+                    <tbody>
+                      
+                        <tr>
+                          <td class="k">Size (Length)</td>
+                          <td class="v">8 inch</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Usage</td>
+                          <td class="v">Metal Grinding</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Material</td>
+                          <td class="v">Stainless Steel</td>
+                        </tr>
+                      
+                    </tbody>
+                  </table>
+
+                  <p class="prod-desc-text">8-inch stainless steel industrial grinder blades designed for rigorous metal grinding, recycling crushers, and abrasive material reduction.</p>
+                </div>
+
+                <div class="prod-footer-meta">
+                  <span>Direct Factory Supply · <strong>Coimbatore Workshop</strong></span>
+                  <span>Custom Sizes, Tolerances &amp; Sampling Supported</span>
+                </div>
+              </div>
+            </div>
+          
+            <div class="product-row-card avoid-break">
+              <div class="prod-content">
+                <div>
+                  <div class="prod-head">
+                    <div class="prod-title">Plastic Grinder Crusher Blade</div>
+                    <div class="prod-badges">
+                      <span class="moq-pill">MOQ: 1 Piece</span>
+                      <span class="mfg-pill">Direct Workshop</span>
+                    </div>
+                  </div>
+                  <div class="prod-subcat">Grinder Blades</div>
+
+                  <table class="specs-table">
+                    <tbody>
+                      
+                        <tr>
+                          <td class="k">Size (Length)</td>
+                          <td class="v">4 inch</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Usage</td>
+                          <td class="v">Plastic Grinding</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Material</td>
+                          <td class="v">Stainless Steel</td>
+                        </tr>
+                      
+                    </tbody>
+                  </table>
+
+                  <p class="prod-desc-text">4-inch plastic grinder crusher blades manufactured from high chromium alloy steel for pulverizing plastics, polymers, and PVC runners.</p>
+                </div>
+
+                <div class="prod-footer-meta">
+                  <span>Direct Factory Supply · <strong>Coimbatore Workshop</strong></span>
+                  <span>Custom Sizes, Tolerances &amp; Sampling Supported</span>
+                </div>
+              </div>
+            </div>
+          
+      </div>
+    
+      <div class="page-break"></div>
+      <div class="catalog-header">
+        <span><strong>K.S.G. Tools</strong> · Industrial Catalogue</span>
+        <span class="badge">Granulator Blades</span>
+      </div>
+
+      <div class="cat-divider">
+        <h2>Granulator Blades</h2>
+        <span>3 Items Listed</span>
+      </div>
+
+      <div class="products-list">
+        
+            <div class="product-row-card avoid-break">
+              <div class="prod-content">
+                <div>
+                  <div class="prod-head">
+                    <div class="prod-title">Plastic Recycling Granulator Blade</div>
+                    <div class="prod-badges">
+                      <span class="moq-pill">MOQ: 1 Piece</span>
+                      <span class="mfg-pill">Direct Workshop</span>
+                    </div>
+                  </div>
+                  <div class="prod-subcat">Granulator Blades</div>
+
+                  <table class="specs-table">
+                    <tbody>
+                      
+                        <tr>
+                          <td class="k">Size (Length)</td>
+                          <td class="v">5 inch</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Usage</td>
+                          <td class="v">For Plastic Granules</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Material</td>
+                          <td class="v">Stainless Steel</td>
+                        </tr>
+                      
+                    </tbody>
+                  </table>
+
+                  <p class="prod-desc-text">Precision 5-inch rotor and bed blades for plastic recycling granulators, converting rejected mouldings into uniform granules.</p>
+                </div>
+
+                <div class="prod-footer-meta">
+                  <span>Direct Factory Supply · <strong>Coimbatore Workshop</strong></span>
+                  <span>Custom Sizes, Tolerances &amp; Sampling Supported</span>
+                </div>
+              </div>
+            </div>
+          
+            <div class="product-row-card avoid-break">
+              <div class="prod-content">
+                <div>
+                  <div class="prod-head">
+                    <div class="prod-title">5 Inch Plastic Granulator Blades</div>
+                    <div class="prod-badges">
+                      <span class="moq-pill">MOQ: 1 Piece</span>
+                      <span class="mfg-pill">Direct Workshop</span>
+                    </div>
+                  </div>
+                  <div class="prod-subcat">Granulator Blades</div>
+
+                  <table class="specs-table">
+                    <tbody>
+                      
+                        <tr>
+                          <td class="k">Size (Length)</td>
+                          <td class="v">5 inch</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Material</td>
+                          <td class="v">Stainless Steel</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Usage</td>
+                          <td class="v">For Plastic Granules</td>
+                        </tr>
+                      
+                    </tbody>
+                  </table>
+
+                  <p class="prod-desc-text">5-inch plastic granulator blades with precision ground cutting angles to minimize dust formation and power consumption.</p>
+                </div>
+
+                <div class="prod-footer-meta">
+                  <span>Direct Factory Supply · <strong>Coimbatore Workshop</strong></span>
+                  <span>Custom Sizes, Tolerances &amp; Sampling Supported</span>
+                </div>
+              </div>
+            </div>
+          
+            <div class="product-row-card avoid-break">
+              <div class="prod-content">
+                <div>
+                  <div class="prod-head">
+                    <div class="prod-title">10 Inch Plastic Granulator Blades</div>
+                    <div class="prod-badges">
+                      <span class="moq-pill">MOQ: 1 Piece</span>
+                      <span class="mfg-pill">Direct Workshop</span>
+                    </div>
+                  </div>
+                  <div class="prod-subcat">Granulator Blades</div>
+
+                  <table class="specs-table">
+                    <tbody>
+                      
+                        <tr>
+                          <td class="k">Size (Length)</td>
+                          <td class="v">10 inch</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Usage</td>
+                          <td class="v">For Plastic Granules</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Material</td>
+                          <td class="v">Stainless Steel</td>
+                        </tr>
+                      
+                    </tbody>
+                  </table>
+
+                  <p class="prod-desc-text">10-inch heavy-duty granulator rotor and stator blades designed for centralized granulators handling bottles, lumps, and pipes.</p>
+                </div>
+
+                <div class="prod-footer-meta">
+                  <span>Direct Factory Supply · <strong>Coimbatore Workshop</strong></span>
+                  <span>Custom Sizes, Tolerances &amp; Sampling Supported</span>
+                </div>
+              </div>
+            </div>
+          
+      </div>
+    
+      <div class="page-break"></div>
+      <div class="catalog-header">
+        <span><strong>K.S.G. Tools</strong> · Industrial Catalogue</span>
+        <span class="badge">VMC Machine Job Work</span>
+      </div>
+
+      <div class="cat-divider">
+        <h2>VMC Machine Job Work</h2>
+        <span>7 Items Listed</span>
+      </div>
+
+      <div class="products-list">
+        
+            <div class="product-row-card avoid-break">
+              <div class="prod-content">
+                <div>
+                  <div class="prod-head">
+                    <div class="prod-title">Vmc Job Work With Material with 4 axis</div>
+                    <div class="prod-badges">
+                      <span class="moq-pill">MOQ: 1 Piece</span>
+                      <span class="mfg-pill">Direct Workshop</span>
+                    </div>
+                  </div>
+                  <div class="prod-subcat">Vmc Machine Job Work</div>
+
+                  <table class="specs-table">
+                    <tbody>
+                      
+                        <tr>
+                          <td class="k">Material Selection</td>
+                          <td class="v">Aluminum</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Country of Origin</td>
+                          <td class="v">Made in India</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Axis</td>
+                          <td class="v">4-Axis VMC Machining Center</td>
+                        </tr>
+                      
+                    </tbody>
+                  </table>
+
+                  <p class="prod-desc-text">Comprehensive 4-axis VMC machining center job work including raw material procurement, CNC milling, precision boring, and tapping.</p>
+                </div>
+
+                <div class="prod-footer-meta">
+                  <span>Direct Factory Supply · <strong>Coimbatore Workshop</strong></span>
+                  <span>Custom Sizes, Tolerances &amp; Sampling Supported</span>
+                </div>
+              </div>
+            </div>
+          
+            <div class="product-row-card avoid-break">
+              <div class="prod-content">
+                <div>
+                  <div class="prod-head">
+                    <div class="prod-title">Vmc Milling Machine Job Work</div>
+                    <div class="prod-badges">
+                      <span class="moq-pill">MOQ: 1 Hour</span>
+                      <span class="mfg-pill">Direct Workshop</span>
+                    </div>
+                  </div>
+                  <div class="prod-subcat">Vmc Machine Job Work</div>
+
+                  <table class="specs-table">
+                    <tbody>
+                      
+                        <tr>
+                          <td class="k">Workpiece Material</td>
+                          <td class="v">Steel / Cast Iron / Aluminium</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">MADE IN</td>
+                          <td class="v">INDIA</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Service Unit</td>
+                          <td class="v">Per Hour Machining</td>
+                        </tr>
+                      
+                    </tbody>
+                  </table>
+
+                  <p class="prod-desc-text">Hourly based precision VMC milling machine job work for tooling components, fixture plates, precision dies, and prototype parts.</p>
+                </div>
+
+                <div class="prod-footer-meta">
+                  <span>Direct Factory Supply · <strong>Coimbatore Workshop</strong></span>
+                  <span>Custom Sizes, Tolerances &amp; Sampling Supported</span>
+                </div>
+              </div>
+            </div>
+          
+            <div class="product-row-card avoid-break">
+              <div class="prod-content">
+                <div>
+                  <div class="prod-head">
+                    <div class="prod-title">Drilling Jig And Fixture</div>
+                    <div class="prod-badges">
+                      
+                      <span class="mfg-pill">Direct Workshop</span>
+                    </div>
+                  </div>
+                  <div class="prod-subcat">Jig Fixture</div>
+
+                  <table class="specs-table">
+                    <tbody>
+                      
+                        <tr>
+                          <td class="k">Usage/Application</td>
+                          <td class="v">Industrial Manufacturing</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Brand</td>
+                          <td class="v">K.S.G. Tools</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Location</td>
+                          <td class="v">Coimbatore</td>
+                        </tr>
+                      
+                    </tbody>
+                  </table>
+
+                  <p class="prod-desc-text">Drilling Jig And Fixture</p>
+                </div>
+
+                <div class="prod-footer-meta">
+                  <span>Direct Factory Supply · <strong>Coimbatore Workshop</strong></span>
+                  <span>Custom Sizes, Tolerances &amp; Sampling Supported</span>
+                </div>
+              </div>
+            </div>
+          
+            <div class="product-row-card avoid-break">
+              <div class="prod-content">
+                <div>
+                  <div class="prod-head">
+                    <div class="prod-title">4th Axis Vmc Machining Fixture</div>
+                    <div class="prod-badges">
+                      
+                      <span class="mfg-pill">Direct Workshop</span>
+                    </div>
+                  </div>
+                  <div class="prod-subcat">Vmc Fixture</div>
+
+                  <table class="specs-table">
+                    <tbody>
+                      
+                        <tr>
+                          <td class="k">Material</td>
+                          <td class="v">Stainless Steel</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Country of Origin</td>
+                          <td class="v">Made in India</td>
+                        </tr>
+                      
+                    </tbody>
+                  </table>
+
+                  <p class="prod-desc-text">KSG Tools is dealing in best quality of materials and product to getthe customers foe long term and based on the customer requirement everything is done.</p>
+                </div>
+
+                <div class="prod-footer-meta">
+                  <span>Direct Factory Supply · <strong>Coimbatore Workshop</strong></span>
+                  <span>Custom Sizes, Tolerances &amp; Sampling Supported</span>
+                </div>
+              </div>
+            </div>
+          
+            <div class="product-row-card avoid-break">
+              <div class="prod-content">
+                <div>
+                  <div class="prod-head">
+                    <div class="prod-title">CNC Holding Fixtures</div>
+                    <div class="prod-badges">
+                      
+                      <span class="mfg-pill">Direct Workshop</span>
+                    </div>
+                  </div>
+                  <div class="prod-subcat">Vmc Fixture</div>
+
+                  <table class="specs-table">
+                    <tbody>
+                      
+                        <tr>
+                          <td class="k">Usage/Application</td>
+                          <td class="v">Industrial Manufacturing</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Brand</td>
+                          <td class="v">K.S.G. Tools</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Location</td>
+                          <td class="v">Coimbatore</td>
+                        </tr>
+                      
+                    </tbody>
+                  </table>
+
+                  <p class="prod-desc-text">CNC Holding Fixtures</p>
+                </div>
+
+                <div class="prod-footer-meta">
+                  <span>Direct Factory Supply · <strong>Coimbatore Workshop</strong></span>
+                  <span>Custom Sizes, Tolerances &amp; Sampling Supported</span>
+                </div>
+              </div>
+            </div>
+          
+            <div class="product-row-card avoid-break">
+              <div class="prod-content">
+                <div>
+                  <div class="prod-head">
+                    <div class="prod-title">Cnc Holding Fixture</div>
+                    <div class="prod-badges">
+                      
+                      <span class="mfg-pill">Direct Workshop</span>
+                    </div>
+                  </div>
+                  <div class="prod-subcat">Vmc Fixture</div>
+
+                  <table class="specs-table">
+                    <tbody>
+                      
+                        <tr>
+                          <td class="k">Usage/Application</td>
+                          <td class="v">Industrial Manufacturing</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Brand</td>
+                          <td class="v">K.S.G. Tools</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Location</td>
+                          <td class="v">Coimbatore</td>
+                        </tr>
+                      
+                    </tbody>
+                  </table>
+
+                  <p class="prod-desc-text">Cnc Holding Fixture</p>
+                </div>
+
+                <div class="prod-footer-meta">
+                  <span>Direct Factory Supply · <strong>Coimbatore Workshop</strong></span>
+                  <span>Custom Sizes, Tolerances &amp; Sampling Supported</span>
+                </div>
+              </div>
+            </div>
+          
+            <div class="product-row-card avoid-break">
+              <div class="prod-content">
+                <div>
+                  <div class="prod-head">
+                    <div class="prod-title">Vmc Precision Machined Components</div>
+                    <div class="prod-badges">
+                      <span class="moq-pill">MOQ: 1 Piece</span>
+                      <span class="mfg-pill">Direct Workshop</span>
+                    </div>
+                  </div>
+                  <div class="prod-subcat">Vmc Job Work</div>
+
+                  <table class="specs-table">
+                    <tbody>
+                      
+                        <tr>
+                          <td class="k">Material</td>
+                          <td class="v">Titanium</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Product Type</td>
+                          <td class="v">Moulds</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Packaging Type</td>
+                          <td class="v">Box</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Surface Treatment</td>
+                          <td class="v">Chromium</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Country of Origin</td>
+                          <td class="v">Made in India</td>
+                        </tr>
+                      
+                    </tbody>
+                  </table>
+
+                  <p class="prod-desc-text">KSG Tools is dealing in best quality of materials and product to getthe customers foe long term and based on the customer requirement everything is done.</p>
+                </div>
+
+                <div class="prod-footer-meta">
+                  <span>Direct Factory Supply · <strong>Coimbatore Workshop</strong></span>
+                  <span>Custom Sizes, Tolerances &amp; Sampling Supported</span>
+                </div>
+              </div>
+            </div>
+          
+      </div>
+    
+      <div class="page-break"></div>
+      <div class="catalog-header">
+        <span><strong>K.S.G. Tools</strong> · Industrial Catalogue</span>
+        <span class="badge">Chaff Cutter Blades</span>
+      </div>
+
+      <div class="cat-divider">
+        <h2>Chaff Cutter Blades</h2>
+        <span>2 Items Listed</span>
+      </div>
+
+      <div class="products-list">
+        
+            <div class="product-row-card avoid-break">
+              <div class="prod-content">
+                <div>
+                  <div class="prod-head">
+                    <div class="prod-title">Steel Crusher Blade, For Industrial</div>
+                    <div class="prod-badges">
+                      <span class="moq-pill">MOQ: 1 Piece</span>
+                      <span class="mfg-pill">Direct Workshop</span>
+                    </div>
+                  </div>
+                  <div class="prod-subcat">Chaff Cutter Blades</div>
+
+                  <table class="specs-table">
+                    <tbody>
+                      
+                        <tr>
+                          <td class="k">Size</td>
+                          <td class="v">4 Inch</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Material</td>
+                          <td class="v">Stainless Steel</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Machine Type</td>
+                          <td class="v">Metal Working Machine</td>
+                        </tr>
+                      
+                    </tbody>
+                  </table>
+
+                  <p class="prod-desc-text">Heavy-duty steel crusher and cutting blades for industrial shredding and agricultural fodder processing machines.</p>
+                </div>
+
+                <div class="prod-footer-meta">
+                  <span>Direct Factory Supply · <strong>Coimbatore Workshop</strong></span>
+                  <span>Custom Sizes, Tolerances &amp; Sampling Supported</span>
+                </div>
+              </div>
+            </div>
+          
+            <div class="product-row-card avoid-break">
+              <div class="prod-content">
+                <div>
+                  <div class="prod-head">
+                    <div class="prod-title">Rectangular Chaff Cutter Blade</div>
+                    <div class="prod-badges">
+                      <span class="moq-pill">MOQ: 1 Piece</span>
+                      <span class="mfg-pill">Direct Workshop</span>
+                    </div>
+                  </div>
+                  <div class="prod-subcat">Chaff Cutter Blades</div>
+
+                  <table class="specs-table">
+                    <tbody>
+                      
+                        <tr>
+                          <td class="k">Size (Length)</td>
+                          <td class="v">15 mm</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Material</td>
+                          <td class="v">Stainless Steel</td>
+                        </tr>
+                      
+                        <tr>
+                          <td class="k">Color</td>
+                          <td class="v">Silver</td>
+                        </tr>
+                      
+                    </tbody>
+                  </table>
+
+                  <p class="prod-desc-text">Precision rectangular chaff cutter blades crafted from high carbon steel for fast fodder chopping and silage preparation.</p>
+                </div>
+
+                <div class="prod-footer-meta">
+                  <span>Direct Factory Supply · <strong>Coimbatore Workshop</strong></span>
+                  <span>Custom Sizes, Tolerances &amp; Sampling Supported</span>
+                </div>
+              </div>
+            </div>
+          
+      </div>
+    
+
+  <!-- ==================== BACK COVER ==================== -->
+  <div class="page-break"></div>
+  <div class="back-cover">
+    <div>
+      <div class="catalog-header" style="border-bottom-color: rgba(255,255,255,0.2); color: #94a3b8;">
+        <span style="color: #ffffff;"><strong>K.S.G. Tools</strong></span>
+        <span class="badge" style="background: #2563eb;">Direct Workshop</span>
+      </div>
+
+      <h2>Request a Custom Quote &amp; Technical Drawing</h2>
+      <p class="lead">
+        We manufacture precision industrial blades, press tool dies, and complete shredder assemblies custom tailored to your machinery and application requirements.
+      </p>
+
+      <div class="contact-hero-box">
+        <h3>Direct Factory Contact</h3>
+        <p>Call or WhatsApp our engineering team with your sample dimensions or drawing:</p>
+        <div class="contact-hero-phone">+91 99447 44509</div>
+      </div>
+
+      <div class="back-grid">
+        <div class="back-card">
+          <h3>Why Choose K.S.G. Tools?</h3>
+          <ul>
+            <li>Experienced team of professionals</li><li>Client-centric approach</li><li>Direct manufacturer quote structure</li><li>Timely delivery</li><li>Qualitative range of product</li>
+            <li>Direct factory supply without middlemen or trading markups</li>
+            <li>In-house CNC milling, EDM wire-cut, and precision grinding</li>
+            <li>Pan-India logistics with secure palletised packaging</li>
+          </ul>
+        </div>
+
+        <div class="back-card">
+          <h3>Works &amp; Business Credentials</h3>
+          <ul>
+            <li><strong>Proprietor:</strong> K. Ganapathy</li>
+            <li><strong>Legal Status:</strong> Proprietorship</li>
+            <li><strong>GSTIN:</strong> 33CEYPS0366D2Z6</li>
+            <li><strong>GST Reg. Year:</strong> 2017</li>
+            <li><strong>Address:</strong> Ksg Tools, Prozone Mall, 4th St, Sivanandhapuram, Sivanadha Puram, Saravanampatti, Coimbatore, Tamil Nadu 641035</li>
+            <li><strong>Nature of Business:</strong> Direct Manufacturer</li>
+            <li><strong>Shipment:</strong> By Road from Coimbatore across India</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="back-footer-notes">
+      <p>© 2026 K.S.G. Tools, Coimbatore. All rights reserved. Specifications subject to custom manufacturing variations.</p>
+      <p>Notice: All quotations are tailored to order volume, steel grade, and exact dimensional tolerances. Contact sales for formal proposals.</p>
+    </div>
+  </div>
+
+</body>
+</html>

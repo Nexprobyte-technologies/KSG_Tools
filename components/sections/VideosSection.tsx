@@ -157,7 +157,7 @@ export default function VideosSection() {
                   <div className="video-card-actions">
                     <a
                       href={`https://wa.me/${company.whatsapp}?text=${encodeURIComponent(
-                        `Hi K.S.G. Tools, I watched your video demo "${v.title}" on your website and would like technical specs and pricing.`
+                        `Hi K.S.G. Tools, I watched your video demo "${v.title}" on your website and would like technical specs and quote.`
                       )}`}
                       target="_blank"
                       rel="noreferrer"
@@ -179,30 +179,6 @@ export default function VideosSection() {
               </div>
             );
           })}
-        </div>
-
-        {/* Bottom Banner */}
-        <div className="videos-bottom-cta">
-          <div className="cta-icon-box">
-            <Icon name="gear" size={32} />
-          </div>
-          <div className="cta-text-box">
-            <h4>Need a live trial for your specific material?</h4>
-            <p>
-              Send us your raw material samples (plastic, rubber, chicken, wood, scrap) —
-              we will perform a trial run on our shredders and send you a custom video demo!
-            </p>
-          </div>
-          <a
-            href={`https://wa.me/${company.whatsapp}?text=${encodeURIComponent(
-              "Hi K.S.G. Tools, I want to request a custom machine cutting trial / video demo for my material."
-            )}`}
-            target="_blank"
-            rel="noreferrer"
-            className="btn btn-primary"
-          >
-            <Icon name="chat" size={18} /> Request Custom Trial Video
-          </a>
         </div>
       </div>
 
@@ -247,13 +223,13 @@ export default function VideosSection() {
               <div className="v-modal-actions">
                 <a
                   href={`https://wa.me/${company.whatsapp}?text=${encodeURIComponent(
-                    `Hi K.S.G. Tools, I watched your video "${modalVideo.title}" in cinema mode and need a price quote.`
+                    `Hi K.S.G. Tools, I watched your video "${modalVideo.title}" in cinema mode and need a technical quote.`
                   )}`}
                   target="_blank"
                   rel="noreferrer"
                   className="btn btn-primary"
                 >
-                  <Icon name="chat" size={16} /> Get Price Quote on WhatsApp
+                  <Icon name="chat" size={16} /> Get Technical Quote on WhatsApp
                 </a>
                 <a
                   href={`tel:${company.phoneLink}`}

@@ -2,29 +2,25 @@ import type { Metadata } from "next";
 import PageHeader from "@/components/PageHeader";
 import AboutSection from "@/components/sections/AboutSection";
 import StatsBand from "@/components/sections/StatsBand";
-import FactsheetSection from "@/components/sections/FactsheetSection";
 import CtaBand from "@/components/sections/CtaBand";
-import ContactSection from "@/components/sections/ContactSection";
 
 export const metadata: Metadata = {
   title: "About Us | K.S.G. Tools",
   description:
-    "K.S.G. Tools is a Proprietorship firm established in 2009 in Coimbatore - manufacturer, wholesaler, trader and retailer of industrial cutting tools.",
+    "K.S.G. Tools is a leading industrial cutting tool and recycling machinery blade manufacturer in Coimbatore established in 2009. Precision shredder knives, chipper blades, tools, dies, and 4-axis VMC machining.",
 };
 
 export default function AboutPage() {
   return (
     <>
       <PageHeader
-        eyebrow="Our Story"
+        eyebrow="Our Heritage &amp; Expertise"
         title="About K.S.G. Tools"
-        subtitle="Established in 2009 as a Proprietorship firm, we manufacture and supply a wide range of industrial cutting tools from Coimbatore."
+        subtitle="Pioneering precision industrial cutting tools, heavy-duty shredder knives, wood chipper blades, and advanced 4-Axis VMC tooling in Coimbatore since 2009."
       />
       <AboutSection />
       <StatsBand />
-      <FactsheetSection />
       <CtaBand />
-      <ContactSection />
     </>
   );
 }

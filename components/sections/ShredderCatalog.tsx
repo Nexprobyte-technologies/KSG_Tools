@@ -44,78 +44,78 @@ export const DEAL_IN_CATEGORIES = [
     name: "Shredder Knives",
     title: "SHREDDER KNIVES",
     image: "/products/indiamart-2850047594948.jpeg",
-    gradient: "linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%)", // KSG Royal Blue
-    borderColor: "rgba(96, 165, 250, 0.45)",
+    gradient: "linear-gradient(135deg, #101c2c 0%, #1e334d 100%)",
+    borderColor: "rgba(242, 140, 40, 0.45)",
     count: 10,
   },
   {
     name: "Chipper Knives",
     title: "CHIPPER KNIVES",
     image: "/products/indiamart-2851585949630.jpg",
-    gradient: "linear-gradient(135deg, #0369a1 0%, #0284c7 100%)", // Cobalt Ocean Blue
-    borderColor: "rgba(56, 189, 248, 0.45)",
+    gradient: "linear-gradient(135deg, #132235 0%, #223752 100%)",
+    borderColor: "rgba(242, 140, 40, 0.45)",
     count: 9,
   },
   {
     name: "Tools And Dies",
     title: "TOOLS AND DIES",
     image: "/products/indiamart-2852735040912.jpeg",
-    gradient: "linear-gradient(135deg, #312e81 0%, #4f46e5 100%)", // Precision Indigo
-    borderColor: "rgba(129, 140, 248, 0.45)",
+    gradient: "linear-gradient(135deg, #17293e 0%, #243c5a 100%)",
+    borderColor: "rgba(242, 140, 40, 0.45)",
     count: 37,
   },
   {
     name: "Shredding Machine",
     title: "SHREDDING MACHINE",
     image: "/products/indiamart-2850479907955.jpg",
-    gradient: "linear-gradient(135deg, #0f172a 0%, #1e293b 100%)", // Heavy Machinery Slate Carbon
-    borderColor: "rgba(148, 163, 184, 0.4)",
+    gradient: "linear-gradient(135deg, #0e1724 0%, #1a2a40 100%)",
+    borderColor: "rgba(242, 140, 40, 0.45)",
     count: 12,
   },
   {
     name: "Grinder Blades",
     title: "GRINDER BLADES",
     image: "/products/indiamart-2851585980433.jpg",
-    gradient: "linear-gradient(135deg, #064e3b 0%, #059669 100%)", // Industrial Machine Green
-    borderColor: "rgba(52, 211, 153, 0.45)",
+    gradient: "linear-gradient(135deg, #112033 0%, #1f3550 100%)",
+    borderColor: "rgba(242, 140, 40, 0.45)",
     count: 3,
   },
   {
     name: "Granulator Blades",
     title: "GRANULATOR BLADES",
     image: "/products/indiamart-2850047382797.jpeg",
-    gradient: "linear-gradient(135deg, #0e7490 0%, #0891b2 100%)", // High-Carbon Cyan Teal
-    borderColor: "rgba(45, 212, 191, 0.45)",
+    gradient: "linear-gradient(135deg, #152539 0%, #233b58 100%)",
+    borderColor: "rgba(242, 140, 40, 0.45)",
     count: 3,
   },
   {
     name: "VMC Machine Job Work",
     title: "VMC MACHINE JOB WORK",
     image: "/products/indiamart-2852735040848.jpeg",
-    gradient: "linear-gradient(135deg, #4338ca 0%, #6366f1 100%)", // High-Precision CNC Violet
-    borderColor: "rgba(165, 180, 252, 0.45)",
+    gradient: "linear-gradient(135deg, #182b41 0%, #264060 100%)",
+    borderColor: "rgba(242, 140, 40, 0.45)",
     count: 7,
   },
   {
     name: "Chaff Cutter Blades",
     title: "CHAFF CUTTER BLADES",
     image: "/products/indiamart-2851586220048.jpeg",
-    gradient: "linear-gradient(135deg, #1e40af 0%, #3b82f6 100%)", // Sapphire Steel Blue
-    borderColor: "rgba(147, 197, 253, 0.45)",
+    gradient: "linear-gradient(135deg, #101c2c 0%, #20344d 100%)",
+    borderColor: "rgba(242, 140, 40, 0.45)",
     count: 2,
   },
 ];
 
 // Hand-picked top flagship products representing each core category for home preview
-const HOME_FEATURED_CODES = [
-  "KSG-101", // 10 Inch Double Shaft Shredder Knives (Shredder Knives)
-  "KSG-201", // 4 inch Stainless Steel Chipper Knife (Chipper Knives)
-  "KSG-401", // Metal Shredder Machine (Shredding Machine)
-  "KSG-301", // Press Tool Die Manufacturer (Tools And Dies)
-  "KSG-601", // Plastic Recycling Granulator Blade (Granulator Blades)
-  "KSG-701", // Vmc Job Work With Material with 4 axis (VMC Machine Job Work)
-  "KSG-501", // Shredder Machine Blade, For Industrial (Grinder Blades)
-  "KSG-801", // Steel Crusher Blade, For Industrial (Chaff Cutter Blades)
+const HOME_FEATURED_SLUGS = [
+  "10-inch-double-shaft-shredder-knives", // Shredder Knives
+  "4-inch-stainless-steel-chipper-knife", // Chipper Knives
+  "metal-shredder-machine", // Shredding Machine
+  "press-tool-die-manufacturer", // Tools And Dies
+  "plastic-recycling-granulator-blade", // Granulator Blades
+  "vmc-job-work-with-material-with-4-axis", // VMC Machine Job Work
+  "shredder-machine-blade-for-industrial", // Grinder Blades
+  "steel-crusher-blade-for-industrial", // Chaff Cutter Blades
 ];
 
 interface ShredderCatalogProps {
@@ -126,7 +126,7 @@ interface ShredderCatalogProps {
 export default function ShredderCatalog({ isHome = false, limit = 6 }: ShredderCatalogProps) {
   const [activeCategory, setActiveCategory] = useState<string>("All");
   const [search, setSearch] = useState<string>("");
-  const [sortBy, setSortBy] = useState<"featured" | "price-asc" | "price-desc">("featured");
+  const [sortBy, setSortBy] = useState<"featured" | "name-asc" | "name-desc">("featured");
   const [visibleCount, setVisibleCount] = useState<number>(isHome ? limit : 18);
 
   const handleCategorySelect = (catName: string) => {
@@ -150,9 +150,9 @@ export default function ShredderCatalog({ isHome = false, limit = 6 }: ShredderC
   const filteredProducts = useMemo(() => {
     // If on homepage and viewing "All" without search, showcase the top flagship products
     if (isHome && activeCategory === "All" && !search.trim()) {
-      const codeMap = new Map(allProducts.map((p) => [p.code, p]));
-      const featured = HOME_FEATURED_CODES
-        .map((c) => codeMap.get(c))
+      const slugMap = new Map(allProducts.map((p) => [p.slug, p]));
+      const featured = HOME_FEATURED_SLUGS
+        .map((s) => slugMap.get(s))
         .filter((p): p is (typeof allProducts)[number] => Boolean(p));
       return featured;
     }
@@ -168,20 +168,19 @@ export default function ShredderCatalog({ isHome = false, limit = 6 }: ShredderC
     if (search.trim()) {
       const q = search.toLowerCase().trim();
       list = list.filter((p) => {
-        const inCode = p.code.toLowerCase().includes(q) || p.code.toLowerCase().replace("-", "").includes(q);
         const inName = p.name.toLowerCase().includes(q);
         const inCat = p.category?.toLowerCase().includes(q);
         const inSubCat = p.subCategory?.toLowerCase().includes(q);
         const inSpecs = p.specs.some(([k, v]) => k.toLowerCase().includes(q) || v.toLowerCase().includes(q));
-        return inCode || inName || inCat || inSubCat || inSpecs;
+        return inName || inCat || inSubCat || inSpecs;
       });
     }
 
     // Sort
-    if (sortBy === "price-asc") {
-      list.sort((a, b) => (a.price ?? 999999) - (b.price ?? 999999));
-    } else if (sortBy === "price-desc") {
-      list.sort((a, b) => (b.price ?? 0) - (a.price ?? 0));
+    if (sortBy === "name-asc") {
+      list.sort((a, b) => a.name.localeCompare(b.name));
+    } else if (sortBy === "name-desc") {
+      list.sort((a, b) => b.name.localeCompare(a.name));
     }
 
     return list;
@@ -203,6 +202,18 @@ export default function ShredderCatalog({ isHome = false, limit = 6 }: ShredderC
             <p className="deal-in-main-sub">
               Tap any category card below to view all manufactured cutting tools, blades &amp; machinery.
             </p>
+            <div style={{ marginTop: 12, marginBottom: 6 }}>
+              <a
+                href="/api/download-catalogue"
+                download="KSG-Tools-Product-Catalogue.pdf"
+                className="btn btn-primary"
+                style={{ width: "100%", justifyContent: "center", gap: 8, fontSize: 14 }}
+                title="Download Complete Product Catalogue (PDF)"
+              >
+                <Icon name="download" size={16} />
+                <span>Download Catalogue (PDF)</span>
+              </a>
+            </div>
           </div>
 
           <div className="deal-in-grid" role="region" aria-label="Products we deal in categories">
@@ -258,7 +269,7 @@ export default function ShredderCatalog({ isHome = false, limit = 6 }: ShredderC
                 <span className="eyebrow">Verified Industrial Product Catalog</span>
                 <h2>Products &amp; Industrial Services</h2>
                 <p className="sub">
-                  Direct from manufacturer in Coimbatore · {allProducts.length} Products &amp; Services available · All prices in Indian Rupees (₹)
+                  Direct from manufacturer in Coimbatore · {allProducts.length} Products &amp; Services available · Custom sizes &amp; grades manufactured to order
                 </p>
               </>
             )}
@@ -323,10 +334,20 @@ export default function ShredderCatalog({ isHome = false, limit = 6 }: ShredderC
                 className="catalog-select"
               >
                 <option value="featured">Featured Order</option>
-                <option value="price-asc">Price: Low to High</option>
-                <option value="price-desc">Price: High to Low</option>
+                <option value="name-asc">Product Name: A to Z</option>
+                <option value="name-desc">Product Name: Z to A</option>
               </select>
             </div>
+
+            <a
+              href="/api/download-catalogue"
+              download="KSG-Tools-Product-Catalogue.pdf"
+              className="btn btn-outline catalog-download-btn"
+              title="Download Complete Product Catalogue (PDF)"
+            >
+              <Icon name="download" size={15} />
+              <span>Download PDF</span>
+            </a>
           </div>
 
           {/* Category Description Banner */}
@@ -394,7 +415,7 @@ export default function ShredderCatalog({ isHome = false, limit = 6 }: ShredderC
                   key={p.slug}
                   style={{ animationDelay: `${(idx % 6) * 0.08}s` }}
                 >
-                  {/* Product Image on top (clean, no badge overlay on top) */}
+                  {/* Product Image on top */}
                   <Link href={`/products/${p.slug}`} className="product-media-link" aria-label={`View ${p.name}`}>
                     <div className="product-media">
                       <Image
@@ -404,25 +425,57 @@ export default function ShredderCatalog({ isHome = false, limit = 6 }: ShredderC
                         sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                         style={{ objectFit: "cover" }}
                       />
+                      <span className="product-card-badge">Custom Quote</span>
                     </div>
                   </Link>
 
-                  {/* Below the image: Category Label, Product Name, and View Details Button */}
+                  {/* Below the image: Category Label, Product Name, Specs snippet, and Actions */}
                   <div className="product-card-body">
-                    <span className="product-cat-label">
-                      {p.subCategory ?? p.category}
-                    </span>
+                    <div className="product-meta-row">
+                      <span className="product-cat-label">
+                        {p.subCategory ?? p.category}
+                      </span>
+                      {p.moq && (
+                        <span className="product-moq-chip">MOQ: {p.moq}</span>
+                      )}
+                    </div>
                     <h3 className="product-card-title">
                       <Link href={`/products/${p.slug}`} className="product-title-link">
                         {p.name}
                       </Link>
                     </h3>
 
-                    {/* View Details Action: Opens full product page with all specs, price, description & enquiry */}
-                    <div className="product-actions">
-                      <Link href={`/products/${p.slug}`} className="btn btn-primary btn-product-view">
-                        View Details →
-                      </Link>
+                    {/* Verified Specs Preview */}
+                    {p.specs && p.specs.length > 0 && (
+                      <div className="product-specs-preview">
+                        {p.specs.slice(0, 2).map(([k, v]) => (
+                          <div className="spec-item" key={k}>
+                            <span className="spec-k">{k}:</span>
+                            <span className="spec-v">{v}</span>
+                          </div>
+                        ))}
+                      </div>
+                    )}
+
+                    {/* Card Footer with Dual Action Buttons */}
+                    <div className="product-card-footer">
+                      <div className="price-tag-label">Factory Quote on Request</div>
+                      <div className="product-actions-grid">
+                        <Link href={`/products/${p.slug}`} className="btn btn-outline-dark btn-product-view">
+                          View Specs
+                        </Link>
+                        <a
+                          href={`https://wa.me/${company.whatsapp}?text=${encodeURIComponent(
+                            `Hi K.S.G. Tools, I want to request a quote for ${p.name}.`
+                          )}`}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="btn btn-primary btn-product-quote"
+                          title={`Get WhatsApp Quote for ${p.name}`}
+                        >
+                          Get Quote
+                        </a>
+                      </div>
                     </div>
                   </div>
                 </div>

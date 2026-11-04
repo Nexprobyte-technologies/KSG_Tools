@@ -20,7 +20,6 @@ export default function JsonLd() {
       longitude: "76.9558",
     },
     image: "https://ksg-tools.com/hero/shredder-blade.jpg",
-    priceRange: "₹300–₹3,000",
     openingHoursSpecification: {
       "@type": "OpeningHoursSpecification",
       dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],

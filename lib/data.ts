@@ -13,7 +13,7 @@ export const company = {
   phone: "+91 99447 44509",
   phoneLink: "+919944744509",
   whatsapp: "919944744509",
-  email: "sales@ksgtools.example.com",
+  email: "ksgtools555@gmail.com",
   response: "100%",
   rating: 4.5,
   totalRatings: 10,
@@ -23,10 +23,18 @@ export const company = {
 
 export const navLinks = [
   { label: "Home", href: "/" },
-  { label: "Products & Services", href: "/products" },
   { label: "About Us", href: "/about" },
-  { label: "Videos", href: "/videos" },
-  { label: "Photos", href: "/photos" },
+  { label: "Products & Services", href: "/products" },
+  { label: "Manufacturing Area", href: "/photos" },
+  { label: "Contact Us", href: "/contact" },
+];
+
+export const footerLinks = [
+  { label: "Home", href: "/" },
+  { label: "About Us", href: "/about" },
+  { label: "Products & Services", href: "/products" },
+  { label: "Manufacturing Area", href: "/photos" },
+  { label: "Video Demos", href: "/videos" },
   { label: "Contact Us", href: "/contact" },
 ];
 
@@ -68,7 +76,7 @@ export const categories = [
 export const whyUsPoints = [
   "Experienced team of professionals",
   "Client-centric approach",
-  "Competitive price structure",
+  "Direct manufacturer quote structure",
   "Timely delivery",
   "Qualitative range of product",
 ];
@@ -86,7 +94,6 @@ export const factsheet = {
 };
 
 export interface Product {
-  code: string;
   name: string;
   category?: string;
   subCategory?: string;
@@ -102,12 +109,11 @@ export interface Product {
 
 export const allProducts: Product[] = [
   {
-    "code": "KSG-201",
     "name": "4 inch Stainless Steel Chipper Knife",
     "category": "Chipper Knives",
     "slug": "4-inch-stainless-steel-chipper-knife",
     "image": "/products/indiamart-2851585949630.jpg",
-    "price": 4000,
+    "price": null,
     "moq": "1 Piece",
     "specs": [
       [
@@ -136,12 +142,11 @@ export const allProducts: Product[] = [
     "hasRealImage": true
   },
   {
-    "code": "KSG-202",
     "name": "2 Slot Wood Chipper Knives",
     "category": "Chipper Knives",
     "slug": "2-slot-wood-chipper-knives",
     "image": "/products/indiamart-2850047399762.jpeg",
-    "price": 500,
+    "price": null,
     "moq": "1 Piece",
     "specs": [
       [
@@ -166,12 +171,11 @@ export const allProducts: Product[] = [
     "hasRealImage": true
   },
   {
-    "code": "KSG-203",
     "name": "Stainless Steel Chipper Knives",
     "category": "Chipper Knives",
     "slug": "stainless-steel-chipper-knives",
     "image": "/products/indiamart-2850047515930.jpg",
-    "price": 650,
+    "price": null,
     "moq": "1 Piece",
     "specs": [
       [
@@ -196,12 +200,11 @@ export const allProducts: Product[] = [
     "hasRealImage": true
   },
   {
-    "code": "KSG-204",
     "name": "10 Inch Agriculture Chipper Knives",
     "category": "Chipper Knives",
     "slug": "10-inch-agriculture-chipper-knives",
     "image": "/products/indiamart-2850047488548.jpg",
-    "price": 650,
+    "price": null,
     "moq": "1 Piece",
     "specs": [
       [
@@ -226,12 +229,11 @@ export const allProducts: Product[] = [
     "hasRealImage": true
   },
   {
-    "code": "KSG-205",
     "name": "4 Inch Wood Chipper Knives",
     "category": "Chipper Knives",
     "slug": "4-inch-wood-chipper-knives",
     "image": "/products/indiamart-2850047534997.jpg",
-    "price": 450,
+    "price": null,
     "moq": "1 Piece",
     "specs": [
       [
@@ -256,12 +258,11 @@ export const allProducts: Product[] = [
     "hasRealImage": true
   },
   {
-    "code": "KSG-206",
     "name": "5 Inch Wood Chipper Knives",
     "category": "Chipper Knives",
     "slug": "5-inch-wood-chipper-knives",
     "image": "/products/indiamart-2850039862855.jpeg",
-    "price": 1500,
+    "price": null,
     "moq": "1 Piece",
     "specs": [
       [
@@ -286,12 +287,11 @@ export const allProducts: Product[] = [
     "hasRealImage": true
   },
   {
-    "code": "KSG-207",
     "name": "Garden Shredder Chipper Knives",
     "category": "Chipper Knives",
     "slug": "garden-shredder-chipper-knives",
     "image": "/products/indiamart-2850047574088.jpg",
-    "price": 350,
+    "price": null,
     "moq": "1 Piece",
     "specs": [
       [
@@ -312,12 +312,11 @@ export const allProducts: Product[] = [
     "hasRealImage": true
   },
   {
-    "code": "KSG-208",
     "name": "Wood Chipper Knives",
     "category": "Chipper Knives",
     "slug": "wood-chipper-knives",
     "image": "/products/indiamart-2850047389462.png",
-    "price": 500,
+    "price": null,
     "moq": "1 Piece",
     "specs": [
       [
@@ -338,12 +337,11 @@ export const allProducts: Product[] = [
     "hasRealImage": true
   },
   {
-    "code": "KSG-101",
     "name": "10 Inch Double Shaft Shredder Knives",
     "category": "Shredder Knives",
     "slug": "10-inch-double-shaft-shredder-knives",
     "image": "/products/indiamart-2850047594948.jpeg",
-    "price": 1500,
+    "price": null,
     "moq": "1 Piece",
     "specs": [
       [
@@ -368,12 +366,11 @@ export const allProducts: Product[] = [
     "hasRealImage": true
   },
   {
-    "code": "KSG-102",
     "name": "Shredding Machine Knives & Blades",
     "category": "Shredder Knives",
     "slug": "shredding-machine-knives-and-blades",
     "image": "/products/indiamart-2851586119173.jpg",
-    "price": 2000,
+    "price": null,
     "moq": "1 Piece",
     "specs": [
       [
@@ -398,12 +395,11 @@ export const allProducts: Product[] = [
     "hasRealImage": true
   },
   {
-    "code": "KSG-103",
     "name": "Shredder Blade Manufacturer, For Industrial",
     "category": "Shredder Knives",
     "slug": "shredder-blade-manufacturer-industrial",
     "image": "/products/indiamart-2851586172133.jpeg",
-    "price": 1000,
+    "price": null,
     "moq": "1 Piece",
     "specs": [
       [
@@ -424,12 +420,11 @@ export const allProducts: Product[] = [
     "hasRealImage": true
   },
   {
-    "code": "KSG-104",
     "name": "Mild Steel Shredder Blade",
     "category": "Shredder Knives",
     "slug": "mild-steel-shredder-blade",
     "image": "/products/indiamart-2851586264212.jpeg",
-    "price": 3000,
+    "price": null,
     "moq": "1 Piece",
     "specs": [
       [
@@ -450,12 +445,11 @@ export const allProducts: Product[] = [
     "hasRealImage": true
   },
   {
-    "code": "KSG-105",
     "name": "Shredder Knives, For Industrial",
     "category": "Shredder Knives",
     "slug": "shredder-knives-for-industrial",
     "image": "/products/indiamart-2851586277597.jpg",
-    "price": 3000,
+    "price": null,
     "moq": "1 Piece",
     "specs": [
       [
@@ -476,12 +470,11 @@ export const allProducts: Product[] = [
     "hasRealImage": true
   },
   {
-    "code": "KSG-106",
     "name": "8mm Agricultural Shredder Knives",
     "category": "Shredder Knives",
     "slug": "8mm-agricultural-shredder-knives",
     "image": "/products/indiamart-23048052933.jpg",
-    "price": 650,
+    "price": null,
     "moq": "1 Piece",
     "specs": [
       [
@@ -502,12 +495,11 @@ export const allProducts: Product[] = [
     "hasRealImage": true
   },
   {
-    "code": "KSG-107",
     "name": "8 Inch Double Shaft Shredder Knives",
     "category": "Shredder Knives",
     "slug": "8-inch-double-shaft-shredder-knives",
     "image": "/products/indiamart-2850047604433.jpeg",
-    "price": 1500,
+    "price": null,
     "moq": "1 Piece",
     "specs": [
       [
@@ -528,12 +520,11 @@ export const allProducts: Product[] = [
     "hasRealImage": true
   },
   {
-    "code": "KSG-108",
     "name": "Chicken Cutting Shredder Knives",
     "category": "Shredder Knives",
     "slug": "chicken-cutting-shredder-knives",
     "image": "/products/indiamart-23048040255.jpg",
-    "price": 300,
+    "price": null,
     "moq": "1 Piece",
     "specs": [
       [
@@ -554,12 +545,11 @@ export const allProducts: Product[] = [
     "hasRealImage": true
   },
   {
-    "code": "KSG-109",
     "name": "Plastic Shredder Knives, For Garage/Workshop",
     "category": "Shredder Knives",
     "slug": "plastic-shredder-knives-garage-workshop",
     "image": "/products/indiamart-2851586046655.jpeg",
-    "price": 2000,
+    "price": null,
     "moq": "1 Piece",
     "specs": [
       [
@@ -580,12 +570,11 @@ export const allProducts: Product[] = [
     "hasRealImage": true
   },
   {
-    "code": "KSG-301",
     "name": "Press Tool Die Manufacturer",
     "category": "Tools And Dies",
     "slug": "press-tool-die-manufacturer",
     "image": "/products/indiamart-2852735040912.jpeg",
-    "price": 5000,
+    "price": null,
     "moq": "1 Piece",
     "specs": [
       [
@@ -606,12 +595,11 @@ export const allProducts: Product[] = [
     "hasRealImage": true
   },
   {
-    "code": "KSG-302",
     "name": "Plastic Moulding Dies",
     "category": "Tools And Dies",
     "slug": "plastic-moulding-dies",
     "image": "/products/indiamart-2852735041012.jpg",
-    "price": 10000,
+    "price": null,
     "moq": "1 Piece",
     "specs": [
       [
@@ -632,12 +620,11 @@ export const allProducts: Product[] = [
     "hasRealImage": true
   },
   {
-    "code": "KSG-303",
     "name": "Indian Knives Wood Chipper Knives",
     "category": "Tools And Dies",
     "slug": "indian-knives-wood-chipper-knives",
     "image": "/products/indiamart-2851585911888.jpeg",
-    "price": 3000,
+    "price": null,
     "moq": "1 Piece",
     "specs": [
       [
@@ -658,12 +645,11 @@ export const allProducts: Product[] = [
     "hasRealImage": true
   },
   {
-    "code": "KSG-304",
     "name": "Aluminium Pattern Works",
     "category": "Tools And Dies",
     "slug": "aluminium-pattern-works",
     "image": "/products/indiamart-2852735041212.jpg",
-    "price": 5000,
+    "price": null,
     "moq": "1 Piece",
     "specs": [
       [
@@ -684,7 +670,6 @@ export const allProducts: Product[] = [
     "hasRealImage": true
   },
   {
-    "code": "KSG-305",
     "name": "Rubber Moulding",
     "category": "Tools And Dies",
     "slug": "rubber-moulding",
@@ -710,12 +695,11 @@ export const allProducts: Product[] = [
     "hasRealImage": true
   },
   {
-    "code": "KSG-306",
     "name": "Press And Die Casting Moulds",
     "category": "Tools And Dies",
     "slug": "press-and-die-casting-moulds",
     "image": "/products/indiamart-2852735041497.jpg",
-    "price": 8000,
+    "price": null,
     "moq": "1 Piece",
     "specs": [
       [
@@ -736,7 +720,6 @@ export const allProducts: Product[] = [
     "hasRealImage": true
   },
   {
-    "code": "KSG-307",
     "name": "Die Sets",
     "category": "Tools And Dies",
     "slug": "die-sets",
@@ -762,7 +745,6 @@ export const allProducts: Product[] = [
     "hasRealImage": true
   },
   {
-    "code": "KSG-308",
     "name": "Pattern Dies",
     "category": "Tools And Dies",
     "slug": "pattern-dies",
@@ -789,7 +771,6 @@ export const allProducts: Product[] = [
     "hasRealImage": true
   },
   {
-    "code": "KSG-309",
     "name": "Cnc Turret Punch Press Tool",
     "category": "Tools And Dies",
     "slug": "cnc-turret-punch-press-tool",
@@ -816,7 +797,6 @@ export const allProducts: Product[] = [
     "hasRealImage": true
   },
   {
-    "code": "KSG-310",
     "name": "Progressive Die Tools",
     "category": "Tools And Dies",
     "slug": "progressive-die-tools",
@@ -843,7 +823,6 @@ export const allProducts: Product[] = [
     "hasRealImage": true
   },
   {
-    "code": "KSG-311",
     "name": "Automotive Steel Die Pattern",
     "category": "Tools And Dies",
     "slug": "automotive-steel-die-pattern",
@@ -870,7 +849,6 @@ export const allProducts: Product[] = [
     "hasRealImage": true
   },
   {
-    "code": "KSG-312",
     "name": "Precision Moulds & Dies",
     "category": "Tools And Dies",
     "slug": "precision-moulds-and-dies",
@@ -897,7 +875,6 @@ export const allProducts: Product[] = [
     "hasRealImage": true
   },
   {
-    "code": "KSG-313",
     "name": "Automotive Dies",
     "category": "Tools And Dies",
     "slug": "automotive-dies",
@@ -920,12 +897,11 @@ export const allProducts: Product[] = [
     "hasRealImage": true
   },
   {
-    "code": "KSG-401",
     "name": "Metal Shredder Machine",
     "category": "Shredding Machine",
     "slug": "metal-shredder-machine",
     "image": "/products/indiamart-2850479907955.jpg",
-    "price": 50000,
+    "price": null,
     "moq": "1 Piece",
     "specs": [
       [
@@ -947,7 +923,6 @@ export const allProducts: Product[] = [
     "hasRealImage": true
   },
   {
-    "code": "KSG-402",
     "name": "Mild Steel Shredder Cutter, For Industrial",
     "category": "Shredding Machine",
     "slug": "mild-steel-shredder-cutter-industrial",
@@ -974,7 +949,6 @@ export const allProducts: Product[] = [
     "hasRealImage": true
   },
   {
-    "code": "KSG-403",
     "name": "Double Shaft Automatic Shredding Machine",
     "category": "Shredding Machine",
     "slug": "double-shaft-automatic-shredding-machine",
@@ -1000,7 +974,6 @@ export const allProducts: Product[] = [
     "hasRealImage": true
   },
   {
-    "code": "KSG-404",
     "name": "Agricultural Shredder Machine In Coimbatore",
     "category": "Shredding Machine",
     "slug": "agricultural-shredder-machine-in-coimbatore",
@@ -1026,7 +999,6 @@ export const allProducts: Product[] = [
     "hasRealImage": true
   },
   {
-    "code": "KSG-405",
     "name": "Mild Steel Coconut Husk Shredder Machine",
     "category": "Shredding Machine",
     "slug": "mild-steel-coconut-husk-shredder-machine",
@@ -1052,12 +1024,11 @@ export const allProducts: Product[] = [
     "hasRealImage": true
   },
   {
-    "code": "KSG-501",
     "name": "Shredder Machine Blade, For Industrial",
     "category": "Grinder Blades",
     "slug": "shredder-machine-blade-industrial",
     "image": "/products/indiamart-2851585980433.jpg",
-    "price": 3000,
+    "price": null,
     "moq": "1 Piece",
     "specs": [
       [
@@ -1078,12 +1049,11 @@ export const allProducts: Product[] = [
     "hasRealImage": true
   },
   {
-    "code": "KSG-502",
     "name": "Stainless Steel Grinder Blades",
     "category": "Grinder Blades",
     "slug": "stainless-steel-grinder-blades",
     "image": "/products/indiamart-2850047409355.jpg",
-    "price": 2500,
+    "price": null,
     "moq": "1 Piece",
     "specs": [
       [
@@ -1104,12 +1074,11 @@ export const allProducts: Product[] = [
     "hasRealImage": true
   },
   {
-    "code": "KSG-503",
     "name": "Plastic Grinder Crusher Blade",
     "category": "Grinder Blades",
     "slug": "plastic-grinder-crusher-blade",
     "image": "/products/indiamart-2850039868588.jpeg",
-    "price": 2000,
+    "price": null,
     "moq": "1 Piece",
     "specs": [
       [
@@ -1130,12 +1099,11 @@ export const allProducts: Product[] = [
     "hasRealImage": true
   },
   {
-    "code": "KSG-601",
     "name": "Plastic Recycling Granulator Blade",
     "category": "Granulator Blades",
     "slug": "plastic-recycling-granulator-blade",
     "image": "/products/indiamart-2850047382797.jpeg",
-    "price": 550,
+    "price": null,
     "moq": "1 Piece",
     "specs": [
       [
@@ -1156,12 +1124,11 @@ export const allProducts: Product[] = [
     "hasRealImage": true
   },
   {
-    "code": "KSG-602",
     "name": "5 Inch Plastic Granulator Blades",
     "category": "Granulator Blades",
     "slug": "5-inch-plastic-granulator-blades",
     "image": "/products/indiamart-2850039861455.jpg",
-    "price": 2500,
+    "price": null,
     "moq": "1 Piece",
     "specs": [
       [
@@ -1182,12 +1149,11 @@ export const allProducts: Product[] = [
     "hasRealImage": true
   },
   {
-    "code": "KSG-603",
     "name": "10 Inch Plastic Granulator Blades",
     "category": "Granulator Blades",
     "slug": "10-inch-plastic-granulator-blades",
     "image": "/products/indiamart-2850039856933.jpeg",
-    "price": 2500,
+    "price": null,
     "moq": "1 Piece",
     "specs": [
       [
@@ -1208,7 +1174,6 @@ export const allProducts: Product[] = [
     "hasRealImage": true
   },
   {
-    "code": "KSG-701",
     "name": "Vmc Job Work With Material with 4 axis",
     "category": "VMC Machine Job Work",
     "slug": "vmc-job-work-with-material-with-4-axis",
@@ -1235,12 +1200,11 @@ export const allProducts: Product[] = [
     "hasRealImage": true
   },
   {
-    "code": "KSG-702",
     "name": "Vmc Milling Machine Job Work",
     "category": "VMC Machine Job Work",
     "slug": "vmc-milling-machine-job-work",
     "image": "/products/indiamart-2853043337488.jpeg",
-    "price": 1000,
+    "price": null,
     "moq": "1 Hour",
     "specs": [
       [
@@ -1262,12 +1226,11 @@ export const allProducts: Product[] = [
     "hasRealImage": true
   },
   {
-    "code": "KSG-801",
     "name": "Steel Crusher Blade, For Industrial",
     "category": "Chaff Cutter Blades",
     "slug": "steel-crusher-blade-industrial",
     "image": "/products/indiamart-2851586220048.jpeg",
-    "price": 6000,
+    "price": null,
     "moq": "1 Piece",
     "specs": [
       [
@@ -1288,12 +1251,11 @@ export const allProducts: Product[] = [
     "hasRealImage": true
   },
   {
-    "code": "KSG-802",
     "name": "Rectangular Chaff Cutter Blade",
     "category": "Chaff Cutter Blades",
     "slug": "rectangular-chaff-cutter-blade",
     "image": "/products/indiamart-2850039864888.jpeg",
-    "price": 350,
+    "price": null,
     "moq": "1 Piece",
     "specs": [
       [
@@ -1314,7 +1276,6 @@ export const allProducts: Product[] = [
     "hasRealImage": true
   },
   {
-    "code": "KSG-314",
     "name": "Match Plate Pattern",
     "category": "Tools And Dies",
     "subCategory": "Aluminium Pattern",
@@ -1341,7 +1302,6 @@ export const allProducts: Product[] = [
     "hasRealImage": false
   },
   {
-    "code": "KSG-315",
     "name": "Automotive Die Casting",
     "category": "Tools And Dies",
     "subCategory": "Die Casting",
@@ -1368,7 +1328,6 @@ export const allProducts: Product[] = [
     "hasRealImage": true
   },
   {
-    "code": "KSG-316",
     "name": "Aluminum Pressure Die Casting",
     "category": "Tools And Dies",
     "subCategory": "Die Casting",
@@ -1395,7 +1354,6 @@ export const allProducts: Product[] = [
     "hasRealImage": false
   },
   {
-    "code": "KSG-317",
     "name": "4 Way Junction Box Aluminium Die Casting",
     "category": "Tools And Dies",
     "subCategory": "Die Casting",
@@ -1422,7 +1380,6 @@ export const allProducts: Product[] = [
     "hasRealImage": false
   },
   {
-    "code": "KSG-318",
     "name": "Cnc Turrent Jewellery Dies",
     "category": "Tools And Dies",
     "subCategory": "Engraving Dies",
@@ -1449,7 +1406,6 @@ export const allProducts: Product[] = [
     "hasRealImage": true
   },
   {
-    "code": "KSG-319",
     "name": "2d & 3d Cnc Steel Engraving Die Mould",
     "category": "Tools And Dies",
     "subCategory": "Engraving Dies",
@@ -1476,13 +1432,12 @@ export const allProducts: Product[] = [
     "hasRealImage": true
   },
   {
-    "code": "KSG-406",
     "name": "Granulator Machine",
     "category": "Shredding Machine",
     "subCategory": "Granulator Machine",
     "slug": "granulator-machine",
     "image": "/products/indiamart-2850479928673.jpg",
-    "price": 20000,
+    "price": null,
     "moq": "1 Piece",
     "specs": [
       [
@@ -1511,7 +1466,6 @@ export const allProducts: Product[] = [
     "hasRealImage": true
   },
   {
-    "code": "KSG-320",
     "name": "Pipe Die Set",
     "category": "Tools And Dies",
     "subCategory": "Hand Tools",
@@ -1538,7 +1492,6 @@ export const allProducts: Product[] = [
     "hasRealImage": true
   },
   {
-    "code": "KSG-321",
     "name": "Tap Die Set",
     "category": "Tools And Dies",
     "subCategory": "Hand Tools",
@@ -1565,7 +1518,6 @@ export const allProducts: Product[] = [
     "hasRealImage": true
   },
   {
-    "code": "KSG-703",
     "name": "Drilling Jig And Fixture",
     "category": "VMC Machine Job Work",
     "subCategory": "Jig Fixture",
@@ -1592,7 +1544,6 @@ export const allProducts: Product[] = [
     "hasRealImage": false
   },
   {
-    "code": "KSG-322",
     "name": "Egg Tray Plastic Injection Moulding Die",
     "category": "Tools And Dies",
     "subCategory": "Moulding Dies",
@@ -1619,7 +1570,6 @@ export const allProducts: Product[] = [
     "hasRealImage": false
   },
   {
-    "code": "KSG-323",
     "name": "Moulding Patterns",
     "category": "Tools And Dies",
     "subCategory": "Moulding Dies",
@@ -1646,7 +1596,6 @@ export const allProducts: Product[] = [
     "hasRealImage": false
   },
   {
-    "code": "KSG-324",
     "name": "Injection Blow Moulding Die",
     "category": "Tools And Dies",
     "subCategory": "Moulding Dies",
@@ -1673,7 +1622,6 @@ export const allProducts: Product[] = [
     "hasRealImage": false
   },
   {
-    "code": "KSG-325",
     "name": "Cavity Mould Base Plastic Moulds",
     "category": "Tools And Dies",
     "subCategory": "Moulding Dies",
@@ -1700,7 +1648,6 @@ export const allProducts: Product[] = [
     "hasRealImage": false
   },
   {
-    "code": "KSG-326",
     "name": "Multi Cavity Injection Moulds",
     "category": "Tools And Dies",
     "subCategory": "Moulding Dies",
@@ -1727,7 +1674,6 @@ export const allProducts: Product[] = [
     "hasRealImage": false
   },
   {
-    "code": "KSG-327",
     "name": "Bottle Cap Mold",
     "category": "Tools And Dies",
     "subCategory": "Moulding Dies",
@@ -1754,7 +1700,6 @@ export const allProducts: Product[] = [
     "hasRealImage": false
   },
   {
-    "code": "KSG-328",
     "name": "Plastic Bottle Cap Mould",
     "category": "Tools And Dies",
     "subCategory": "Moulding Dies",
@@ -1781,7 +1726,6 @@ export const allProducts: Product[] = [
     "hasRealImage": false
   },
   {
-    "code": "KSG-329",
     "name": "Metal Dies Pattern",
     "category": "Tools And Dies",
     "subCategory": "Pattern Works",
@@ -1808,7 +1752,6 @@ export const allProducts: Product[] = [
     "hasRealImage": true
   },
   {
-    "code": "KSG-330",
     "name": "Aluminium Casting Pattern",
     "category": "Tools And Dies",
     "subCategory": "Pattern Works",
@@ -1835,7 +1778,6 @@ export const allProducts: Product[] = [
     "hasRealImage": false
   },
   {
-    "code": "KSG-331",
     "name": "Rubber Moulding Die",
     "category": "Tools And Dies",
     "subCategory": "Plastic Moulding Die",
@@ -1862,7 +1804,6 @@ export const allProducts: Product[] = [
     "hasRealImage": false
   },
   {
-    "code": "KSG-332",
     "name": "Plastic Injection Mold Die",
     "category": "Tools And Dies",
     "subCategory": "Plastic Moulding Die",
@@ -1889,7 +1830,6 @@ export const allProducts: Product[] = [
     "hasRealImage": false
   },
   {
-    "code": "KSG-333",
     "name": "Cnc Turrent Metal Dies",
     "category": "Tools And Dies",
     "subCategory": "Press Tools",
@@ -1916,7 +1856,6 @@ export const allProducts: Product[] = [
     "hasRealImage": true
   },
   {
-    "code": "KSG-334",
     "name": "Industrial Sheet Metal Dies",
     "category": "Tools And Dies",
     "subCategory": "Sheet Metal Die",
@@ -1943,7 +1882,6 @@ export const allProducts: Product[] = [
     "hasRealImage": true
   },
   {
-    "code": "KSG-335",
     "name": "Automotive Sheet Metal Dies",
     "category": "Tools And Dies",
     "subCategory": "Sheet Metal Die",
@@ -1970,7 +1908,6 @@ export const allProducts: Product[] = [
     "hasRealImage": true
   },
   {
-    "code": "KSG-336",
     "name": "Steel Die Pattern",
     "category": "Tools And Dies",
     "subCategory": "Sheet Metal Die",
@@ -1997,7 +1934,6 @@ export const allProducts: Product[] = [
     "hasRealImage": true
   },
   {
-    "code": "KSG-110",
     "name": "Plastic Shredder Knives, For Garage/Workshop",
     "category": "Shredder Knives",
     "slug": "plastic-shredder-knives-for-garage-workshop",
@@ -2027,7 +1963,6 @@ export const allProducts: Product[] = [
     "hasRealImage": true
   },
   {
-    "code": "KSG-407",
     "name": "Tyre Shredders",
     "category": "Shredding Machine",
     "subCategory": "Shredder Machine",
@@ -2062,7 +1997,6 @@ export const allProducts: Product[] = [
     "hasRealImage": false
   },
   {
-    "code": "KSG-408",
     "name": "5 HP Compact Shredding Machine, For Industrial",
     "category": "Shredding Machine",
     "slug": "5-hp-compact-shredding-machine-for-industrial",
@@ -2088,7 +2022,6 @@ export const allProducts: Product[] = [
     "hasRealImage": false
   },
   {
-    "code": "KSG-409",
     "name": "Industrial Shredders In Coimbatore",
     "category": "Shredding Machine",
     "slug": "industrial-shredders-in-coimbatore",
@@ -2114,7 +2047,6 @@ export const allProducts: Product[] = [
     "hasRealImage": false
   },
   {
-    "code": "KSG-410",
     "name": "Industrial Plastic Shredder Machine",
     "category": "Shredding Machine",
     "slug": "industrial-plastic-shredder-machine",
@@ -2140,7 +2072,6 @@ export const allProducts: Product[] = [
     "hasRealImage": false
   },
   {
-    "code": "KSG-411",
     "name": "Wood Shredding Machine",
     "category": "Shredding Machine",
     "slug": "wood-shredding-machine",
@@ -2166,7 +2097,6 @@ export const allProducts: Product[] = [
     "hasRealImage": false
   },
   {
-    "code": "KSG-412",
     "name": "Paper Shredding Machine",
     "category": "Shredding Machine",
     "slug": "paper-shredding-machine",
@@ -2192,7 +2122,6 @@ export const allProducts: Product[] = [
     "hasRealImage": false
   },
   {
-    "code": "KSG-337",
     "name": "Tool and die Insert",
     "category": "Tools And Dies",
     "slug": "tool-and-die-insert",
@@ -2218,13 +2147,12 @@ export const allProducts: Product[] = [
     "hasRealImage": false
   },
   {
-    "code": "KSG-209",
     "name": "14 Inch Veneer Peeling Knife",
     "category": "Chipper Knives",
     "subCategory": "Veneer Peeling Knife",
     "slug": "14-inch-veneer-peeling-knife",
     "image": "/products/indiamart-2850047587733.jpg",
-    "price": 2750,
+    "price": null,
     "moq": "1 Piece",
     "specs": [
       [
@@ -2261,7 +2189,6 @@ export const allProducts: Product[] = [
     "hasRealImage": true
   },
   {
-    "code": "KSG-704",
     "name": "4th Axis Vmc Machining Fixture",
     "category": "VMC Machine Job Work",
     "subCategory": "Vmc Fixture",
@@ -2284,7 +2211,6 @@ export const allProducts: Product[] = [
     "hasRealImage": true
   },
   {
-    "code": "KSG-705",
     "name": "CNC Holding Fixtures",
     "category": "VMC Machine Job Work",
     "subCategory": "Vmc Fixture",
@@ -2311,7 +2237,6 @@ export const allProducts: Product[] = [
     "hasRealImage": false
   },
   {
-    "code": "KSG-706",
     "name": "Cnc Holding Fixture",
     "category": "VMC Machine Job Work",
     "subCategory": "Vmc Fixture",
@@ -2338,13 +2263,12 @@ export const allProducts: Product[] = [
     "hasRealImage": false
   },
   {
-    "code": "KSG-707",
     "name": "Vmc Precision Machined Components",
     "category": "VMC Machine Job Work",
     "subCategory": "Vmc Job Work",
     "slug": "vmc-precision-machined-components",
     "image": "/products/indiamart-2853043613248.jpg",
-    "price": 4000,
+    "price": null,
     "moq": "1 Piece",
     "specs": [
       [
@@ -2406,7 +2330,7 @@ export const reviews = [
     location: "Cheruthuruthi, Kerala",
     date: "Verified Buyer",
     product: "Granulator Blades",
-    text: "Good quality blades with competitive pricing. Would recommend for industrial knife requirements.",
+    text: "Good quality blades with exceptional precision and durability. Would recommend for industrial knife requirements.",
   },
 ];
 
@@ -2454,11 +2378,175 @@ export const videos: VideoItem[] = [
   },
 ];
 
-export const infrastructureImages = [
-  { caption: "Infrastructure Facilities", img: "/infrastructure/infrastructure-1.jpg" },
-  { caption: "Infrastructural Set-Up", img: "/infrastructure/infrastructure-2.jpg" },
-  { caption: "Our Shop Exterior", img: "/infrastructure/infrastructure-3.jpg" },
-  { caption: "Infrastructure & Manufacturing Facilities", img: "/infrastructure/infrastructure-4.jpg" },
-  { caption: "Our Shop Interior", img: "/infrastructure/infrastructure-5.jpg" },
-  { caption: "Our Storage Stock", img: "/infrastructure/infrastructure-6.jpg" },
+export interface InfrastructureItem {
+  title: string;
+  caption: string;
+  img: string;
+  webp?: string;
+  category: string;
+  model: string;
+  manufacturer: string;
+  specs: string;
+  desc: string;
+  width?: number;
+  height?: number;
+}
+
+export const infrastructureImages: InfrastructureItem[] = [
+  {
+    title: "FEELER VMP-45A Vertical Machining Center",
+    caption: "FEELER VMP-45A Vertical Machining Center",
+    category: "VMC Machinery",
+    model: "FEELER VMP-45A",
+    manufacturer: "FEELER / Fair Friend Group (FFG)",
+    specs: "Table 1200x600mm | X: 1100mm, Y: 610mm, Z: 600mm | BT40 / 10,000 RPM Spindle | High-Rigidity Column",
+    desc: "Heavy-duty high-speed vertical machining center engineered for precision milling, die cavity profiling, and large component manufacturing with rigid box guideways.",
+    img: "/infrastructure/feeler-vmp-45a-machining-center.jpg",
+    webp: "/infrastructure/feeler-vmp-45a-machining-center.webp",
+    width: 1280,
+    height: 960
+  },
+  {
+    title: "FEELER VMP-40A CNC Vertical Machining Center",
+    caption: "FEELER VMP-40A CNC Vertical Machining Center",
+    category: "VMC Machinery",
+    model: "FEELER VMP-40A",
+    manufacturer: "FEELER / Fair Friend Group (FFG)",
+    specs: "Table 1150x520mm | X: 1020mm, Y: 520mm, Z: 505mm | 4th Axis Rotary Ready | High Torque BT40 Spindle",
+    desc: "Precision CNC machining center utilized for manufacturing precision components, dual-shaft shredder cutters, knife pockets, and 4th-axis indexing operations.",
+    img: "/infrastructure/feeler-vmp-40a-cnc-machine.jpg",
+    webp: "/infrastructure/feeler-vmp-40a-cnc-machine.webp",
+    width: 1280,
+    height: 960
+  },
+  {
+    title: "FEELER VMP-40A CNC Controller & Spindle Head",
+    caption: "FEELER VMP-40A CNC Controller & Spindle Head",
+    category: "Control & Spindle",
+    model: "VMP-40A Control Pendant",
+    manufacturer: "FEELER / FFG",
+    specs: "Multi-Axis CNC Control Pendant | Direct Spindle Coolant Delivery | Tooling Fixture Bed",
+    desc: "Detailed view of the digital CNC operator control pendant, programmable feed controls, spindle tooling interface, and multi-nozzle cutting fluid system.",
+    img: "/infrastructure/feeler-vmp-40a-controller-spindle.jpg",
+    webp: "/infrastructure/feeler-vmp-40a-controller-spindle.webp",
+    width: 1280,
+    height: 960
+  },
+  {
+    title: "High-Precision Machining Chamber & Clamping Fixture",
+    caption: "VMC Machining Chamber & Precision Fixture",
+    category: "Machining Setup",
+    model: "VMC Internal Work Envelope",
+    manufacturer: "FEELER Industrial VMC",
+    specs: "Precision Ground T-Slot Bed | Heavy Clamping Fixture | ATC Arm & Telescopic Stainless Bellows",
+    desc: "Interior machining chamber showcasing rigid workholding clamping, telescopic way covers, and automatic tool changer interface for vibration-free production.",
+    img: "/infrastructure/vmc-internal-machining-chamber.jpg",
+    webp: "/infrastructure/vmc-internal-machining-chamber.webp",
+    width: 1280,
+    height: 960
+  },
+  {
+    title: "Precision CNC Tooling, Collet Chucks & Accessories",
+    caption: "Precision CNC Tooling Suite",
+    category: "Tooling & Fixtures",
+    model: "BT-40 / BT-50 Tooling Suite",
+    manufacturer: "Industrial Grade Tooling",
+    specs: "BT40 Tool Holders | ER Collet Chucks | Boring Heads | Heavy Modular Clamping Blocks",
+    desc: "Dedicated tooling workstation equipped with comprehensive BT40 toolholders, end mill adapters, precision collets, and clamping fixtures for versatile machining runs.",
+    img: "/infrastructure/cnc-tooling-holders-setup.jpg",
+    webp: "/infrastructure/cnc-tooling-holders-setup.webp",
+    width: 1280,
+    height: 960
+  },
+  {
+    title: "REXAN Rotary Screw Air Compressor",
+    caption: "REXAN Rotary Screw Air Compressor",
+    category: "Pneumatics & Power",
+    model: "REXAN Screw Compressor Series",
+    manufacturer: "REXAN Industrial Equipment",
+    specs: "Continuous Industrial Duty | Low-Noise Acoustic Enclosure | Microprocessor PLC Controller | CE Certified",
+    desc: "High-efficiency industrial rotary screw air compressor providing uninterrupted, pulsation-free compressed air for pneumatic workholding and machine tool operation.",
+    img: "/infrastructure/rexan-rotary-screw-compressor.jpg",
+    webp: "/infrastructure/rexan-rotary-screw-compressor.webp",
+    width: 1280,
+    height: 960
+  },
+  {
+    title: "Air Receiver Storage Vessel & Refrigerated Air Dryer",
+    caption: "Industrial Air Receiver Station",
+    category: "Pneumatics & Power",
+    model: "Vertical Receiver & Air Dryer System",
+    manufacturer: "Industrial Pneumatics",
+    specs: "Vertical Pressure Vessel | Connected Refrigerated Dryer | Pressure Gauge & Safety Relief Valve",
+    desc: "Auxiliary compressed air treatment station ensuring moisture-free, regulated pneumatic supply to protect VMC pneumatic actuators and precision spindles.",
+    img: "/infrastructure/industrial-air-receiver-station.jpg",
+    webp: "/infrastructure/industrial-air-receiver-station.webp",
+    width: 1280,
+    height: 960
+  },
+  {
+    title: "Vertical Turret Milling Machine with Digital Readout (DRO)",
+    caption: "Vertical Turret Milling Machine (DRO)",
+    category: "Conventional Machining",
+    model: "Knee-Type Turret Milling Machine",
+    manufacturer: "Industrial Precision Milling",
+    specs: "Multi-Axis Digital Readout (DRO) | Motorized X-Axis Power Table Feed | Heavy Duty Milling Vice",
+    desc: "Versatile vertical milling machine utilized for rapid squaring, keyway slotting, edge chamfering, and custom tool room operations with micrometer-level DRO accuracy.",
+    img: "/infrastructure/vertical-turret-milling-machine.jpg",
+    webp: "/infrastructure/vertical-turret-milling-machine.webp",
+    width: 1280,
+    height: 960
+  },
+  {
+    title: "CAD/CAM Design & Programming Machining Station",
+    caption: "CAD/CAM Milling Programming Station",
+    category: "Engineering & Production",
+    model: "Shop Floor CAD/CAM Integration",
+    manufacturer: "KSG Tools Workshop",
+    specs: "Direct CNC Program Generation | Toolpath Simulation | Adjacent Turret Milling Unit",
+    desc: "Integrated manufacturing setup linking digital 2D/3D component design, CAM toolpath programming, and physical machining on the shop floor.",
+    img: "/infrastructure/cad-cam-milling-workstation.jpg",
+    webp: "/infrastructure/cad-cam-milling-workstation.webp",
+    width: 1280,
+    height: 960
+  },
+  {
+    title: "Universal Tool & Cutter Grinding Machine",
+    caption: "Universal Tool & Cutter Grinder",
+    category: "Grinding & Finishing",
+    model: "Universal Tool & Cutter Grinder",
+    manufacturer: "Precision Grinding Machinery",
+    specs: "Universal Swivel Grinding Head | Workhead with Dividing Indexer | Fine Micrometer Infeed Controls",
+    desc: "Specialized grinding unit utilized for resharpening, bevel grinding, and precision edge finishing of industrial chipper knives, granulator blades, and milling cutters.",
+    img: "/infrastructure/universal-tool-cutter-grinder.jpg",
+    webp: "/infrastructure/universal-tool-cutter-grinder.webp",
+    width: 1280,
+    height: 960
+  },
+  {
+    title: "Heavy-Duty 3-Phase Servo Voltage Stabilizer (415V)",
+    caption: "415V 3-Phase Servo Stabilizer",
+    category: "Electrical Infrastructure",
+    model: "Oil-Cooled 415V Servo Stabilizer",
+    manufacturer: "ABL Power Systems",
+    specs: "415 Volts 3-Phase Balanced Output | Heavy Transformer Oil Cooling Tank | Digital Monitoring Panel",
+    desc: "Dedicated heavy-duty industrial servo stabilizer ensuring constant, surge-free clean electrical supply to safeguard sensitive CNC drives and spindle electronics.",
+    img: "/infrastructure/industrial-servo-stabilizer-415v.jpg",
+    webp: "/infrastructure/industrial-servo-stabilizer-415v.webp",
+    width: 960,
+    height: 1280
+  },
+  {
+    title: "2-Ton (2000 Kg) Heavy-Duty Hydraulic Material Stacker",
+    caption: "2-Ton Hydraulic Stacker Lifter",
+    category: "Material Handling",
+    model: "2000 Kgs Hydraulic Fork Stacker",
+    manufacturer: "Industrial Material Handling",
+    specs: "2000 Kg (2 Ton) Lifting Capacity | Dual Leaf Safety Lift Chains | Heavy Forged Fork Tines",
+    desc: "Robust hydraulic fork stacker utilized for safe loading, unloading, and staging of heavy raw steel billets, die blocks, and large tooling fixtures across machines.",
+    img: "/infrastructure/hydraulic-stacker-2000kg.jpg",
+    webp: "/infrastructure/hydraulic-stacker-2000kg.webp",
+    width: 960,
+    height: 1280
+  }
 ];

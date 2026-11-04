@@ -94,7 +94,7 @@ export default function PageHeader({
             <div className="capability-actions">
               <a
                 href={`https://wa.me/${company.whatsapp}?text=${encodeURIComponent(
-                  "Hi K.S.G. Tools, I would like to request technical specifications and custom price quote for industrial cutting tools."
+                  "Hi K.S.G. Tools, I would like to request technical specifications and custom quote for industrial cutting tools."
                 )}`}
                 target="_blank"
                 rel="noreferrer"

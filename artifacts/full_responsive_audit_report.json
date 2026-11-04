@@ -1,0 +1,7002 @@
+[
+  {
+    "page": "Home",
+    "file": "index.html",
+    "viewport": "Mobile-320x568",
+    "width": 320,
+    "height": 568,
+    "passed": true,
+    "winWidth": 320,
+    "maxScroll": 320,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 19,
+    "smallTouchTargetsSample": [
+      {
+        "tag": "a",
+        "selector": "a.brand",
+        "width": 112,
+        "height": 28,
+        "text": "KSG\nK.S.G. Tools"
+      },
+      {
+        "tag": "button",
+        "selector": "button.burger",
+        "width": 38,
+        "height": 38,
+        "text": "☰"
+      },
+      {
+        "tag": "a",
+        "selector": "a.product-title-link",
+        "width": 195,
+        "height": 22,
+        "text": "Metal Shredder Machine"
+      },
+      {
+        "tag": "button",
+        "selector": "button",
+        "width": 120,
+        "height": 36,
+        "text": "All Facilities"
+      },
+      {
+        "tag": "button",
+        "selector": "button",
+        "width": 142,
+        "height": 36,
+        "text": "VMC Machinery"
+      }
+    ],
+    "navAnomaly": null
+  },
+  {
+    "page": "Home",
+    "file": "index.html",
+    "viewport": "Mobile-360x800",
+    "width": 360,
+    "height": 800,
+    "passed": true,
+    "winWidth": 360,
+    "maxScroll": 360,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 19,
+    "smallTouchTargetsSample": [
+      {
+        "tag": "a",
+        "selector": "a.brand",
+        "width": 127,
+        "height": 32,
+        "text": "KSG\nK.S.G. Tools"
+      },
+      {
+        "tag": "a",
+        "selector": "a.product-title-link",
+        "width": 195,
+        "height": 22,
+        "text": "Metal Shredder Machine"
+      },
+      {
+        "tag": "a",
+        "selector": "a.product-title-link",
+        "width": 228,
+        "height": 22,
+        "text": "Press Tool Die Manufactur"
+      },
+      {
+        "tag": "button",
+        "selector": "button",
+        "width": 120,
+        "height": 36,
+        "text": "All Facilities"
+      },
+      {
+        "tag": "button",
+        "selector": "button",
+        "width": 142,
+        "height": 36,
+        "text": "VMC Machinery"
+      }
+    ],
+    "navAnomaly": null
+  },
+  {
+    "page": "Home",
+    "file": "index.html",
+    "viewport": "Mobile-375x812",
+    "width": 375,
+    "height": 812,
+    "passed": true,
+    "winWidth": 375,
+    "maxScroll": 375,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 20,
+    "smallTouchTargetsSample": [
+      {
+        "tag": "a",
+        "selector": "a.brand",
+        "width": 127,
+        "height": 32,
+        "text": "KSG\nK.S.G. Tools"
+      },
+      {
+        "tag": "a",
+        "selector": "a.product-title-link",
+        "width": 195,
+        "height": 22,
+        "text": "Metal Shredder Machine"
+      },
+      {
+        "tag": "a",
+        "selector": "a.product-title-link",
+        "width": 228,
+        "height": 22,
+        "text": "Press Tool Die Manufactur"
+      },
+      {
+        "tag": "a",
+        "selector": "a.product-title-link",
+        "width": 273,
+        "height": 22,
+        "text": "Plastic Recycling Granula"
+      },
+      {
+        "tag": "button",
+        "selector": "button",
+        "width": 120,
+        "height": 36,
+        "text": "All Facilities"
+      }
+    ],
+    "navAnomaly": null
+  },
+  {
+    "page": "Home",
+    "file": "index.html",
+    "viewport": "Mobile-390x844",
+    "width": 390,
+    "height": 844,
+    "passed": true,
+    "winWidth": 390,
+    "maxScroll": 390,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 21,
+    "smallTouchTargetsSample": [
+      {
+        "tag": "a",
+        "selector": "a.brand",
+        "width": 141,
+        "height": 36,
+        "text": "KSG\nK.S.G. Tools"
+      },
+      {
+        "tag": "a",
+        "selector": "a.product-title-link",
+        "width": 279,
+        "height": 22,
+        "text": "4 inch Stainless Steel Ch"
+      },
+      {
+        "tag": "a",
+        "selector": "a.product-title-link",
+        "width": 195,
+        "height": 22,
+        "text": "Metal Shredder Machine"
+      },
+      {
+        "tag": "a",
+        "selector": "a.product-title-link",
+        "width": 228,
+        "height": 22,
+        "text": "Press Tool Die Manufactur"
+      },
+      {
+        "tag": "a",
+        "selector": "a.product-title-link",
+        "width": 273,
+        "height": 22,
+        "text": "Plastic Recycling Granula"
+      }
+    ],
+    "navAnomaly": null
+  },
+  {
+    "page": "Home",
+    "file": "index.html",
+    "viewport": "Mobile-414x896",
+    "width": 414,
+    "height": 896,
+    "passed": true,
+    "winWidth": 414,
+    "maxScroll": 414,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 22,
+    "smallTouchTargetsSample": [
+      {
+        "tag": "a",
+        "selector": "a.brand",
+        "width": 141,
+        "height": 36,
+        "text": "KSG\nK.S.G. Tools"
+      },
+      {
+        "tag": "a",
+        "selector": "a.product-title-link",
+        "width": 298,
+        "height": 22,
+        "text": "10 Inch Double Shaft Shre"
+      },
+      {
+        "tag": "a",
+        "selector": "a.product-title-link",
+        "width": 279,
+        "height": 22,
+        "text": "4 inch Stainless Steel Ch"
+      },
+      {
+        "tag": "a",
+        "selector": "a.product-title-link",
+        "width": 195,
+        "height": 22,
+        "text": "Metal Shredder Machine"
+      },
+      {
+        "tag": "a",
+        "selector": "a.product-title-link",
+        "width": 228,
+        "height": 22,
+        "text": "Press Tool Die Manufactur"
+      }
+    ],
+    "navAnomaly": null
+  },
+  {
+    "page": "Home",
+    "file": "index.html",
+    "viewport": "Mobile-430x932",
+    "width": 430,
+    "height": 932,
+    "passed": true,
+    "winWidth": 430,
+    "maxScroll": 430,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 23,
+    "smallTouchTargetsSample": [
+      {
+        "tag": "a",
+        "selector": "a.brand",
+        "width": 141,
+        "height": 36,
+        "text": "KSG\nK.S.G. Tools"
+      },
+      {
+        "tag": "a",
+        "selector": "a.product-title-link",
+        "width": 298,
+        "height": 22,
+        "text": "10 Inch Double Shaft Shre"
+      },
+      {
+        "tag": "a",
+        "selector": "a.product-title-link",
+        "width": 279,
+        "height": 22,
+        "text": "4 inch Stainless Steel Ch"
+      },
+      {
+        "tag": "a",
+        "selector": "a.product-title-link",
+        "width": 195,
+        "height": 22,
+        "text": "Metal Shredder Machine"
+      },
+      {
+        "tag": "a",
+        "selector": "a.product-title-link",
+        "width": 228,
+        "height": 22,
+        "text": "Press Tool Die Manufactur"
+      }
+    ],
+    "navAnomaly": null
+  },
+  {
+    "page": "Home",
+    "file": "index.html",
+    "viewport": "Mobile-568x320-L",
+    "width": 568,
+    "height": 320,
+    "passed": true,
+    "winWidth": 568,
+    "maxScroll": 568,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 23,
+    "smallTouchTargetsSample": [
+      {
+        "tag": "a",
+        "selector": "a.brand",
+        "width": 141,
+        "height": 36,
+        "text": "KSG\nK.S.G. Tools"
+      },
+      {
+        "tag": "a",
+        "selector": "a.product-title-link",
+        "width": 298,
+        "height": 22,
+        "text": "10 Inch Double Shaft Shre"
+      },
+      {
+        "tag": "a",
+        "selector": "a.product-title-link",
+        "width": 279,
+        "height": 22,
+        "text": "4 inch Stainless Steel Ch"
+      },
+      {
+        "tag": "a",
+        "selector": "a.product-title-link",
+        "width": 195,
+        "height": 22,
+        "text": "Metal Shredder Machine"
+      },
+      {
+        "tag": "a",
+        "selector": "a.product-title-link",
+        "width": 228,
+        "height": 22,
+        "text": "Press Tool Die Manufactur"
+      }
+    ],
+    "navAnomaly": null
+  },
+  {
+    "page": "Home",
+    "file": "index.html",
+    "viewport": "Mobile-844x390-L",
+    "width": 844,
+    "height": 390,
+    "passed": true,
+    "winWidth": 844,
+    "maxScroll": 844,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [
+      {
+        "tag": "div",
+        "selector": "div.catalog-tabs",
+        "right": 1941,
+        "width": 1915,
+        "overflow": 1097,
+        "textSnippet": "All Products 83 Chipper Knives 9 Sh"
+      },
+      {
+        "tag": "button",
+        "selector": "button.cat-tab",
+        "right": 1051,
+        "width": 223,
+        "overflow": 207,
+        "textSnippet": "Shredding Machine 12"
+      },
+      {
+        "tag": "svg",
+        "selector": "svg",
+        "right": 862,
+        "width": 16,
+        "overflow": 18,
+        "textSnippet": ""
+      },
+      {
+        "tag": "path",
+        "selector": "path",
+        "right": 861,
+        "width": 13,
+        "overflow": 17,
+        "textSnippet": ""
+      },
+      {
+        "tag": "span",
+        "selector": "span",
+        "right": 995,
+        "width": 125,
+        "overflow": 151,
+        "textSnippet": "Shredding Machine"
+      },
+      {
+        "tag": "span",
+        "selector": "span.cat-count",
+        "right": 1032,
+        "width": 29,
+        "overflow": 188,
+        "textSnippet": "12"
+      },
+      {
+        "tag": "button",
+        "selector": "button.cat-tab",
+        "right": 1247,
+        "width": 188,
+        "overflow": 403,
+        "textSnippet": "Grinder Blades 3"
+      },
+      {
+        "tag": "svg",
+        "selector": "svg",
+        "right": 1094,
+        "width": 16,
+        "overflow": 250,
+        "textSnippet": ""
+      }
+    ],
+    "smallTouchTargetsCount": 24,
+    "smallTouchTargetsSample": [
+      {
+        "tag": "select",
+        "selector": "select#catalog-sort-select.catalog-select",
+        "width": 189,
+        "height": 39,
+        "text": "Featured Order\nProduct Na"
+      },
+      {
+        "tag": "a",
+        "selector": "a.btn",
+        "width": 154,
+        "height": 39,
+        "text": "Download PDF"
+      },
+      {
+        "tag": "a",
+        "selector": "a.product-title-link",
+        "width": 298,
+        "height": 22,
+        "text": "10 Inch Double Shaft Shre"
+      },
+      {
+        "tag": "a",
+        "selector": "a.product-title-link",
+        "width": 279,
+        "height": 22,
+        "text": "4 inch Stainless Steel Ch"
+      },
+      {
+        "tag": "a",
+        "selector": "a.product-title-link",
+        "width": 195,
+        "height": 22,
+        "text": "Metal Shredder Machine"
+      }
+    ],
+    "navAnomaly": null
+  },
+  {
+    "page": "Home",
+    "file": "index.html",
+    "viewport": "Tablet-600x960",
+    "width": 600,
+    "height": 960,
+    "passed": true,
+    "winWidth": 600,
+    "maxScroll": 600,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 23,
+    "smallTouchTargetsSample": [
+      {
+        "tag": "a",
+        "selector": "a.brand",
+        "width": 141,
+        "height": 36,
+        "text": "KSG\nK.S.G. Tools"
+      },
+      {
+        "tag": "a",
+        "selector": "a.product-title-link",
+        "width": 298,
+        "height": 22,
+        "text": "10 Inch Double Shaft Shre"
+      },
+      {
+        "tag": "a",
+        "selector": "a.product-title-link",
+        "width": 279,
+        "height": 22,
+        "text": "4 inch Stainless Steel Ch"
+      },
+      {
+        "tag": "a",
+        "selector": "a.product-title-link",
+        "width": 195,
+        "height": 22,
+        "text": "Metal Shredder Machine"
+      },
+      {
+        "tag": "a",
+        "selector": "a.product-title-link",
+        "width": 228,
+        "height": 22,
+        "text": "Press Tool Die Manufactur"
+      }
+    ],
+    "navAnomaly": null
+  },
+  {
+    "page": "Home",
+    "file": "index.html",
+    "viewport": "Tablet-768x1024",
+    "width": 768,
+    "height": 1024,
+    "passed": true,
+    "winWidth": 768,
+    "maxScroll": 768,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 0,
+    "smallTouchTargetsSample": [],
+    "navAnomaly": null
+  },
+  {
+    "page": "Home",
+    "file": "index.html",
+    "viewport": "Tablet-820x1180",
+    "width": 820,
+    "height": 1180,
+    "passed": true,
+    "winWidth": 820,
+    "maxScroll": 820,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [
+      {
+        "tag": "div",
+        "selector": "div.catalog-tabs",
+        "right": 1940,
+        "width": 1915,
+        "overflow": 1120,
+        "textSnippet": "All Products 83 Chipper Knives 9 Sh"
+      },
+      {
+        "tag": "button",
+        "selector": "button.cat-tab",
+        "right": 1050,
+        "width": 223,
+        "overflow": 230,
+        "textSnippet": "Shredding Machine 12"
+      },
+      {
+        "tag": "svg",
+        "selector": "svg",
+        "right": 862,
+        "width": 16,
+        "overflow": 42,
+        "textSnippet": ""
+      },
+      {
+        "tag": "path",
+        "selector": "path",
+        "right": 860,
+        "width": 13,
+        "overflow": 40,
+        "textSnippet": ""
+      },
+      {
+        "tag": "span",
+        "selector": "span",
+        "right": 994,
+        "width": 125,
+        "overflow": 174,
+        "textSnippet": "Shredding Machine"
+      },
+      {
+        "tag": "span",
+        "selector": "span.cat-count",
+        "right": 1031,
+        "width": 29,
+        "overflow": 211,
+        "textSnippet": "12"
+      },
+      {
+        "tag": "button",
+        "selector": "button.cat-tab",
+        "right": 1246,
+        "width": 188,
+        "overflow": 426,
+        "textSnippet": "Grinder Blades 3"
+      },
+      {
+        "tag": "svg",
+        "selector": "svg",
+        "right": 1093,
+        "width": 16,
+        "overflow": 273,
+        "textSnippet": ""
+      }
+    ],
+    "smallTouchTargetsCount": 0,
+    "smallTouchTargetsSample": [],
+    "navAnomaly": null
+  },
+  {
+    "page": "Home",
+    "file": "index.html",
+    "viewport": "Tablet-1024x768",
+    "width": 1024,
+    "height": 768,
+    "passed": true,
+    "winWidth": 1024,
+    "maxScroll": 1024,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [
+      {
+        "tag": "div",
+        "selector": "div.catalog-tabs",
+        "right": 1947,
+        "width": 1915,
+        "overflow": 923,
+        "textSnippet": "All Products 83 Chipper Knives 9 Sh"
+      },
+      {
+        "tag": "button",
+        "selector": "button.cat-tab",
+        "right": 1057,
+        "width": 223,
+        "overflow": 33,
+        "textSnippet": "Shredding Machine 12"
+      },
+      {
+        "tag": "span",
+        "selector": "span.cat-count",
+        "right": 1038,
+        "width": 29,
+        "overflow": 14,
+        "textSnippet": "12"
+      },
+      {
+        "tag": "button",
+        "selector": "button.cat-tab",
+        "right": 1253,
+        "width": 188,
+        "overflow": 229,
+        "textSnippet": "Grinder Blades 3"
+      },
+      {
+        "tag": "svg",
+        "selector": "svg",
+        "right": 1100,
+        "width": 16,
+        "overflow": 76,
+        "textSnippet": ""
+      },
+      {
+        "tag": "path",
+        "selector": "path",
+        "right": 1098,
+        "width": 12,
+        "overflow": 74,
+        "textSnippet": ""
+      },
+      {
+        "tag": "path",
+        "selector": "path",
+        "right": 1094,
+        "width": 3,
+        "overflow": 70,
+        "textSnippet": ""
+      },
+      {
+        "tag": "span",
+        "selector": "span",
+        "right": 1205,
+        "width": 97,
+        "overflow": 181,
+        "textSnippet": "Grinder Blades"
+      }
+    ],
+    "smallTouchTargetsCount": 0,
+    "smallTouchTargetsSample": [],
+    "navAnomaly": null
+  },
+  {
+    "page": "Home",
+    "file": "index.html",
+    "viewport": "Laptop-1280x720",
+    "width": 1280,
+    "height": 720,
+    "passed": true,
+    "winWidth": 1280,
+    "maxScroll": 1280,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [
+      {
+        "tag": "div",
+        "selector": "div.catalog-tabs",
+        "right": 1966,
+        "width": 1915,
+        "overflow": 686,
+        "textSnippet": "All Products 83 Chipper Knives 9 Sh"
+      },
+      {
+        "tag": "button",
+        "selector": "button.cat-tab",
+        "right": 1489,
+        "width": 208,
+        "overflow": 209,
+        "textSnippet": "Granulator Blades 3"
+      },
+      {
+        "tag": "svg",
+        "selector": "svg",
+        "right": 1316,
+        "width": 16,
+        "overflow": 36,
+        "textSnippet": ""
+      },
+      {
+        "tag": "path",
+        "selector": "path",
+        "right": 1308,
+        "width": 6,
+        "overflow": 28,
+        "textSnippet": ""
+      },
+      {
+        "tag": "path",
+        "selector": "path",
+        "right": 1310,
+        "width": 3,
+        "overflow": 30,
+        "textSnippet": ""
+      },
+      {
+        "tag": "path",
+        "selector": "path",
+        "right": 1314,
+        "width": 3,
+        "overflow": 34,
+        "textSnippet": ""
+      },
+      {
+        "tag": "path",
+        "selector": "path",
+        "right": 1314,
+        "width": 3,
+        "overflow": 34,
+        "textSnippet": ""
+      },
+      {
+        "tag": "span",
+        "selector": "span",
+        "right": 1441,
+        "width": 117,
+        "overflow": 161,
+        "textSnippet": "Granulator Blades"
+      }
+    ],
+    "smallTouchTargetsCount": 0,
+    "smallTouchTargetsSample": [],
+    "navAnomaly": null
+  },
+  {
+    "page": "Home",
+    "file": "index.html",
+    "viewport": "Laptop-1366x768",
+    "width": 1366,
+    "height": 768,
+    "passed": true,
+    "winWidth": 1366,
+    "maxScroll": 1366,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [
+      {
+        "tag": "div",
+        "selector": "div.catalog-tabs",
+        "right": 1998,
+        "width": 1915,
+        "overflow": 632,
+        "textSnippet": "All Products 83 Chipper Knives 9 Sh"
+      },
+      {
+        "tag": "button",
+        "selector": "button.cat-tab",
+        "right": 1521,
+        "width": 208,
+        "overflow": 155,
+        "textSnippet": "Granulator Blades 3"
+      },
+      {
+        "tag": "span",
+        "selector": "span",
+        "right": 1472,
+        "width": 117,
+        "overflow": 106,
+        "textSnippet": "Granulator Blades"
+      },
+      {
+        "tag": "span",
+        "selector": "span.cat-count",
+        "right": 1502,
+        "width": 21,
+        "overflow": 136,
+        "textSnippet": "3"
+      },
+      {
+        "tag": "button",
+        "selector": "button.cat-tab",
+        "right": 1773,
+        "width": 244,
+        "overflow": 407,
+        "textSnippet": "VMC Machine Job Work 7"
+      },
+      {
+        "tag": "svg",
+        "selector": "svg",
+        "right": 1564,
+        "width": 16,
+        "overflow": 198,
+        "textSnippet": ""
+      },
+      {
+        "tag": "path",
+        "selector": "path",
+        "right": 1562,
+        "width": 13,
+        "overflow": 196,
+        "textSnippet": ""
+      },
+      {
+        "tag": "span",
+        "selector": "span",
+        "right": 1725,
+        "width": 153,
+        "overflow": 359,
+        "textSnippet": "VMC Machine Job Work"
+      }
+    ],
+    "smallTouchTargetsCount": 0,
+    "smallTouchTargetsSample": [],
+    "navAnomaly": null
+  },
+  {
+    "page": "Home",
+    "file": "index.html",
+    "viewport": "Desktop-1440x900",
+    "width": 1440,
+    "height": 900,
+    "passed": true,
+    "winWidth": 1440,
+    "maxScroll": 1440,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [
+      {
+        "tag": "div",
+        "selector": "div.catalog-tabs",
+        "right": 2035,
+        "width": 1915,
+        "overflow": 595,
+        "textSnippet": "All Products 83 Chipper Knives 9 Sh"
+      },
+      {
+        "tag": "button",
+        "selector": "button.cat-tab",
+        "right": 1558,
+        "width": 208,
+        "overflow": 118,
+        "textSnippet": "Granulator Blades 3"
+      },
+      {
+        "tag": "span",
+        "selector": "span",
+        "right": 1509,
+        "width": 117,
+        "overflow": 69,
+        "textSnippet": "Granulator Blades"
+      },
+      {
+        "tag": "span",
+        "selector": "span.cat-count",
+        "right": 1539,
+        "width": 21,
+        "overflow": 99,
+        "textSnippet": "3"
+      },
+      {
+        "tag": "button",
+        "selector": "button.cat-tab",
+        "right": 1810,
+        "width": 244,
+        "overflow": 370,
+        "textSnippet": "VMC Machine Job Work 7"
+      },
+      {
+        "tag": "svg",
+        "selector": "svg",
+        "right": 1601,
+        "width": 16,
+        "overflow": 161,
+        "textSnippet": ""
+      },
+      {
+        "tag": "path",
+        "selector": "path",
+        "right": 1599,
+        "width": 13,
+        "overflow": 159,
+        "textSnippet": ""
+      },
+      {
+        "tag": "span",
+        "selector": "span",
+        "right": 1762,
+        "width": 153,
+        "overflow": 322,
+        "textSnippet": "VMC Machine Job Work"
+      }
+    ],
+    "smallTouchTargetsCount": 0,
+    "smallTouchTargetsSample": [],
+    "navAnomaly": null
+  },
+  {
+    "page": "Home",
+    "file": "index.html",
+    "viewport": "Desktop-1600x900",
+    "width": 1600,
+    "height": 900,
+    "passed": true,
+    "winWidth": 1600,
+    "maxScroll": 1600,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [
+      {
+        "tag": "div",
+        "selector": "div.catalog-tabs",
+        "right": 2115,
+        "width": 1915,
+        "overflow": 515,
+        "textSnippet": "All Products 83 Chipper Knives 9 Sh"
+      },
+      {
+        "tag": "button",
+        "selector": "button.cat-tab",
+        "right": 1638,
+        "width": 208,
+        "overflow": 38,
+        "textSnippet": "Granulator Blades 3"
+      },
+      {
+        "tag": "span",
+        "selector": "span.cat-count",
+        "right": 1619,
+        "width": 21,
+        "overflow": 19,
+        "textSnippet": "3"
+      },
+      {
+        "tag": "button",
+        "selector": "button.cat-tab",
+        "right": 1890,
+        "width": 244,
+        "overflow": 290,
+        "textSnippet": "VMC Machine Job Work 7"
+      },
+      {
+        "tag": "svg",
+        "selector": "svg",
+        "right": 1681,
+        "width": 16,
+        "overflow": 81,
+        "textSnippet": ""
+      },
+      {
+        "tag": "path",
+        "selector": "path",
+        "right": 1679,
+        "width": 13,
+        "overflow": 79,
+        "textSnippet": ""
+      },
+      {
+        "tag": "span",
+        "selector": "span",
+        "right": 1842,
+        "width": 153,
+        "overflow": 242,
+        "textSnippet": "VMC Machine Job Work"
+      },
+      {
+        "tag": "span",
+        "selector": "span.cat-count",
+        "right": 1871,
+        "width": 21,
+        "overflow": 271,
+        "textSnippet": "7"
+      }
+    ],
+    "smallTouchTargetsCount": 0,
+    "smallTouchTargetsSample": [],
+    "navAnomaly": null
+  },
+  {
+    "page": "Home",
+    "file": "index.html",
+    "viewport": "Desktop-1920x1080",
+    "width": 1920,
+    "height": 1080,
+    "passed": true,
+    "winWidth": 1920,
+    "maxScroll": 1920,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [
+      {
+        "tag": "div",
+        "selector": "div.catalog-tabs",
+        "right": 2275,
+        "width": 1915,
+        "overflow": 355,
+        "textSnippet": "All Products 83 Chipper Knives 9 Sh"
+      },
+      {
+        "tag": "button",
+        "selector": "button.cat-tab",
+        "right": 2050,
+        "width": 244,
+        "overflow": 130,
+        "textSnippet": "VMC Machine Job Work 7"
+      },
+      {
+        "tag": "span",
+        "selector": "span",
+        "right": 2002,
+        "width": 153,
+        "overflow": 82,
+        "textSnippet": "VMC Machine Job Work"
+      },
+      {
+        "tag": "span",
+        "selector": "span.cat-count",
+        "right": 2031,
+        "width": 21,
+        "overflow": 111,
+        "textSnippet": "7"
+      },
+      {
+        "tag": "button",
+        "selector": "button.cat-tab",
+        "right": 2275,
+        "width": 217,
+        "overflow": 355,
+        "textSnippet": "Chaff Cutter Blades 2"
+      },
+      {
+        "tag": "svg",
+        "selector": "svg",
+        "right": 2093,
+        "width": 16,
+        "overflow": 173,
+        "textSnippet": ""
+      },
+      {
+        "tag": "path",
+        "selector": "path",
+        "right": 2085,
+        "width": 3,
+        "overflow": 165,
+        "textSnippet": ""
+      },
+      {
+        "tag": "span",
+        "selector": "span",
+        "right": 2227,
+        "width": 126,
+        "overflow": 307,
+        "textSnippet": "Chaff Cutter Blades"
+      }
+    ],
+    "smallTouchTargetsCount": 0,
+    "smallTouchTargetsSample": [],
+    "navAnomaly": null
+  },
+  {
+    "page": "About",
+    "file": "about.html",
+    "viewport": "Mobile-320x568",
+    "width": 320,
+    "height": 568,
+    "passed": true,
+    "winWidth": 320,
+    "maxScroll": 320,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 12,
+    "smallTouchTargetsSample": [
+      {
+        "tag": "a",
+        "selector": "a.brand",
+        "width": 112,
+        "height": 28,
+        "text": "KSG\nK.S.G. Tools"
+      },
+      {
+        "tag": "button",
+        "selector": "button.burger",
+        "width": 38,
+        "height": 38,
+        "text": "☰"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 35,
+        "height": 21,
+        "text": "Home"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 37,
+        "height": 19,
+        "text": "Home"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 57,
+        "height": 19,
+        "text": "About Us"
+      }
+    ],
+    "navAnomaly": null
+  },
+  {
+    "page": "About",
+    "file": "about.html",
+    "viewport": "Mobile-360x800",
+    "width": 360,
+    "height": 800,
+    "passed": true,
+    "winWidth": 360,
+    "maxScroll": 360,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 11,
+    "smallTouchTargetsSample": [
+      {
+        "tag": "a",
+        "selector": "a.brand",
+        "width": 127,
+        "height": 32,
+        "text": "KSG\nK.S.G. Tools"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 35,
+        "height": 21,
+        "text": "Home"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 37,
+        "height": 19,
+        "text": "Home"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 57,
+        "height": 19,
+        "text": "About Us"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 121,
+        "height": 19,
+        "text": "Products & Services"
+      }
+    ],
+    "navAnomaly": null
+  },
+  {
+    "page": "About",
+    "file": "about.html",
+    "viewport": "Mobile-375x812",
+    "width": 375,
+    "height": 812,
+    "passed": true,
+    "winWidth": 375,
+    "maxScroll": 375,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 11,
+    "smallTouchTargetsSample": [
+      {
+        "tag": "a",
+        "selector": "a.brand",
+        "width": 127,
+        "height": 32,
+        "text": "KSG\nK.S.G. Tools"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 35,
+        "height": 21,
+        "text": "Home"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 37,
+        "height": 19,
+        "text": "Home"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 57,
+        "height": 19,
+        "text": "About Us"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 121,
+        "height": 19,
+        "text": "Products & Services"
+      }
+    ],
+    "navAnomaly": null
+  },
+  {
+    "page": "About",
+    "file": "about.html",
+    "viewport": "Mobile-390x844",
+    "width": 390,
+    "height": 844,
+    "passed": true,
+    "winWidth": 390,
+    "maxScroll": 390,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 11,
+    "smallTouchTargetsSample": [
+      {
+        "tag": "a",
+        "selector": "a.brand",
+        "width": 141,
+        "height": 36,
+        "text": "KSG\nK.S.G. Tools"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 35,
+        "height": 21,
+        "text": "Home"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 37,
+        "height": 19,
+        "text": "Home"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 57,
+        "height": 19,
+        "text": "About Us"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 121,
+        "height": 19,
+        "text": "Products & Services"
+      }
+    ],
+    "navAnomaly": null
+  },
+  {
+    "page": "About",
+    "file": "about.html",
+    "viewport": "Mobile-414x896",
+    "width": 414,
+    "height": 896,
+    "passed": true,
+    "winWidth": 414,
+    "maxScroll": 414,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 11,
+    "smallTouchTargetsSample": [
+      {
+        "tag": "a",
+        "selector": "a.brand",
+        "width": 141,
+        "height": 36,
+        "text": "KSG\nK.S.G. Tools"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 35,
+        "height": 21,
+        "text": "Home"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 37,
+        "height": 19,
+        "text": "Home"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 57,
+        "height": 19,
+        "text": "About Us"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 121,
+        "height": 19,
+        "text": "Products & Services"
+      }
+    ],
+    "navAnomaly": null
+  },
+  {
+    "page": "About",
+    "file": "about.html",
+    "viewport": "Mobile-430x932",
+    "width": 430,
+    "height": 932,
+    "passed": true,
+    "winWidth": 430,
+    "maxScroll": 430,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 11,
+    "smallTouchTargetsSample": [
+      {
+        "tag": "a",
+        "selector": "a.brand",
+        "width": 141,
+        "height": 36,
+        "text": "KSG\nK.S.G. Tools"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 35,
+        "height": 21,
+        "text": "Home"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 37,
+        "height": 19,
+        "text": "Home"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 57,
+        "height": 19,
+        "text": "About Us"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 121,
+        "height": 19,
+        "text": "Products & Services"
+      }
+    ],
+    "navAnomaly": null
+  },
+  {
+    "page": "About",
+    "file": "about.html",
+    "viewport": "Mobile-568x320-L",
+    "width": 568,
+    "height": 320,
+    "passed": true,
+    "winWidth": 568,
+    "maxScroll": 568,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 11,
+    "smallTouchTargetsSample": [
+      {
+        "tag": "a",
+        "selector": "a.brand",
+        "width": 141,
+        "height": 36,
+        "text": "KSG\nK.S.G. Tools"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 35,
+        "height": 21,
+        "text": "Home"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 37,
+        "height": 19,
+        "text": "Home"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 57,
+        "height": 19,
+        "text": "About Us"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 121,
+        "height": 19,
+        "text": "Products & Services"
+      }
+    ],
+    "navAnomaly": null
+  },
+  {
+    "page": "About",
+    "file": "about.html",
+    "viewport": "Mobile-844x390-L",
+    "width": 844,
+    "height": 390,
+    "passed": true,
+    "winWidth": 844,
+    "maxScroll": 844,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 10,
+    "smallTouchTargetsSample": [
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 35,
+        "height": 21,
+        "text": "Home"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 37,
+        "height": 19,
+        "text": "Home"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 57,
+        "height": 19,
+        "text": "About Us"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 121,
+        "height": 19,
+        "text": "Products & Services"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 121,
+        "height": 19,
+        "text": "Manufacturing Area"
+      }
+    ],
+    "navAnomaly": null
+  },
+  {
+    "page": "About",
+    "file": "about.html",
+    "viewport": "Tablet-600x960",
+    "width": 600,
+    "height": 960,
+    "passed": true,
+    "winWidth": 600,
+    "maxScroll": 600,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 11,
+    "smallTouchTargetsSample": [
+      {
+        "tag": "a",
+        "selector": "a.brand",
+        "width": 141,
+        "height": 36,
+        "text": "KSG\nK.S.G. Tools"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 35,
+        "height": 21,
+        "text": "Home"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 37,
+        "height": 19,
+        "text": "Home"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 57,
+        "height": 19,
+        "text": "About Us"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 121,
+        "height": 19,
+        "text": "Products & Services"
+      }
+    ],
+    "navAnomaly": null
+  },
+  {
+    "page": "About",
+    "file": "about.html",
+    "viewport": "Tablet-768x1024",
+    "width": 768,
+    "height": 1024,
+    "passed": true,
+    "winWidth": 768,
+    "maxScroll": 768,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 0,
+    "smallTouchTargetsSample": [],
+    "navAnomaly": null
+  },
+  {
+    "page": "About",
+    "file": "about.html",
+    "viewport": "Tablet-820x1180",
+    "width": 820,
+    "height": 1180,
+    "passed": true,
+    "winWidth": 820,
+    "maxScroll": 820,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 0,
+    "smallTouchTargetsSample": [],
+    "navAnomaly": null
+  },
+  {
+    "page": "About",
+    "file": "about.html",
+    "viewport": "Tablet-1024x768",
+    "width": 1024,
+    "height": 768,
+    "passed": true,
+    "winWidth": 1024,
+    "maxScroll": 1024,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 0,
+    "smallTouchTargetsSample": [],
+    "navAnomaly": null
+  },
+  {
+    "page": "About",
+    "file": "about.html",
+    "viewport": "Laptop-1280x720",
+    "width": 1280,
+    "height": 720,
+    "passed": true,
+    "winWidth": 1280,
+    "maxScroll": 1280,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 0,
+    "smallTouchTargetsSample": [],
+    "navAnomaly": null
+  },
+  {
+    "page": "About",
+    "file": "about.html",
+    "viewport": "Laptop-1366x768",
+    "width": 1366,
+    "height": 768,
+    "passed": true,
+    "winWidth": 1366,
+    "maxScroll": 1366,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 0,
+    "smallTouchTargetsSample": [],
+    "navAnomaly": null
+  },
+  {
+    "page": "About",
+    "file": "about.html",
+    "viewport": "Desktop-1440x900",
+    "width": 1440,
+    "height": 900,
+    "passed": true,
+    "winWidth": 1440,
+    "maxScroll": 1440,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 0,
+    "smallTouchTargetsSample": [],
+    "navAnomaly": null
+  },
+  {
+    "page": "About",
+    "file": "about.html",
+    "viewport": "Desktop-1600x900",
+    "width": 1600,
+    "height": 900,
+    "passed": true,
+    "winWidth": 1600,
+    "maxScroll": 1600,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 0,
+    "smallTouchTargetsSample": [],
+    "navAnomaly": null
+  },
+  {
+    "page": "About",
+    "file": "about.html",
+    "viewport": "Desktop-1920x1080",
+    "width": 1920,
+    "height": 1080,
+    "passed": true,
+    "winWidth": 1920,
+    "maxScroll": 1920,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 0,
+    "smallTouchTargetsSample": [],
+    "navAnomaly": null
+  },
+  {
+    "page": "Products",
+    "file": "products.html",
+    "viewport": "Mobile-320x568",
+    "width": 320,
+    "height": 568,
+    "passed": true,
+    "winWidth": 320,
+    "maxScroll": 320,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 15,
+    "smallTouchTargetsSample": [
+      {
+        "tag": "a",
+        "selector": "a.brand",
+        "width": 112,
+        "height": 28,
+        "text": "KSG\nK.S.G. Tools"
+      },
+      {
+        "tag": "button",
+        "selector": "button.burger",
+        "width": 38,
+        "height": 38,
+        "text": "☰"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 35,
+        "height": 21,
+        "text": "Home"
+      },
+      {
+        "tag": "a",
+        "selector": "a.product-title-link",
+        "width": 222,
+        "height": 22,
+        "text": "2 Slot Wood Chipper Knive"
+      },
+      {
+        "tag": "a",
+        "selector": "a.product-title-link",
+        "width": 172,
+        "height": 22,
+        "text": "Wood Chipper Knives"
+      }
+    ],
+    "navAnomaly": null
+  },
+  {
+    "page": "Products",
+    "file": "products.html",
+    "viewport": "Mobile-360x800",
+    "width": 360,
+    "height": 800,
+    "passed": true,
+    "winWidth": 360,
+    "maxScroll": 360,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 21,
+    "smallTouchTargetsSample": [
+      {
+        "tag": "a",
+        "selector": "a.brand",
+        "width": 127,
+        "height": 32,
+        "text": "KSG\nK.S.G. Tools"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 35,
+        "height": 21,
+        "text": "Home"
+      },
+      {
+        "tag": "a",
+        "selector": "a.product-title-link",
+        "width": 222,
+        "height": 22,
+        "text": "2 Slot Wood Chipper Knive"
+      },
+      {
+        "tag": "a",
+        "selector": "a.product-title-link",
+        "width": 237,
+        "height": 22,
+        "text": "Stainless Steel Chipper K"
+      },
+      {
+        "tag": "a",
+        "selector": "a.product-title-link",
+        "width": 225,
+        "height": 22,
+        "text": "4 Inch Wood Chipper Knive"
+      }
+    ],
+    "navAnomaly": null
+  },
+  {
+    "page": "Products",
+    "file": "products.html",
+    "viewport": "Mobile-375x812",
+    "width": 375,
+    "height": 812,
+    "passed": true,
+    "winWidth": 375,
+    "maxScroll": 375,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 22,
+    "smallTouchTargetsSample": [
+      {
+        "tag": "a",
+        "selector": "a.brand",
+        "width": 127,
+        "height": 32,
+        "text": "KSG\nK.S.G. Tools"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 35,
+        "height": 21,
+        "text": "Home"
+      },
+      {
+        "tag": "a",
+        "selector": "a.product-title-link",
+        "width": 222,
+        "height": 22,
+        "text": "2 Slot Wood Chipper Knive"
+      },
+      {
+        "tag": "a",
+        "selector": "a.product-title-link",
+        "width": 237,
+        "height": 22,
+        "text": "Stainless Steel Chipper K"
+      },
+      {
+        "tag": "a",
+        "selector": "a.product-title-link",
+        "width": 275,
+        "height": 22,
+        "text": "10 Inch Agriculture Chipp"
+      }
+    ],
+    "navAnomaly": null
+  },
+  {
+    "page": "Products",
+    "file": "products.html",
+    "viewport": "Mobile-390x844",
+    "width": 390,
+    "height": 844,
+    "passed": true,
+    "winWidth": 390,
+    "maxScroll": 390,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 25,
+    "smallTouchTargetsSample": [
+      {
+        "tag": "a",
+        "selector": "a.brand",
+        "width": 141,
+        "height": 36,
+        "text": "KSG\nK.S.G. Tools"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 35,
+        "height": 21,
+        "text": "Home"
+      },
+      {
+        "tag": "a",
+        "selector": "a.product-title-link",
+        "width": 279,
+        "height": 22,
+        "text": "4 inch Stainless Steel Ch"
+      },
+      {
+        "tag": "a",
+        "selector": "a.product-title-link",
+        "width": 222,
+        "height": 22,
+        "text": "2 Slot Wood Chipper Knive"
+      },
+      {
+        "tag": "a",
+        "selector": "a.product-title-link",
+        "width": 237,
+        "height": 22,
+        "text": "Stainless Steel Chipper K"
+      }
+    ],
+    "navAnomaly": null
+  },
+  {
+    "page": "Products",
+    "file": "products.html",
+    "viewport": "Mobile-414x896",
+    "width": 414,
+    "height": 896,
+    "passed": true,
+    "winWidth": 414,
+    "maxScroll": 414,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 27,
+    "smallTouchTargetsSample": [
+      {
+        "tag": "a",
+        "selector": "a.brand",
+        "width": 141,
+        "height": 36,
+        "text": "KSG\nK.S.G. Tools"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 35,
+        "height": 21,
+        "text": "Home"
+      },
+      {
+        "tag": "a",
+        "selector": "a.product-title-link",
+        "width": 279,
+        "height": 22,
+        "text": "4 inch Stainless Steel Ch"
+      },
+      {
+        "tag": "a",
+        "selector": "a.product-title-link",
+        "width": 222,
+        "height": 22,
+        "text": "2 Slot Wood Chipper Knive"
+      },
+      {
+        "tag": "a",
+        "selector": "a.product-title-link",
+        "width": 237,
+        "height": 22,
+        "text": "Stainless Steel Chipper K"
+      }
+    ],
+    "navAnomaly": null
+  },
+  {
+    "page": "Products",
+    "file": "products.html",
+    "viewport": "Mobile-430x932",
+    "width": 430,
+    "height": 932,
+    "passed": true,
+    "winWidth": 430,
+    "maxScroll": 430,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 27,
+    "smallTouchTargetsSample": [
+      {
+        "tag": "a",
+        "selector": "a.brand",
+        "width": 141,
+        "height": 36,
+        "text": "KSG\nK.S.G. Tools"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 35,
+        "height": 21,
+        "text": "Home"
+      },
+      {
+        "tag": "a",
+        "selector": "a.product-title-link",
+        "width": 279,
+        "height": 22,
+        "text": "4 inch Stainless Steel Ch"
+      },
+      {
+        "tag": "a",
+        "selector": "a.product-title-link",
+        "width": 222,
+        "height": 22,
+        "text": "2 Slot Wood Chipper Knive"
+      },
+      {
+        "tag": "a",
+        "selector": "a.product-title-link",
+        "width": 237,
+        "height": 22,
+        "text": "Stainless Steel Chipper K"
+      }
+    ],
+    "navAnomaly": null
+  },
+  {
+    "page": "Products",
+    "file": "products.html",
+    "viewport": "Mobile-568x320-L",
+    "width": 568,
+    "height": 320,
+    "passed": true,
+    "winWidth": 568,
+    "maxScroll": 568,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 29,
+    "smallTouchTargetsSample": [
+      {
+        "tag": "a",
+        "selector": "a.brand",
+        "width": 141,
+        "height": 36,
+        "text": "KSG\nK.S.G. Tools"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 35,
+        "height": 21,
+        "text": "Home"
+      },
+      {
+        "tag": "a",
+        "selector": "a.product-title-link",
+        "width": 279,
+        "height": 22,
+        "text": "4 inch Stainless Steel Ch"
+      },
+      {
+        "tag": "a",
+        "selector": "a.product-title-link",
+        "width": 222,
+        "height": 22,
+        "text": "2 Slot Wood Chipper Knive"
+      },
+      {
+        "tag": "a",
+        "selector": "a.product-title-link",
+        "width": 237,
+        "height": 22,
+        "text": "Stainless Steel Chipper K"
+      }
+    ],
+    "navAnomaly": null
+  },
+  {
+    "page": "Products",
+    "file": "products.html",
+    "viewport": "Mobile-844x390-L",
+    "width": 844,
+    "height": 390,
+    "passed": true,
+    "winWidth": 844,
+    "maxScroll": 844,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [
+      {
+        "tag": "div",
+        "selector": "div.catalog-tabs",
+        "right": 1941,
+        "width": 1915,
+        "overflow": 1097,
+        "textSnippet": "All Products 83 Chipper Knives 9 Sh"
+      },
+      {
+        "tag": "button",
+        "selector": "button.cat-tab",
+        "right": 1051,
+        "width": 223,
+        "overflow": 207,
+        "textSnippet": "Shredding Machine 12"
+      },
+      {
+        "tag": "svg",
+        "selector": "svg",
+        "right": 862,
+        "width": 16,
+        "overflow": 18,
+        "textSnippet": ""
+      },
+      {
+        "tag": "path",
+        "selector": "path",
+        "right": 861,
+        "width": 13,
+        "overflow": 17,
+        "textSnippet": ""
+      },
+      {
+        "tag": "span",
+        "selector": "span",
+        "right": 995,
+        "width": 125,
+        "overflow": 151,
+        "textSnippet": "Shredding Machine"
+      },
+      {
+        "tag": "span",
+        "selector": "span.cat-count",
+        "right": 1032,
+        "width": 29,
+        "overflow": 188,
+        "textSnippet": "12"
+      },
+      {
+        "tag": "button",
+        "selector": "button.cat-tab",
+        "right": 1247,
+        "width": 188,
+        "overflow": 403,
+        "textSnippet": "Grinder Blades 3"
+      },
+      {
+        "tag": "svg",
+        "selector": "svg",
+        "right": 1094,
+        "width": 16,
+        "overflow": 250,
+        "textSnippet": ""
+      }
+    ],
+    "smallTouchTargetsCount": 28,
+    "smallTouchTargetsSample": [
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 35,
+        "height": 21,
+        "text": "Home"
+      },
+      {
+        "tag": "select",
+        "selector": "select#catalog-sort-select.catalog-select",
+        "width": 189,
+        "height": 39,
+        "text": "Featured Order\nProduct Na"
+      },
+      {
+        "tag": "a",
+        "selector": "a.btn",
+        "width": 154,
+        "height": 39,
+        "text": "Download PDF"
+      },
+      {
+        "tag": "a",
+        "selector": "a.product-title-link",
+        "width": 279,
+        "height": 22,
+        "text": "4 inch Stainless Steel Ch"
+      },
+      {
+        "tag": "a",
+        "selector": "a.product-title-link",
+        "width": 222,
+        "height": 22,
+        "text": "2 Slot Wood Chipper Knive"
+      }
+    ],
+    "navAnomaly": null
+  },
+  {
+    "page": "Products",
+    "file": "products.html",
+    "viewport": "Tablet-600x960",
+    "width": 600,
+    "height": 960,
+    "passed": true,
+    "winWidth": 600,
+    "maxScroll": 600,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 29,
+    "smallTouchTargetsSample": [
+      {
+        "tag": "a",
+        "selector": "a.brand",
+        "width": 141,
+        "height": 36,
+        "text": "KSG\nK.S.G. Tools"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 35,
+        "height": 21,
+        "text": "Home"
+      },
+      {
+        "tag": "a",
+        "selector": "a.product-title-link",
+        "width": 279,
+        "height": 22,
+        "text": "4 inch Stainless Steel Ch"
+      },
+      {
+        "tag": "a",
+        "selector": "a.product-title-link",
+        "width": 222,
+        "height": 22,
+        "text": "2 Slot Wood Chipper Knive"
+      },
+      {
+        "tag": "a",
+        "selector": "a.product-title-link",
+        "width": 237,
+        "height": 22,
+        "text": "Stainless Steel Chipper K"
+      }
+    ],
+    "navAnomaly": null
+  },
+  {
+    "page": "Products",
+    "file": "products.html",
+    "viewport": "Tablet-768x1024",
+    "width": 768,
+    "height": 1024,
+    "passed": true,
+    "winWidth": 768,
+    "maxScroll": 768,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 0,
+    "smallTouchTargetsSample": [],
+    "navAnomaly": null
+  },
+  {
+    "page": "Products",
+    "file": "products.html",
+    "viewport": "Tablet-820x1180",
+    "width": 820,
+    "height": 1180,
+    "passed": true,
+    "winWidth": 820,
+    "maxScroll": 820,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [
+      {
+        "tag": "div",
+        "selector": "div.catalog-tabs",
+        "right": 1940,
+        "width": 1915,
+        "overflow": 1120,
+        "textSnippet": "All Products 83 Chipper Knives 9 Sh"
+      },
+      {
+        "tag": "button",
+        "selector": "button.cat-tab",
+        "right": 1050,
+        "width": 223,
+        "overflow": 230,
+        "textSnippet": "Shredding Machine 12"
+      },
+      {
+        "tag": "svg",
+        "selector": "svg",
+        "right": 862,
+        "width": 16,
+        "overflow": 42,
+        "textSnippet": ""
+      },
+      {
+        "tag": "path",
+        "selector": "path",
+        "right": 860,
+        "width": 13,
+        "overflow": 40,
+        "textSnippet": ""
+      },
+      {
+        "tag": "span",
+        "selector": "span",
+        "right": 994,
+        "width": 125,
+        "overflow": 174,
+        "textSnippet": "Shredding Machine"
+      },
+      {
+        "tag": "span",
+        "selector": "span.cat-count",
+        "right": 1031,
+        "width": 29,
+        "overflow": 211,
+        "textSnippet": "12"
+      },
+      {
+        "tag": "button",
+        "selector": "button.cat-tab",
+        "right": 1246,
+        "width": 188,
+        "overflow": 426,
+        "textSnippet": "Grinder Blades 3"
+      },
+      {
+        "tag": "svg",
+        "selector": "svg",
+        "right": 1093,
+        "width": 16,
+        "overflow": 273,
+        "textSnippet": ""
+      }
+    ],
+    "smallTouchTargetsCount": 0,
+    "smallTouchTargetsSample": [],
+    "navAnomaly": null
+  },
+  {
+    "page": "Products",
+    "file": "products.html",
+    "viewport": "Tablet-1024x768",
+    "width": 1024,
+    "height": 768,
+    "passed": true,
+    "winWidth": 1024,
+    "maxScroll": 1024,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [
+      {
+        "tag": "div",
+        "selector": "div.catalog-tabs",
+        "right": 1947,
+        "width": 1915,
+        "overflow": 923,
+        "textSnippet": "All Products 83 Chipper Knives 9 Sh"
+      },
+      {
+        "tag": "button",
+        "selector": "button.cat-tab",
+        "right": 1057,
+        "width": 223,
+        "overflow": 33,
+        "textSnippet": "Shredding Machine 12"
+      },
+      {
+        "tag": "span",
+        "selector": "span.cat-count",
+        "right": 1038,
+        "width": 29,
+        "overflow": 14,
+        "textSnippet": "12"
+      },
+      {
+        "tag": "button",
+        "selector": "button.cat-tab",
+        "right": 1253,
+        "width": 188,
+        "overflow": 229,
+        "textSnippet": "Grinder Blades 3"
+      },
+      {
+        "tag": "svg",
+        "selector": "svg",
+        "right": 1100,
+        "width": 16,
+        "overflow": 76,
+        "textSnippet": ""
+      },
+      {
+        "tag": "path",
+        "selector": "path",
+        "right": 1098,
+        "width": 12,
+        "overflow": 74,
+        "textSnippet": ""
+      },
+      {
+        "tag": "path",
+        "selector": "path",
+        "right": 1094,
+        "width": 3,
+        "overflow": 70,
+        "textSnippet": ""
+      },
+      {
+        "tag": "span",
+        "selector": "span",
+        "right": 1205,
+        "width": 97,
+        "overflow": 181,
+        "textSnippet": "Grinder Blades"
+      }
+    ],
+    "smallTouchTargetsCount": 0,
+    "smallTouchTargetsSample": [],
+    "navAnomaly": null
+  },
+  {
+    "page": "Products",
+    "file": "products.html",
+    "viewport": "Laptop-1280x720",
+    "width": 1280,
+    "height": 720,
+    "passed": true,
+    "winWidth": 1280,
+    "maxScroll": 1280,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [
+      {
+        "tag": "div",
+        "selector": "div.catalog-tabs",
+        "right": 1966,
+        "width": 1915,
+        "overflow": 686,
+        "textSnippet": "All Products 83 Chipper Knives 9 Sh"
+      },
+      {
+        "tag": "button",
+        "selector": "button.cat-tab",
+        "right": 1489,
+        "width": 208,
+        "overflow": 209,
+        "textSnippet": "Granulator Blades 3"
+      },
+      {
+        "tag": "svg",
+        "selector": "svg",
+        "right": 1316,
+        "width": 16,
+        "overflow": 36,
+        "textSnippet": ""
+      },
+      {
+        "tag": "path",
+        "selector": "path",
+        "right": 1308,
+        "width": 6,
+        "overflow": 28,
+        "textSnippet": ""
+      },
+      {
+        "tag": "path",
+        "selector": "path",
+        "right": 1310,
+        "width": 3,
+        "overflow": 30,
+        "textSnippet": ""
+      },
+      {
+        "tag": "path",
+        "selector": "path",
+        "right": 1314,
+        "width": 3,
+        "overflow": 34,
+        "textSnippet": ""
+      },
+      {
+        "tag": "path",
+        "selector": "path",
+        "right": 1314,
+        "width": 3,
+        "overflow": 34,
+        "textSnippet": ""
+      },
+      {
+        "tag": "span",
+        "selector": "span",
+        "right": 1441,
+        "width": 117,
+        "overflow": 161,
+        "textSnippet": "Granulator Blades"
+      }
+    ],
+    "smallTouchTargetsCount": 0,
+    "smallTouchTargetsSample": [],
+    "navAnomaly": null
+  },
+  {
+    "page": "Products",
+    "file": "products.html",
+    "viewport": "Laptop-1366x768",
+    "width": 1366,
+    "height": 768,
+    "passed": true,
+    "winWidth": 1366,
+    "maxScroll": 1366,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [
+      {
+        "tag": "div",
+        "selector": "div.catalog-tabs",
+        "right": 1998,
+        "width": 1915,
+        "overflow": 632,
+        "textSnippet": "All Products 83 Chipper Knives 9 Sh"
+      },
+      {
+        "tag": "button",
+        "selector": "button.cat-tab",
+        "right": 1521,
+        "width": 208,
+        "overflow": 155,
+        "textSnippet": "Granulator Blades 3"
+      },
+      {
+        "tag": "span",
+        "selector": "span",
+        "right": 1472,
+        "width": 117,
+        "overflow": 106,
+        "textSnippet": "Granulator Blades"
+      },
+      {
+        "tag": "span",
+        "selector": "span.cat-count",
+        "right": 1502,
+        "width": 21,
+        "overflow": 136,
+        "textSnippet": "3"
+      },
+      {
+        "tag": "button",
+        "selector": "button.cat-tab",
+        "right": 1773,
+        "width": 244,
+        "overflow": 407,
+        "textSnippet": "VMC Machine Job Work 7"
+      },
+      {
+        "tag": "svg",
+        "selector": "svg",
+        "right": 1564,
+        "width": 16,
+        "overflow": 198,
+        "textSnippet": ""
+      },
+      {
+        "tag": "path",
+        "selector": "path",
+        "right": 1562,
+        "width": 13,
+        "overflow": 196,
+        "textSnippet": ""
+      },
+      {
+        "tag": "span",
+        "selector": "span",
+        "right": 1725,
+        "width": 153,
+        "overflow": 359,
+        "textSnippet": "VMC Machine Job Work"
+      }
+    ],
+    "smallTouchTargetsCount": 0,
+    "smallTouchTargetsSample": [],
+    "navAnomaly": null
+  },
+  {
+    "page": "Products",
+    "file": "products.html",
+    "viewport": "Desktop-1440x900",
+    "width": 1440,
+    "height": 900,
+    "passed": true,
+    "winWidth": 1440,
+    "maxScroll": 1440,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [
+      {
+        "tag": "div",
+        "selector": "div.catalog-tabs",
+        "right": 2035,
+        "width": 1915,
+        "overflow": 595,
+        "textSnippet": "All Products 83 Chipper Knives 9 Sh"
+      },
+      {
+        "tag": "button",
+        "selector": "button.cat-tab",
+        "right": 1558,
+        "width": 208,
+        "overflow": 118,
+        "textSnippet": "Granulator Blades 3"
+      },
+      {
+        "tag": "span",
+        "selector": "span",
+        "right": 1509,
+        "width": 117,
+        "overflow": 69,
+        "textSnippet": "Granulator Blades"
+      },
+      {
+        "tag": "span",
+        "selector": "span.cat-count",
+        "right": 1539,
+        "width": 21,
+        "overflow": 99,
+        "textSnippet": "3"
+      },
+      {
+        "tag": "button",
+        "selector": "button.cat-tab",
+        "right": 1810,
+        "width": 244,
+        "overflow": 370,
+        "textSnippet": "VMC Machine Job Work 7"
+      },
+      {
+        "tag": "svg",
+        "selector": "svg",
+        "right": 1601,
+        "width": 16,
+        "overflow": 161,
+        "textSnippet": ""
+      },
+      {
+        "tag": "path",
+        "selector": "path",
+        "right": 1599,
+        "width": 13,
+        "overflow": 159,
+        "textSnippet": ""
+      },
+      {
+        "tag": "span",
+        "selector": "span",
+        "right": 1762,
+        "width": 153,
+        "overflow": 322,
+        "textSnippet": "VMC Machine Job Work"
+      }
+    ],
+    "smallTouchTargetsCount": 0,
+    "smallTouchTargetsSample": [],
+    "navAnomaly": null
+  },
+  {
+    "page": "Products",
+    "file": "products.html",
+    "viewport": "Desktop-1600x900",
+    "width": 1600,
+    "height": 900,
+    "passed": true,
+    "winWidth": 1600,
+    "maxScroll": 1600,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [
+      {
+        "tag": "div",
+        "selector": "div.catalog-tabs",
+        "right": 2115,
+        "width": 1915,
+        "overflow": 515,
+        "textSnippet": "All Products 83 Chipper Knives 9 Sh"
+      },
+      {
+        "tag": "button",
+        "selector": "button.cat-tab",
+        "right": 1638,
+        "width": 208,
+        "overflow": 38,
+        "textSnippet": "Granulator Blades 3"
+      },
+      {
+        "tag": "span",
+        "selector": "span.cat-count",
+        "right": 1619,
+        "width": 21,
+        "overflow": 19,
+        "textSnippet": "3"
+      },
+      {
+        "tag": "button",
+        "selector": "button.cat-tab",
+        "right": 1890,
+        "width": 244,
+        "overflow": 290,
+        "textSnippet": "VMC Machine Job Work 7"
+      },
+      {
+        "tag": "svg",
+        "selector": "svg",
+        "right": 1681,
+        "width": 16,
+        "overflow": 81,
+        "textSnippet": ""
+      },
+      {
+        "tag": "path",
+        "selector": "path",
+        "right": 1679,
+        "width": 13,
+        "overflow": 79,
+        "textSnippet": ""
+      },
+      {
+        "tag": "span",
+        "selector": "span",
+        "right": 1842,
+        "width": 153,
+        "overflow": 242,
+        "textSnippet": "VMC Machine Job Work"
+      },
+      {
+        "tag": "span",
+        "selector": "span.cat-count",
+        "right": 1871,
+        "width": 21,
+        "overflow": 271,
+        "textSnippet": "7"
+      }
+    ],
+    "smallTouchTargetsCount": 0,
+    "smallTouchTargetsSample": [],
+    "navAnomaly": null
+  },
+  {
+    "page": "Products",
+    "file": "products.html",
+    "viewport": "Desktop-1920x1080",
+    "width": 1920,
+    "height": 1080,
+    "passed": true,
+    "winWidth": 1920,
+    "maxScroll": 1920,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [
+      {
+        "tag": "div",
+        "selector": "div.catalog-tabs",
+        "right": 2275,
+        "width": 1915,
+        "overflow": 355,
+        "textSnippet": "All Products 83 Chipper Knives 9 Sh"
+      },
+      {
+        "tag": "button",
+        "selector": "button.cat-tab",
+        "right": 2050,
+        "width": 244,
+        "overflow": 130,
+        "textSnippet": "VMC Machine Job Work 7"
+      },
+      {
+        "tag": "span",
+        "selector": "span",
+        "right": 2002,
+        "width": 153,
+        "overflow": 82,
+        "textSnippet": "VMC Machine Job Work"
+      },
+      {
+        "tag": "span",
+        "selector": "span.cat-count",
+        "right": 2031,
+        "width": 21,
+        "overflow": 111,
+        "textSnippet": "7"
+      },
+      {
+        "tag": "button",
+        "selector": "button.cat-tab",
+        "right": 2275,
+        "width": 217,
+        "overflow": 355,
+        "textSnippet": "Chaff Cutter Blades 2"
+      },
+      {
+        "tag": "svg",
+        "selector": "svg",
+        "right": 2093,
+        "width": 16,
+        "overflow": 173,
+        "textSnippet": ""
+      },
+      {
+        "tag": "path",
+        "selector": "path",
+        "right": 2085,
+        "width": 3,
+        "overflow": 165,
+        "textSnippet": ""
+      },
+      {
+        "tag": "span",
+        "selector": "span",
+        "right": 2227,
+        "width": 126,
+        "overflow": 307,
+        "textSnippet": "Chaff Cutter Blades"
+      }
+    ],
+    "smallTouchTargetsCount": 0,
+    "smallTouchTargetsSample": [],
+    "navAnomaly": null
+  },
+  {
+    "page": "Product-Detail-1",
+    "file": "products/4-inch-stainless-steel-chipper-knife.html",
+    "viewport": "Mobile-320x568",
+    "width": 320,
+    "height": 568,
+    "passed": true,
+    "winWidth": 320,
+    "maxScroll": 320,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 14,
+    "smallTouchTargetsSample": [
+      {
+        "tag": "a",
+        "selector": "a.brand",
+        "width": 112,
+        "height": 28,
+        "text": "KSG\nK.S.G. Tools"
+      },
+      {
+        "tag": "button",
+        "selector": "button.burger",
+        "width": 38,
+        "height": 38,
+        "text": "☰"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 35,
+        "height": 17,
+        "text": "Home"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 51,
+        "height": 17,
+        "text": "Products"
+      },
+      {
+        "tag": "a",
+        "selector": "a.btn",
+        "width": 131,
+        "height": 34,
+        "text": "Watch Videos →"
+      }
+    ],
+    "navAnomaly": null
+  },
+  {
+    "page": "Product-Detail-1",
+    "file": "products/4-inch-stainless-steel-chipper-knife.html",
+    "viewport": "Mobile-360x800",
+    "width": 360,
+    "height": 800,
+    "passed": true,
+    "winWidth": 360,
+    "maxScroll": 360,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 13,
+    "smallTouchTargetsSample": [
+      {
+        "tag": "a",
+        "selector": "a.brand",
+        "width": 127,
+        "height": 32,
+        "text": "KSG\nK.S.G. Tools"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 35,
+        "height": 17,
+        "text": "Home"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 51,
+        "height": 17,
+        "text": "Products"
+      },
+      {
+        "tag": "a",
+        "selector": "a.btn",
+        "width": 131,
+        "height": 34,
+        "text": "Watch Videos →"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 37,
+        "height": 19,
+        "text": "Home"
+      }
+    ],
+    "navAnomaly": null
+  },
+  {
+    "page": "Product-Detail-1",
+    "file": "products/4-inch-stainless-steel-chipper-knife.html",
+    "viewport": "Mobile-375x812",
+    "width": 375,
+    "height": 812,
+    "passed": true,
+    "winWidth": 375,
+    "maxScroll": 375,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 13,
+    "smallTouchTargetsSample": [
+      {
+        "tag": "a",
+        "selector": "a.brand",
+        "width": 127,
+        "height": 32,
+        "text": "KSG\nK.S.G. Tools"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 35,
+        "height": 17,
+        "text": "Home"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 51,
+        "height": 17,
+        "text": "Products"
+      },
+      {
+        "tag": "a",
+        "selector": "a.btn",
+        "width": 131,
+        "height": 34,
+        "text": "Watch Videos →"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 37,
+        "height": 19,
+        "text": "Home"
+      }
+    ],
+    "navAnomaly": null
+  },
+  {
+    "page": "Product-Detail-1",
+    "file": "products/4-inch-stainless-steel-chipper-knife.html",
+    "viewport": "Mobile-390x844",
+    "width": 390,
+    "height": 844,
+    "passed": true,
+    "winWidth": 390,
+    "maxScroll": 390,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 13,
+    "smallTouchTargetsSample": [
+      {
+        "tag": "a",
+        "selector": "a.brand",
+        "width": 141,
+        "height": 36,
+        "text": "KSG\nK.S.G. Tools"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 35,
+        "height": 17,
+        "text": "Home"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 51,
+        "height": 17,
+        "text": "Products"
+      },
+      {
+        "tag": "a",
+        "selector": "a.btn",
+        "width": 131,
+        "height": 34,
+        "text": "Watch Videos →"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 37,
+        "height": 19,
+        "text": "Home"
+      }
+    ],
+    "navAnomaly": null
+  },
+  {
+    "page": "Product-Detail-1",
+    "file": "products/4-inch-stainless-steel-chipper-knife.html",
+    "viewport": "Mobile-414x896",
+    "width": 414,
+    "height": 896,
+    "passed": true,
+    "winWidth": 414,
+    "maxScroll": 414,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 13,
+    "smallTouchTargetsSample": [
+      {
+        "tag": "a",
+        "selector": "a.brand",
+        "width": 141,
+        "height": 36,
+        "text": "KSG\nK.S.G. Tools"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 35,
+        "height": 17,
+        "text": "Home"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 51,
+        "height": 17,
+        "text": "Products"
+      },
+      {
+        "tag": "a",
+        "selector": "a.btn",
+        "width": 131,
+        "height": 34,
+        "text": "Watch Videos →"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 37,
+        "height": 19,
+        "text": "Home"
+      }
+    ],
+    "navAnomaly": null
+  },
+  {
+    "page": "Product-Detail-1",
+    "file": "products/4-inch-stainless-steel-chipper-knife.html",
+    "viewport": "Mobile-430x932",
+    "width": 430,
+    "height": 932,
+    "passed": true,
+    "winWidth": 430,
+    "maxScroll": 430,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 13,
+    "smallTouchTargetsSample": [
+      {
+        "tag": "a",
+        "selector": "a.brand",
+        "width": 141,
+        "height": 36,
+        "text": "KSG\nK.S.G. Tools"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 35,
+        "height": 17,
+        "text": "Home"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 51,
+        "height": 17,
+        "text": "Products"
+      },
+      {
+        "tag": "a",
+        "selector": "a.btn",
+        "width": 131,
+        "height": 34,
+        "text": "Watch Videos →"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 37,
+        "height": 19,
+        "text": "Home"
+      }
+    ],
+    "navAnomaly": null
+  },
+  {
+    "page": "Product-Detail-1",
+    "file": "products/4-inch-stainless-steel-chipper-knife.html",
+    "viewport": "Mobile-568x320-L",
+    "width": 568,
+    "height": 320,
+    "passed": true,
+    "winWidth": 568,
+    "maxScroll": 568,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 13,
+    "smallTouchTargetsSample": [
+      {
+        "tag": "a",
+        "selector": "a.brand",
+        "width": 141,
+        "height": 36,
+        "text": "KSG\nK.S.G. Tools"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 35,
+        "height": 17,
+        "text": "Home"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 51,
+        "height": 17,
+        "text": "Products"
+      },
+      {
+        "tag": "a",
+        "selector": "a.btn",
+        "width": 131,
+        "height": 34,
+        "text": "Watch Videos →"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 37,
+        "height": 19,
+        "text": "Home"
+      }
+    ],
+    "navAnomaly": null
+  },
+  {
+    "page": "Product-Detail-1",
+    "file": "products/4-inch-stainless-steel-chipper-knife.html",
+    "viewport": "Mobile-844x390-L",
+    "width": 844,
+    "height": 390,
+    "passed": true,
+    "winWidth": 844,
+    "maxScroll": 844,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 12,
+    "smallTouchTargetsSample": [
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 35,
+        "height": 17,
+        "text": "Home"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 51,
+        "height": 17,
+        "text": "Products"
+      },
+      {
+        "tag": "a",
+        "selector": "a.btn",
+        "width": 131,
+        "height": 34,
+        "text": "Watch Videos →"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 37,
+        "height": 19,
+        "text": "Home"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 57,
+        "height": 19,
+        "text": "About Us"
+      }
+    ],
+    "navAnomaly": null
+  },
+  {
+    "page": "Product-Detail-1",
+    "file": "products/4-inch-stainless-steel-chipper-knife.html",
+    "viewport": "Tablet-600x960",
+    "width": 600,
+    "height": 960,
+    "passed": true,
+    "winWidth": 600,
+    "maxScroll": 600,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 13,
+    "smallTouchTargetsSample": [
+      {
+        "tag": "a",
+        "selector": "a.brand",
+        "width": 141,
+        "height": 36,
+        "text": "KSG\nK.S.G. Tools"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 35,
+        "height": 17,
+        "text": "Home"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 51,
+        "height": 17,
+        "text": "Products"
+      },
+      {
+        "tag": "a",
+        "selector": "a.btn",
+        "width": 131,
+        "height": 34,
+        "text": "Watch Videos →"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 37,
+        "height": 19,
+        "text": "Home"
+      }
+    ],
+    "navAnomaly": null
+  },
+  {
+    "page": "Product-Detail-1",
+    "file": "products/4-inch-stainless-steel-chipper-knife.html",
+    "viewport": "Tablet-768x1024",
+    "width": 768,
+    "height": 1024,
+    "passed": true,
+    "winWidth": 768,
+    "maxScroll": 768,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 0,
+    "smallTouchTargetsSample": [],
+    "navAnomaly": null
+  },
+  {
+    "page": "Product-Detail-1",
+    "file": "products/4-inch-stainless-steel-chipper-knife.html",
+    "viewport": "Tablet-820x1180",
+    "width": 820,
+    "height": 1180,
+    "passed": true,
+    "winWidth": 820,
+    "maxScroll": 820,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 0,
+    "smallTouchTargetsSample": [],
+    "navAnomaly": null
+  },
+  {
+    "page": "Product-Detail-1",
+    "file": "products/4-inch-stainless-steel-chipper-knife.html",
+    "viewport": "Tablet-1024x768",
+    "width": 1024,
+    "height": 768,
+    "passed": true,
+    "winWidth": 1024,
+    "maxScroll": 1024,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 0,
+    "smallTouchTargetsSample": [],
+    "navAnomaly": null
+  },
+  {
+    "page": "Product-Detail-1",
+    "file": "products/4-inch-stainless-steel-chipper-knife.html",
+    "viewport": "Laptop-1280x720",
+    "width": 1280,
+    "height": 720,
+    "passed": true,
+    "winWidth": 1280,
+    "maxScroll": 1280,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 0,
+    "smallTouchTargetsSample": [],
+    "navAnomaly": null
+  },
+  {
+    "page": "Product-Detail-1",
+    "file": "products/4-inch-stainless-steel-chipper-knife.html",
+    "viewport": "Laptop-1366x768",
+    "width": 1366,
+    "height": 768,
+    "passed": true,
+    "winWidth": 1366,
+    "maxScroll": 1366,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 0,
+    "smallTouchTargetsSample": [],
+    "navAnomaly": null
+  },
+  {
+    "page": "Product-Detail-1",
+    "file": "products/4-inch-stainless-steel-chipper-knife.html",
+    "viewport": "Desktop-1440x900",
+    "width": 1440,
+    "height": 900,
+    "passed": true,
+    "winWidth": 1440,
+    "maxScroll": 1440,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 0,
+    "smallTouchTargetsSample": [],
+    "navAnomaly": null
+  },
+  {
+    "page": "Product-Detail-1",
+    "file": "products/4-inch-stainless-steel-chipper-knife.html",
+    "viewport": "Desktop-1600x900",
+    "width": 1600,
+    "height": 900,
+    "passed": true,
+    "winWidth": 1600,
+    "maxScroll": 1600,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 0,
+    "smallTouchTargetsSample": [],
+    "navAnomaly": null
+  },
+  {
+    "page": "Product-Detail-1",
+    "file": "products/4-inch-stainless-steel-chipper-knife.html",
+    "viewport": "Desktop-1920x1080",
+    "width": 1920,
+    "height": 1080,
+    "passed": true,
+    "winWidth": 1920,
+    "maxScroll": 1920,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 0,
+    "smallTouchTargetsSample": [],
+    "navAnomaly": null
+  },
+  {
+    "page": "Product-Detail-2",
+    "file": "products/10-inch-double-shaft-shredder-knives.html",
+    "viewport": "Mobile-320x568",
+    "width": 320,
+    "height": 568,
+    "passed": true,
+    "winWidth": 320,
+    "maxScroll": 320,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 14,
+    "smallTouchTargetsSample": [
+      {
+        "tag": "a",
+        "selector": "a.brand",
+        "width": 112,
+        "height": 28,
+        "text": "KSG\nK.S.G. Tools"
+      },
+      {
+        "tag": "button",
+        "selector": "button.burger",
+        "width": 38,
+        "height": 38,
+        "text": "☰"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 35,
+        "height": 17,
+        "text": "Home"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 51,
+        "height": 17,
+        "text": "Products"
+      },
+      {
+        "tag": "a",
+        "selector": "a.btn",
+        "width": 131,
+        "height": 34,
+        "text": "Watch Videos →"
+      }
+    ],
+    "navAnomaly": null
+  },
+  {
+    "page": "Product-Detail-2",
+    "file": "products/10-inch-double-shaft-shredder-knives.html",
+    "viewport": "Mobile-360x800",
+    "width": 360,
+    "height": 800,
+    "passed": true,
+    "winWidth": 360,
+    "maxScroll": 360,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 13,
+    "smallTouchTargetsSample": [
+      {
+        "tag": "a",
+        "selector": "a.brand",
+        "width": 127,
+        "height": 32,
+        "text": "KSG\nK.S.G. Tools"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 35,
+        "height": 17,
+        "text": "Home"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 51,
+        "height": 17,
+        "text": "Products"
+      },
+      {
+        "tag": "a",
+        "selector": "a.btn",
+        "width": 131,
+        "height": 34,
+        "text": "Watch Videos →"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 37,
+        "height": 19,
+        "text": "Home"
+      }
+    ],
+    "navAnomaly": null
+  },
+  {
+    "page": "Product-Detail-2",
+    "file": "products/10-inch-double-shaft-shredder-knives.html",
+    "viewport": "Mobile-375x812",
+    "width": 375,
+    "height": 812,
+    "passed": true,
+    "winWidth": 375,
+    "maxScroll": 375,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 13,
+    "smallTouchTargetsSample": [
+      {
+        "tag": "a",
+        "selector": "a.brand",
+        "width": 127,
+        "height": 32,
+        "text": "KSG\nK.S.G. Tools"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 35,
+        "height": 17,
+        "text": "Home"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 51,
+        "height": 17,
+        "text": "Products"
+      },
+      {
+        "tag": "a",
+        "selector": "a.btn",
+        "width": 131,
+        "height": 34,
+        "text": "Watch Videos →"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 37,
+        "height": 19,
+        "text": "Home"
+      }
+    ],
+    "navAnomaly": null
+  },
+  {
+    "page": "Product-Detail-2",
+    "file": "products/10-inch-double-shaft-shredder-knives.html",
+    "viewport": "Mobile-390x844",
+    "width": 390,
+    "height": 844,
+    "passed": true,
+    "winWidth": 390,
+    "maxScroll": 390,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 13,
+    "smallTouchTargetsSample": [
+      {
+        "tag": "a",
+        "selector": "a.brand",
+        "width": 141,
+        "height": 36,
+        "text": "KSG\nK.S.G. Tools"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 35,
+        "height": 17,
+        "text": "Home"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 51,
+        "height": 17,
+        "text": "Products"
+      },
+      {
+        "tag": "a",
+        "selector": "a.btn",
+        "width": 131,
+        "height": 34,
+        "text": "Watch Videos →"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 37,
+        "height": 19,
+        "text": "Home"
+      }
+    ],
+    "navAnomaly": null
+  },
+  {
+    "page": "Product-Detail-2",
+    "file": "products/10-inch-double-shaft-shredder-knives.html",
+    "viewport": "Mobile-414x896",
+    "width": 414,
+    "height": 896,
+    "passed": true,
+    "winWidth": 414,
+    "maxScroll": 414,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 13,
+    "smallTouchTargetsSample": [
+      {
+        "tag": "a",
+        "selector": "a.brand",
+        "width": 141,
+        "height": 36,
+        "text": "KSG\nK.S.G. Tools"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 35,
+        "height": 17,
+        "text": "Home"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 51,
+        "height": 17,
+        "text": "Products"
+      },
+      {
+        "tag": "a",
+        "selector": "a.btn",
+        "width": 131,
+        "height": 34,
+        "text": "Watch Videos →"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 37,
+        "height": 19,
+        "text": "Home"
+      }
+    ],
+    "navAnomaly": null
+  },
+  {
+    "page": "Product-Detail-2",
+    "file": "products/10-inch-double-shaft-shredder-knives.html",
+    "viewport": "Mobile-430x932",
+    "width": 430,
+    "height": 932,
+    "passed": true,
+    "winWidth": 430,
+    "maxScroll": 430,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 13,
+    "smallTouchTargetsSample": [
+      {
+        "tag": "a",
+        "selector": "a.brand",
+        "width": 141,
+        "height": 36,
+        "text": "KSG\nK.S.G. Tools"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 35,
+        "height": 17,
+        "text": "Home"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 51,
+        "height": 17,
+        "text": "Products"
+      },
+      {
+        "tag": "a",
+        "selector": "a.btn",
+        "width": 131,
+        "height": 34,
+        "text": "Watch Videos →"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 37,
+        "height": 19,
+        "text": "Home"
+      }
+    ],
+    "navAnomaly": null
+  },
+  {
+    "page": "Product-Detail-2",
+    "file": "products/10-inch-double-shaft-shredder-knives.html",
+    "viewport": "Mobile-568x320-L",
+    "width": 568,
+    "height": 320,
+    "passed": true,
+    "winWidth": 568,
+    "maxScroll": 568,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 13,
+    "smallTouchTargetsSample": [
+      {
+        "tag": "a",
+        "selector": "a.brand",
+        "width": 141,
+        "height": 36,
+        "text": "KSG\nK.S.G. Tools"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 35,
+        "height": 17,
+        "text": "Home"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 51,
+        "height": 17,
+        "text": "Products"
+      },
+      {
+        "tag": "a",
+        "selector": "a.btn",
+        "width": 131,
+        "height": 34,
+        "text": "Watch Videos →"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 37,
+        "height": 19,
+        "text": "Home"
+      }
+    ],
+    "navAnomaly": null
+  },
+  {
+    "page": "Product-Detail-2",
+    "file": "products/10-inch-double-shaft-shredder-knives.html",
+    "viewport": "Mobile-844x390-L",
+    "width": 844,
+    "height": 390,
+    "passed": true,
+    "winWidth": 844,
+    "maxScroll": 844,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 12,
+    "smallTouchTargetsSample": [
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 35,
+        "height": 17,
+        "text": "Home"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 51,
+        "height": 17,
+        "text": "Products"
+      },
+      {
+        "tag": "a",
+        "selector": "a.btn",
+        "width": 131,
+        "height": 34,
+        "text": "Watch Videos →"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 37,
+        "height": 19,
+        "text": "Home"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 57,
+        "height": 19,
+        "text": "About Us"
+      }
+    ],
+    "navAnomaly": null
+  },
+  {
+    "page": "Product-Detail-2",
+    "file": "products/10-inch-double-shaft-shredder-knives.html",
+    "viewport": "Tablet-600x960",
+    "width": 600,
+    "height": 960,
+    "passed": true,
+    "winWidth": 600,
+    "maxScroll": 600,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 13,
+    "smallTouchTargetsSample": [
+      {
+        "tag": "a",
+        "selector": "a.brand",
+        "width": 141,
+        "height": 36,
+        "text": "KSG\nK.S.G. Tools"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 35,
+        "height": 17,
+        "text": "Home"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 51,
+        "height": 17,
+        "text": "Products"
+      },
+      {
+        "tag": "a",
+        "selector": "a.btn",
+        "width": 131,
+        "height": 34,
+        "text": "Watch Videos →"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 37,
+        "height": 19,
+        "text": "Home"
+      }
+    ],
+    "navAnomaly": null
+  },
+  {
+    "page": "Product-Detail-2",
+    "file": "products/10-inch-double-shaft-shredder-knives.html",
+    "viewport": "Tablet-768x1024",
+    "width": 768,
+    "height": 1024,
+    "passed": true,
+    "winWidth": 768,
+    "maxScroll": 768,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 0,
+    "smallTouchTargetsSample": [],
+    "navAnomaly": null
+  },
+  {
+    "page": "Product-Detail-2",
+    "file": "products/10-inch-double-shaft-shredder-knives.html",
+    "viewport": "Tablet-820x1180",
+    "width": 820,
+    "height": 1180,
+    "passed": true,
+    "winWidth": 820,
+    "maxScroll": 820,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 0,
+    "smallTouchTargetsSample": [],
+    "navAnomaly": null
+  },
+  {
+    "page": "Product-Detail-2",
+    "file": "products/10-inch-double-shaft-shredder-knives.html",
+    "viewport": "Tablet-1024x768",
+    "width": 1024,
+    "height": 768,
+    "passed": true,
+    "winWidth": 1024,
+    "maxScroll": 1024,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 0,
+    "smallTouchTargetsSample": [],
+    "navAnomaly": null
+  },
+  {
+    "page": "Product-Detail-2",
+    "file": "products/10-inch-double-shaft-shredder-knives.html",
+    "viewport": "Laptop-1280x720",
+    "width": 1280,
+    "height": 720,
+    "passed": true,
+    "winWidth": 1280,
+    "maxScroll": 1280,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 0,
+    "smallTouchTargetsSample": [],
+    "navAnomaly": null
+  },
+  {
+    "page": "Product-Detail-2",
+    "file": "products/10-inch-double-shaft-shredder-knives.html",
+    "viewport": "Laptop-1366x768",
+    "width": 1366,
+    "height": 768,
+    "passed": true,
+    "winWidth": 1366,
+    "maxScroll": 1366,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 0,
+    "smallTouchTargetsSample": [],
+    "navAnomaly": null
+  },
+  {
+    "page": "Product-Detail-2",
+    "file": "products/10-inch-double-shaft-shredder-knives.html",
+    "viewport": "Desktop-1440x900",
+    "width": 1440,
+    "height": 900,
+    "passed": true,
+    "winWidth": 1440,
+    "maxScroll": 1440,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 0,
+    "smallTouchTargetsSample": [],
+    "navAnomaly": null
+  },
+  {
+    "page": "Product-Detail-2",
+    "file": "products/10-inch-double-shaft-shredder-knives.html",
+    "viewport": "Desktop-1600x900",
+    "width": 1600,
+    "height": 900,
+    "passed": true,
+    "winWidth": 1600,
+    "maxScroll": 1600,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 0,
+    "smallTouchTargetsSample": [],
+    "navAnomaly": null
+  },
+  {
+    "page": "Product-Detail-2",
+    "file": "products/10-inch-double-shaft-shredder-knives.html",
+    "viewport": "Desktop-1920x1080",
+    "width": 1920,
+    "height": 1080,
+    "passed": true,
+    "winWidth": 1920,
+    "maxScroll": 1920,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 0,
+    "smallTouchTargetsSample": [],
+    "navAnomaly": null
+  },
+  {
+    "page": "Product-Detail-3",
+    "file": "products/vmc-job-work-with-material-with-4-axis.html",
+    "viewport": "Mobile-320x568",
+    "width": 320,
+    "height": 568,
+    "passed": true,
+    "winWidth": 320,
+    "maxScroll": 320,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 14,
+    "smallTouchTargetsSample": [
+      {
+        "tag": "a",
+        "selector": "a.brand",
+        "width": 112,
+        "height": 28,
+        "text": "KSG\nK.S.G. Tools"
+      },
+      {
+        "tag": "button",
+        "selector": "button.burger",
+        "width": 38,
+        "height": 38,
+        "text": "☰"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 35,
+        "height": 17,
+        "text": "Home"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 51,
+        "height": 17,
+        "text": "Products"
+      },
+      {
+        "tag": "a",
+        "selector": "a.btn",
+        "width": 131,
+        "height": 34,
+        "text": "Watch Videos →"
+      }
+    ],
+    "navAnomaly": null
+  },
+  {
+    "page": "Product-Detail-3",
+    "file": "products/vmc-job-work-with-material-with-4-axis.html",
+    "viewport": "Mobile-360x800",
+    "width": 360,
+    "height": 800,
+    "passed": true,
+    "winWidth": 360,
+    "maxScroll": 360,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 13,
+    "smallTouchTargetsSample": [
+      {
+        "tag": "a",
+        "selector": "a.brand",
+        "width": 127,
+        "height": 32,
+        "text": "KSG\nK.S.G. Tools"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 35,
+        "height": 17,
+        "text": "Home"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 51,
+        "height": 17,
+        "text": "Products"
+      },
+      {
+        "tag": "a",
+        "selector": "a.btn",
+        "width": 131,
+        "height": 34,
+        "text": "Watch Videos →"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 37,
+        "height": 19,
+        "text": "Home"
+      }
+    ],
+    "navAnomaly": null
+  },
+  {
+    "page": "Product-Detail-3",
+    "file": "products/vmc-job-work-with-material-with-4-axis.html",
+    "viewport": "Mobile-375x812",
+    "width": 375,
+    "height": 812,
+    "passed": true,
+    "winWidth": 375,
+    "maxScroll": 375,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 13,
+    "smallTouchTargetsSample": [
+      {
+        "tag": "a",
+        "selector": "a.brand",
+        "width": 127,
+        "height": 32,
+        "text": "KSG\nK.S.G. Tools"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 35,
+        "height": 17,
+        "text": "Home"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 51,
+        "height": 17,
+        "text": "Products"
+      },
+      {
+        "tag": "a",
+        "selector": "a.btn",
+        "width": 131,
+        "height": 34,
+        "text": "Watch Videos →"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 37,
+        "height": 19,
+        "text": "Home"
+      }
+    ],
+    "navAnomaly": null
+  },
+  {
+    "page": "Product-Detail-3",
+    "file": "products/vmc-job-work-with-material-with-4-axis.html",
+    "viewport": "Mobile-390x844",
+    "width": 390,
+    "height": 844,
+    "passed": true,
+    "winWidth": 390,
+    "maxScroll": 390,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 13,
+    "smallTouchTargetsSample": [
+      {
+        "tag": "a",
+        "selector": "a.brand",
+        "width": 141,
+        "height": 36,
+        "text": "KSG\nK.S.G. Tools"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 35,
+        "height": 17,
+        "text": "Home"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 51,
+        "height": 17,
+        "text": "Products"
+      },
+      {
+        "tag": "a",
+        "selector": "a.btn",
+        "width": 131,
+        "height": 34,
+        "text": "Watch Videos →"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 37,
+        "height": 19,
+        "text": "Home"
+      }
+    ],
+    "navAnomaly": null
+  },
+  {
+    "page": "Product-Detail-3",
+    "file": "products/vmc-job-work-with-material-with-4-axis.html",
+    "viewport": "Mobile-414x896",
+    "width": 414,
+    "height": 896,
+    "passed": true,
+    "winWidth": 414,
+    "maxScroll": 414,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 13,
+    "smallTouchTargetsSample": [
+      {
+        "tag": "a",
+        "selector": "a.brand",
+        "width": 141,
+        "height": 36,
+        "text": "KSG\nK.S.G. Tools"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 35,
+        "height": 17,
+        "text": "Home"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 51,
+        "height": 17,
+        "text": "Products"
+      },
+      {
+        "tag": "a",
+        "selector": "a.btn",
+        "width": 131,
+        "height": 34,
+        "text": "Watch Videos →"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 37,
+        "height": 19,
+        "text": "Home"
+      }
+    ],
+    "navAnomaly": null
+  },
+  {
+    "page": "Product-Detail-3",
+    "file": "products/vmc-job-work-with-material-with-4-axis.html",
+    "viewport": "Mobile-430x932",
+    "width": 430,
+    "height": 932,
+    "passed": true,
+    "winWidth": 430,
+    "maxScroll": 430,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 13,
+    "smallTouchTargetsSample": [
+      {
+        "tag": "a",
+        "selector": "a.brand",
+        "width": 141,
+        "height": 36,
+        "text": "KSG\nK.S.G. Tools"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 35,
+        "height": 17,
+        "text": "Home"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 51,
+        "height": 17,
+        "text": "Products"
+      },
+      {
+        "tag": "a",
+        "selector": "a.btn",
+        "width": 131,
+        "height": 34,
+        "text": "Watch Videos →"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 37,
+        "height": 19,
+        "text": "Home"
+      }
+    ],
+    "navAnomaly": null
+  },
+  {
+    "page": "Product-Detail-3",
+    "file": "products/vmc-job-work-with-material-with-4-axis.html",
+    "viewport": "Mobile-568x320-L",
+    "width": 568,
+    "height": 320,
+    "passed": true,
+    "winWidth": 568,
+    "maxScroll": 568,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 13,
+    "smallTouchTargetsSample": [
+      {
+        "tag": "a",
+        "selector": "a.brand",
+        "width": 141,
+        "height": 36,
+        "text": "KSG\nK.S.G. Tools"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 35,
+        "height": 17,
+        "text": "Home"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 51,
+        "height": 17,
+        "text": "Products"
+      },
+      {
+        "tag": "a",
+        "selector": "a.btn",
+        "width": 131,
+        "height": 34,
+        "text": "Watch Videos →"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 37,
+        "height": 19,
+        "text": "Home"
+      }
+    ],
+    "navAnomaly": null
+  },
+  {
+    "page": "Product-Detail-3",
+    "file": "products/vmc-job-work-with-material-with-4-axis.html",
+    "viewport": "Mobile-844x390-L",
+    "width": 844,
+    "height": 390,
+    "passed": true,
+    "winWidth": 844,
+    "maxScroll": 844,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 12,
+    "smallTouchTargetsSample": [
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 35,
+        "height": 17,
+        "text": "Home"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 51,
+        "height": 17,
+        "text": "Products"
+      },
+      {
+        "tag": "a",
+        "selector": "a.btn",
+        "width": 131,
+        "height": 34,
+        "text": "Watch Videos →"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 37,
+        "height": 19,
+        "text": "Home"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 57,
+        "height": 19,
+        "text": "About Us"
+      }
+    ],
+    "navAnomaly": null
+  },
+  {
+    "page": "Product-Detail-3",
+    "file": "products/vmc-job-work-with-material-with-4-axis.html",
+    "viewport": "Tablet-600x960",
+    "width": 600,
+    "height": 960,
+    "passed": true,
+    "winWidth": 600,
+    "maxScroll": 600,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 13,
+    "smallTouchTargetsSample": [
+      {
+        "tag": "a",
+        "selector": "a.brand",
+        "width": 141,
+        "height": 36,
+        "text": "KSG\nK.S.G. Tools"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 35,
+        "height": 17,
+        "text": "Home"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 51,
+        "height": 17,
+        "text": "Products"
+      },
+      {
+        "tag": "a",
+        "selector": "a.btn",
+        "width": 131,
+        "height": 34,
+        "text": "Watch Videos →"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 37,
+        "height": 19,
+        "text": "Home"
+      }
+    ],
+    "navAnomaly": null
+  },
+  {
+    "page": "Product-Detail-3",
+    "file": "products/vmc-job-work-with-material-with-4-axis.html",
+    "viewport": "Tablet-768x1024",
+    "width": 768,
+    "height": 1024,
+    "passed": true,
+    "winWidth": 768,
+    "maxScroll": 768,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 0,
+    "smallTouchTargetsSample": [],
+    "navAnomaly": null
+  },
+  {
+    "page": "Product-Detail-3",
+    "file": "products/vmc-job-work-with-material-with-4-axis.html",
+    "viewport": "Tablet-820x1180",
+    "width": 820,
+    "height": 1180,
+    "passed": true,
+    "winWidth": 820,
+    "maxScroll": 820,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 0,
+    "smallTouchTargetsSample": [],
+    "navAnomaly": null
+  },
+  {
+    "page": "Product-Detail-3",
+    "file": "products/vmc-job-work-with-material-with-4-axis.html",
+    "viewport": "Tablet-1024x768",
+    "width": 1024,
+    "height": 768,
+    "passed": true,
+    "winWidth": 1024,
+    "maxScroll": 1024,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 0,
+    "smallTouchTargetsSample": [],
+    "navAnomaly": null
+  },
+  {
+    "page": "Product-Detail-3",
+    "file": "products/vmc-job-work-with-material-with-4-axis.html",
+    "viewport": "Laptop-1280x720",
+    "width": 1280,
+    "height": 720,
+    "passed": true,
+    "winWidth": 1280,
+    "maxScroll": 1280,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 0,
+    "smallTouchTargetsSample": [],
+    "navAnomaly": null
+  },
+  {
+    "page": "Product-Detail-3",
+    "file": "products/vmc-job-work-with-material-with-4-axis.html",
+    "viewport": "Laptop-1366x768",
+    "width": 1366,
+    "height": 768,
+    "passed": true,
+    "winWidth": 1366,
+    "maxScroll": 1366,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 0,
+    "smallTouchTargetsSample": [],
+    "navAnomaly": null
+  },
+  {
+    "page": "Product-Detail-3",
+    "file": "products/vmc-job-work-with-material-with-4-axis.html",
+    "viewport": "Desktop-1440x900",
+    "width": 1440,
+    "height": 900,
+    "passed": true,
+    "winWidth": 1440,
+    "maxScroll": 1440,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 0,
+    "smallTouchTargetsSample": [],
+    "navAnomaly": null
+  },
+  {
+    "page": "Product-Detail-3",
+    "file": "products/vmc-job-work-with-material-with-4-axis.html",
+    "viewport": "Desktop-1600x900",
+    "width": 1600,
+    "height": 900,
+    "passed": true,
+    "winWidth": 1600,
+    "maxScroll": 1600,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 0,
+    "smallTouchTargetsSample": [],
+    "navAnomaly": null
+  },
+  {
+    "page": "Product-Detail-3",
+    "file": "products/vmc-job-work-with-material-with-4-axis.html",
+    "viewport": "Desktop-1920x1080",
+    "width": 1920,
+    "height": 1080,
+    "passed": true,
+    "winWidth": 1920,
+    "maxScroll": 1920,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 0,
+    "smallTouchTargetsSample": [],
+    "navAnomaly": null
+  },
+  {
+    "page": "Contact",
+    "file": "contact.html",
+    "viewport": "Mobile-320x568",
+    "width": 320,
+    "height": 568,
+    "passed": true,
+    "winWidth": 320,
+    "maxScroll": 320,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 12,
+    "smallTouchTargetsSample": [
+      {
+        "tag": "a",
+        "selector": "a.brand",
+        "width": 112,
+        "height": 28,
+        "text": "KSG\nK.S.G. Tools"
+      },
+      {
+        "tag": "button",
+        "selector": "button.burger",
+        "width": 38,
+        "height": 38,
+        "text": "☰"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 35,
+        "height": 21,
+        "text": "Home"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 37,
+        "height": 19,
+        "text": "Home"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 57,
+        "height": 19,
+        "text": "About Us"
+      }
+    ],
+    "navAnomaly": null
+  },
+  {
+    "page": "Contact",
+    "file": "contact.html",
+    "viewport": "Mobile-360x800",
+    "width": 360,
+    "height": 800,
+    "passed": true,
+    "winWidth": 360,
+    "maxScroll": 360,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 11,
+    "smallTouchTargetsSample": [
+      {
+        "tag": "a",
+        "selector": "a.brand",
+        "width": 127,
+        "height": 32,
+        "text": "KSG\nK.S.G. Tools"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 35,
+        "height": 21,
+        "text": "Home"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 37,
+        "height": 19,
+        "text": "Home"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 57,
+        "height": 19,
+        "text": "About Us"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 121,
+        "height": 19,
+        "text": "Products & Services"
+      }
+    ],
+    "navAnomaly": null
+  },
+  {
+    "page": "Contact",
+    "file": "contact.html",
+    "viewport": "Mobile-375x812",
+    "width": 375,
+    "height": 812,
+    "passed": true,
+    "winWidth": 375,
+    "maxScroll": 375,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 11,
+    "smallTouchTargetsSample": [
+      {
+        "tag": "a",
+        "selector": "a.brand",
+        "width": 127,
+        "height": 32,
+        "text": "KSG\nK.S.G. Tools"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 35,
+        "height": 21,
+        "text": "Home"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 37,
+        "height": 19,
+        "text": "Home"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 57,
+        "height": 19,
+        "text": "About Us"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 121,
+        "height": 19,
+        "text": "Products & Services"
+      }
+    ],
+    "navAnomaly": null
+  },
+  {
+    "page": "Contact",
+    "file": "contact.html",
+    "viewport": "Mobile-390x844",
+    "width": 390,
+    "height": 844,
+    "passed": true,
+    "winWidth": 390,
+    "maxScroll": 390,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 11,
+    "smallTouchTargetsSample": [
+      {
+        "tag": "a",
+        "selector": "a.brand",
+        "width": 141,
+        "height": 36,
+        "text": "KSG\nK.S.G. Tools"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 35,
+        "height": 21,
+        "text": "Home"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 37,
+        "height": 19,
+        "text": "Home"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 57,
+        "height": 19,
+        "text": "About Us"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 121,
+        "height": 19,
+        "text": "Products & Services"
+      }
+    ],
+    "navAnomaly": null
+  },
+  {
+    "page": "Contact",
+    "file": "contact.html",
+    "viewport": "Mobile-414x896",
+    "width": 414,
+    "height": 896,
+    "passed": true,
+    "winWidth": 414,
+    "maxScroll": 414,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 11,
+    "smallTouchTargetsSample": [
+      {
+        "tag": "a",
+        "selector": "a.brand",
+        "width": 141,
+        "height": 36,
+        "text": "KSG\nK.S.G. Tools"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 35,
+        "height": 21,
+        "text": "Home"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 37,
+        "height": 19,
+        "text": "Home"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 57,
+        "height": 19,
+        "text": "About Us"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 121,
+        "height": 19,
+        "text": "Products & Services"
+      }
+    ],
+    "navAnomaly": null
+  },
+  {
+    "page": "Contact",
+    "file": "contact.html",
+    "viewport": "Mobile-430x932",
+    "width": 430,
+    "height": 932,
+    "passed": true,
+    "winWidth": 430,
+    "maxScroll": 430,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 11,
+    "smallTouchTargetsSample": [
+      {
+        "tag": "a",
+        "selector": "a.brand",
+        "width": 141,
+        "height": 36,
+        "text": "KSG\nK.S.G. Tools"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 35,
+        "height": 21,
+        "text": "Home"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 37,
+        "height": 19,
+        "text": "Home"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 57,
+        "height": 19,
+        "text": "About Us"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 121,
+        "height": 19,
+        "text": "Products & Services"
+      }
+    ],
+    "navAnomaly": null
+  },
+  {
+    "page": "Contact",
+    "file": "contact.html",
+    "viewport": "Mobile-568x320-L",
+    "width": 568,
+    "height": 320,
+    "passed": true,
+    "winWidth": 568,
+    "maxScroll": 568,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 11,
+    "smallTouchTargetsSample": [
+      {
+        "tag": "a",
+        "selector": "a.brand",
+        "width": 141,
+        "height": 36,
+        "text": "KSG\nK.S.G. Tools"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 35,
+        "height": 21,
+        "text": "Home"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 37,
+        "height": 19,
+        "text": "Home"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 57,
+        "height": 19,
+        "text": "About Us"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 121,
+        "height": 19,
+        "text": "Products & Services"
+      }
+    ],
+    "navAnomaly": null
+  },
+  {
+    "page": "Contact",
+    "file": "contact.html",
+    "viewport": "Mobile-844x390-L",
+    "width": 844,
+    "height": 390,
+    "passed": true,
+    "winWidth": 844,
+    "maxScroll": 844,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 10,
+    "smallTouchTargetsSample": [
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 35,
+        "height": 21,
+        "text": "Home"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 37,
+        "height": 19,
+        "text": "Home"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 57,
+        "height": 19,
+        "text": "About Us"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 121,
+        "height": 19,
+        "text": "Products & Services"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 121,
+        "height": 19,
+        "text": "Manufacturing Area"
+      }
+    ],
+    "navAnomaly": null
+  },
+  {
+    "page": "Contact",
+    "file": "contact.html",
+    "viewport": "Tablet-600x960",
+    "width": 600,
+    "height": 960,
+    "passed": true,
+    "winWidth": 600,
+    "maxScroll": 600,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 11,
+    "smallTouchTargetsSample": [
+      {
+        "tag": "a",
+        "selector": "a.brand",
+        "width": 141,
+        "height": 36,
+        "text": "KSG\nK.S.G. Tools"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 35,
+        "height": 21,
+        "text": "Home"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 37,
+        "height": 19,
+        "text": "Home"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 57,
+        "height": 19,
+        "text": "About Us"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 121,
+        "height": 19,
+        "text": "Products & Services"
+      }
+    ],
+    "navAnomaly": null
+  },
+  {
+    "page": "Contact",
+    "file": "contact.html",
+    "viewport": "Tablet-768x1024",
+    "width": 768,
+    "height": 1024,
+    "passed": true,
+    "winWidth": 768,
+    "maxScroll": 768,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 0,
+    "smallTouchTargetsSample": [],
+    "navAnomaly": null
+  },
+  {
+    "page": "Contact",
+    "file": "contact.html",
+    "viewport": "Tablet-820x1180",
+    "width": 820,
+    "height": 1180,
+    "passed": true,
+    "winWidth": 820,
+    "maxScroll": 820,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 0,
+    "smallTouchTargetsSample": [],
+    "navAnomaly": null
+  },
+  {
+    "page": "Contact",
+    "file": "contact.html",
+    "viewport": "Tablet-1024x768",
+    "width": 1024,
+    "height": 768,
+    "passed": true,
+    "winWidth": 1024,
+    "maxScroll": 1024,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 0,
+    "smallTouchTargetsSample": [],
+    "navAnomaly": null
+  },
+  {
+    "page": "Contact",
+    "file": "contact.html",
+    "viewport": "Laptop-1280x720",
+    "width": 1280,
+    "height": 720,
+    "passed": true,
+    "winWidth": 1280,
+    "maxScroll": 1280,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 0,
+    "smallTouchTargetsSample": [],
+    "navAnomaly": null
+  },
+  {
+    "page": "Contact",
+    "file": "contact.html",
+    "viewport": "Laptop-1366x768",
+    "width": 1366,
+    "height": 768,
+    "passed": true,
+    "winWidth": 1366,
+    "maxScroll": 1366,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 0,
+    "smallTouchTargetsSample": [],
+    "navAnomaly": null
+  },
+  {
+    "page": "Contact",
+    "file": "contact.html",
+    "viewport": "Desktop-1440x900",
+    "width": 1440,
+    "height": 900,
+    "passed": true,
+    "winWidth": 1440,
+    "maxScroll": 1440,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 0,
+    "smallTouchTargetsSample": [],
+    "navAnomaly": null
+  },
+  {
+    "page": "Contact",
+    "file": "contact.html",
+    "viewport": "Desktop-1600x900",
+    "width": 1600,
+    "height": 900,
+    "passed": true,
+    "winWidth": 1600,
+    "maxScroll": 1600,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 0,
+    "smallTouchTargetsSample": [],
+    "navAnomaly": null
+  },
+  {
+    "page": "Contact",
+    "file": "contact.html",
+    "viewport": "Desktop-1920x1080",
+    "width": 1920,
+    "height": 1080,
+    "passed": true,
+    "winWidth": 1920,
+    "maxScroll": 1920,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 0,
+    "smallTouchTargetsSample": [],
+    "navAnomaly": null
+  },
+  {
+    "page": "Photos-Factory",
+    "file": "photos.html",
+    "viewport": "Mobile-320x568",
+    "width": 320,
+    "height": 568,
+    "passed": true,
+    "winWidth": 320,
+    "maxScroll": 320,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 18,
+    "smallTouchTargetsSample": [
+      {
+        "tag": "a",
+        "selector": "a.brand",
+        "width": 112,
+        "height": 28,
+        "text": "KSG\nK.S.G. Tools"
+      },
+      {
+        "tag": "button",
+        "selector": "button.burger",
+        "width": 38,
+        "height": 38,
+        "text": "☰"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 35,
+        "height": 21,
+        "text": "Home"
+      },
+      {
+        "tag": "button",
+        "selector": "button",
+        "width": 120,
+        "height": 36,
+        "text": "All Facilities"
+      },
+      {
+        "tag": "button",
+        "selector": "button",
+        "width": 142,
+        "height": 36,
+        "text": "VMC Machinery"
+      }
+    ],
+    "navAnomaly": null
+  },
+  {
+    "page": "Photos-Factory",
+    "file": "photos.html",
+    "viewport": "Mobile-360x800",
+    "width": 360,
+    "height": 800,
+    "passed": true,
+    "winWidth": 360,
+    "maxScroll": 360,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 17,
+    "smallTouchTargetsSample": [
+      {
+        "tag": "a",
+        "selector": "a.brand",
+        "width": 127,
+        "height": 32,
+        "text": "KSG\nK.S.G. Tools"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 35,
+        "height": 21,
+        "text": "Home"
+      },
+      {
+        "tag": "button",
+        "selector": "button",
+        "width": 120,
+        "height": 36,
+        "text": "All Facilities"
+      },
+      {
+        "tag": "button",
+        "selector": "button",
+        "width": 142,
+        "height": 36,
+        "text": "VMC Machinery"
+      },
+      {
+        "tag": "button",
+        "selector": "button",
+        "width": 200,
+        "height": 36,
+        "text": "Conventional Machining"
+      }
+    ],
+    "navAnomaly": null
+  },
+  {
+    "page": "Photos-Factory",
+    "file": "photos.html",
+    "viewport": "Mobile-375x812",
+    "width": 375,
+    "height": 812,
+    "passed": true,
+    "winWidth": 375,
+    "maxScroll": 375,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 17,
+    "smallTouchTargetsSample": [
+      {
+        "tag": "a",
+        "selector": "a.brand",
+        "width": 127,
+        "height": 32,
+        "text": "KSG\nK.S.G. Tools"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 35,
+        "height": 21,
+        "text": "Home"
+      },
+      {
+        "tag": "button",
+        "selector": "button",
+        "width": 120,
+        "height": 36,
+        "text": "All Facilities"
+      },
+      {
+        "tag": "button",
+        "selector": "button",
+        "width": 142,
+        "height": 36,
+        "text": "VMC Machinery"
+      },
+      {
+        "tag": "button",
+        "selector": "button",
+        "width": 200,
+        "height": 36,
+        "text": "Conventional Machining"
+      }
+    ],
+    "navAnomaly": null
+  },
+  {
+    "page": "Photos-Factory",
+    "file": "photos.html",
+    "viewport": "Mobile-390x844",
+    "width": 390,
+    "height": 844,
+    "passed": true,
+    "winWidth": 390,
+    "maxScroll": 390,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 17,
+    "smallTouchTargetsSample": [
+      {
+        "tag": "a",
+        "selector": "a.brand",
+        "width": 141,
+        "height": 36,
+        "text": "KSG\nK.S.G. Tools"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 35,
+        "height": 21,
+        "text": "Home"
+      },
+      {
+        "tag": "button",
+        "selector": "button",
+        "width": 120,
+        "height": 36,
+        "text": "All Facilities"
+      },
+      {
+        "tag": "button",
+        "selector": "button",
+        "width": 142,
+        "height": 36,
+        "text": "VMC Machinery"
+      },
+      {
+        "tag": "button",
+        "selector": "button",
+        "width": 200,
+        "height": 36,
+        "text": "Conventional Machining"
+      }
+    ],
+    "navAnomaly": null
+  },
+  {
+    "page": "Photos-Factory",
+    "file": "photos.html",
+    "viewport": "Mobile-414x896",
+    "width": 414,
+    "height": 896,
+    "passed": true,
+    "winWidth": 414,
+    "maxScroll": 414,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 17,
+    "smallTouchTargetsSample": [
+      {
+        "tag": "a",
+        "selector": "a.brand",
+        "width": 141,
+        "height": 36,
+        "text": "KSG\nK.S.G. Tools"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 35,
+        "height": 21,
+        "text": "Home"
+      },
+      {
+        "tag": "button",
+        "selector": "button",
+        "width": 120,
+        "height": 36,
+        "text": "All Facilities"
+      },
+      {
+        "tag": "button",
+        "selector": "button",
+        "width": 142,
+        "height": 36,
+        "text": "VMC Machinery"
+      },
+      {
+        "tag": "button",
+        "selector": "button",
+        "width": 200,
+        "height": 36,
+        "text": "Conventional Machining"
+      }
+    ],
+    "navAnomaly": null
+  },
+  {
+    "page": "Photos-Factory",
+    "file": "photos.html",
+    "viewport": "Mobile-430x932",
+    "width": 430,
+    "height": 932,
+    "passed": true,
+    "winWidth": 430,
+    "maxScroll": 430,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 17,
+    "smallTouchTargetsSample": [
+      {
+        "tag": "a",
+        "selector": "a.brand",
+        "width": 141,
+        "height": 36,
+        "text": "KSG\nK.S.G. Tools"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 35,
+        "height": 21,
+        "text": "Home"
+      },
+      {
+        "tag": "button",
+        "selector": "button",
+        "width": 120,
+        "height": 36,
+        "text": "All Facilities"
+      },
+      {
+        "tag": "button",
+        "selector": "button",
+        "width": 142,
+        "height": 36,
+        "text": "VMC Machinery"
+      },
+      {
+        "tag": "button",
+        "selector": "button",
+        "width": 200,
+        "height": 36,
+        "text": "Conventional Machining"
+      }
+    ],
+    "navAnomaly": null
+  },
+  {
+    "page": "Photos-Factory",
+    "file": "photos.html",
+    "viewport": "Mobile-568x320-L",
+    "width": 568,
+    "height": 320,
+    "passed": true,
+    "winWidth": 568,
+    "maxScroll": 568,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 17,
+    "smallTouchTargetsSample": [
+      {
+        "tag": "a",
+        "selector": "a.brand",
+        "width": 141,
+        "height": 36,
+        "text": "KSG\nK.S.G. Tools"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 35,
+        "height": 21,
+        "text": "Home"
+      },
+      {
+        "tag": "button",
+        "selector": "button",
+        "width": 120,
+        "height": 36,
+        "text": "All Facilities"
+      },
+      {
+        "tag": "button",
+        "selector": "button",
+        "width": 142,
+        "height": 36,
+        "text": "VMC Machinery"
+      },
+      {
+        "tag": "button",
+        "selector": "button",
+        "width": 200,
+        "height": 36,
+        "text": "Conventional Machining"
+      }
+    ],
+    "navAnomaly": null
+  },
+  {
+    "page": "Photos-Factory",
+    "file": "photos.html",
+    "viewport": "Mobile-844x390-L",
+    "width": 844,
+    "height": 390,
+    "passed": true,
+    "winWidth": 844,
+    "maxScroll": 844,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 16,
+    "smallTouchTargetsSample": [
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 35,
+        "height": 21,
+        "text": "Home"
+      },
+      {
+        "tag": "button",
+        "selector": "button",
+        "width": 120,
+        "height": 36,
+        "text": "All Facilities"
+      },
+      {
+        "tag": "button",
+        "selector": "button",
+        "width": 142,
+        "height": 36,
+        "text": "VMC Machinery"
+      },
+      {
+        "tag": "button",
+        "selector": "button",
+        "width": 200,
+        "height": 36,
+        "text": "Conventional Machining"
+      },
+      {
+        "tag": "button",
+        "selector": "button",
+        "width": 177,
+        "height": 36,
+        "text": "Pneumatics & Power"
+      }
+    ],
+    "navAnomaly": null
+  },
+  {
+    "page": "Photos-Factory",
+    "file": "photos.html",
+    "viewport": "Tablet-600x960",
+    "width": 600,
+    "height": 960,
+    "passed": true,
+    "winWidth": 600,
+    "maxScroll": 600,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 17,
+    "smallTouchTargetsSample": [
+      {
+        "tag": "a",
+        "selector": "a.brand",
+        "width": 141,
+        "height": 36,
+        "text": "KSG\nK.S.G. Tools"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 35,
+        "height": 21,
+        "text": "Home"
+      },
+      {
+        "tag": "button",
+        "selector": "button",
+        "width": 120,
+        "height": 36,
+        "text": "All Facilities"
+      },
+      {
+        "tag": "button",
+        "selector": "button",
+        "width": 142,
+        "height": 36,
+        "text": "VMC Machinery"
+      },
+      {
+        "tag": "button",
+        "selector": "button",
+        "width": 200,
+        "height": 36,
+        "text": "Conventional Machining"
+      }
+    ],
+    "navAnomaly": null
+  },
+  {
+    "page": "Photos-Factory",
+    "file": "photos.html",
+    "viewport": "Tablet-768x1024",
+    "width": 768,
+    "height": 1024,
+    "passed": true,
+    "winWidth": 768,
+    "maxScroll": 768,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 0,
+    "smallTouchTargetsSample": [],
+    "navAnomaly": null
+  },
+  {
+    "page": "Photos-Factory",
+    "file": "photos.html",
+    "viewport": "Tablet-820x1180",
+    "width": 820,
+    "height": 1180,
+    "passed": true,
+    "winWidth": 820,
+    "maxScroll": 820,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 0,
+    "smallTouchTargetsSample": [],
+    "navAnomaly": null
+  },
+  {
+    "page": "Photos-Factory",
+    "file": "photos.html",
+    "viewport": "Tablet-1024x768",
+    "width": 1024,
+    "height": 768,
+    "passed": true,
+    "winWidth": 1024,
+    "maxScroll": 1024,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 0,
+    "smallTouchTargetsSample": [],
+    "navAnomaly": null
+  },
+  {
+    "page": "Photos-Factory",
+    "file": "photos.html",
+    "viewport": "Laptop-1280x720",
+    "width": 1280,
+    "height": 720,
+    "passed": true,
+    "winWidth": 1280,
+    "maxScroll": 1280,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 0,
+    "smallTouchTargetsSample": [],
+    "navAnomaly": null
+  },
+  {
+    "page": "Photos-Factory",
+    "file": "photos.html",
+    "viewport": "Laptop-1366x768",
+    "width": 1366,
+    "height": 768,
+    "passed": true,
+    "winWidth": 1366,
+    "maxScroll": 1366,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 0,
+    "smallTouchTargetsSample": [],
+    "navAnomaly": null
+  },
+  {
+    "page": "Photos-Factory",
+    "file": "photos.html",
+    "viewport": "Desktop-1440x900",
+    "width": 1440,
+    "height": 900,
+    "passed": true,
+    "winWidth": 1440,
+    "maxScroll": 1440,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 0,
+    "smallTouchTargetsSample": [],
+    "navAnomaly": null
+  },
+  {
+    "page": "Photos-Factory",
+    "file": "photos.html",
+    "viewport": "Desktop-1600x900",
+    "width": 1600,
+    "height": 900,
+    "passed": true,
+    "winWidth": 1600,
+    "maxScroll": 1600,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 0,
+    "smallTouchTargetsSample": [],
+    "navAnomaly": null
+  },
+  {
+    "page": "Photos-Factory",
+    "file": "photos.html",
+    "viewport": "Desktop-1920x1080",
+    "width": 1920,
+    "height": 1080,
+    "passed": true,
+    "winWidth": 1920,
+    "maxScroll": 1920,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 0,
+    "smallTouchTargetsSample": [],
+    "navAnomaly": null
+  },
+  {
+    "page": "Videos",
+    "file": "videos.html",
+    "viewport": "Mobile-320x568",
+    "width": 320,
+    "height": 568,
+    "passed": true,
+    "winWidth": 320,
+    "maxScroll": 320,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 12,
+    "smallTouchTargetsSample": [
+      {
+        "tag": "a",
+        "selector": "a.brand",
+        "width": 112,
+        "height": 28,
+        "text": "KSG\nK.S.G. Tools"
+      },
+      {
+        "tag": "button",
+        "selector": "button.burger",
+        "width": 38,
+        "height": 38,
+        "text": "☰"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 35,
+        "height": 21,
+        "text": "Home"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 37,
+        "height": 19,
+        "text": "Home"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 57,
+        "height": 19,
+        "text": "About Us"
+      }
+    ],
+    "navAnomaly": null
+  },
+  {
+    "page": "Videos",
+    "file": "videos.html",
+    "viewport": "Mobile-360x800",
+    "width": 360,
+    "height": 800,
+    "passed": true,
+    "winWidth": 360,
+    "maxScroll": 360,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 11,
+    "smallTouchTargetsSample": [
+      {
+        "tag": "a",
+        "selector": "a.brand",
+        "width": 127,
+        "height": 32,
+        "text": "KSG\nK.S.G. Tools"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 35,
+        "height": 21,
+        "text": "Home"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 37,
+        "height": 19,
+        "text": "Home"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 57,
+        "height": 19,
+        "text": "About Us"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 121,
+        "height": 19,
+        "text": "Products & Services"
+      }
+    ],
+    "navAnomaly": null
+  },
+  {
+    "page": "Videos",
+    "file": "videos.html",
+    "viewport": "Mobile-375x812",
+    "width": 375,
+    "height": 812,
+    "passed": true,
+    "winWidth": 375,
+    "maxScroll": 375,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 11,
+    "smallTouchTargetsSample": [
+      {
+        "tag": "a",
+        "selector": "a.brand",
+        "width": 127,
+        "height": 32,
+        "text": "KSG\nK.S.G. Tools"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 35,
+        "height": 21,
+        "text": "Home"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 37,
+        "height": 19,
+        "text": "Home"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 57,
+        "height": 19,
+        "text": "About Us"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 121,
+        "height": 19,
+        "text": "Products & Services"
+      }
+    ],
+    "navAnomaly": null
+  },
+  {
+    "page": "Videos",
+    "file": "videos.html",
+    "viewport": "Mobile-390x844",
+    "width": 390,
+    "height": 844,
+    "passed": true,
+    "winWidth": 390,
+    "maxScroll": 390,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 11,
+    "smallTouchTargetsSample": [
+      {
+        "tag": "a",
+        "selector": "a.brand",
+        "width": 141,
+        "height": 36,
+        "text": "KSG\nK.S.G. Tools"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 35,
+        "height": 21,
+        "text": "Home"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 37,
+        "height": 19,
+        "text": "Home"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 57,
+        "height": 19,
+        "text": "About Us"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 121,
+        "height": 19,
+        "text": "Products & Services"
+      }
+    ],
+    "navAnomaly": null
+  },
+  {
+    "page": "Videos",
+    "file": "videos.html",
+    "viewport": "Mobile-414x896",
+    "width": 414,
+    "height": 896,
+    "passed": true,
+    "winWidth": 414,
+    "maxScroll": 414,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 11,
+    "smallTouchTargetsSample": [
+      {
+        "tag": "a",
+        "selector": "a.brand",
+        "width": 141,
+        "height": 36,
+        "text": "KSG\nK.S.G. Tools"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 35,
+        "height": 21,
+        "text": "Home"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 37,
+        "height": 19,
+        "text": "Home"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 57,
+        "height": 19,
+        "text": "About Us"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 121,
+        "height": 19,
+        "text": "Products & Services"
+      }
+    ],
+    "navAnomaly": null
+  },
+  {
+    "page": "Videos",
+    "file": "videos.html",
+    "viewport": "Mobile-430x932",
+    "width": 430,
+    "height": 932,
+    "passed": true,
+    "winWidth": 430,
+    "maxScroll": 430,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 11,
+    "smallTouchTargetsSample": [
+      {
+        "tag": "a",
+        "selector": "a.brand",
+        "width": 141,
+        "height": 36,
+        "text": "KSG\nK.S.G. Tools"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 35,
+        "height": 21,
+        "text": "Home"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 37,
+        "height": 19,
+        "text": "Home"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 57,
+        "height": 19,
+        "text": "About Us"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 121,
+        "height": 19,
+        "text": "Products & Services"
+      }
+    ],
+    "navAnomaly": null
+  },
+  {
+    "page": "Videos",
+    "file": "videos.html",
+    "viewport": "Mobile-568x320-L",
+    "width": 568,
+    "height": 320,
+    "passed": true,
+    "winWidth": 568,
+    "maxScroll": 568,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 11,
+    "smallTouchTargetsSample": [
+      {
+        "tag": "a",
+        "selector": "a.brand",
+        "width": 141,
+        "height": 36,
+        "text": "KSG\nK.S.G. Tools"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 35,
+        "height": 21,
+        "text": "Home"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 37,
+        "height": 19,
+        "text": "Home"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 57,
+        "height": 19,
+        "text": "About Us"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 121,
+        "height": 19,
+        "text": "Products & Services"
+      }
+    ],
+    "navAnomaly": null
+  },
+  {
+    "page": "Videos",
+    "file": "videos.html",
+    "viewport": "Mobile-844x390-L",
+    "width": 844,
+    "height": 390,
+    "passed": true,
+    "winWidth": 844,
+    "maxScroll": 844,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 10,
+    "smallTouchTargetsSample": [
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 35,
+        "height": 21,
+        "text": "Home"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 37,
+        "height": 19,
+        "text": "Home"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 57,
+        "height": 19,
+        "text": "About Us"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 121,
+        "height": 19,
+        "text": "Products & Services"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 121,
+        "height": 19,
+        "text": "Manufacturing Area"
+      }
+    ],
+    "navAnomaly": null
+  },
+  {
+    "page": "Videos",
+    "file": "videos.html",
+    "viewport": "Tablet-600x960",
+    "width": 600,
+    "height": 960,
+    "passed": true,
+    "winWidth": 600,
+    "maxScroll": 600,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 11,
+    "smallTouchTargetsSample": [
+      {
+        "tag": "a",
+        "selector": "a.brand",
+        "width": 141,
+        "height": 36,
+        "text": "KSG\nK.S.G. Tools"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 35,
+        "height": 21,
+        "text": "Home"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 37,
+        "height": 19,
+        "text": "Home"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 57,
+        "height": 19,
+        "text": "About Us"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 121,
+        "height": 19,
+        "text": "Products & Services"
+      }
+    ],
+    "navAnomaly": null
+  },
+  {
+    "page": "Videos",
+    "file": "videos.html",
+    "viewport": "Tablet-768x1024",
+    "width": 768,
+    "height": 1024,
+    "passed": true,
+    "winWidth": 768,
+    "maxScroll": 768,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 0,
+    "smallTouchTargetsSample": [],
+    "navAnomaly": null
+  },
+  {
+    "page": "Videos",
+    "file": "videos.html",
+    "viewport": "Tablet-820x1180",
+    "width": 820,
+    "height": 1180,
+    "passed": true,
+    "winWidth": 820,
+    "maxScroll": 820,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 0,
+    "smallTouchTargetsSample": [],
+    "navAnomaly": null
+  },
+  {
+    "page": "Videos",
+    "file": "videos.html",
+    "viewport": "Tablet-1024x768",
+    "width": 1024,
+    "height": 768,
+    "passed": true,
+    "winWidth": 1024,
+    "maxScroll": 1024,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 0,
+    "smallTouchTargetsSample": [],
+    "navAnomaly": null
+  },
+  {
+    "page": "Videos",
+    "file": "videos.html",
+    "viewport": "Laptop-1280x720",
+    "width": 1280,
+    "height": 720,
+    "passed": true,
+    "winWidth": 1280,
+    "maxScroll": 1280,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 0,
+    "smallTouchTargetsSample": [],
+    "navAnomaly": null
+  },
+  {
+    "page": "Videos",
+    "file": "videos.html",
+    "viewport": "Laptop-1366x768",
+    "width": 1366,
+    "height": 768,
+    "passed": true,
+    "winWidth": 1366,
+    "maxScroll": 1366,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 0,
+    "smallTouchTargetsSample": [],
+    "navAnomaly": null
+  },
+  {
+    "page": "Videos",
+    "file": "videos.html",
+    "viewport": "Desktop-1440x900",
+    "width": 1440,
+    "height": 900,
+    "passed": true,
+    "winWidth": 1440,
+    "maxScroll": 1440,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 0,
+    "smallTouchTargetsSample": [],
+    "navAnomaly": null
+  },
+  {
+    "page": "Videos",
+    "file": "videos.html",
+    "viewport": "Desktop-1600x900",
+    "width": 1600,
+    "height": 900,
+    "passed": true,
+    "winWidth": 1600,
+    "maxScroll": 1600,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 0,
+    "smallTouchTargetsSample": [],
+    "navAnomaly": null
+  },
+  {
+    "page": "Videos",
+    "file": "videos.html",
+    "viewport": "Desktop-1920x1080",
+    "width": 1920,
+    "height": 1080,
+    "passed": true,
+    "winWidth": 1920,
+    "maxScroll": 1920,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 0,
+    "smallTouchTargetsSample": [],
+    "navAnomaly": null
+  },
+  {
+    "page": "404-NotFound",
+    "file": "_not-found.html",
+    "viewport": "Mobile-320x568",
+    "width": 320,
+    "height": 568,
+    "passed": true,
+    "winWidth": 320,
+    "maxScroll": 320,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 11,
+    "smallTouchTargetsSample": [
+      {
+        "tag": "a",
+        "selector": "a.brand",
+        "width": 112,
+        "height": 28,
+        "text": "KSG\nK.S.G. Tools"
+      },
+      {
+        "tag": "button",
+        "selector": "button.burger",
+        "width": 38,
+        "height": 38,
+        "text": "☰"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 37,
+        "height": 19,
+        "text": "Home"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 57,
+        "height": 19,
+        "text": "About Us"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 121,
+        "height": 19,
+        "text": "Products & Services"
+      }
+    ],
+    "navAnomaly": null
+  },
+  {
+    "page": "404-NotFound",
+    "file": "_not-found.html",
+    "viewport": "Mobile-360x800",
+    "width": 360,
+    "height": 800,
+    "passed": true,
+    "winWidth": 360,
+    "maxScroll": 360,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 10,
+    "smallTouchTargetsSample": [
+      {
+        "tag": "a",
+        "selector": "a.brand",
+        "width": 127,
+        "height": 32,
+        "text": "KSG\nK.S.G. Tools"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 37,
+        "height": 19,
+        "text": "Home"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 57,
+        "height": 19,
+        "text": "About Us"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 121,
+        "height": 19,
+        "text": "Products & Services"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 121,
+        "height": 19,
+        "text": "Manufacturing Area"
+      }
+    ],
+    "navAnomaly": null
+  },
+  {
+    "page": "404-NotFound",
+    "file": "_not-found.html",
+    "viewport": "Mobile-375x812",
+    "width": 375,
+    "height": 812,
+    "passed": true,
+    "winWidth": 375,
+    "maxScroll": 375,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 10,
+    "smallTouchTargetsSample": [
+      {
+        "tag": "a",
+        "selector": "a.brand",
+        "width": 127,
+        "height": 32,
+        "text": "KSG\nK.S.G. Tools"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 37,
+        "height": 19,
+        "text": "Home"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 57,
+        "height": 19,
+        "text": "About Us"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 121,
+        "height": 19,
+        "text": "Products & Services"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 121,
+        "height": 19,
+        "text": "Manufacturing Area"
+      }
+    ],
+    "navAnomaly": null
+  },
+  {
+    "page": "404-NotFound",
+    "file": "_not-found.html",
+    "viewport": "Mobile-390x844",
+    "width": 390,
+    "height": 844,
+    "passed": true,
+    "winWidth": 390,
+    "maxScroll": 390,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 10,
+    "smallTouchTargetsSample": [
+      {
+        "tag": "a",
+        "selector": "a.brand",
+        "width": 141,
+        "height": 36,
+        "text": "KSG\nK.S.G. Tools"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 37,
+        "height": 19,
+        "text": "Home"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 57,
+        "height": 19,
+        "text": "About Us"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 121,
+        "height": 19,
+        "text": "Products & Services"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 121,
+        "height": 19,
+        "text": "Manufacturing Area"
+      }
+    ],
+    "navAnomaly": null
+  },
+  {
+    "page": "404-NotFound",
+    "file": "_not-found.html",
+    "viewport": "Mobile-414x896",
+    "width": 414,
+    "height": 896,
+    "passed": true,
+    "winWidth": 414,
+    "maxScroll": 414,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 10,
+    "smallTouchTargetsSample": [
+      {
+        "tag": "a",
+        "selector": "a.brand",
+        "width": 141,
+        "height": 36,
+        "text": "KSG\nK.S.G. Tools"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 37,
+        "height": 19,
+        "text": "Home"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 57,
+        "height": 19,
+        "text": "About Us"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 121,
+        "height": 19,
+        "text": "Products & Services"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 121,
+        "height": 19,
+        "text": "Manufacturing Area"
+      }
+    ],
+    "navAnomaly": null
+  },
+  {
+    "page": "404-NotFound",
+    "file": "_not-found.html",
+    "viewport": "Mobile-430x932",
+    "width": 430,
+    "height": 932,
+    "passed": true,
+    "winWidth": 430,
+    "maxScroll": 430,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 10,
+    "smallTouchTargetsSample": [
+      {
+        "tag": "a",
+        "selector": "a.brand",
+        "width": 141,
+        "height": 36,
+        "text": "KSG\nK.S.G. Tools"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 37,
+        "height": 19,
+        "text": "Home"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 57,
+        "height": 19,
+        "text": "About Us"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 121,
+        "height": 19,
+        "text": "Products & Services"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 121,
+        "height": 19,
+        "text": "Manufacturing Area"
+      }
+    ],
+    "navAnomaly": null
+  },
+  {
+    "page": "404-NotFound",
+    "file": "_not-found.html",
+    "viewport": "Mobile-568x320-L",
+    "width": 568,
+    "height": 320,
+    "passed": true,
+    "winWidth": 568,
+    "maxScroll": 568,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 10,
+    "smallTouchTargetsSample": [
+      {
+        "tag": "a",
+        "selector": "a.brand",
+        "width": 141,
+        "height": 36,
+        "text": "KSG\nK.S.G. Tools"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 37,
+        "height": 19,
+        "text": "Home"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 57,
+        "height": 19,
+        "text": "About Us"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 121,
+        "height": 19,
+        "text": "Products & Services"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 121,
+        "height": 19,
+        "text": "Manufacturing Area"
+      }
+    ],
+    "navAnomaly": null
+  },
+  {
+    "page": "404-NotFound",
+    "file": "_not-found.html",
+    "viewport": "Mobile-844x390-L",
+    "width": 844,
+    "height": 390,
+    "passed": true,
+    "winWidth": 844,
+    "maxScroll": 844,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 9,
+    "smallTouchTargetsSample": [
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 37,
+        "height": 19,
+        "text": "Home"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 57,
+        "height": 19,
+        "text": "About Us"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 121,
+        "height": 19,
+        "text": "Products & Services"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 121,
+        "height": 19,
+        "text": "Manufacturing Area"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 82,
+        "height": 19,
+        "text": "Video Demos"
+      }
+    ],
+    "navAnomaly": null
+  },
+  {
+    "page": "404-NotFound",
+    "file": "_not-found.html",
+    "viewport": "Tablet-600x960",
+    "width": 600,
+    "height": 960,
+    "passed": true,
+    "winWidth": 600,
+    "maxScroll": 600,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 10,
+    "smallTouchTargetsSample": [
+      {
+        "tag": "a",
+        "selector": "a.brand",
+        "width": 141,
+        "height": 36,
+        "text": "KSG\nK.S.G. Tools"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 37,
+        "height": 19,
+        "text": "Home"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 57,
+        "height": 19,
+        "text": "About Us"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 121,
+        "height": 19,
+        "text": "Products & Services"
+      },
+      {
+        "tag": "a",
+        "selector": "a",
+        "width": 121,
+        "height": 19,
+        "text": "Manufacturing Area"
+      }
+    ],
+    "navAnomaly": null
+  },
+  {
+    "page": "404-NotFound",
+    "file": "_not-found.html",
+    "viewport": "Tablet-768x1024",
+    "width": 768,
+    "height": 1024,
+    "passed": true,
+    "winWidth": 768,
+    "maxScroll": 768,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 0,
+    "smallTouchTargetsSample": [],
+    "navAnomaly": null
+  },
+  {
+    "page": "404-NotFound",
+    "file": "_not-found.html",
+    "viewport": "Tablet-820x1180",
+    "width": 820,
+    "height": 1180,
+    "passed": true,
+    "winWidth": 820,
+    "maxScroll": 820,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 0,
+    "smallTouchTargetsSample": [],
+    "navAnomaly": null
+  },
+  {
+    "page": "404-NotFound",
+    "file": "_not-found.html",
+    "viewport": "Tablet-1024x768",
+    "width": 1024,
+    "height": 768,
+    "passed": true,
+    "winWidth": 1024,
+    "maxScroll": 1024,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 0,
+    "smallTouchTargetsSample": [],
+    "navAnomaly": null
+  },
+  {
+    "page": "404-NotFound",
+    "file": "_not-found.html",
+    "viewport": "Laptop-1280x720",
+    "width": 1280,
+    "height": 720,
+    "passed": true,
+    "winWidth": 1280,
+    "maxScroll": 1280,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 0,
+    "smallTouchTargetsSample": [],
+    "navAnomaly": null
+  },
+  {
+    "page": "404-NotFound",
+    "file": "_not-found.html",
+    "viewport": "Laptop-1366x768",
+    "width": 1366,
+    "height": 768,
+    "passed": true,
+    "winWidth": 1366,
+    "maxScroll": 1366,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 0,
+    "smallTouchTargetsSample": [],
+    "navAnomaly": null
+  },
+  {
+    "page": "404-NotFound",
+    "file": "_not-found.html",
+    "viewport": "Desktop-1440x900",
+    "width": 1440,
+    "height": 900,
+    "passed": true,
+    "winWidth": 1440,
+    "maxScroll": 1440,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 0,
+    "smallTouchTargetsSample": [],
+    "navAnomaly": null
+  },
+  {
+    "page": "404-NotFound",
+    "file": "_not-found.html",
+    "viewport": "Desktop-1600x900",
+    "width": 1600,
+    "height": 900,
+    "passed": true,
+    "winWidth": 1600,
+    "maxScroll": 1600,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 0,
+    "smallTouchTargetsSample": [],
+    "navAnomaly": null
+  },
+  {
+    "page": "404-NotFound",
+    "file": "_not-found.html",
+    "viewport": "Desktop-1920x1080",
+    "width": 1920,
+    "height": 1080,
+    "passed": true,
+    "winWidth": 1920,
+    "maxScroll": 1920,
+    "hasOverflow": false,
+    "overflowAmount": 0,
+    "overflowEls": [],
+    "smallTouchTargetsCount": 0,
+    "smallTouchTargetsSample": [],
+    "navAnomaly": null
+  }
+]

@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import VideosSection from "@/components/sections/VideosSection";
 import PageHeader from "@/components/PageHeader";
 import CtaBand from "@/components/sections/CtaBand";
-import ContactSection from "@/components/sections/ContactSection";
 
 export const metadata: Metadata = {
   title: "Videos & Machine Demos | K.S.G. Tools",
@@ -20,7 +19,6 @@ export default function VideosPage() {
       />
       <VideosSection />
       <CtaBand />
-      <ContactSection />
     </>
   );
 }

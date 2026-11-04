@@ -3,7 +3,6 @@ import PageHeader from "@/components/PageHeader";
 import ShredderCatalog from "@/components/sections/ShredderCatalog";
 import StatsBand from "@/components/sections/StatsBand";
 import CtaBand from "@/components/sections/CtaBand";
-import ContactSection from "@/components/sections/ContactSection";
 
 export const metadata: Metadata = {
   title: "Products & Services | K.S.G. Tools",
@@ -22,7 +21,6 @@ export default function ProductsPage() {
       <ShredderCatalog />
       <StatsBand />
       <CtaBand />
-      <ContactSection />
     </>
   );
 }

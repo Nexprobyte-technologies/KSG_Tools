@@ -3,37 +3,28 @@ import Icon from "@/components/icons";
 const services = [
   {
     icon: "gear" as const,
-    title: "Manufacturer",
-    text: "Precision manufacturing of shredder knives, granulator blades, chipper knives and more — engineered to fit your machine exactly.",
+    title: "Precision Tool Manufacturer",
+    text: "Direct manufacturing of shredder knives, granulator blades, chipper knives and custom dies engineered to fit your machinery OEM specs.",
     tag: "In-house production",
   },
   {
     icon: "factory" as const,
-    title: "Wholesale Supply",
-    text: "Bulk and wholesale supply with competitive pricing, consistent stock and dependable dispatch schedules for dealers and industries.",
-    tag: "Bulk & dealer pricing",
+    title: "Wholesale & Volume Supply",
+    text: "Bulk and wholesale supply with direct factory value, consistent metallurgical stock and dependable dispatch schedules for recycling plants.",
+    tag: "Bulk & OEM supply",
   },
   {
     icon: "wrench" as const,
-    title: "Trading & Distribution",
-    text: "Reliable trading and distribution of cutting tools, blades and dies across India, backed by dependable logistics by road.",
-    tag: "All-India delivery",
+    title: "4-Axis VMC Machining & Job Work",
+    text: "Precision CNC vertical machining center job work with material, custom component profiling, drilling, and precision slotting to drawing.",
+    tag: "±0.02mm Tolerance",
   },
   {
     icon: "knife" as const,
-    title: "Retail Supply",
-    text: "Fast, friendly retail support for small workshops and fabrication units with ready stock and flexible order quantities.",
-    tag: "Any order size",
+    title: "Custom Sampling & Resharpening",
+    text: "Rapid sampling from worn blades or CAD drawings, and specialized industrial blade regrinding to OEM edge sharpness and bevel angles.",
+    tag: "Custom profiling",
   },
-];
-
-const industries = [
-  "Plastic Recycling",
-  "Metal Recycling",
-  "Wood & Timber Processing",
-  "Paper & Cardboard",
-  "Agriculture",
-  "Food Processing",
 ];
 
 function ServiceCard({ s, n }: { s: (typeof services)[number]; n: number }) {
@@ -41,7 +32,7 @@ function ServiceCard({ s, n }: { s: (typeof services)[number]; n: number }) {
     <div className="milestone-card">
       <div className="ms-head">
         <span className="ms-num">{String(n).padStart(2, "0")}</span>
-        <div className="ms-ico">
+        <div className="ms-ico" aria-hidden="true">
           <Icon name={s.icon} size={22} />
         </div>
       </div>
@@ -65,14 +56,14 @@ export default function ServicesSection() {
   ];
 
   return (
-    <section className="section section-alt milestone-section">
+    <section id="services" className="section section-alt milestone-section" aria-label="Our Services">
       <div className="container">
         <div className="section-head center">
-          <span className="eyebrow">What We Do</span>
-          <h2>Our Services</h2>
+          <span className="eyebrow">Manufacturing &amp; Supply</span>
+          <h2>Industrial Services &amp; Capabilities</h2>
           <p className="sub">
-            From single blades to complete machine supplies, we serve every kind of
-            cutting requirement — from small workshops to large industrial units.
+            From single blade sampling to full machine tooling setups, K.S.G. Tools delivers
+            end-to-end tooling expertise from our Coimbatore workshop.
           </p>
         </div>
 

@@ -6,6 +6,12 @@ import Image from "next/image";
 export interface LightboxImage {
   caption: string;
   img: string;
+  title?: string;
+  category?: string;
+  model?: string;
+  manufacturer?: string;
+  specs?: string;
+  desc?: string;
 }
 
 export default function Lightbox({
@@ -59,7 +65,7 @@ export default function Lightbox({
       <figure className="lightbox-fig" onClick={(e) => e.stopPropagation()}>
         <Image
           src={img.img}
-          alt={img.caption}
+          alt={img.title || img.caption}
           fill
           sizes="92vw"
           priority
@@ -78,7 +84,14 @@ export default function Lightbox({
         ›
       </button>
       <div className="lightbox-meta">
-        <div className="lightbox-caption">{img.caption}</div>
+        <div className="lightbox-caption">
+          <strong>{img.title || img.caption}</strong>
+          {img.specs && (
+            <span style={{ display: "block", fontSize: 13, opacity: 0.85, marginTop: 4 }}>
+              {img.specs}
+            </span>
+          )}
+        </div>
         <div className="lightbox-count">
           {index + 1} / {images.length}
         </div>
