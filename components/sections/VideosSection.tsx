@@ -76,7 +76,7 @@ export default function VideosSection() {
                       videoRefs.current[v.id] = el;
                     }}
                     src={v.src}
-                    preload="metadata"
+                    preload="none"
                     playsInline
                     controls={isPlaying}
                     onEnded={() => handleVideoEnded(v.id)}

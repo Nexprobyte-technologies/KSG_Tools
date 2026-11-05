@@ -5,7 +5,6 @@ import QualityAndMaterialsSection from "@/components/sections/QualityAndMaterial
 import StatsBand from "@/components/sections/StatsBand";
 import ServicesSection from "@/components/sections/ServicesSection";
 import VideosSection from "@/components/sections/VideosSection";
-import PhotosSection from "@/components/sections/PhotosSection";
 import CompanyProfile from "@/components/sections/CompanyProfile";
 import LocationMapSection from "@/components/sections/LocationMapSection";
 import CtaBand from "@/components/sections/CtaBand";
@@ -20,7 +19,6 @@ export default function Home() {
       <StatsBand />
       <ServicesSection />
       <VideosSection />
-      <PhotosSection />
       <CompanyProfile />
       <LocationMapSection />
       <CtaBand />

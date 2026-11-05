@@ -83,32 +83,59 @@ export default function Navbar() {
             </ul>
           </nav>
 
-          {/* Header Action CTAs */}
+          {/* Desktop Actions */}
           <div className="nav-cta">
+            <a
+              href={`tel:${company.phoneLink}`}
+              className="phone-pill"
+              title={`Call K.S.G. Tools direct: ${company.phone}`}
+            >
+              <Icon name="phone" size={14} />
+              <span className="phone-pill-text">{company.phone}</span>
+            </a>
+            <Link
+              href="/contact"
+              className="btn btn-primary nav-quote-btn"
+              title="Request a Factory Quote"
+            >
+              <Icon name="tag" size={13} />
+              <span className="btn-text-full">Request Quote</span>
+              <span className="btn-text-short">Quote</span>
+            </Link>
             <a
               href="/api/download-catalogue"
               download="KSG-Tools-Product-Catalogue.pdf"
-              className="btn btn-primary nav-download-btn"
+              className="btn btn-outline-light nav-download-btn"
               title="Download Product Catalogue (PDF)"
               aria-label="Download Product Catalogue (PDF)"
             >
               <Icon name="download" size={14} />
-              <span className="btn-text-full">Download Catalogue</span>
-              <span className="btn-text-short">Catalogue</span>
+              <span className="btn-text-full">Catalogue</span>
             </a>
           </div>
 
-          {/* Accessible Mobile Menu Button */}
-          <button
-            className="burger"
-            type="button"
-            aria-label={open ? "Close navigation menu" : "Open navigation menu"}
-            aria-expanded={open}
-            aria-controls="mobile-nav-drawer"
-            onClick={() => setOpen((v) => !v)}
-          >
-            {open ? "✕" : "☰"}
-          </button>
+          {/* Mobile Right Controls: Quick Quote + Modern Hamburger */}
+          <div className="mobile-nav-controls">
+            <Link
+              href="/contact"
+              className="mobile-nav-quote"
+              onClick={() => setOpen(false)}
+              aria-label="Request a quote"
+            >
+              <Icon name="tag" size={13} />
+              <span>Quote</span>
+            </Link>
+            <button
+              className="burger"
+              type="button"
+              aria-label={open ? "Close navigation menu" : "Open navigation menu"}
+              aria-expanded={open}
+              aria-controls="mobile-nav-drawer"
+              onClick={() => setOpen((v) => !v)}
+            >
+              {open ? "✕" : "☰"}
+            </button>
+          </div>
         </div>
       </header>
 
@@ -160,13 +187,19 @@ export default function Navbar() {
             </nav>
 
             <div className="mobile-drawer-cta">
-              <a
-                href="/api/download-catalogue"
-                download="KSG-Tools-Product-Catalogue.pdf"
-                className="btn btn-primary mobile-cta-download"
+              <Link
+                href="/contact"
+                className="btn btn-primary mobile-cta-quote"
                 onClick={() => setOpen(false)}
               >
-                <Icon name="download" size={16} /> Download Full Catalogue (PDF)
+                <Icon name="tag" size={16} /> Request Factory Quote
+              </Link>
+              <a
+                href={`tel:${company.phoneLink}`}
+                className="btn btn-outline-dark mobile-cta-phone"
+                onClick={() => setOpen(false)}
+              >
+                <Icon name="phone" size={16} /> Call {company.phone}
               </a>
               <a
                 href={`https://wa.me/${company.whatsapp}?text=${encodeURIComponent(
@@ -177,7 +210,15 @@ export default function Navbar() {
                 className="btn btn-wa mobile-cta-wa"
                 onClick={() => setOpen(false)}
               >
-                <Icon name="chat" size={16} /> Chat on WhatsApp
+                <Icon name="chat" size={16} /> WhatsApp Us
+              </a>
+              <a
+                href="/api/download-catalogue"
+                download="KSG-Tools-Product-Catalogue.pdf"
+                className="btn btn-outline-dark mobile-cta-download"
+                onClick={() => setOpen(false)}
+              >
+                <Icon name="download" size={16} /> Download Catalogue (PDF)
               </a>
             </div>
           </aside>
